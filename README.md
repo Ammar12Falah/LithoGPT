@@ -64,5 +64,4 @@ Despite strong performance, the model exhibits specific failure modes:
 lithogpt/       # Core Model Package
 baselines/      # Scikit-Learn Comparison Benchmarks
 scripts/        # Analysis Tools (Tokenizer visualization)
-experiments/    # Ablation Study Configurations
 assets/         # Research Figures
