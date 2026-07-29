@@ -1,0 +1,32 @@
+REAL pooled std = 0.160875  (expect ~0.161)
+
+POOLED per arm:
+  A          std=0.090579  understatement=43.70%
+  B-linear   std=0.088272  understatement=45.13%
+  B-abs      std=0.078311  understatement=51.32%
+  B2         std=0.103124  understatement=35.90%
+  C          std=0.086985  understatement=45.93%
+
+EQUAL-WEIGHT PER WELL (per-well std, then average across 8 wells):
+  REAL equal-weight mean per-well std = 0.115213
+  A          eqw_std=0.084237  understatement=26.89%
+  B-linear   eqw_std=0.080798  understatement=29.87%
+  B-abs      eqw_std=0.078748  understatement=31.65%
+  B2         eqw_std=0.091323  understatement=20.74%
+  C          eqw_std=0.014155  understatement=87.71%
+
+PER-WELL C GENERATED STD (investigating the pooled-vs-eqw divergence for C):
+  16/4-1       C_gen_std=0.006705  real_std=0.173987
+  25/2-14      C_gen_std=0.007706  real_std=0.105272
+  30/6-5       C_gen_std=0.019734  real_std=0.131068
+  15/9-15      C_gen_std=0.002090  real_std=0.150738
+  25/8-5 S     C_gen_std=0.071268  real_std=0.218457
+  16/1-6 A     C_gen_std=0.002261  real_std=0.052573
+  34/5-1 S     C_gen_std=0.002282  real_std=0.049532
+  34/7-13      C_gen_std=0.001197  real_std=0.040077
+
+RANGE OF UNDERSTATEMENT ACROSS ARMS:
+  pooled basis: 35.9% to 51.3%
+  v1.9 claimed bracket 40-50%: correct on pooled basis = False
+
+TASK6_DISPERSION_COMPLETE

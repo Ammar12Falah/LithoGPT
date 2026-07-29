@@ -1,0 +1,97 @@
+====================================================================================================
+1a. REAL NPHI MEAN
+====================================================================================================
+equal-weight: 0.3280888434  (10sf)   0.3281 (4dp)   expect 0.328089
+pooled:       0.3373089306  (10sf)   0.3373 (4dp)   expect 0.337309
+
+====================================================================================================
+1b. SCORED COUNT / FULL VALID COUNT
+====================================================================================================
+scored = 54051  (expect 54051)
+full_valid = 72064  (expect 72064)
+
+====================================================================================================
+1c. FIVE HEADLINE NPHI BIASES
+====================================================================================================
+  A          full=-0.04234970379  4dp=-0.0423  target=-0.0423  diff=4.97e-05
+  B-linear   full=-0.0665919643  4dp=-0.0666  target=-0.0666  diff=8.04e-06
+  B-abs      full=-0.03398159302  4dp=-0.0340  target=-0.0340  diff=1.84e-05
+  B2         full=-0.04475730224  4dp=-0.0448  target=-0.0448  diff=4.27e-05
+  C          full=0.03318312565  4dp=+0.0332  target=+0.0332  diff=1.69e-05
+
+====================================================================================================
+1d. FULL HEADLINE TABLE, 5 METRICS x 5 ARMS (equal-weight per well)
+====================================================================================================
+arm                nphi_bias           nphi_w1      nphi_ac_rmse           gr_bias         rhob_bias
+A             -0.04234970379    +0.08029155549     +0.1961720223      -5.200750789     +0.0291306563
+B-linear       -0.0665919643    +0.08296180907      +0.196069286      +6.717170967    +0.07133046152
+B-abs         -0.03398159302    +0.08284627394     +0.1713965889      -3.986207126    +0.05865872648
+B2            -0.04475730224    +0.07743633277     +0.1606039153      +4.078149288    +0.06962285318
+C             +0.03318312565     +0.1008188364     +0.2149200307      -3.527257207     -0.1043189331
+
+====================================================================================================
+1e. FOUR CONTRASTS, SIGNED NPHI BIAS, PAIRED BOOTSTRAP, SHARED INDEX DRAW
+====================================================================================================
+  B2 minus A               operand_order=(B2 minus A)  point_full=-0.002407598453  point_4dp=-0.0024  CI_full=[-0.01881543205,0.01403530827]  CI_4dp=[-0.0188,+0.0140]
+  B-abs minus A            operand_order=(B-abs minus A)  point_full=0.008368110766  point_4dp=+0.0084  CI_full=[-0.006374720753,0.02227480145]  CI_4dp=[-0.0064,+0.0223]
+  B-linear minus B-abs     operand_order=(B-linear minus B-abs)  point_full=-0.03261037128  point_4dp=-0.0326  CI_full=[-0.04695306705,-0.01843557887]  CI_4dp=[-0.0470,-0.0184]
+  C minus A                operand_order=(C minus A)  point_full=0.07553282944  point_4dp=+0.0755  CI_full=[0.02144974072,0.1311669016]  CI_4dp=[+0.0214,+0.1312]
+
+====================================================================================================
+1f. GUARD TABLES -- SIGNED and MAGNITUDE (abs per well AFTER realization reduction, BEFORE averaging across wells)
+====================================================================================================
+
+-- SIGNED --
+  B2 minus A               GR             point=+9.278900 CI=[+5.255403,+13.436610] excl0=True
+  B2 minus A               RHOB           point=+0.040492 CI=[+0.003155,+0.079351] excl0=True
+  B2 minus A               NPHI ACF RMSE  point=-0.035568 CI=[-0.100225,+0.030007] excl0=False
+  B-abs minus A            GR             point=+1.214544 CI=[-3.894580,+7.387156] excl0=False
+  B-abs minus A            RHOB           point=+0.029528 CI=[+0.013951,+0.051765] excl0=True
+  B-abs minus A            NPHI ACF RMSE  point=-0.024775 CI=[-0.063201,+0.015129] excl0=False
+  B-linear minus B-abs     GR             point=+10.703378 CI=[+5.995695,+15.184491] excl0=True
+  B-linear minus B-abs     RHOB           point=+0.012672 CI=[-0.009927,+0.035919] excl0=False
+  B-linear minus B-abs     NPHI ACF RMSE  point=+0.024673 CI=[-0.000946,+0.049659] excl0=False
+  C minus A                GR             point=+1.673494 CI=[-2.273707,+6.475255] excl0=False
+  C minus A                RHOB           point=-0.133450 CI=[-0.233130,-0.041456] excl0=True
+  C minus A                NPHI ACF RMSE  point=+0.018748 CI=[-0.144690,+0.178345] excl0=False
+
+-- MAGNITUDE --
+  B2 minus A               GR             point=-2.963528 CI=[-9.452652,+2.673335] excl0=False
+  B2 minus A               RHOB           point=-0.026767 CI=[-0.059175,+0.005906] excl0=False
+  B2 minus A               NPHI ACF RMSE  point=-0.035568 CI=[-0.100225,+0.030007] excl0=False
+  B-abs minus A            GR             point=-4.321909 CI=[-9.430615,+0.192552] excl0=False
+  B-abs minus A            RHOB           point=-0.012675 CI=[-0.042000,+0.010291] excl0=False
+  B-abs minus A            NPHI ACF RMSE  point=-0.024775 CI=[-0.063201,+0.015129] excl0=False
+  B-linear minus B-abs     GR             point=+4.226528 CI=[-4.621424,+11.918287] excl0=False
+  B-linear minus B-abs     RHOB           point=+0.024463 CI=[+0.007078,+0.042710] excl0=True
+  B-linear minus B-abs     NPHI ACF RMSE  point=+0.024673 CI=[-0.000946,+0.049659] excl0=False
+  C minus A                GR             point=-2.369395 CI=[-7.065430,+1.565296] excl0=False
+  C minus A                RHOB           point=+0.015557 CI=[-0.070373,+0.118545] excl0=False
+  C minus A                NPHI ACF RMSE  point=+0.018748 CI=[-0.144690,+0.178345] excl0=False
+
+====================================================================================================
+CSV: full precision vs single-rounded 4dp vs v1.9 target, flagged
+====================================================================================================
+  1a_real_nphi_eqw                   full=0.3280888434  rounded=+0.3281  target=+0.3281  flagged=False
+  1a_real_nphi_pooled                full=0.3373089306  rounded=+0.3373  target=+0.3373  flagged=False
+  1c_A                               full=-0.04234970379  rounded=-0.0423  target=-0.0423  flagged=False
+  1c_B-linear                        full=-0.0665919643  rounded=-0.0666  target=-0.0666  flagged=False
+  1c_B-abs                           full=-0.03398159302  rounded=-0.0340  target=-0.0340  flagged=False
+  1c_B2                              full=-0.04475730224  rounded=-0.0448  target=-0.0448  flagged=False
+  1c_C                               full=0.03318312565  rounded=+0.0332  target=+0.0332  flagged=False
+  1e_B2 minus A_point                full=-0.002407598453  rounded=-0.0024  target=-0.0024  flagged=False
+  1e_B2 minus A_lo                   full=-0.01881543205  rounded=-0.0188  target=-0.0188  flagged=False
+  1e_B2 minus A_hi                   full=0.01403530827  rounded=+0.0140  target=+0.0140  flagged=False
+  1e_B-abs minus A_point             full=0.008368110766  rounded=+0.0084  target=+0.0084  flagged=False
+  1e_B-abs minus A_lo                full=-0.006374720753  rounded=-0.0064  target=-0.0064  flagged=False
+  1e_B-abs minus A_hi                full=0.02227480145  rounded=+0.0223  target=+0.0223  flagged=False
+  1e_B-linear minus B-abs_point      full=-0.03261037128  rounded=-0.0326  target=-0.0326  flagged=False
+  1e_B-linear minus B-abs_lo         full=-0.04695306705  rounded=-0.0470  target=-0.0470  flagged=False
+  1e_B-linear minus B-abs_hi         full=-0.01843557887  rounded=-0.0184  target=-0.0184  flagged=False
+  1e_C minus A_point                 full=0.07553282944  rounded=+0.0755  target=+0.0755  flagged=False
+  1e_C minus A_lo                    full=0.02144974072  rounded=+0.0214  target=+0.0214  flagged=False
+  1e_C minus A_hi                    full=0.1311669016  rounded=+0.1312  target=+0.1312  flagged=False
+
+written dk_task1_fullprecision.csv
+
+TASK1_FULLPRECISION_COMPLETE

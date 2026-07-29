@@ -1,0 +1,207 @@
+DK Task 2, 4, 7 -- command log and verbatim findings
+=======================================================
+
+TASK 2. ESTIMATOR PROVENANCE
+-----------------------------
+
+--- atce_ablation_v3.py bootstrap block, verbatim, lines 70 (N_BOOTSTRAP) and 604-641 ---
+Command: sed -n '70p;604,641p' scripts/atce/atce_ablation_v3.py
+
+70:N_BOOTSTRAP = 1000
+
+604:    metrics_by_arm = {}
+605:    for arm_name, per_well in results.items():
+606:        well_level = {}
+607:        for w, d in per_well.items():
+608:            real = np.array(d["real"]); gens = np.array(d["generated_realizations"])
+609:            well_level[w] = well_metrics(real, gens)
+610:        metrics_by_arm[arm_name] = well_level
+611:
+612:    def bootstrap_ci(values, n_boot=N_BOOTSTRAP, seed=SEED):
+613:        rng = np.random.default_rng(seed)
+614:        values = np.array(values)
+615:        boots = [np.mean(rng.choice(values, size=len(values), replace=True)) for _ in range(n_boot)]
+616:        return dict(mean=float(np.mean(values)), ci_low=float(np.percentile(boots, 2.5)),
+617:                    ci_high=float(np.percentile(boots, 97.5)))
+618:
+619:    summary = {}
+620:    for arm_name, well_level in metrics_by_arm.items():
+621:        arm_summary = {}
+622:        for metric in ["abs_bias", "w1", "rhob_bias", "gr_bias", "ac_rmse"]:
+623:            all_vals = []
+624:            per_well_summary = {}
+625:            for w, m in well_level.items():
+626:                vals = m[metric]
+627:                per_well_summary[w] = bootstrap_ci(vals)
+628:                all_vals.extend(vals)
+629:            arm_summary[metric] = dict(per_well=per_well_summary, aggregate=bootstrap_ci(all_vals))
+630:        real_means = [m["real_mean_nphi"] for m in well_level.values()]
+631:        overall_real_mean = float(np.mean(real_means))
+632:        rel_bias_vals = []
+633:        for w, m in well_level.items():
+634:            for b in m["abs_bias"]:
+635:                rel_bias_vals.append(b / m["real_mean_nphi"] * 100)
+636:        arm_summary["nphi_relative_bias_pct_vs_real_mean"] = bootstrap_ci(rel_bias_vals)
+637:        arm_summary["overall_real_mean_nphi"] = overall_real_mean
+638:        summary[arm_name] = arm_summary
+639:        log(f"[{arm_name}] NPHI abs_bias={arm_summary['abs_bias']['aggregate']} "
+640:            f"rel_bias%={arm_summary['nphi_relative_bias_pct_vs_real_mean']} "
+641:            f"W1={arm_summary['w1']['aggregate']}")
+
+ORIGINAL script's bootstrap_ci resamples over: (a) per-well, the 5 REALIZATION-level
+values for that well ("vals = m[metric]", 5 numbers) -- NOT the 8 wells; (b) "aggregate",
+a POOLED list of all 40 realization-level values across all 8 wells concatenated
+("all_vals.extend(vals)" inside the well loop) -- realizations from different wells ARE
+pooled and resampled as if independent, and n_boot=1000, not 10000.
+
+--- atce_v3_recompute.py, lines 211-237, verbatim ---
+Command: sed -n '211,237p' scripts/atce/atce_v3_recompute.py
+
+211:def bootstrap_well_level(values_by_well, n_boot=N_BOOT, seed=BOOT_SEED):
+212:    rng = np.random.default_rng(seed)
+213:    wells = list(values_by_well.keys())
+214:    vals = np.array([values_by_well[w] for w in wells])
+215:    n = len(vals)
+216:    boots = np.array([rng.choice(vals, size=n, replace=True).mean() for _ in range(n_boot)])
+217:    return dict(mean=float(vals.mean()), ci_low=float(np.percentile(boots, 2.5)),
+218:                ci_high=float(np.percentile(boots, 97.5)), n_wells=n)
+219:
+220:
+221:def bootstrap_paired_diff(vals_a_by_well, vals_b_by_well, n_boot=N_BOOT, seed=BOOT_SEED):
+222:    """Paired well-level bootstrap on (b - a): same resampled well indices used
+223:    for both arms in each resample, so the comparison stays matched."""
+224:    rng = np.random.default_rng(seed)
+225:    wells = list(vals_a_by_well.keys())
+226:    assert wells == list(vals_b_by_well.keys())
+227:    a = np.array([vals_a_by_well[w] for w in wells])
+228:    b = np.array([vals_b_by_well[w] for w in wells])
+229:    n = len(a)
+230:    diffs = []
+231:    for _ in range(n_boot):
+232:        idx = rng.integers(0, n, size=n)
+233:        diffs.append(b[idx].mean() - a[idx].mean())
+234:    diffs = np.array(diffs)
+235:    point_diff = float(b.mean() - a.mean())
+236:    return dict(point_diff=point_diff, ci_low=float(np.percentile(diffs, 2.5)),
+237:                ci_high=float(np.percentile(diffs, 97.5)))
+
+(N_BOOT = 10000, BOOT_SEED = ref.SEED = 20260715, per atce_v3_recompute.py:22-23)
+This resamples over the 8 WELLS (values_by_well keyed by well, size=n=8), matched
+indices shared between the two arms in bootstrap_paired_diff -- the corrected,
+paired well-level estimator.
+
+--- git log: first/last commit, both files, vs benchmark ef8883e ---
+Commands:
+  git log --all --follow --format='%H %ad %s' --date=iso -- scripts/atce/atce_ablation_v3.py
+  git log --all --follow --format='%H %ad %s' --date=iso -- scripts/atce/atce_v3_recompute.py
+  git show -s --format='%H %ad' --date=iso ef8883e
+
+atce_ablation_v3.py: ONE commit only.
+  ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+  "Item J: ATCE ablation - exploratory (K) + diagnostic v2 (W) + sealed v3 runs"
+
+atce_v3_recompute.py: ONE commit only.
+  4c626d9c0ecdb9258a700dfe9a930b6b4cb7a436 2026-07-27 20:35:28 +0000
+  "AA-series items AM-AP: CPU-only recompute of v3 bias stats, well-level bootstrap,
+   tokenizer reconstruction bias, and Arm D/units/grid code audit"
+
+benchmark (first result commit): ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+
+VERDICT: atce_ablation_v3.py's commit IS the benchmark commit itself (same hash, same
+instant) -- the original script (with its 1000-resample, non-well-level, pooled-
+realization bootstrap) exists exactly as of the first result. atce_v3_recompute.py
+(the 10,000-resample PAIRED WELL-LEVEL estimator) was committed ~17 hours LATER, same
+day. STATED PLAINLY: yes, the 10,000 paired well-level estimator POSTDATES the first
+result commit.
+
+
+TASK 4. WEIGHT INITIALISATION SEED
+------------------------------------
+Command: grep -ni "manual_seed\|np.random.seed\|random.seed\|torch.cuda.manual_seed\|generator=" scripts/atce/atce_ablation_v3.py
+Result: NO MATCHES. Zero occurrences of torch.manual_seed, torch.cuda.manual_seed,
+np.random.seed (bare, non-Generator form), random.seed, or generator= anywhere in the
+file.
+
+Broader check, command: grep -ni "seed" scripts/atce/atce_ablation_v3.py
+Result: SEED = 20260715 (line 55) is used pervasively for np.random.default_rng(SEED)
+across data splitting (line 119), batch building (194, 212), the tokenizer's
+MiniBatchKMeans random_state (353), generation sampling (267), and the bootstrap (613)
+-- but never passed to torch in any form.
+
+ANSWER: weight initialization is NOT seeded. PyTorch's global RNG governs
+nn.Linear/nn.Embedding default init (and any other torch-side randomness, e.g. dropout
+if present) with whatever state exists at that point in the process -- uncontrolled,
+not reproducible run-to-run, independent of the pervasively-seeded numpy-side pipeline
+(splits, batching, tokenizer, generation, bootstrap).
+
+
+TASK 7. TOKENIZER REFIT UNDER ARCHIVED PINS
+----------------------------------------------
+
+(a) Archived environment freeze, verbatim (scikit-learn version IS recorded --
+    proceeding, not stopping):
+File: reports/basinshift/atce_ablation_v3/pip_freeze_2026-07-27.txt
+Relevant lines:
+  numpy==1.26.3
+  pandas==2.2.3
+  scikit-learn==1.9.0
+  scipy==1.16.3
+  torch==2.4.1+cu124
+  torchaudio==2.4.1+cu124
+  torchvision==0.19.1+cu124
+(full ~140-line freeze also on file, includes jupyter/nvidia-cuda/system packages
+irrelevant to the tokenizer computation)
+
+(b) Isolated venv created: python3 -m venv ~/lithogpt_tokver (exit 0).
+Working environment pip freeze BEFORE (python3 -m pip freeze):
+  altgraph @ file:///AppleInternal/... (system wheel)
+  future @ file:///AppleInternal/... (system wheel)
+  joblib==1.5.3
+  macholib @ file:///AppleInternal/... (system wheel)
+  numpy==2.0.2
+  pandas==2.3.3
+  python-dateutil==2.9.0.post0
+  pytz==2026.3.post1
+  scikit-learn==1.6.1
+  scipy==1.13.1
+  six @ file:///AppleInternal/... (system wheel)
+  threadpoolctl==3.6.0
+  tzdata==2026.3
+
+Attempt 1 -- full archived freeze into venv:
+Command: ~/lithogpt_tokver/bin/pip install -r .../pip_freeze_2026-07-27.txt
+Result: FAILED.
+  ERROR: Could not find a version that satisfies the requirement ipython==8.27.0
+  (from versions: ... 8.18.1)
+  ERROR: No matching distribution found for ipython==8.27.0
+Cause: this venv's Python is 3.9.6 (system /usr/bin/python3); ipython==8.27.0 has no
+cp39 wheel (requires newer Python). Transaction aborted before installing anything
+(venv freeze empty after this attempt).
+
+Attempt 2 -- scientific subset only (numpy, pandas, scikit-learn, scipy, joblib) at
+exact archived pins:
+Command: ~/lithogpt_tokver/bin/pip install "numpy==1.26.3" "pandas==2.2.3" \
+  "scikit-learn==1.9.0" "scipy==1.16.3" "joblib==1.5.3"
+Result: FAILED.
+  ERROR: Could not find a version that satisfies the requirement scikit-learn==1.9.0
+  (from versions: ... 1.6.1)
+  ERROR: No matching distribution found for scikit-learn==1.9.0
+Cause: same as above -- scikit-learn==1.9.0 requires Python >=3.10; this Mac's only
+available interpreter is Python 3.9.6 (checked: no python3.10/3.11/3.12/3.13 anywhere
+on PATH, no Homebrew installed). Transaction aborted before installing anything.
+
+Working environment pip freeze AFTER both attempts:
+Command: diff <(python3 -m pip freeze, captured before) <(python3 -m pip freeze,
+captured after)
+Result: empty diff. WORKING ENVIRONMENT CONFIRMED BYTE-IDENTICAL, untouched.
+
+(c)/(d) NOT PERFORMED. The archived pin scikit-learn==1.9.0 cannot be installed on
+this Mac under any available Python interpreter -- this is a genuine, verified
+limitation of this machine, not a version substituted or guessed around. No tokenizer
+refit was attempted in the venv (there is no working scikit-learn in it to run it
+with), and no numbers are reported for cluster usage / entropy / per-curve RMSE from
+this venv. This is a real "cannot be performed" result, reported as such rather than
+approximated with a different sklearn version. (A separate refit WAS performed on the
+RunPod pod in the DB-DI brief, under scikit-learn 1.4.2 -- not the archived 1.9.0 pin
+-- entropy 9.786, NPHI RMSE 0.0134; that result stands as a different-environment
+comparison point, already reported, not a substitute for this venv's failed attempt.)

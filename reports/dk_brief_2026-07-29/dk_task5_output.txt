@@ -1,0 +1,86 @@
+Depth arrays validated element-aligned to stored real arrays for all 8 wells.
+
+====================================================================================================
+POST-HOC 5b/5e. PER-WELL REAL NPHI-vs-DEPTH SLOPE (v/v per 1000 m)
+====================================================================================================
+  POST-HOC  16/4-1       real slope = -0.304485
+  POST-HOC  25/2-14      real slope = -0.005837
+  POST-HOC  30/6-5       real slope = -0.204637
+  POST-HOC  15/9-15      real slope = -0.253100
+  POST-HOC  25/8-5 S     real slope = -0.333747
+  POST-HOC  16/1-6 A     real slope = +0.150502
+  POST-HOC  34/5-1 S     real slope = +0.004368
+  POST-HOC  34/7-13      real slope = -0.088231
+
+====================================================================================================
+POST-HOC 5a/5e. PER-WELL, PER-ARM SLOPE (mean of 5 realization slopes)
+====================================================================================================
+
+  Arm A:
+    POST-HOC  16/4-1       arm slope = -0.004751  real slope = -0.304485  diff = +0.299734
+    POST-HOC  25/2-14      arm slope = +0.069096  real slope = -0.005837  diff = +0.074932
+    POST-HOC  30/6-5       arm slope = -0.001219  real slope = -0.204637  diff = +0.203418
+    POST-HOC  15/9-15      arm slope = -0.033197  real slope = -0.253100  diff = +0.219903
+    POST-HOC  25/8-5 S     arm slope = -0.014989  real slope = -0.333747  diff = +0.318757
+    POST-HOC  16/1-6 A     arm slope = -0.246173  real slope = +0.150502  diff = -0.396675
+    POST-HOC  34/5-1 S     arm slope = +0.377897  real slope = +0.004368  diff = +0.373529
+    POST-HOC  34/7-13      arm slope = +0.025688  real slope = -0.088231  diff = +0.113919
+
+  Arm B-linear:
+    POST-HOC  16/4-1       arm slope = -0.055824  real slope = -0.304485  diff = +0.248661
+    POST-HOC  25/2-14      arm slope = -0.122524  real slope = -0.005837  diff = -0.116687
+    POST-HOC  30/6-5       arm slope = -0.045374  real slope = -0.204637  diff = +0.159263
+    POST-HOC  15/9-15      arm slope = -0.046648  real slope = -0.253100  diff = +0.206452
+    POST-HOC  25/8-5 S     arm slope = -0.035942  real slope = -0.333747  diff = +0.297805
+    POST-HOC  16/1-6 A     arm slope = -0.296003  real slope = +0.150502  diff = -0.446506
+    POST-HOC  34/5-1 S     arm slope = -0.001444  real slope = +0.004368  diff = -0.005812
+    POST-HOC  34/7-13      arm slope = -0.044093  real slope = -0.088231  diff = +0.044137
+
+  Arm B-abs:
+    POST-HOC  16/4-1       arm slope = -0.084283  real slope = -0.304485  diff = +0.220202
+    POST-HOC  25/2-14      arm slope = +0.071839  real slope = -0.005837  diff = +0.077676
+    POST-HOC  30/6-5       arm slope = -0.051742  real slope = -0.204637  diff = +0.152895
+    POST-HOC  15/9-15      arm slope = -0.001780  real slope = -0.253100  diff = +0.251320
+    POST-HOC  25/8-5 S     arm slope = -0.022008  real slope = -0.333747  diff = +0.311739
+    POST-HOC  16/1-6 A     arm slope = -0.172304  real slope = +0.150502  diff = -0.322806
+    POST-HOC  34/5-1 S     arm slope = +0.091349  real slope = +0.004368  diff = +0.086981
+    POST-HOC  34/7-13      arm slope = +0.086758  real slope = -0.088231  diff = +0.174989
+
+  Arm B2:
+    POST-HOC  16/4-1       arm slope = -0.120989  real slope = -0.304485  diff = +0.183497
+    POST-HOC  25/2-14      arm slope = -0.091588  real slope = -0.005837  diff = -0.085751
+    POST-HOC  30/6-5       arm slope = -0.049261  real slope = -0.204637  diff = +0.155375
+    POST-HOC  15/9-15      arm slope = -0.158826  real slope = -0.253100  diff = +0.094274
+    POST-HOC  25/8-5 S     arm slope = -0.127874  real slope = -0.333747  diff = +0.205873
+    POST-HOC  16/1-6 A     arm slope = -0.490518  real slope = +0.150502  diff = -0.641020
+    POST-HOC  34/5-1 S     arm slope = -0.326612  real slope = +0.004368  diff = -0.330980
+    POST-HOC  34/7-13      arm slope = -0.059378  real slope = -0.088231  diff = +0.028853
+
+  Arm C:
+    POST-HOC  16/4-1       arm slope = -0.001992  real slope = -0.304485  diff = +0.302493
+    POST-HOC  25/2-14      arm slope = +0.020663  real slope = -0.005837  diff = +0.026500
+    POST-HOC  30/6-5       arm slope = -0.016950  real slope = -0.204637  diff = +0.187687
+    POST-HOC  15/9-15      arm slope = -0.001673  real slope = -0.253100  diff = +0.251427
+    POST-HOC  25/8-5 S     arm slope = -0.086173  real slope = -0.333747  diff = +0.247574
+    POST-HOC  16/1-6 A     arm slope = +0.012788  real slope = +0.150502  diff = -0.137714
+    POST-HOC  34/5-1 S     arm slope = -0.020522  real slope = +0.004368  diff = -0.024890
+    POST-HOC  34/7-13      arm slope = +0.003664  real slope = -0.088231  diff = +0.091894
+
+====================================================================================================
+POST-HOC 5c. PER-WELL DIFFERENCE (arm minus real), equal-weight mean + paired bootstrap over wells
+====================================================================================================
+  POST-HOC  A          mean(arm-real) = +0.150940  CI=[-0.026762,+0.282162]
+  POST-HOC  B-linear   mean(arm-real) = +0.048414  CI=[-0.120633,+0.188537]
+  POST-HOC  B-abs      mean(arm-real) = +0.119124  CI=[-0.022422,+0.223509]
+  POST-HOC  B2         mean(arm-real) = -0.048735  CI=[-0.256457,+0.121812]
+  POST-HOC  C          mean(arm-real) = +0.118121  CI=[+0.015025,+0.213968]
+
+====================================================================================================
+POST-HOC 5d. FOUR CONTRASTS APPLIED TO SLOPE (arm-vs-arm on the SLOPE quantity itself)
+====================================================================================================
+  POST-HOC  B2 minus A               operand_order=(B2 minus A)  slope_point=-0.199674 v/v-per-1000m  CI=[-0.355271,-0.098880]
+  POST-HOC  B-abs minus A            operand_order=(B-abs minus A)  slope_point=-0.031815 v/v-per-1000m  CI=[-0.115435,+0.032240]
+  POST-HOC  B-linear minus B-abs     operand_order=(B-linear minus B-abs)  slope_point=-0.070710 v/v-per-1000m  CI=[-0.122007,-0.021300]
+  POST-HOC  C minus A                operand_order=(C minus A)  slope_point=-0.032818 v/v-per-1000m  CI=[-0.159231,+0.078536]
+
+TASK5_DEPTHSLOPE_COMPLETE
