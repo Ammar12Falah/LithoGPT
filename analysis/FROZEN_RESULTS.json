@@ -125,6 +125,13 @@
     },
     "value": 256000
   },
+  "code_commit_pushed": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "git push origin-orig atce-v1-5-audit-2026-07-29, verified via git fetch + rev-parse"
+    },
+    "value": "b730d622faf3e9aa049131d6e8e29e5b93fca0eb"
+  },
   "code_commit_results": {
     "provenance": {
       "code_path": "header/n/a",

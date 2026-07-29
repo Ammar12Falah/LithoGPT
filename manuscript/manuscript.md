@@ -658,19 +658,19 @@ refit fresh on this study's own training wells).
 ## Code Availability
 
 **[Source note: rewritten at brief DT G15c to name the destination repository ahead of the
-G16 push. The commit hash below is the literal placeholder text specified by the brief until
-G16 actually creates it (do not invent a commit hash, matching the existing "do not invent a
-DOI" rule) -- filled in by a follow-up commit once pushed, per G16d.]**
+push; commit hash inserted at brief DV Task 5 after the push completed and was verified by
+`git fetch` + `git rev-parse` against the remote (not the local commit alone).]**
 
 The code that produced the archived raw outputs analyzed in this manuscript, together with the
 recompute and audit scripts, the comparison protocol, and the decision record, is public at
-`github.com/Ammar12Falah/LithoGPT`, commit hash to be inserted after push. Raw generation outputs
-(`atce_ablation_v3_raw_results_2026-07-26.json`, ac963f2c56ec27ac8f2fd837faa90108dc580a53560dbeb3c50a41c35f0110ed) are not hosted on GitHub, because they
-exceed its file-size limit; they are deposited to Zenodo, DOI to be inserted on deposit (see
-`analysis/RAW_OUTPUTS_LOCATION.md` for the file's size, digest, and integrity-verification
-record). This manuscript claims only that the archived raw outputs reproduce every arm-level
-metric reported above (verified in `audit/verify_all.py`); it does not claim that the training
-and generation pipeline itself is reproducible end to end, which was not tested.
+`github.com/Ammar12Falah/LithoGPT`, branch `atce-v1-5-audit-2026-07-29`, commit `b730d622faf3e9aa049131d6e8e29e5b93fca0eb`.
+Raw generation outputs (`atce_ablation_v3_raw_results_2026-07-26.json`, ac963f2c56ec27ac8f2fd837faa90108dc580a53560dbeb3c50a41c35f0110ed) are not hosted on
+GitHub, because they exceed its file-size limit; they are deposited to Zenodo, DOI to be
+inserted on deposit (see `analysis/RAW_OUTPUTS_LOCATION.md` for the file's size, digest, and
+integrity-verification record). This manuscript claims only that the archived raw outputs
+reproduce every arm-level metric reported above (verified in `audit/verify_all.py`); it does
+not claim that the training and generation pipeline itself is reproducible end to end, which
+was not tested.
 
 ## References
 
