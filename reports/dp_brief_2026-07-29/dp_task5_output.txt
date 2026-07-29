@@ -1,0 +1,10 @@
+Sanity check vs DK task1c equal-weight arm means: PASS
+
+t_crit(0.975,df=7)=2.364624  t_power(0.80,df=7)=0.896030
+
+POST-HOC  B2 minus A               SD_PAIRED=0.025563  MDE=0.029469
+POST-HOC  B-abs minus A            SD_PAIRED=0.022322  MDE=0.025733
+POST-HOC  B-linear minus B-abs     SD_PAIRED=0.022030  MDE=0.025396
+POST-HOC  C minus A                SD_PAIRED=0.085288  MDE=0.098322
+
+DP_TASK5_MDE_COMPLETE

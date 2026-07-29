@@ -1,0 +1,10 @@
+[PASS] rebuild byte-identical to committed manuscript.md
+[PASS] banned strings (section 4), 0 hits -- []
+[PASS] 'fair' not used (0 occurrences found) -- 0 occurrence(s)
+[PASS] 'pilot' not used as study name (0 occurrences) -- 0 occurrence(s)
+[PASS] word count 3139 <= 6800 hard ceiling -- 3139 words
+[PASS] word count 3139 <= 6500 target -- 3139 words (informational, not a FAIL condition per 3.6)
+[PASS] 'Arm D' appears exactly once (withdrawal note only) -- 1 occurrence(s)
+[PASS] no superseded v3 run-log interval value cited in manuscript -- []
+
+AUDIT: ALL CHECKS PASSED.

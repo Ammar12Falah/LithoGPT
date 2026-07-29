@@ -1,0 +1,52 @@
+DQ Gate 5 -- reference resolution. Network used ONLY here, per section 0. Both
+"Known" references from brief section 1 verified against primary sources (not from
+memory), resolved to DOI/stable URL. The manuscript as built in G4 (Abstract, Results,
+Discussion, Conclusions, Limitations, corrections note, Code Availability -- no
+Introduction/Methods/Related Work, rev3 not found) contains ZERO formal in-text
+citations, so there is nothing in manuscript.md itself to remove for a failed
+resolution; both references below are on record for whenever Introduction/Related Work
+are drafted, and directly support the corrections-note claim about ref #7 and the
+FORCE-licence line.
+
+============================================================
+REFERENCE 1: arXiv 2412.05681
+============================================================
+Checked: https://arxiv.org/abs/2412.05681 (fetched directly, 2026-07-29)
+Title:   "Leveraging Time-Series Foundation Model for Subsurface Well Logs Prediction
+          and Anomaly Detection"
+Authors: Ardiansyah Koeshidayatullah, Abdulrahman Al-Fakih, SanLinn Ismael Kaka
+Stable URL: https://arxiv.org/abs/2412.05681
+RESULT: RESOLVES. Matches the "Known" fact in brief section 1 exactly (Koeshidayatullah,
+Al-Fakih, Kaka) -- confirms the prior report's "Liu et al. 2024" attribution for this
+arXiv ID was wrong; these are the real authors.
+
+============================================================
+REFERENCE 2: FORCE 2020 dataset licence
+============================================================
+Checked: https://zenodo.org/records/4351156 (fetched directly, 2026-07-29) -- the
+dataset's own Zenodo deposit, the authoritative primary source (not a secondary
+blog/GitHub mirror).
+DOI: 10.5281/zenodo.4351156
+Citation: Bormann, Peter; Aursand, Peder; Dilib, Fahad; Manral, Surrender; Dischington,
+Peter (2020). FORCE 2020 Well well log and lithofacies dataset for machine learning
+competition. Zenodo. https://doi.org/10.5281/zenodo.4351156
+Licence terms (quoted from the Zenodo Rights section): the curated dataset / lithofacies
+labels are "Creative Commons Attribution 4.0 International" (CC-BY-4.0, "allows
+re-distribution and re-use of a licensed work on the condition that the creator is
+appropriately credited"). The well log CURVE data is separately noted: "The original
+well log data comes from the Norwegian government and is provided by a NOLD 2.0
+licence" -- i.e. NLOD 2.0 (Norwegian Licence for Open Government Data), not CC-BY-4.0.
+RESULT: RESOLVES. Confirms the dual-licence split given in brief section 1 exactly:
+curves under NLOD 2.0, lithofacies labels under CC-BY-4.0. This study (per Code
+Availability / corrections note) uses only GR/RDEP/NPHI/RHOB curve data, never the
+lithofacies labels -- so any acknowledgement line citing CC-BY-4.0 for this study's own
+data usage would be the wrong licence; the correct citation for this study's actual
+data usage is NLOD 2.0, with the Zenodo DOI above as the dataset's own permanent
+identifier (used here as evidence, not inserted into the manuscript as a claimed DOI
+for THIS repository -- Code Availability explicitly claims no DOI for the code/results).
+
+============================================================
+SUMMARY
+============================================================
+2 references checked, 2 resolved, 0 removed. No manuscript citation was removed since
+none currently exist in the drafted sections.

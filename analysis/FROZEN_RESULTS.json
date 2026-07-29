@@ -1,0 +1,2361 @@
+{
+  "arm_C_gen_mean": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
+    },
+    "value": 0.3613
+  },
+  "athy_frozen_lambda_m": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 4068.0
+  },
+  "athy_frozen_phi0": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 0.6052
+  },
+  "athy_trainonly_lambda_m": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 4375.8
+  },
+  "athy_trainonly_phi0": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 0.5776
+  },
+  "code_commit_results": {
+    "provenance": {
+      "code_path": "header/n/a",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": "ef8883e27d34deac198ab14b7db6601aedaefb14"
+  },
+  "code_raw_digest_sha256": {
+    "provenance": {
+      "code_path": "header/n/a",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": "ac963f2c56ec27ac8f2fd837faa90108dc580a53560dbeb3c50a41c35f0110ed"
+  },
+  "code_raw_filename": {
+    "provenance": {
+      "code_path": "header/n/a",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": "atce_ablation_v3_raw_results_2026-07-26.json"
+  },
+  "code_repo_name": {
+    "provenance": {
+      "code_path": "header/n/a",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": "LithoGPT-2"
+  },
+  "contrast_magnitude_nphi_bias_B-linear_minus_B-abs_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude(primary metric)",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.03566934439320731
+  },
+  "contrast_magnitude_nphi_bias_B-linear_minus_B-abs_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude(primary metric)",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.0006126058417203137
+  },
+  "contrast_magnitude_nphi_bias_B-linear_minus_B-abs_point": {
+    "provenance": {
+      "code_path": "1f-magnitude(primary metric)",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.017754216625885444
+  },
+  "contrast_signed_nphi_bias_B-abs_minus_A_ci_high": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.02227480145384286
+  },
+  "contrast_signed_nphi_bias_B-abs_minus_A_ci_low": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.006374720752855313
+  },
+  "contrast_signed_nphi_bias_B-abs_minus_A_point": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.00836811076601629
+  },
+  "contrast_signed_nphi_bias_B-linear_minus_B-abs_ci_high": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.018435578868976496
+  },
+  "contrast_signed_nphi_bias_B-linear_minus_B-abs_ci_low": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.04695306705052196
+  },
+  "contrast_signed_nphi_bias_B-linear_minus_B-abs_point": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.032610371278301596
+  },
+  "contrast_signed_nphi_bias_B2_minus_A_ci_high": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.014035308272914299
+  },
+  "contrast_signed_nphi_bias_B2_minus_A_ci_low": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.018815432047250273
+  },
+  "contrast_signed_nphi_bias_B2_minus_A_point": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.002407598452502664
+  },
+  "contrast_signed_nphi_bias_C_minus_A_ci_high": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.13116690157286087
+  },
+  "contrast_signed_nphi_bias_C_minus_A_ci_low": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.021449740722575706
+  },
+  "contrast_signed_nphi_bias_C_minus_A_point": {
+    "provenance": {
+      "code_path": "1e",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.0755328294350042
+  },
+  "depth_full_valid_max_m": {
+    "provenance": {
+      "code_path": "Q3b",
+      "file": "reports/dl_brief_2026-07-29/dl_q3_depth_range.py"
+    },
+    "value": 3897.346
+  },
+  "depth_full_valid_min_m": {
+    "provenance": {
+      "code_path": "Q3b",
+      "file": "reports/dl_brief_2026-07-29/dl_q3_depth_range.py"
+    },
+    "value": 760.8896039
+  },
+  "depth_scored_max_m": {
+    "provenance": {
+      "code_path": "Q3a",
+      "file": "reports/dl_brief_2026-07-29/dl_q3_depth_range.py"
+    },
+    "value": 3897.346
+  },
+  "depth_scored_min_m": {
+    "provenance": {
+      "code_path": "Q3a",
+      "file": "reports/dl_brief_2026-07-29/dl_q3_depth_range.py"
+    },
+    "value": 1295.6256039
+  },
+  "discrete_arms_gen_mean_range_high": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
+    },
+    "value": 0.2941
+  },
+  "discrete_arms_gen_mean_range_low": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
+    },
+    "value": 0.2615
+  },
+  "dispersion_eqw_std_A": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.08423669632707137
+  },
+  "dispersion_eqw_std_B-abs": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.07874780136693943
+  },
+  "dispersion_eqw_std_B-linear": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.08079815650675977
+  },
+  "dispersion_eqw_std_B2": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.0913231239639416
+  },
+  "dispersion_eqw_std_C": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.01415545542414656
+  },
+  "dispersion_eqw_understatement_pct_A": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 26.886026053167843
+  },
+  "dispersion_eqw_understatement_pct_B-abs": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 31.650160220464407
+  },
+  "dispersion_eqw_understatement_pct_B-linear": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 29.870536626342027
+  },
+  "dispersion_eqw_understatement_pct_B2": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 20.73529949088061
+  },
+  "dispersion_eqw_understatement_pct_C": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 87.7136492263647
+  },
+  "dispersion_pooled_std_A": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.09057901274510428
+  },
+  "dispersion_pooled_std_B-abs": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.07831147769917962
+  },
+  "dispersion_pooled_std_B-linear": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.08827167014852734
+  },
+  "dispersion_pooled_std_B2": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.10312444658074184
+  },
+  "dispersion_pooled_std_C": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.08698475721117817
+  },
+  "dispersion_pooled_understatement_pct_A": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 43.69604232692529
+  },
+  "dispersion_pooled_understatement_pct_B-abs": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 51.32154798266049
+  },
+  "dispersion_pooled_understatement_pct_B-linear": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 45.13028758924156
+  },
+  "dispersion_pooled_understatement_pct_B2": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 35.89779465050342
+  },
+  "dispersion_pooled_understatement_pct_C": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 45.93023328700868
+  },
+  "dispersion_real_eqw_std": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.11521285436943636
+  },
+  "dispersion_real_pooled_std": {
+    "provenance": {
+      "code_path": "task6",
+      "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
+    },
+    "value": 0.1608750370108003
+  },
+  "estimator_first_result_commit_utc": {
+    "provenance": {
+      "code_path": "commit ef8883e",
+      "file": "git log ef8883e"
+    },
+    "value": "2026-07-27 03:29:42"
+  },
+  "estimator_original_n_resamples": {
+    "provenance": {
+      "code_path": "task2",
+      "file": "reports/dk_brief_2026-07-29/dk_task2_4_7_log.txt"
+    },
+    "value": 1000
+  },
+  "estimator_recompute_commit_utc": {
+    "provenance": {
+      "code_path": "commit 4c626d9 (atce_v3_recompute.py)",
+      "file": "git log 4c626d9"
+    },
+    "value": "2026-07-27 20:35:28"
+  },
+  "estimator_recompute_n_resamples": {
+    "provenance": {
+      "code_path": "task2",
+      "file": "reports/dk_brief_2026-07-29/dk_task2_4_7_log.txt"
+    },
+    "value": 10000
+  },
+  "final_train_loss_A": {
+    "provenance": {
+      "code_path": "line23",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 1.4262
+  },
+  "final_train_loss_B2": {
+    "provenance": {
+      "code_path": "line54",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 1.352
+  },
+  "final_train_loss_Babs": {
+    "provenance": {
+      "code_path": "line43",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 1.4331
+  },
+  "final_train_loss_Blinear": {
+    "provenance": {
+      "code_path": "line33",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 1.4213
+  },
+  "final_train_loss_C_mse": {
+    "provenance": {
+      "code_path": "line63",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 0.0292
+  },
+  "full_valid_count": {
+    "provenance": {
+      "code_path": "1b",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 72064
+  },
+  "guard_magnitude_B-abs_minus_A_GR_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.1925518858138516
+  },
+  "guard_magnitude_B-abs_minus_A_GR_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -9.43061538365639
+  },
+  "guard_magnitude_B-abs_minus_A_GR_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_magnitude_B-abs_minus_A_GR_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -4.321909481153337
+  },
+  "guard_magnitude_B-abs_minus_A_NPHI_ACF_RMSE_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.015128656240456097
+  },
+  "guard_magnitude_B-abs_minus_A_NPHI_ACF_RMSE_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.0632009142261049
+  },
+  "guard_magnitude_B-abs_minus_A_NPHI_ACF_RMSE_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_magnitude_B-abs_minus_A_NPHI_ACF_RMSE_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.02477543341744362
+  },
+  "guard_magnitude_B-abs_minus_A_RHOB_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.010291183117261543
+  },
+  "guard_magnitude_B-abs_minus_A_RHOB_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.04199966032493618
+  },
+  "guard_magnitude_B-abs_minus_A_RHOB_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_magnitude_B-abs_minus_A_RHOB_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.012675496048931298
+  },
+  "guard_magnitude_B-linear_minus_B-abs_GR_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 11.918287111107356
+  },
+  "guard_magnitude_B-linear_minus_B-abs_GR_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -4.621423618485547
+  },
+  "guard_magnitude_B-linear_minus_B-abs_GR_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_magnitude_B-linear_minus_B-abs_GR_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 4.226528141319715
+  },
+  "guard_magnitude_B-linear_minus_B-abs_NPHI_ACF_RMSE_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.04965854101546764
+  },
+  "guard_magnitude_B-linear_minus_B-abs_NPHI_ACF_RMSE_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.0009457232307846674
+  },
+  "guard_magnitude_B-linear_minus_B-abs_NPHI_ACF_RMSE_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_magnitude_B-linear_minus_B-abs_NPHI_ACF_RMSE_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.02467269707459896
+  },
+  "guard_magnitude_B-linear_minus_B-abs_RHOB_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.042710076377549186
+  },
+  "guard_magnitude_B-linear_minus_B-abs_RHOB_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.007077514533552529
+  },
+  "guard_magnitude_B-linear_minus_B-abs_RHOB_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": true
+  },
+  "guard_magnitude_B-linear_minus_B-abs_RHOB_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.024463121165530066
+  },
+  "guard_magnitude_B2_minus_A_GR_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 2.6733345094660947
+  },
+  "guard_magnitude_B2_minus_A_GR_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -9.452652186090912
+  },
+  "guard_magnitude_B2_minus_A_GR_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_magnitude_B2_minus_A_GR_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -2.9635281209348925
+  },
+  "guard_magnitude_B2_minus_A_NPHI_ACF_RMSE_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.030006645858943637
+  },
+  "guard_magnitude_B2_minus_A_NPHI_ACF_RMSE_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.10022543006703402
+  },
+  "guard_magnitude_B2_minus_A_NPHI_ACF_RMSE_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_magnitude_B2_minus_A_NPHI_ACF_RMSE_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.035568107065114846
+  },
+  "guard_magnitude_B2_minus_A_RHOB_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.005905899329000416
+  },
+  "guard_magnitude_B2_minus_A_RHOB_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.05917490534448895
+  },
+  "guard_magnitude_B2_minus_A_RHOB_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_magnitude_B2_minus_A_RHOB_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.02676663919869264
+  },
+  "guard_magnitude_C_minus_A_GR_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 1.5652960501944495
+  },
+  "guard_magnitude_C_minus_A_GR_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -7.06542983391353
+  },
+  "guard_magnitude_C_minus_A_GR_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_magnitude_C_minus_A_GR_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -2.369394728583849
+  },
+  "guard_magnitude_C_minus_A_NPHI_ACF_RMSE_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.1783453062617496
+  },
+  "guard_magnitude_C_minus_A_NPHI_ACF_RMSE_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.14468971958998478
+  },
+  "guard_magnitude_C_minus_A_NPHI_ACF_RMSE_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_magnitude_C_minus_A_NPHI_ACF_RMSE_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.018748008401324984
+  },
+  "guard_magnitude_C_minus_A_RHOB_ci_high": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.11854495166916347
+  },
+  "guard_magnitude_C_minus_A_RHOB_ci_low": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.0703726052380543
+  },
+  "guard_magnitude_C_minus_A_RHOB_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_magnitude_C_minus_A_RHOB_point": {
+    "provenance": {
+      "code_path": "1f-magnitude",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.015557162550969547
+  },
+  "guard_magnitude_excl_count": {
+    "provenance": {
+      "code_path": "header/n/a",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 1
+  },
+  "guard_signed_B-abs_minus_A_GR_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 7.3871558338862595
+  },
+  "guard_signed_B-abs_minus_A_GR_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -3.89458010753515
+  },
+  "guard_signed_B-abs_minus_A_GR_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_signed_B-abs_minus_A_GR_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 1.2145436625203185
+  },
+  "guard_signed_B-abs_minus_A_NPHI_ACF_RMSE_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.015128656240456097
+  },
+  "guard_signed_B-abs_minus_A_NPHI_ACF_RMSE_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.0632009142261049
+  },
+  "guard_signed_B-abs_minus_A_NPHI_ACF_RMSE_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_signed_B-abs_minus_A_NPHI_ACF_RMSE_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.02477543341744362
+  },
+  "guard_signed_B-abs_minus_A_RHOB_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.05176474552925822
+  },
+  "guard_signed_B-abs_minus_A_RHOB_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.013951298851713726
+  },
+  "guard_signed_B-abs_minus_A_RHOB_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": true
+  },
+  "guard_signed_B-abs_minus_A_RHOB_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.02952807018093296
+  },
+  "guard_signed_B-linear_minus_B-abs_GR_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 15.184491304554095
+  },
+  "guard_signed_B-linear_minus_B-abs_GR_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 5.995694781819293
+  },
+  "guard_signed_B-linear_minus_B-abs_GR_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": true
+  },
+  "guard_signed_B-linear_minus_B-abs_GR_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 10.703378093170553
+  },
+  "guard_signed_B-linear_minus_B-abs_NPHI_ACF_RMSE_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.04965854101546764
+  },
+  "guard_signed_B-linear_minus_B-abs_NPHI_ACF_RMSE_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.0009457232307846674
+  },
+  "guard_signed_B-linear_minus_B-abs_NPHI_ACF_RMSE_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_signed_B-linear_minus_B-abs_NPHI_ACF_RMSE_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.02467269707459896
+  },
+  "guard_signed_B-linear_minus_B-abs_RHOB_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.035919222235806555
+  },
+  "guard_signed_B-linear_minus_B-abs_RHOB_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.009927010248163969
+  },
+  "guard_signed_B-linear_minus_B-abs_RHOB_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_signed_B-linear_minus_B-abs_RHOB_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.012671735034624473
+  },
+  "guard_signed_B2_minus_A_GR_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 13.436609935374861
+  },
+  "guard_signed_B2_minus_A_GR_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 5.255402851958702
+  },
+  "guard_signed_B2_minus_A_GR_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": true
+  },
+  "guard_signed_B2_minus_A_GR_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 9.278900077033327
+  },
+  "guard_signed_B2_minus_A_NPHI_ACF_RMSE_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.030006645858943637
+  },
+  "guard_signed_B2_minus_A_NPHI_ACF_RMSE_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.10022543006703402
+  },
+  "guard_signed_B2_minus_A_NPHI_ACF_RMSE_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_signed_B2_minus_A_NPHI_ACF_RMSE_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.035568107065114846
+  },
+  "guard_signed_B2_minus_A_RHOB_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.07935141370139075
+  },
+  "guard_signed_B2_minus_A_RHOB_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.003155196820899854
+  },
+  "guard_signed_B2_minus_A_RHOB_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": true
+  },
+  "guard_signed_B2_minus_A_RHOB_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.0404921968775234
+  },
+  "guard_signed_C_minus_A_GR_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 6.4752551506759035
+  },
+  "guard_signed_C_minus_A_GR_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -2.273706646215392
+  },
+  "guard_signed_C_minus_A_GR_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_signed_C_minus_A_GR_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 1.6734935815272252
+  },
+  "guard_signed_C_minus_A_NPHI_ACF_RMSE_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.1783453062617496
+  },
+  "guard_signed_C_minus_A_NPHI_ACF_RMSE_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.14468971958998478
+  },
+  "guard_signed_C_minus_A_NPHI_ACF_RMSE_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": false
+  },
+  "guard_signed_C_minus_A_NPHI_ACF_RMSE_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.018748008401324984
+  },
+  "guard_signed_C_minus_A_RHOB_ci_high": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.041455564013497224
+  },
+  "guard_signed_C_minus_A_RHOB_ci_low": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.2331295818999607
+  },
+  "guard_signed_C_minus_A_RHOB_excludes_zero": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": true
+  },
+  "guard_signed_C_minus_A_RHOB_point": {
+    "provenance": {
+      "code_path": "1f-signed",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.13344958943356353
+  },
+  "guard_signed_excl_count": {
+    "provenance": {
+      "code_path": "header/n/a",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 5
+  },
+  "headline_gr_bias_A": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -5.200750788623463
+  },
+  "headline_gr_bias_B-abs": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -3.986207126103144
+  },
+  "headline_gr_bias_B-linear": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 6.717170967067409
+  },
+  "headline_gr_bias_B2": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 4.078149288409865
+  },
+  "headline_gr_bias_C": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -3.5272572070962376
+  },
+  "headline_nphi_ac_rmse_A": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.19617202233397948
+  },
+  "headline_nphi_ac_rmse_B-abs": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.17139658891653586
+  },
+  "headline_nphi_ac_rmse_B-linear": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.19606928599113482
+  },
+  "headline_nphi_ac_rmse_B2": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.16060391526886464
+  },
+  "headline_nphi_ac_rmse_C": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.21492003073530447
+  },
+  "headline_nphi_bias_A": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.04234970378594816
+  },
+  "headline_nphi_bias_B-abs": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.03398159301993187
+  },
+  "headline_nphi_bias_B-linear": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.06659196429823347
+  },
+  "headline_nphi_bias_B2": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.04475730223845083
+  },
+  "headline_nphi_bias_C": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.033183125649056025
+  },
+  "headline_nphi_w1_A": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.08029155548635991
+  },
+  "headline_nphi_w1_B-abs": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.08284627393677314
+  },
+  "headline_nphi_w1_B-linear": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.08296180907015917
+  },
+  "headline_nphi_w1_B2": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.07743633277115203
+  },
+  "headline_nphi_w1_C": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.1008188363782299
+  },
+  "headline_rhob_bias_A": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.02913065630373627
+  },
+  "headline_rhob_bias_B-abs": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.05865872648466923
+  },
+  "headline_rhob_bias_B-linear": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.0713304615192937
+  },
+  "headline_rhob_bias_B2": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.06962285318125967
+  },
+  "headline_rhob_bias_C": {
+    "provenance": {
+      "code_path": "1d",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": -0.10431893312982726
+  },
+  "loo_arm_minus_real_A_loo_max": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": 0.22917020665658663
+  },
+  "loo_arm_minus_real_A_loo_min": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": 0.11914108279615301
+  },
+  "loo_arm_minus_real_A_sign_stable": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": true
+  },
+  "loo_arm_minus_real_B-abs_loo_max": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": 0.18225735217233838
+  },
+  "loo_arm_minus_real_B-abs_loo_min": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": 0.09160806515131728
+  },
+  "loo_arm_minus_real_B-abs_sign_stable": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": true
+  },
+  "loo_arm_minus_real_B-linear_loo_max": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": 0.11911709415251355
+  },
+  "loo_arm_minus_real_B-linear_loo_min": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": 0.012786935765733698
+  },
+  "loo_arm_minus_real_B-linear_sign_stable": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": true
+  },
+  "loo_arm_minus_real_B2_loo_max": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": 0.035877374894263014
+  },
+  "loo_arm_minus_real_B2_loo_min": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": -0.08510738438300512
+  },
+  "loo_arm_minus_real_B2_sign_stable": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": false
+  },
+  "loo_arm_minus_real_C_loo_max": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": 0.15466926173370574
+  },
+  "loo_arm_minus_real_C_loo_min": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": 0.09178248390849982
+  },
+  "loo_arm_minus_real_C_sign_stable": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": true
+  },
+  "loo_slope_contrast_B-abs_minus_A_loo_max": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": 0.004575197348057149
+  },
+  "loo_slope_contrast_B-abs_minus_A_loo_min": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": -0.04691285448424827
+  },
+  "loo_slope_contrast_B-abs_minus_A_sign_stable": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": false
+  },
+  "loo_slope_contrast_B-linear_minus_B-abs_loo_max": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": -0.05304547238027994
+  },
+  "loo_slope_contrast_B-linear_minus_B-abs_loo_min": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": -0.08487719305217316
+  },
+  "loo_slope_contrast_B-linear_minus_B-abs_sign_stable": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": true
+  },
+  "loo_slope_contrast_B2_minus_A_loo_max": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": -0.12755518700478297
+  },
+  "loo_slope_contrast_B2_minus_A_loo_min": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": -0.22133607099651811
+  },
+  "loo_slope_contrast_B2_minus_A_sign_stable": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": true
+  },
+  "loo_slope_contrast_C_minus_A_loo_max": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": 0.019410327781168774
+  },
+  "loo_slope_contrast_C_minus_A_loo_min": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": -0.07450094492288094
+  },
+  "loo_slope_contrast_C_minus_A_sign_stable": {
+    "provenance": {
+      "code_path": "G1b",
+      "file": "reports/dp_brief_2026-07-29/dp_task2_loo.py"
+    },
+    "value": false
+  },
+  "mde_B-abs_minus_A": {
+    "provenance": {
+      "code_path": "G1e",
+      "file": "reports/dp_brief_2026-07-29/dp_task5_mde.py"
+    },
+    "value": 0.02573265281565373
+  },
+  "mde_B-linear_minus_B-abs": {
+    "provenance": {
+      "code_path": "G1e",
+      "file": "reports/dp_brief_2026-07-29/dp_task5_mde.py"
+    },
+    "value": 0.02539627963884354
+  },
+  "mde_B2_minus_A": {
+    "provenance": {
+      "code_path": "G1e",
+      "file": "reports/dp_brief_2026-07-29/dp_task5_mde.py"
+    },
+    "value": 0.029469105683423712
+  },
+  "mde_C_minus_A": {
+    "provenance": {
+      "code_path": "G1e",
+      "file": "reports/dp_brief_2026-07-29/dp_task5_mde.py"
+    },
+    "value": 0.0983215496347457
+  },
+  "mde_sd_paired_B-abs_minus_A": {
+    "provenance": {
+      "code_path": "G1e",
+      "file": "reports/dp_brief_2026-07-29/dp_task5_mde.py"
+    },
+    "value": 0.02232157583693489
+  },
+  "mde_sd_paired_B-linear_minus_B-abs": {
+    "provenance": {
+      "code_path": "G1e",
+      "file": "reports/dp_brief_2026-07-29/dp_task5_mde.py"
+    },
+    "value": 0.022029791720098252
+  },
+  "mde_sd_paired_B2_minus_A": {
+    "provenance": {
+      "code_path": "G1e",
+      "file": "reports/dp_brief_2026-07-29/dp_task5_mde.py"
+    },
+    "value": 0.02556273082575611
+  },
+  "mde_sd_paired_C_minus_A": {
+    "provenance": {
+      "code_path": "G1e",
+      "file": "reports/dp_brief_2026-07-29/dp_task5_mde.py"
+    },
+    "value": 0.08528821114167659
+  },
+  "mde_t_crit_0975_df7": {
+    "provenance": {
+      "code_path": "G1e",
+      "file": "reports/dp_brief_2026-07-29/dp_task5_mde.py"
+    },
+    "value": 2.3646242515927844
+  },
+  "mde_t_power_080_df7": {
+    "provenance": {
+      "code_path": "G1e",
+      "file": "reports/dp_brief_2026-07-29/dp_task5_mde.py"
+    },
+    "value": 0.8960296443135947
+  },
+  "n_dev_wells": {
+    "provenance": {
+      "code_path": "header/n/a",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 10
+  },
+  "n_realizations": {
+    "provenance": {
+      "code_path": "header/n/a",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 5
+  },
+  "n_test_wells": {
+    "provenance": {
+      "code_path": "header/n/a",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 8
+  },
+  "n_train_wells": {
+    "provenance": {
+      "code_path": "header/n/a",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 80
+  },
+  "n_training_steps": {
+    "provenance": {
+      "code_path": "header/n/a",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 3000
+  },
+  "params_A": {
+    "provenance": {
+      "code_path": "line23",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 5383144
+  },
+  "params_B2": {
+    "provenance": {
+      "code_path": "line54",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 5386472
+  },
+  "params_Babs": {
+    "provenance": {
+      "code_path": "line43",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 5383656
+  },
+  "params_Blinear": {
+    "provenance": {
+      "code_path": "line33",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 5383656
+  },
+  "params_C": {
+    "provenance": {
+      "code_path": "line63",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 5127172
+  },
+  "real_nphi_deep_high": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
+    },
+    "value": 0.27
+  },
+  "real_nphi_deep_low": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
+    },
+    "value": 0.21
+  },
+  "real_nphi_mean_eqw": {
+    "provenance": {
+      "code_path": "1a",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.32808884339981725
+  },
+  "real_nphi_mean_pooled": {
+    "provenance": {
+      "code_path": "1a",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 0.3373089305812659
+  },
+  "real_nphi_shallow": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
+    },
+    "value": 0.452
+  },
+  "scored_count": {
+    "provenance": {
+      "code_path": "1b",
+      "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
+    },
+    "value": 54051
+  },
+  "slope_arm_A_15/9-15": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.03319713974143498
+  },
+  "slope_arm_A_16/1-6 A": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.2461726707208569
+  },
+  "slope_arm_A_16/4-1": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.0047514844863435785
+  },
+  "slope_arm_A_25/2-14": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.06909565080121227
+  },
+  "slope_arm_A_25/8-5 S": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.014989422912793312
+  },
+  "slope_arm_A_30/6-5": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.001219144727214147
+  },
+  "slope_arm_A_34/5-1 S": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.3778966860561478
+  },
+  "slope_arm_A_34/7-13": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.02568786381125679
+  },
+  "slope_arm_B-abs_15/9-15": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.0017801450686171275
+  },
+  "slope_arm_B-abs_16/1-6 A": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.17230371424537075
+  },
+  "slope_arm_B-abs_16/4-1": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.0842831738182168
+  },
+  "slope_arm_B-abs_25/2-14": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.07183906556642601
+  },
+  "slope_arm_B-abs_25/8-5 S": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.02200807870634296
+  },
+  "slope_arm_B-abs_30/6-5": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.051741977940114606
+  },
+  "slope_arm_B-abs_34/5-1 S": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.091349279705496
+  },
+  "slope_arm_B-abs_34/7-13": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.0867580576724624
+  },
+  "slope_arm_B-linear_15/9-15": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.04664785147400643
+  },
+  "slope_arm_B-linear_16/1-6 A": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.29600337508296454
+  },
+  "slope_arm_B-linear_16/4-1": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.05582428942937245
+  },
+  "slope_arm_B-linear_25/2-14": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.12252409474798212
+  },
+  "slope_arm_B-linear_25/8-5 S": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.03594163998362547
+  },
+  "slope_arm_B-linear_30/6-5": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.04537376601206774
+  },
+  "slope_arm_B-linear_34/5-1 S": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.0014437436569847196
+  },
+  "slope_arm_B-linear_34/7-13": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.04409339342364202
+  },
+  "slope_arm_B2_15/9-15": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.15882631567480937
+  },
+  "slope_arm_B2_16/1-6 A": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.490517501248275
+  },
+  "slope_arm_B2_16/4-1": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.12098869384990936
+  },
+  "slope_arm_B2_25/2-14": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.09158750110809943
+  },
+  "slope_arm_B2_25/8-5 S": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.1278735599155179
+  },
+  "slope_arm_B2_30/6-5": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.049261300615270745
+  },
+  "slope_arm_B2_34/5-1 S": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.326611657774055
+  },
+  "slope_arm_B2_34/7-13": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.059377784597772834
+  },
+  "slope_arm_C_15/9-15": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.001673277468966396
+  },
+  "slope_arm_C_16/1-6 A": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.01278801606497303
+  },
+  "slope_arm_C_16/4-1": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.0019924625118137224
+  },
+  "slope_arm_C_25/2-14": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.020663443433555573
+  },
+  "slope_arm_C_25/8-5 S": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.0861731832217015
+  },
+  "slope_arm_C_30/6-5": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.016950099088132976
+  },
+  "slope_arm_C_34/5-1 S": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.020521536086370255
+  },
+  "slope_arm_C_34/7-13": {
+    "provenance": {
+      "code_path": "5a",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.003663509284093576
+  },
+  "slope_arm_minus_real_A_ci_high": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.28216161269925355
+  },
+  "slope_arm_minus_real_A_ci_low": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.02676222379575747
+  },
+  "slope_arm_minus_real_A_point": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.15093953543441424
+  },
+  "slope_arm_minus_real_B-abs_ci_high": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.2235085899908763
+  },
+  "slope_arm_minus_real_B-abs_ci_low": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.02242155952161836
+  },
+  "slope_arm_minus_real_B-abs_point": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.11912440732013277
+  },
+  "slope_arm_minus_real_B-linear_ci_high": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.18853747663975423
+  },
+  "slope_arm_minus_real_B-linear_ci_low": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.12063266057289868
+  },
+  "slope_arm_minus_real_B-linear_point": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.048414223948086824
+  },
+  "slope_arm_minus_real_B2_ci_high": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.12181189839008905
+  },
+  "slope_arm_minus_real_B2_ci_low": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.2564573172389845
+  },
+  "slope_arm_minus_real_B2_point": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.04873479617354618
+  },
+  "slope_arm_minus_real_C_ci_high": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.2139684772892132
+  },
+  "slope_arm_minus_real_C_ci_low": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.015024780794498043
+  },
+  "slope_arm_minus_real_C_point": {
+    "provenance": {
+      "code_path": "5c",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.11812129447512218
+  },
+  "slope_contrast_B-abs_minus_A_ci_high": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.0322398360881095
+  },
+  "slope_contrast_B-abs_minus_A_ci_low": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.11543534013598947
+  },
+  "slope_contrast_B-abs_minus_A_point": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.031815128114281464
+  },
+  "slope_contrast_B-linear_minus_B-abs_ci_high": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.021299887980168457
+  },
+  "slope_contrast_B-linear_minus_B-abs_ci_low": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.12200726012669845
+  },
+  "slope_contrast_B-linear_minus_B-abs_point": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.07071018337204595
+  },
+  "slope_contrast_B2_minus_A_ci_high": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.09887957191336177
+  },
+  "slope_contrast_B2_minus_A_ci_low": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.35527082052098274
+  },
+  "slope_contrast_B2_minus_A_point": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.19967433160796041
+  },
+  "slope_contrast_C_minus_A_ci_high": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.07853626199303736
+  },
+  "slope_contrast_C_minus_A_ci_low": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.15923090801079312
+  },
+  "slope_contrast_C_minus_A_point": {
+    "provenance": {
+      "code_path": "5d",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.03281824095929207
+  },
+  "slope_real_15/9-15": {
+    "provenance": {
+      "code_path": "5b",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.2530999176159127
+  },
+  "slope_real_16/1-6 A": {
+    "provenance": {
+      "code_path": "5b",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.15050249239993563
+  },
+  "slope_real_16/4-1": {
+    "provenance": {
+      "code_path": "5b",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.3044854309532924
+  },
+  "slope_real_25/2-14": {
+    "provenance": {
+      "code_path": "5b",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.0058367901769094096
+  },
+  "slope_real_25/8-5 S": {
+    "provenance": {
+      "code_path": "5b",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.3337468812081842
+  },
+  "slope_real_30/6-5": {
+    "provenance": {
+      "code_path": "5b",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.20463674243987412
+  },
+  "slope_real_34/5-1 S": {
+    "provenance": {
+      "code_path": "5b",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": 0.004367982153904944
+  },
+  "slope_real_34/7-13": {
+    "provenance": {
+      "code_path": "5b",
+      "file": "reports/dk_brief_2026-07-29/dk_task5_depthslope.py"
+    },
+    "value": -0.08823065755500782
+  },
+  "third_convention_row26_ci_high": {
+    "provenance": {
+      "code_path": "task3",
+      "file": "reports/dk_brief_2026-07-29/dk_task3_output.txt"
+    },
+    "value": 0.03326014400310464
+  },
+  "third_convention_row26_ci_low": {
+    "provenance": {
+      "code_path": "task3",
+      "file": "reports/dk_brief_2026-07-29/dk_task3_output.txt"
+    },
+    "value": 0.0015034300876249668
+  },
+  "third_convention_row26_point": {
+    "provenance": {
+      "code_path": "task3",
+      "file": "reports/dk_brief_2026-07-29/dk_task3_output.txt"
+    },
+    "value": 0.016942285207397677
+  },
+  "tokenizer_archived_pin_refit_status": {
+    "provenance": {
+      "code_path": "task7(c)/(d)",
+      "file": "reports/dk_brief_2026-07-29/dk_task2_4_7_log.txt"
+    },
+    "value": "could not run: no interpreter on this Mac supports scikit-learn 1.9.0"
+  },
+  "tokenizer_diffenv_entropy": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 9.786
+  },
+  "tokenizer_diffenv_rmse_NPHI": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 0.0134
+  },
+  "tokenizer_reconstruction_bias_eqw": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 0.000487
+  },
+  "tokenizer_sealed_clusters": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": "1000/1000"
+  },
+  "tokenizer_sealed_entropy": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 9.8
+  },
+  "tokenizer_sealed_rmse_GR": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 3.928
+  },
+  "tokenizer_sealed_rmse_NPHI": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 0.0136
+  },
+  "tokenizer_sealed_rmse_RDEP": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 9.309
+  },
+  "tokenizer_sealed_rmse_RHOB": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
+    },
+    "value": 0.0254
+  },
+  "train_corpus_nphi_mean_eqw": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
+    },
+    "value": 0.313741
+  },
+  "training_loss_B2_below_A": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
+    },
+    "value": 0.0742
+  },
+  "training_loss_span_A_Blinear_Babs": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
+    },
+    "value": 0.0118
+  },
+  "v1_relbias_corrected_pct": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
+    },
+    "value": 48.3
+  },
+  "v1_relbias_reported_pct": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
+    },
+    "value": 32
+  },
+  "wall_time_A_s": {
+    "provenance": {
+      "code_path": "line23",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 276.4
+  },
+  "wall_time_B2_s": {
+    "provenance": {
+      "code_path": "line54",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 323.0
+  },
+  "wall_time_Babs_s": {
+    "provenance": {
+      "code_path": "line43",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 276.0
+  },
+  "wall_time_Blinear_s": {
+    "provenance": {
+      "code_path": "line33",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 276.8
+  },
+  "wall_time_C_s": {
+    "provenance": {
+      "code_path": "line63",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 313.2
+  },
+  "wall_time_total_s": {
+    "provenance": {
+      "code_path": "line96",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 3757.1
+  }
+}
