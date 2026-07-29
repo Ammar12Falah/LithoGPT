@@ -8,3 +8,27 @@ pyarrow>=14.0,<26.0
 # dev
 pytest>=7.4
 ruff>=0.4
+
+# local audit environment (2026-07-29, Ammar's Mac, CZ brief) -- NOT the
+# training pipeline's frozen pin above. Documents the ad hoc packages this
+# session's local statistical rerun scripts (bl_/bs_/bx_/cm_cu_ etc.) actually
+# ran under, which is a different, unpinned, --user-installed environment.
+# scikit-learn has no pin anywhere else in this file; adding one here.
+# numpy's audit-env version (2.0.2) intentionally differs from the canonical
+# pin above (1.26.3) -- this divergence is the documented, known source of
+# several small non-reproductions already reported elsewhere this session
+# (e.g. tokenizer MiniBatchKMeans nondeterminism). Do not resolve the
+# divergence by editing the canonical numpy pin above: requirements.txt is
+# one of the 24 files inside the Stage-B freeze's qc_code_sha256 hash
+# (e12d4b64); changing that line would silently invalidate an already-pushed
+# sealed freeze. torch: not installed anywhere in this local audit
+# environment (ModuleNotFoundError on import) -- no version to pin, and none
+# is fabricated here.
+scikit-learn==1.6.1
+scipy==1.13.1
+# numpy audit-env version = 2.0.2 (documented in comment above, not pinned
+# as a second `numpy==` line here -- pip would only honor the last one, and
+# a fake package name is not a valid way to record this in a real
+# requirements file). See requirements-frozen.txt for the full, real
+# `pip freeze` of this environment, numpy==2.0.2 included verbatim there.
+# torch: not installed, no pin.
