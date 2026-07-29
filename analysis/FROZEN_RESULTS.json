@@ -6,6 +6,13 @@
     },
     "value": 0.3613
   },
+  "arm_C_param_delta": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": -255972
+  },
   "athy_frozen_lambda_m": {
     "provenance": {
       "code_path": "n/a",
@@ -20,6 +27,41 @@
     },
     "value": 0.6052
   },
+  "athy_huber_loss_scale": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 0.03
+  },
+  "athy_lambda_bounds_high_m": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 5000
+  },
+  "athy_lambda_bounds_low_m": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 500
+  },
+  "athy_phi0_bounds_high": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 0.7
+  },
+  "athy_phi0_bounds_low": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 0.2
+  },
   "athy_trainonly_lambda_m": {
     "provenance": {
       "code_path": "n/a",
@@ -33,6 +75,55 @@
       "file": "DQ brief section 1 (pre-existing project record, not re-derived this session)"
     },
     "value": 0.5776
+  },
+  "backbone_final_norm_params": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 512
+  },
+  "backbone_n_blocks": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 6
+  },
+  "backbone_output_head_params_continuous": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 1028
+  },
+  "backbone_output_head_params_discrete": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 257000
+  },
+  "backbone_params_per_block": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 789760
+  },
+  "backbone_positional_params": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 131072
+  },
+  "backbone_token_embed_params": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 256000
   },
   "code_commit_results": {
     "provenance": {
@@ -61,6 +152,13 @@
       "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
     },
     "value": "LithoGPT-2"
+  },
+  "context_window_m": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 77.824
   },
   "contrast_magnitude_nphi_bias_B-linear_minus_B-abs_ci_high": {
     "provenance": {
@@ -180,6 +278,20 @@
       "file": "reports/dl_brief_2026-07-29/dl_q3_depth_range.py"
     },
     "value": 760.8896039
+  },
+  "depth_grid_spacing_measured_m": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 0.152
+  },
+  "depth_grid_spacing_nominal_m": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 0.1524
   },
   "depth_scored_max_m": {
     "provenance": {
@@ -362,6 +474,13 @@
       "file": "reports/dk_brief_2026-07-29/dk_task6_dispersion.py"
     },
     "value": 0.1608750370108003
+  },
+  "entropy_uniform_ceiling": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 9.966
   },
   "estimator_first_result_commit_utc": {
     "provenance": {
@@ -1483,6 +1602,13 @@
     },
     "value": false
   },
+  "max_gen_len": {
+    "provenance": {
+      "code_path": "MAX_GEN_LEN",
+      "file": "scripts/atce/atce_ablation_v3.py"
+    },
+    "value": 20000
+  },
   "mde_B-abs_minus_A": {
     "provenance": {
       "code_path": "G1e",
@@ -1553,12 +1679,61 @@
     },
     "value": 0.8960296443135947
   },
+  "mean_m_per_well_full_valid": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 1369
+  },
+  "mean_m_per_well_scored": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 1027
+  },
+  "mean_samples_per_well_full_valid": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 9008
+  },
   "n_dev_wells": {
     "provenance": {
       "code_path": "header/n/a",
       "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
     },
     "value": 10
+  },
+  "n_force_blind_test_wells": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 10
+  },
+  "n_force_open_test_wells": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 10
+  },
+  "n_force_release_wells": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 118
+  },
+  "n_full_training_eligible_wells": {
+    "provenance": {
+      "code_path": "split: train=80 dev=10 test=8",
+      "file": "reports/basinshift/atce_ablation_v3/run_log.txt"
+    },
+    "value": 98
   },
   "n_realizations": {
     "provenance": {
@@ -1623,6 +1798,34 @@
     },
     "value": 5127172
   },
+  "predecessor_tokenizer_clusters_used": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 998
+  },
+  "predecessor_tokenizer_entropy": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 9.629
+  },
+  "predecessor_tokenizer_rmse_NPHI": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 0.0403
+  },
+  "prime_tokens_approx": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 2250
+  },
   "real_nphi_deep_high": {
     "provenance": {
       "code_path": "n/a",
@@ -1658,12 +1861,47 @@
     },
     "value": 0.452
   },
+  "reconstruction_bias_pooled": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 0.001048
+  },
+  "reconstruction_depth_corr_median": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 0.0497
+  },
+  "reconstruction_depth_corr_range_high": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 0.3912
+  },
+  "reconstruction_depth_corr_range_low": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": -0.1023
+  },
   "scored_count": {
     "provenance": {
       "code_path": "1b",
       "file": "reports/dk_brief_2026-07-29/dk_task1_fullprecision.py"
     },
     "value": 54051
+  },
+  "scored_fraction": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 0.750042
   },
   "slope_arm_A_15/9-15": {
     "provenance": {
@@ -2288,6 +2526,13 @@
     },
     "value": 0.313741
   },
+  "training_batch_size": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 32
+  },
   "training_loss_B2_below_A": {
     "provenance": {
       "code_path": "n/a",
@@ -2302,6 +2547,13 @@
     },
     "value": 0.0118
   },
+  "training_lr": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 0.0003
+  },
   "v1_relbias_corrected_pct": {
     "provenance": {
       "code_path": "n/a",
@@ -2315,6 +2567,13 @@
       "file": "DQ brief section 4 (G4) required content -- dictated by the brief, not independently re-derived from raw data this session"
     },
     "value": 32
+  },
+  "w1_sanity_check_n_triples": {
+    "provenance": {
+      "code_path": "n/a",
+      "file": "/Users/ammar/.codex/attachments/ea7dcacd-3e84-4bc0-81b0-48a94dafe5b9/pasted-text.txt (found draft, revision 2, dated 2026-07-29 13:35 -- see reports/DQ_GATE_10.md; NOT independently re-derived this session)"
+    },
+    "value": 240
   },
   "wall_time_A_s": {
     "provenance": {
