@@ -1,0 +1,53 @@
+====================================================================================================
+Q3a. SCORED WINDOW pooled depth range, 8 test wells
+mask: rows of feats_real[prime_n:prime_n+gen_len] per well, i.e. the interval actually
+scored during generation (item P), read from depth_min_m/depth_max_m recorded per well
+in the sealed v3 raw-results JSON (identical across all 6 arms -- same test wells/window).
+====================================================================================================
+  arm A          pooled min=1295.625604  pooled max=3897.346
+  arm B-linear   pooled min=1295.625604  pooled max=3897.346
+  arm B-abs      pooled min=1295.625604  pooled max=3897.346
+  arm B2         pooled min=1295.625604  pooled max=3897.346
+  arm C          pooled min=1295.625604  pooled max=3897.346
+  arm D          pooled min=1295.625604  pooled max=3897.346
+
+per-well (arm A, representative -- identical for all arms):
+    16/4-1     1295.625604 .. 2899.833604
+    25/2-14    3170.681901 .. 3619.233901
+    30/6-5     1562.4504 .. 3547.8744
+    15/9-15    1656.72 .. 3200.128
+    25/8-5 S   1702.2064 .. 3371.1664
+    16/1-6 A   1329.651735 .. 1725.307735
+    34/5-1 S   3653.538 .. 3897.346
+    34/7-13    2531.529 .. 2975.977
+
+POOLED SCORED RANGE: min=1295.625604 m  max=3897.346 m
+  claim on record: 1295.6 m to 3897.3 m -> MATCHES
+
+====================================================================================================
+Q3b. FULL VALID FOUR-CURVE WINDOW pooled depth range, 8 test wells
+mask: np.isfinite(GR,RDEP,NPHI,RHOB).all(axis=1) per row, applied directly to the raw
+FORCE train.csv (';'-separated), independent of any generation/priming window.
+====================================================================================================
+    16/4-1     n_valid= 14073  760.8896039 .. 2899.833604
+    25/2-14    n_valid=  3918  3021.873901 .. 3619.233901
+    30/6-5     n_valid= 17396  901.4024 .. 3547.8744
+    15/9-15    n_valid= 13346  1149.648 .. 3200.128
+    25/8-5 S   n_valid= 13901  1174.0064 .. 3371.1664
+    16/1-6 A   n_valid=  3471  1197.867735 .. 1725.307735
+    34/5-1 S   n_valid=  2059  3556.866 .. 3897.346
+    34/7-13    n_valid=  3900  2383.329 .. 2975.977
+
+TOTAL full-valid rows across 8 wells: 72064  (DK task1b expect 72064)
+POOLED FULL-VALID RANGE: min=760.8896039 m  max=3897.346 m
+  claim on record: 760.9 m to 3897.3 m -> MATCHES
+
+====================================================================================================
+WHICH RANGE FOR 'the span of the 8 test wells'
+====================================================================================================
+The full-valid range (760.9-3897.3 m) is the wells' actual data span (every sample where
+all four modeled curves are present). The scored range (1295.6-3897.3 m) is narrower solely
+because generation always starts after PRIME_FRAC=0.25 of each well is consumed as context
+(scripts/atce/atce_ablation.py: prime_n = max(CONTEXT, int(n*PRIME_FRAC))) -- it is an artifact
+of the generation protocol, not a property of the wells themselves. A document describing "the
+span of the 8 test wells" should cite the FULL-VALID range, 760.9 m to 3897.3 m.

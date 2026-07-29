@@ -1,0 +1,109 @@
+DL Q2. PILOT WALL TIME AND ARTIFACT FACTS
+
+Q2a. Recorded wall-clock training time per arm, pilot (item K) run.
+
+Search commands run (repo root):
+    grep -rni "wall.clock|wall time|elapsed.*arm|training time" \
+        --include="*.md" --include="*.txt" --include="*.json" --include="*.log" .
+
+This DOES exist -- it is recorded, verbatim, in
+reports/basinshift/atce_ablation/run_log.txt (the pilot/item-K run; same script examined in Q1,
+scripts/atce/atce_ablation.py). Full file, verbatim:
+
+    1	=== ATCE v1.5 ablation (Item J) START ===
+    2	device=cuda K=1000 context=512 d_model=256 n_layers=6 n_heads=8 lr=0.0003 batch_size=32 n_steps=3000 seed=20260715
+    3	split: train=80 dev=10 test=8
+    4	tokenizer fit: 628916 train samples, k=1000
+    5	=== Arm A: prior-off (reimplemented from spec, not comparable to v1 Table 3) ===
+    6	  [ArmA] step 0/3000 loss=7.0751 elapsed=1s
+    7	  [ArmA] step 500/3000 loss=1.8384 elapsed=46s
+    8	  [ArmA] step 1000/3000 loss=2.0033 elapsed=91s
+    9	  [ArmA] step 1500/3000 loss=1.7511 elapsed=137s
+    10	  [ArmA] step 2000/3000 loss=1.6508 elapsed=182s
+    11	  [ArmA] step 2500/3000 loss=1.4480 elapsed=228s
+    12	  [ArmA] step 2999/3000 loss=1.4025 elapsed=274s
+    13	[ArmA] trained 3000 steps in 273.8s, final loss=1.4212, n_params=5383144
+    14	=== Arm B: prior-on (additive learned depth embedding) ===
+    15	Arm B parameter delta vs Arm A: 512 (0.0095% of Arm A; vs corrected v1 4.8M: 0.0107%)
+    16	  [ArmB] step 0/3000 loss=7.0729 elapsed=0s
+    17	  [ArmB] step 500/3000 loss=1.8514 elapsed=46s
+    18	  [ArmB] step 1000/3000 loss=2.0137 elapsed=92s
+    19	  [ArmB] step 1500/3000 loss=1.7615 elapsed=138s
+    20	  [ArmB] step 2000/3000 loss=1.6651 elapsed=184s
+    21	  [ArmB] step 2500/3000 loss=1.4532 elapsed=230s
+    22	  [ArmB] step 2999/3000 loss=1.4071 elapsed=276s
+    23	[ArmB] trained 3000 steps in 275.8s, final loss=1.4230, n_params=5383656
+    24	=== Arm C: external baseline (continuous MSE output head) ===
+    25	  [ArmC] step 0/3000 loss=1.1571 elapsed=0s
+    26	  [ArmC] step 500/3000 loss=0.0572 elapsed=54s
+    27	  [ArmC] step 1000/3000 loss=0.0445 elapsed=105s
+    28	  [ArmC] step 1500/3000 loss=0.0280 elapsed=161s
+    29	  [ArmC] step 2000/3000 loss=0.0279 elapsed=218s
+    30	  [ArmC] step 2500/3000 loss=0.0260 elapsed=269s
+    31	  [ArmC] step 2999/3000 loss=0.0226 elapsed=319s
+    32	[ArmC] trained 3000 steps in 319.3s, final loss=0.0291, n_params=5127172
+    33	=== Arm D: explicit trend-residual (Norway Athy phi0=0.6052 lambda_m=4068.0) ===
+    34	  [ArmD] step 0/3000 loss=7.0725 elapsed=0s
+    35	  [ArmD] step 500/3000 loss=1.7647 elapsed=46s
+    36	  [ArmD] step 1000/3000 loss=1.8232 elapsed=92s
+    37	  [ArmD] step 1500/3000 loss=1.6103 elapsed=138s
+    38	  [ArmD] step 2000/3000 loss=1.5780 elapsed=184s
+    39	  [ArmD] step 2500/3000 loss=1.4424 elapsed=230s
+    40	  [ArmD] step 2999/3000 loss=1.3386 elapsed=276s
+    41	[ArmD] trained 3000 steps in 275.5s, final loss=1.3707, n_params=5383656
+    42	=== Generation + evaluation on held-out test wells ===
+    43	[A] generated 8 test wells x 5 realizations
+    44	[B] generated 8 test wells x 5 realizations
+    45	[C] generated 8 test wells x 5 realizations
+    46	[D] generated 8 test wells x 5 realizations
+    47	=== Computing predeclared metrics ===
+    48	[A] NPHI abs_bias={'mean': -0.09858344169627356, ...}
+    49	[B] NPHI abs_bias={'mean': -0.08785342526282595, ...}
+    50	[C] NPHI abs_bias={'mean': -0.028600375586705685, ...}
+    51	[D] NPHI abs_bias={'mean': -0.10016737858686076, ...}
+    52	WRITTEN .../atce_ablation_summary_2026-07-26.json, sha256=7ed9c52f...
+    53	WRITTEN .../atce_ablation_raw_results_2026-07-26.json, sha256=511b82cb...
+    54	TOTAL WALL TIME: 1370.7s = 0.38h
+    55	ATCE_ABLATION_COMPLETE
+
+Per-arm training wall time (from the "trained 3000 steps in ...s" lines above, excludes the
+untimed generation/eval phase which follows):
+    Arm A: 273.8 s
+    Arm B: 275.8 s
+    Arm C: 319.3 s
+    Arm D: 275.5 s
+    Sum of the four training times: 1144.4 s (the remaining ~226.3 s of the 1370.7 s total is
+    generation + metric computation, not separately broken out per arm in this log).
+    TOTAL WALL TIME (full script, training+generation+eval, all 4 arms): 1370.7 s = 0.38 h.
+
+Note for scope: this is the item-K/pilot run. The sealed v3 run (a different, later script,
+scripts/atce/atce_ablation_v3.py) has its own separately timed log at
+reports/basinshift/atce_ablation_v3/run_log.txt (TOTAL WALL TIME: 3757.1s = 1.04h) -- not quoted
+here since Q1/Q2 both specify "the pilot code"/"pilot wall time", which the evidence above ties to
+item K specifically (only script with the KV-cache docstring, only non-sealed exploratory run).
+
+Q2b. File size and sha256 of atce_ablation_v3_raw_results_2026-07-26.json.
+
+The file is NOT in the git working tree (commit ef8883e's message: this file "exceed[s] GitHub's
+100MB push limit and [is] NOT included in this commit -- their sha256 sidecars are committed for
+integrity verification, the raw files remain on the pod's disk only"). The committed sidecar is
+reports/basinshift/atce_ablation_v3/atce_ablation_v3_raw_results_2026-07-26.sha256. A local copy
+of the actual file exists off-git at /Users/ammar/LithoGPT_archive/ (per the local-mac-only
+archive set up for the BC-BW items) -- used here to compute the values directly rather than trust
+the sidecar alone.
+
+Commands run:
+    ls -la /Users/ammar/LithoGPT_archive/atce_ablation_v3_raw_results_2026-07-26.json
+    shasum -a 256 /Users/ammar/LithoGPT_archive/atce_ablation_v3_raw_results_2026-07-26.json
+    cat reports/basinshift/atce_ablation_v3/atce_ablation_v3_raw_results_2026-07-26.sha256
+
+Output:
+    -rw-r--r--  1 ammar  staff  149074228 Jul 28 19:32 /Users/ammar/LithoGPT_archive/atce_ablation_v3_raw_results_2026-07-26.json
+    ac963f2c56ec27ac8f2fd837faa90108dc580a53560dbeb3c50a41c35f0110ed  /Users/ammar/LithoGPT_archive/atce_ablation_v3_raw_results_2026-07-26.json
+    ac963f2c56ec27ac8f2fd837faa90108dc580a53560dbeb3c50a41c35f0110ed  (committed sidecar, same value)
+
+CONFIRMED. Computed size = 149,074,228 bytes = 149.07 MB decimal (142.16 MiB binary) -- matches
+the "149 MB" claim under the decimal-MB convention the commit message itself used ("149MB" for
+this exact file). Computed sha256 = ac963f2c56ec27ac8f2fd837faa90108dc580a53560dbeb3c50a41c35f0110ed
+-- matches the claimed prefix "ac963f2c" exactly, and matches the git-committed sidecar hash
+byte-for-byte (not just the prefix).

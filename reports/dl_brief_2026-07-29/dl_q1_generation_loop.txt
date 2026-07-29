@@ -1,0 +1,103 @@
+DL Q1. GENERATION LOOP EFFICIENCY -- pilot code = scripts/atce/atce_ablation.py (item K, the
+original/exploratory ATCE run; see commit ef8883e message: "Original run (item K, EXPLORATORY,
+not sealed): ... Superseded [by v2, then sealed v3]." This is the only one of the three ablation
+scripts anywhere in the repo whose docstring explicitly discusses KV-cache absence, and its
+run_log (reports/basinshift/atce_ablation/run_log.txt) is the only wall-clock record that is not
+itself the sealed v3 run -- both point to the same file as "the pilot".)
+
+Relevant constants, scripts/atce/atce_ablation.py:
+    36:CONTEXT = 512
+    43:N_REALIZATIONS = 5       # generation realizations per held-out well
+    45:PRIME_FRAC = 0.25         # fraction of each held-out well used as generation context
+    46:MAX_GEN_LEN = 1000        # cap on generated samples per well (documented scope choice, no KV-cache so autoregressive generation is O(gen_len); fixed before any results)
+
+Verbatim generation loop, scripts/atce/atce_ablation.py lines 204-245:
+
+    204	@torch.no_grad()
+    205	def generate_batch(model, prime_tokens, prime_depth_norm, gen_len, n_realizations,
+    206	                    kmeans_centers=None, temperature=1.0, seed=SEED):
+    207	    """Batched generation: all n_realizations of one well generated together (batch dim),
+    208	    since there is no KV-cache, this at least amortizes the per-step Python/kernel-launch
+    209	    overhead across realizations instead of looping over them sequentially."""
+    210	    model.eval()
+    211	    device = next(model.parameters()).device
+    212	    B = n_realizations
+    213	    rng = np.random.default_rng(seed)
+    214	    tokens = np.tile(np.array(prime_tokens), (B, 1)).tolist()
+    215	    tokens = [list(t) for t in tokens]
+    216	    dnorm = [list(prime_depth_norm) for _ in range(B)]
+    217	    depth_step = prime_depth_norm[-1] - prime_depth_norm[-2] if len(prime_depth_norm) > 1 else 0.001
+    218	    centers_t = torch.tensor(kmeans_centers, dtype=torch.float32, device=device)
+    219	    outputs = np.zeros((B, gen_len, centers_t.shape[1]), dtype=np.float32)
+    220	    for i in range(gen_len):
+    221	        window = np.array([t[-CONTEXT:] for t in tokens])
+    222	        dwindow = np.array([d[-CONTEXT:] for d in dnorm], dtype=np.float32)
+    223	        x = torch.tensor(window, dtype=torch.long, device=device)
+    224	        d = torch.tensor(dwindow, dtype=torch.float32, device=device) if model.use_depth_embed else None
+    225	        logits = model(x, depth_norm=d)
+    226	        last = logits[:, -1]   # [B, K] or [B, n_features]
+    227	        next_dnorm = dwindow[:, -1] + depth_step
+    228	        if model.output_head_type == "discrete":
+    229	            probs = torch.softmax(last / temperature, dim=-1).cpu().numpy()
+    230	            for b in range(B):
+    231	                p = probs[b] / probs[b].sum()
+    232	                next_tok = rng.choice(K, p=p) if temperature > 0 else int(np.argmax(p))
+    233	                tokens[b].append(int(next_tok))
+    234	                outputs[b, i] = kmeans_centers[next_tok]
+    235	        else:
+    236	            feat = last.cpu().numpy()
+    237	            # nearest centroid, vectorized across the batch
+    238	            d2 = ((feat[:, None, :] - kmeans_centers[None, :, :]) ** 2).sum(axis=-1)
+    239	            next_toks = d2.argmin(axis=1)
+    240	            for b in range(B):
+    241	                outputs[b, i] = feat[b]
+    242	                tokens[b].append(int(next_toks[b]))
+    243	        for b in range(B):
+    244	            dnorm[b].append(float(next_dnorm[b]))
+    245	    return outputs   # [B, gen_len, n_features]
+
+Call site (confirms n_realizations argument and gen_len derivation), lines 350-364:
+
+    350	        for w in test_wells:
+    351	            depth, feats_real = raw[w]
+    352	            tok = token_seqs[w]
+    353	            dnorm = depth_norm_seqs[w]
+    354	            n = len(tok)
+    355	            prime_n = max(CONTEXT, int(n * PRIME_FRAC))
+    356	            if n <= prime_n + 10:
+    357	                continue
+    358	            gen_len = min(n - prime_n, MAX_GEN_LEN)
+    359	            real_segment = feats_real[prime_n:prime_n + gen_len]  # original (unstandardized) units
+    360
+    361	            gen_std_batch = generate_batch(model, list(tok[:prime_n]), list(dnorm[:prime_n]), gen_len,
+    362	                                            N_REALIZATIONS, kmeans_centers=kmeans_centers,
+    363	                                            temperature=(1.0 if arm_name != "C" else 0.0), seed=SEED)
+
+ANSWERS
+
+a. No KV cache. It recomputes the full CONTEXT-token window from scratch on every generation
+   step. The deciding lines are the docstring at 207-209 ("since there is no KV-cache...") and
+   line 221: `window = np.array([t[-CONTEXT:] for t in tokens])` -- each of the gen_len iterations
+   of the `for i in range(gen_len)` loop (line 220) re-slices the last CONTEXT tokens from the
+   growing `tokens` list and re-runs the full forward pass `logits = model(x, depth_norm=d)`
+   (line 225) over that whole window; nothing from step i-1's activations is reused at step i.
+   Cost per well is therefore O(gen_len) full-context forward passes, not O(gen_len) incremental
+   single-token steps -- explicitly called out in the MAX_GEN_LEN comment (line 46: "no-KV-cache so
+   autoregressive generation is O(gen_len)").
+
+b. It batches all realizations of one well into a single forward pass, not a loop of separate
+   single-realization calls. Line 212 `B = n_realizations`; line 214 tiles the shared prime tokens
+   to shape (B, 1) via `np.tile`; every tensor built inside the `for i in range(gen_len)` loop
+   (window, dwindow, x, d, logits) carries that full batch dimension B, and the per-realization
+   `for b in range(B)` loops (lines 230, 240, 243) only do post-hoc indexing/bookkeeping on
+   already-batched model outputs -- the one `model(x, depth_norm=d)` call per step (line 225) is
+   the only forward pass per step, covering all B realizations at once. The docstring (207-209)
+   states this is deliberate: batching amortizes per-step Python/kernel-launch overhead across
+   realizations, precisely because there is no KV-cache to amortize against instead.
+
+c. The batch dimension at generation time is B = n_realizations. At the call site (lines 361-363)
+   this is passed as N_REALIZATIONS = 5 (line 43), so tensors inside generate_batch have shape
+   [5, ...] (e.g. `window`/`dwindow`: [5, CONTEXT]; `outputs`: [5, gen_len, n_features], line 219).
+   This is per-well: the loop over test wells (line 350) is a plain Python loop across the 8 test
+   wells, each well generating its own batch of 5 realizations independently -- wells are not
+   batched together, only the 5 realizations within a well are.
