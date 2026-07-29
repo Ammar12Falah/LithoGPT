@@ -49,3 +49,8 @@ SHA256_MANIFEST.txt
 # Corpus-freeze pin-set completion: keep these on a clean checkout
 !data/splits/kgs_vintage_crosswalk.csv
 !data/splits/qc_pin_manifest.txt
+
+# ATCE v3 sealed raw generation outputs: 149,074,228 bytes, exceeds GitHub's 100MB
+# limit (and this repo's own 90MB publish threshold, brief DT G15a). Never committed
+# here under any name; deposited to Zenodo instead. See analysis/RAW_OUTPUTS_LOCATION.md.
+atce_ablation_v3_raw_results_2026-07-26.json

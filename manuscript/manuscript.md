@@ -35,9 +35,10 @@ better for having it, and still does not recover the observed profile.
 ## Introduction
 
 **[Source note, remove before submission: adapted from a found draft, see
-`reports/DQ_GATE_10.md`, edited to remove banned language, to cite only references present in
-`audit/references_check.txt`, and to correct a "one seed per arm" framing to "one realized fit
-per arm" per Plan's error-list item 19.]**
+`reports/DQ_GATE_10.md`, edited to remove banned language and to correct a "one seed per arm"
+framing to "one realized fit per arm" per Plan's error-list item 19. All 15 of the draft's
+citations were unresolved when this section was first built (brief DR); all 15 were resolved
+against primary sources and restored at brief DS/DT (`audit/references_check.txt`).]**
 
 Wireline logs are the primary quantitative record of subsurface rock properties, yet complete,
 shareable log data remain scarce: curves are missing over washed-out or uninstrumented
@@ -45,8 +46,9 @@ intervals, acquisition is costly, and much of the archive is proprietary. Genera
 well logs serve several needs at once: augmentation for downstream petrophysical machine
 learning, priors for imputation, stress-test scenarios for interpretation workflows, and
 synthetic datasets that can be shared where raw logs cannot. Prior work spans sequence-based
-adversarial synthesis of well logs, standardized imputation benchmarks, and foundation-scale
-pretraining of time-series models across thousands of wells, including a general-purpose
+adversarial synthesis of well logs (Al-Fakih, Koeshidayatullah, Mukerji, Al-Azani and Kaka
+2025), standardized imputation benchmarks (Gama et al. 2025), and foundation-scale pretraining
+of time-series models across thousands of wells (Qi et al. 2025), including a general-purpose
 time-series foundation model applied to log prediction and anomaly detection (Koeshidayatullah,
 Al-Fakih and Kaka 2024).
 
@@ -58,16 +60,17 @@ coupling without committing to a parametric noise model.
 
 The formulation has a structural blind spot: it is coordinate-blind. The model observes token
 order but never depth. Porosity in clastic sections is known to decline with burial depth
-through mechanical and chemical compaction, classically as an exponential trend, and a model
-that cannot see depth has no direct means of expressing a population-level compaction law. At
-the measured 0.152 m sampling interval of this dataset, a 512-token
-context spans roughly 77.8 m of section, far too short to infer absolute
-burial depth from texture alone. A predecessor report on the same corpus observed a systematic
-neutron-porosity bias in generated logs and attributed it, plausibly but without a controlled
-test, to the missing coordinate. Depth-band offsets have been reported at foundation scale as
-well, in independent work reporting systematic reconstruction offsets in shallow and
-ultra-deep intervals after large-scale pretraining. Whether explicit depth conditioning
-corrects such biases has not, to our knowledge, been tested under controlled conditions.
+through mechanical and chemical compaction, classically as an exponential trend (Athy 1930;
+Sclater and Christie 1980), and a model that cannot see depth has no direct means of expressing
+a population-level compaction law. At the measured 0.152 m sampling
+interval of this dataset, a 512-token context spans roughly 77.8 m of
+section, far too short to infer absolute burial depth from texture alone. A predecessor report
+on the same corpus observed a systematic neutron-porosity bias in generated logs and attributed
+it, plausibly but without a controlled test, to the missing coordinate. Depth-band offsets have
+been reported at foundation scale as well: Qi et al. (2025) observe systematic reconstruction
+offsets in shallow and ultra-deep intervals after pretraining on over a thousand wells. Whether
+explicit depth conditioning corrects such biases has not, to our knowledge, been tested under
+controlled conditions.
 
 We test it directly. Everything is held fixed, including the 80-well FORCE 2020
 training partition, the tokenizer family, a six-layer transformer of model dimension 256, and
@@ -103,45 +106,46 @@ moderate weight rather than a diagnosed mechanism (see Corrections, below).
 
 ## Related Work
 
-**[Source note: same provenance as Introduction. 13 of 14 works cited by the found draft are
-NOT in `audit/references_check.txt` and are therefore described here without formal citation,
-per this brief's "cite nothing unresolved" rule; see `reports/DQ_GATE_10.md` for the full
-removed-citation list.]**
+**[Source note: same provenance as Introduction; all 15 citations restored per
+`audit/references_check.txt`, see `reports/DQ_GATE_10.md`/`DQ_GATE_12.md`.]**
 
 The classical machinery for generating synthetic subsurface property fields is geostatistical:
-simulation conditioned on variogram models or on training images. Two properties of that
-tradition matter here. Spatial coordinates are first-class inputs, and systematic depth trends
-are handled by explicit decomposition, in which a deterministic trend is fitted, removed,
-simulated around, and restored. Neural autoregressive generators invert both defaults:
-coordinates are absent unless injected, and any trend must be learned implicitly from windowed
-context. This study asks whether reintroducing the coordinate, in forms ranging from a raw
-channel to a featurization that embeds a classical compaction trend directly, recovers what the
-classical decomposition provided.
+simulation conditioned on variogram models (Deutsch and Journel 1998) or on training images
+(Strebelle 2002). Two properties of that tradition matter here. Spatial coordinates are
+first-class inputs, and systematic depth trends are handled by explicit decomposition, in which
+a deterministic trend is fitted, removed, simulated around, and restored. Neural autoregressive
+generators invert both defaults: coordinates are absent unless injected, and any trend must be
+learned implicitly from windowed context. This study asks whether reintroducing the coordinate,
+in forms ranging from a raw channel to a featurization that embeds a classical compaction trend
+directly, recovers what the classical decomposition provided.
 
 Most deep-learning work on logs is conditional, predicting or imputing one curve from others,
-including standardized imputation benchmarks and sequence-imputation studies in single-basin
-settings. Closer to unconditional generation, prior work on this corpus family includes a
-time-series generative-adversarial pairing for synthesis and imputation, and a general-purpose
-time-series foundation model applied to log prediction and anomaly detection
-(Koeshidayatullah, Al-Fakih and Kaka 2024). Adversarial and autoregressive approaches to
-multivariate series more generally face a shared difficulty of jointly preserving marginal
-distributions and spatial texture, which are the two axes our guard metrics monitor.
+including standardized imputation benchmarks (Gama et al. 2025) and sequence-imputation studies
+in single-basin settings (Antariksa et al. 2023; Hallam et al. 2022). Closer to unconditional
+generation, prior work on this corpus family includes a time-series generative-adversarial
+pairing for synthesis and imputation (Al-Fakih, Koeshidayatullah, Mukerji, Al-Azani and Kaka
+2025), and a general-purpose time-series foundation model applied to log prediction and anomaly
+detection (Koeshidayatullah, Al-Fakih and Kaka 2024). Adversarial and autoregressive approaches
+to multivariate series more generally (Yoon, Jarrett and van der Schaar 2019) face a shared
+difficulty of jointly preserving marginal distributions and spatial texture, which are the two
+axes our guard metrics monitor.
 
-Discrete tokenization of continuous signals for autoregressive modeling follows the broader
-pattern established for language-model pretraining. In the well-log domain, at least one
-foundation-scale study tokenizes log patches into a learned vocabulary and pretrains across
-more than a thousand wells for interpretation tasks, reporting systematic offsets in shallow
-and ultra-deep intervals; that is evidence that scale alone does not resolve depth-dependent
-bias, and evidence that small controlled studies remain useful for attribution. The present
-work differs from that line and from the imputation literature in intent: rather than adding
-scale, it holds a small model fixed and varies one factor in order to attribute an effect to
-it.
+Discrete tokenization of continuous signals for autoregressive modeling descends from VQ-VAE
+(van den Oord, Vinyals and Kavukcuoglu 2017) and language-model pretraining (Radford et al.
+2019). In the well-log domain, Qi et al. (2025) tokenize log patches into a learned vocabulary
+and pretrain across more than a thousand wells for interpretation tasks, reporting systematic
+offsets in shallow and ultra-deep intervals; that is evidence that scale alone does not resolve
+depth-dependent bias, and evidence that small controlled studies remain useful for attribution.
+The present work differs from that line and from the imputation literature in intent: rather
+than adding scale, it holds a small model fixed and varies one factor in order to attribute an
+effect to it.
 
 How a coordinate is presented to a network matters independently of whether it is presented at
-all; high-frequency coordinate encodings of the kind used in other domains motivate our
-twelve-feature arm. The compaction physics itself is classical and, for offshore Norway
-specifically, has been quantified in the regional literature, which makes this basin a setting
-where the expected trend is characterized in advance.
+all; Fourier feature mappings that let networks learn high-frequency functions of
+low-dimensional coordinates (Tancik et al. 2020) motivate our twelve-feature arm. The
+compaction physics itself is classical (Athy 1930) and was quantified for the North Sea
+specifically by Sclater and Christie (1980), which makes offshore Norway a basin where the
+expected trend is characterized in advance.
 
 No prior work known to us isolates depth conditioning as a single manipulated variable in
 autoregressive log generation under a protocol fixed in advance. Imputation benchmarks
@@ -204,14 +208,13 @@ never concatenated and treated as independent samples. For Arm C, the within-wel
 five identical realizations is an identity and does not alter any distributional statistic or
 narrow any interval.
 
-The equal-weight well mean is primary; a sample-weighted pooled statistic is reported as a
-sensitivity estimator. Estimators are never mixed between the numerator and denominator of a
-ratio; relative bias is reported as the ratio of pooled means, never as an arithmetic mean of
-per-well percentages. Thirty-two paired intervals were computed in total and no multiplicity
-correction was applied. Inferential language is confined to the four comparisons fixed in
-advance on the primary metric; every other interval in this paper is reported as descriptive.
-Guard intervals are deliberately left uncorrected, because widening them would make degradation
-harder to detect and would therefore favour our own conclusion.
+The equal-weight well mean is primary; a sample-weighted pooled statistic is a sensitivity
+estimator. Estimators are never mixed between the numerator and denominator of a ratio;
+relative bias is the ratio of pooled means, never an arithmetic mean of per-well percentages.
+Thirty-two paired intervals were computed with no multiplicity correction. Inferential language
+is confined to the four comparisons fixed in advance on the primary metric; every other
+interval is descriptive. Guard intervals are deliberately left uncorrected: widening them would
+make degradation harder to detect, favouring our own conclusion.
 
 ## Experimental Family
 
@@ -654,10 +657,64 @@ refit fresh on this study's own training wells).
 
 ## Code Availability
 
-The code that produced the archived raw outputs analyzed in this manuscript is at
-`LithoGPT-2`, commit `ef8883e27d34deac198ab14b7db6601aedaefb14`. The archived raw output file analyzed
-throughout (`atce_ablation_v3_raw_results_2026-07-26.json`) has sha256 digest `ac963f2c56ec27ac8f2fd837faa90108dc580a53560dbeb3c50a41c35f0110ed`. This
-manuscript claims only that the archived raw outputs reproduce every arm-level metric reported
-above (verified in `audit/verify_all.py`, see `reports/DQ_GATE_6.md`); it does not claim that
-the training and generation pipeline itself is reproducible end to end, which was not tested. No
-DOI is claimed for this repository state.
+**[Source note: rewritten at brief DT G15c to name the destination repository ahead of the
+G16 push. The commit hash below is the literal placeholder text specified by the brief until
+G16 actually creates it (do not invent a commit hash, matching the existing "do not invent a
+DOI" rule) -- filled in by a follow-up commit once pushed, per G16d.]**
+
+The code that produced the archived raw outputs analyzed in this manuscript, together with the
+recompute and audit scripts, the comparison protocol, and the decision record, is public at
+`github.com/Ammar12Falah/LithoGPT`, commit hash to be inserted after push. Raw generation outputs
+(`atce_ablation_v3_raw_results_2026-07-26.json`, ac963f2c56ec27ac8f2fd837faa90108dc580a53560dbeb3c50a41c35f0110ed) are not hosted on GitHub, because they
+exceed its file-size limit; they are deposited to Zenodo, DOI to be inserted on deposit (see
+`analysis/RAW_OUTPUTS_LOCATION.md` for the file's size, digest, and integrity-verification
+record). This manuscript claims only that the archived raw outputs reproduce every arm-level
+metric reported above (verified in `audit/verify_all.py`); it does not claim that the training
+and generation pipeline itself is reproducible end to end, which was not tested.
+
+## References
+
+**[Source note: every entry below was fetched directly from a primary source and confirmed
+against the found draft's citation; see `audit/references_check.txt` for the full resolution
+record, including the one author-order correction (reference 1).]**
+
+1. Al-Fakih, A., Koeshidayatullah, A., Mukerji, T., Al-Azani, S., and Kaka, S. I. 2025. Well
+   log data generation and imputation using sequence-based generative adversarial networks.
+   *Scientific Reports* 15: 11000. doi:10.1038/s41598-025-95709-0.
+2. Antariksa, G., Muammar, R., Nugraha, A., and Lee, J. 2023. Deep sequence model-based
+   approach to well log data imputation and petrophysical analysis. *Journal of Applied
+   Geophysics* 218: 105213. doi:10.1016/j.jappgeo.2023.105213.
+3. Athy, L. F. 1930. Density, porosity, and compaction of sedimentary rocks. *AAPG Bulletin* 14
+   (1): 1-24. doi:10.1306/3D93289E-16B1-11D7-8645000102C1865D.
+4. Bormann, P., Aursand, P., Dilib, F., Dischington, P., and Manral, S. 2020. FORCE 2020 well
+   log and lithofacies dataset for machine learning competition. Zenodo.
+   doi:10.5281/zenodo.4351156.
+5. Deutsch, C. V., and Journel, A. G. 1998. *GSLIB: Geostatistical Software Library and User's
+   Guide*, 2nd edition. Oxford University Press.
+6. Gama, P. H. T., Faria, J., Sena, J., Neves, F., Riffel, V. R., Perez, L., Korenchendler, A.,
+   Sobreira, M. C. A., and Machado, A. M. C. 2025. Imputation in well log data: A benchmark for
+   machine learning methods. *Computers and Geosciences* 196: 105789.
+   doi:10.1016/j.cageo.2024.105789.
+7. Hallam, A., Mukherjee, D., and Chassagne, R. 2022. Multivariate imputation via chained
+   equations for elastic well log imputation and prediction. *Applied Computing and
+   Geosciences* 14: 100083. doi:10.1016/j.acags.2022.100083.
+8. Koeshidayatullah, A., Al-Fakih, A., and Kaka, S. I. 2024. Leveraging time-series foundation
+   model for subsurface well logs prediction and anomaly detection. arXiv:2412.05681.
+9. Qi, Z., Yu, Q., Wang, J., Zhao, Y.-B., Li, Z., and Lv, W. 2025. WLFM: A well-logs foundation
+   model for multi-task and cross-well geological interpretation. arXiv:2509.18152.
+10. Radford, A., Wu, J., Child, R., Luan, D., Amodei, D., and Sutskever, I. 2019. Language
+    models are unsupervised multitask learners. OpenAI Technical Report.
+11. Sclater, J. G., and Christie, P. A. F. 1980. Continental stretching: an explanation of the
+    post-mid-Cretaceous subsidence of the central North Sea basin. *Journal of Geophysical
+    Research* 85 (B7): 3711-3739. doi:10.1029/JB085iB07p03711.
+12. Strebelle, S. 2002. Conditional simulation of complex geological structures using
+    multiple-point statistics. *Mathematical Geology* 34 (1): 1-21.
+    doi:10.1023/A:1014009426274.
+13. Tancik, M., Srinivasan, P. P., Mildenhall, B., Fridovich-Keil, S., Raghavan, N., Singhal,
+    U., Ramamoorthi, R., Barron, J. T., and Ng, R. 2020. Fourier features let networks learn
+    high frequency functions in low dimensional domains. *Advances in Neural Information
+    Processing Systems* 33. arXiv:2006.10739.
+14. van den Oord, A., Vinyals, O., and Kavukcuoglu, K. 2017. Neural discrete representation
+    learning. *Advances in Neural Information Processing Systems* 30. arXiv:1711.00937.
+15. Yoon, J., Jarrett, D., and van der Schaar, M. 2019. Time-series generative adversarial
+    networks. *Advances in Neural Information Processing Systems* 32.

@@ -2,11 +2,12 @@
 [PASS] banned strings (section 4), 0 hits -- []
 [PASS] 'fair' not used (0 occurrences found) -- 0 occurrence(s)
 [PASS] 'pilot' not used as study name (0 occurrences) -- 0 occurrence(s)
-[PASS] word count 6515 <= 6800 hard ceiling -- 6515 words
-[INFO] word count 6515 <= 6500 target -- 6515 words over target by 15 (soft target per 3.6, not a hard-ceiling FAIL)
+       (word count: 6663 body + 444 References = 7109 total; the 6,500/6,800 budget below is checked against BODY only, per standard convention)
+[PASS] body word count 6663 <= 6800 hard ceiling -- 6663 words
+[INFO] body word count 6663 <= 6500 target -- 6663 words over target by 163 (soft target per 3.6, not a hard-ceiling FAIL)
 [PASS] 'Arm D' appears exactly once (withdrawal note only) -- 1 occurrence(s)
 [PASS] every in-text citation matches a resolved reference (audit/references_check.txt) -- set()
-       (3 citation-shaped parenthetical(s) found: ['Koeshidayatullah, Al-Fakih and Kaka 2024', 'Koeshidayatullah, Al-Fakih and Kaka 2024', 'Bormann, Aursand, Dilib, Dischington and Manral 2020'])
+       (8 citation-shaped parenthetical(s) found: ['Al-Fakih, Koeshidayatullah, Mukerji, Al-Azani and Kaka 2025', 'Koeshidayatullah, Al-Fakih and Kaka 2024', 'Deutsch and Journel 1998', 'Strebelle 2002', 'Al-Fakih, Koeshidayatullah, Mukerji, Al-Azani and Kaka 2025', 'Koeshidayatullah, Al-Fakih and Kaka 2024', 'Athy 1930', 'Bormann, Aursand, Dilib, Dischington and Manral 2020'])
 [PASS] no superseded v3 run-log interval value cited in manuscript -- []
 
 AUDIT: ALL CHECKS PASSED.

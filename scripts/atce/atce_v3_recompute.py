@@ -6,11 +6,14 @@ refit of the (deterministic, documented) tokenizer for AO's reconstruction-
 bias analysis, using the exact same functions as the original run script
 (imported, not reimplemented) to avoid transcription drift.
 """
-import json, sys, hashlib, time
+import json, sys, hashlib, time, os
 from pathlib import Path
 import numpy as np
 
-ROOT = Path("/workspace/LithoGPT-2")
+# Originally hardcoded to the RunPod pod mount /workspace/LithoGPT-2. Fixed at brief
+# DT G15e so a third-party clone resolves ROOT to its own checkout by default; set
+# LITHOGPT2_ROOT to reproduce the original pod layout exactly.
+ROOT = Path(os.environ.get("LITHOGPT2_ROOT", Path(__file__).resolve().parents[2]))
 sys.path.insert(0, str(ROOT / "scripts/atce"))
 import atce_ablation_v3 as ref  # noqa: E402  (import triggers no main(), only module-level setup)
 

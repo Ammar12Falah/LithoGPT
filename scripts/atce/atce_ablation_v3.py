@@ -36,7 +36,7 @@ blind_force is never loaded: asserted explicitly against split_assignment.csv na
 on top of the fact that the 98-well pool is itself the project's "train" split,
 categorically disjoint from blind_force's 10 named wells.
 """
-import json, hashlib, time, sys
+import json, hashlib, time, sys, os
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -46,10 +46,18 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import MiniBatchKMeans
 from scipy.stats import wasserstein_distance
 
-ROOT = Path("/workspace/LithoGPT-2")
+# Originally hardcoded to the RunPod pod mount /workspace/LithoGPT-2 (see provenance
+# in reports/basinshift/atce_ablation_v3/run_log.txt, unchanged). Fixed at brief DT
+# G15e so a third-party clone resolves ROOT to its own checkout by default; set
+# LITHOGPT2_ROOT to reproduce the original pod layout exactly.
+ROOT = Path(os.environ.get("LITHOGPT2_ROOT", Path(__file__).resolve().parents[2]))
 OUT = ROOT / "reports/basinshift/atce_ablation_v3"
 OUT.mkdir(parents=True, exist_ok=True)
 
+# Not fixed: the v1 checkpoint this originally pointed to is permanently unrecoverable
+# (see the corrections note in manuscript/manuscript.md) -- no path would make this
+# directory exist, so it is left as a dead reference documenting where it lived on the
+# pod rather than rewritten to point at nothing.
 V1_CKPT_DIR = Path("/workspace/v1_readonly/LithoGPT/checkpoints")
 
 SEED = 20260715
