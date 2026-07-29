@@ -1,0 +1,1059 @@
+====================================================================================================
+TASK 0. GIT IDENTITY
+====================================================================================================
+Repo-local git config, before/after. No commits rewritten (git config only; no `commit --amend`,
+no `filter-branch`, no `rebase` was run).
+
+BEFORE (repo-local user.name/user.email were UNSET -- git fell back to auto-detection from the
+account/hostname, which is why the last 3 commits on this branch show "Ammar
+<ammar@Ammars-MacBook-Pro.local>"):
+  $ git config --local user.name    -> (unset, exit 1)
+  $ git config --local user.email   -> (unset, exit 1)
+  $ git var GIT_AUTHOR_IDENT        -> Ammar <ammar@Ammars-MacBook-Pro.local> 1785347393 +0300
+
+Evidence used to choose the correct identity -- author distribution across all commits, all
+branches, this repo:
+  $ git log --all --format='%an <%ae>' | sort | uniq -c | sort -rn
+    142 Ammar12Falah <amarfalah1212@gmail.com>
+     11 Ammar12Falah <Ammar12Falah@users.noreply.github.com>
+      3 Ammar <ammar@Ammars-MacBook-Pro.local>
+  The dominant, pod-configured identity across the whole project (142/156 commits) is
+  "Ammar12Falah <amarfalah1212@gmail.com>"; the auto-detected Mac identity accounts for exactly
+  the 3 commits made on this local-audit branch before this fix.
+
+CHANGE MADE:
+  $ git config --local user.name  "Ammar12Falah"
+  $ git config --local user.email "amarfalah1212@gmail.com"
+
+AFTER:
+  $ git config --local user.name    -> Ammar12Falah
+  $ git config --local user.email   -> amarfalah1212@gmail.com
+  $ git var GIT_AUTHOR_IDENT        -> Ammar12Falah <amarfalah1212@gmail.com> 1785347393 +0300
+
+Existing commits (254940b, 8c7dab2, and the DL-brief commit 7e33e0b) are UNCHANGED -- their
+recorded author remains "Ammar <ammar@Ammars-MacBook-Pro.local>" as history; only the config that
+governs NEW commits going forward was changed. This report itself is committed under the corrected
+identity.
+
+
+====================================================================================================
+TASK 1. PASTE DK IN FULL -- commit 254940b, all seven tasks
+====================================================================================================
+Confirmed: commit 254940bfa54fbb8d03ddc78c058c36f9a2a59450 (2026-07-29 16:25:36 +0300) contains 6
+files under reports/dk_brief_2026-07-29/ covering tasks 1-7 (task 2/4/7 share one log file; task 3
+has a script+output; task 1 additionally emits a CSV). All 6 files below were introduced in that
+single commit (git log --diff-filter=A confirms 254940b for every one).
+
+
+--- TASK 1 (full-precision re-derivation): reports/dk_brief_2026-07-29/dk_task1_output.txt ---
+size=8055 bytes  sha256=c5585586b8d02aa8c7a4691348c02a3c501b08ef88efbfab3905b87cff6b6a80
+introduced in commit 254940bfa54fbb8d03ddc78c058c36f9a2a59450
+
+====================================================================================================
+1a. REAL NPHI MEAN
+====================================================================================================
+equal-weight: 0.3280888434  (10sf)   0.3281 (4dp)   expect 0.328089
+pooled:       0.3373089306  (10sf)   0.3373 (4dp)   expect 0.337309
+
+====================================================================================================
+1b. SCORED COUNT / FULL VALID COUNT
+====================================================================================================
+scored = 54051  (expect 54051)
+full_valid = 72064  (expect 72064)
+
+====================================================================================================
+1c. FIVE HEADLINE NPHI BIASES
+====================================================================================================
+  A          full=-0.04234970379  4dp=-0.0423  target=-0.0423  diff=4.97e-05
+  B-linear   full=-0.0665919643  4dp=-0.0666  target=-0.0666  diff=8.04e-06
+  B-abs      full=-0.03398159302  4dp=-0.0340  target=-0.0340  diff=1.84e-05
+  B2         full=-0.04475730224  4dp=-0.0448  target=-0.0448  diff=4.27e-05
+  C          full=0.03318312565  4dp=+0.0332  target=+0.0332  diff=1.69e-05
+
+====================================================================================================
+1d. FULL HEADLINE TABLE, 5 METRICS x 5 ARMS (equal-weight per well)
+====================================================================================================
+arm                nphi_bias           nphi_w1      nphi_ac_rmse           gr_bias         rhob_bias
+A             -0.04234970379    +0.08029155549     +0.1961720223      -5.200750789     +0.0291306563
+B-linear       -0.0665919643    +0.08296180907      +0.196069286      +6.717170967    +0.07133046152
+B-abs         -0.03398159302    +0.08284627394     +0.1713965889      -3.986207126    +0.05865872648
+B2            -0.04475730224    +0.07743633277     +0.1606039153      +4.078149288    +0.06962285318
+C             +0.03318312565     +0.1008188364     +0.2149200307      -3.527257207     -0.1043189331
+
+====================================================================================================
+1e. FOUR CONTRASTS, SIGNED NPHI BIAS, PAIRED BOOTSTRAP, SHARED INDEX DRAW
+====================================================================================================
+  B2 minus A               operand_order=(B2 minus A)  point_full=-0.002407598453  point_4dp=-0.0024  CI_full=[-0.01881543205,0.01403530827]  CI_4dp=[-0.0188,+0.0140]
+  B-abs minus A            operand_order=(B-abs minus A)  point_full=0.008368110766  point_4dp=+0.0084  CI_full=[-0.006374720753,0.02227480145]  CI_4dp=[-0.0064,+0.0223]
+  B-linear minus B-abs     operand_order=(B-linear minus B-abs)  point_full=-0.03261037128  point_4dp=-0.0326  CI_full=[-0.04695306705,-0.01843557887]  CI_4dp=[-0.0470,-0.0184]
+  C minus A                operand_order=(C minus A)  point_full=0.07553282944  point_4dp=+0.0755  CI_full=[0.02144974072,0.1311669016]  CI_4dp=[+0.0214,+0.1312]
+
+====================================================================================================
+1f. GUARD TABLES -- SIGNED and MAGNITUDE (abs per well AFTER realization reduction, BEFORE averaging across wells)
+====================================================================================================
+
+-- SIGNED --
+  B2 minus A               GR             point=+9.278900 CI=[+5.255403,+13.436610] excl0=True
+  B2 minus A               RHOB           point=+0.040492 CI=[+0.003155,+0.079351] excl0=True
+  B2 minus A               NPHI ACF RMSE  point=-0.035568 CI=[-0.100225,+0.030007] excl0=False
+  B-abs minus A            GR             point=+1.214544 CI=[-3.894580,+7.387156] excl0=False
+  B-abs minus A            RHOB           point=+0.029528 CI=[+0.013951,+0.051765] excl0=True
+  B-abs minus A            NPHI ACF RMSE  point=-0.024775 CI=[-0.063201,+0.015129] excl0=False
+  B-linear minus B-abs     GR             point=+10.703378 CI=[+5.995695,+15.184491] excl0=True
+  B-linear minus B-abs     RHOB           point=+0.012672 CI=[-0.009927,+0.035919] excl0=False
+  B-linear minus B-abs     NPHI ACF RMSE  point=+0.024673 CI=[-0.000946,+0.049659] excl0=False
+  C minus A                GR             point=+1.673494 CI=[-2.273707,+6.475255] excl0=False
+  C minus A                RHOB           point=-0.133450 CI=[-0.233130,-0.041456] excl0=True
+  C minus A                NPHI ACF RMSE  point=+0.018748 CI=[-0.144690,+0.178345] excl0=False
+
+-- MAGNITUDE --
+  B2 minus A               GR             point=-2.963528 CI=[-9.452652,+2.673335] excl0=False
+  B2 minus A               RHOB           point=-0.026767 CI=[-0.059175,+0.005906] excl0=False
+  B2 minus A               NPHI ACF RMSE  point=-0.035568 CI=[-0.100225,+0.030007] excl0=False
+  B-abs minus A            GR             point=-4.321909 CI=[-9.430615,+0.192552] excl0=False
+  B-abs minus A            RHOB           point=-0.012675 CI=[-0.042000,+0.010291] excl0=False
+  B-abs minus A            NPHI ACF RMSE  point=-0.024775 CI=[-0.063201,+0.015129] excl0=False
+  B-linear minus B-abs     GR             point=+4.226528 CI=[-4.621424,+11.918287] excl0=False
+  B-linear minus B-abs     RHOB           point=+0.024463 CI=[+0.007078,+0.042710] excl0=True
+  B-linear minus B-abs     NPHI ACF RMSE  point=+0.024673 CI=[-0.000946,+0.049659] excl0=False
+  C minus A                GR             point=-2.369395 CI=[-7.065430,+1.565296] excl0=False
+  C minus A                RHOB           point=+0.015557 CI=[-0.070373,+0.118545] excl0=False
+  C minus A                NPHI ACF RMSE  point=+0.018748 CI=[-0.144690,+0.178345] excl0=False
+
+====================================================================================================
+CSV: full precision vs single-rounded 4dp vs v1.9 target, flagged
+====================================================================================================
+  1a_real_nphi_eqw                   full=0.3280888434  rounded=+0.3281  target=+0.3281  flagged=False
+  1a_real_nphi_pooled                full=0.3373089306  rounded=+0.3373  target=+0.3373  flagged=False
+  1c_A                               full=-0.04234970379  rounded=-0.0423  target=-0.0423  flagged=False
+  1c_B-linear                        full=-0.0665919643  rounded=-0.0666  target=-0.0666  flagged=False
+  1c_B-abs                           full=-0.03398159302  rounded=-0.0340  target=-0.0340  flagged=False
+  1c_B2                              full=-0.04475730224  rounded=-0.0448  target=-0.0448  flagged=False
+  1c_C                               full=0.03318312565  rounded=+0.0332  target=+0.0332  flagged=False
+  1e_B2 minus A_point                full=-0.002407598453  rounded=-0.0024  target=-0.0024  flagged=False
+  1e_B2 minus A_lo                   full=-0.01881543205  rounded=-0.0188  target=-0.0188  flagged=False
+  1e_B2 minus A_hi                   full=0.01403530827  rounded=+0.0140  target=+0.0140  flagged=False
+  1e_B-abs minus A_point             full=0.008368110766  rounded=+0.0084  target=+0.0084  flagged=False
+  1e_B-abs minus A_lo                full=-0.006374720753  rounded=-0.0064  target=-0.0064  flagged=False
+  1e_B-abs minus A_hi                full=0.02227480145  rounded=+0.0223  target=+0.0223  flagged=False
+  1e_B-linear minus B-abs_point      full=-0.03261037128  rounded=-0.0326  target=-0.0326  flagged=False
+  1e_B-linear minus B-abs_lo         full=-0.04695306705  rounded=-0.0470  target=-0.0470  flagged=False
+  1e_B-linear minus B-abs_hi         full=-0.01843557887  rounded=-0.0184  target=-0.0184  flagged=False
+  1e_C minus A_point                 full=0.07553282944  rounded=+0.0755  target=+0.0755  flagged=False
+  1e_C minus A_lo                    full=0.02144974072  rounded=+0.0214  target=+0.0214  flagged=False
+  1e_C minus A_hi                    full=0.1311669016  rounded=+0.1312  target=+0.1312  flagged=False
+
+written dk_task1_fullprecision.csv
+
+TASK1_FULLPRECISION_COMPLETE
+
+Sidecar: reports/dk_brief_2026-07-29/dk_task1_fullprecision.csv
+size=1191 bytes  sha256=19292e10c87baab2a1c1001d797e88b2be955843bb7a23305b1a017fd3b095b4
+introduced in commit 254940bfa54fbb8d03ddc78c058c36f9a2a59450
+--- verbatim CSV ---
+quantity,full_precision,single_rounded_4dp,v19_target,flagged_mismatch
+1a_real_nphi_eqw,0.3280888434119329,0.3281,0.328089,False
+1a_real_nphi_pooled,0.3373089305544762,0.3373,0.337309,False
+1c_A,-0.04234970378690472,-0.0423,-0.0423,False
+1c_B-linear,-0.06659196430271248,-0.0666,-0.0666,False
+1c_B-abs,-0.03398159302165701,-0.034,-0.034,False
+1c_B2,-0.044757302237604886,-0.0448,-0.0448,False
+1c_C,0.033183125654412885,0.0332,0.0332,False
+1e_B2 minus A_point,-0.0024075984526301895,-0.0024,-0.0024,False
+1e_B2 minus A_lo,-0.018815432045497178,-0.0188,-0.0188,False
+1e_B2 minus A_hi,0.014035308274907712,0.014,0.014,False
+1e_B-abs minus A_point,0.008368110766247717,0.0084,0.0084,False
+1e_B-abs minus A_lo,-0.0063747207534895045,-0.0064,-0.0064,False
+1e_B-abs minus A_hi,0.02227480144887918,0.0223,0.0223,False
+1e_B-linear minus B-abs_point,-0.03261037128436473,-0.0326,-0.0326,False
+1e_B-linear minus B-abs_lo,-0.046953067054522706,-0.047,-0.047,False
+1e_B-linear minus B-abs_hi,-0.018435578870480186,-0.0184,-0.0184,False
+1e_C minus A_point,0.07553282944020361,0.0755,0.0755,False
+1e_C minus A_lo,0.021449740723767,0.0214,0.0214,False
+1e_C minus A_hi,0.13116690159959525,0.1312,0.1312,False
+
+
+--- TASK 2 (estimator provenance), TASK 4 (seed), TASK 7 (tokenizer refit under archived pins):
+    reports/dk_brief_2026-07-29/dk_task2_4_7_log.txt ---
+size=10427 bytes  sha256=4e1b7fa920a3b94ba5533315b4c2afed04ba34a6e382372565d34dbbefe1345d
+introduced in commit 254940bfa54fbb8d03ddc78c058c36f9a2a59450
+
+DK Task 2, 4, 7 -- command log and verbatim findings
+=======================================================
+
+TASK 2. ESTIMATOR PROVENANCE
+-----------------------------
+
+--- atce_ablation_v3.py bootstrap block, verbatim, lines 70 (N_BOOTSTRAP) and 604-641 ---
+Command: sed -n '70p;604,641p' scripts/atce/atce_ablation_v3.py
+
+70:N_BOOTSTRAP = 1000
+
+604:    metrics_by_arm = {}
+605:    for arm_name, per_well in results.items():
+606:        well_level = {}
+607:        for w, d in per_well.items():
+608:            real = np.array(d["real"]); gens = np.array(d["generated_realizations"])
+609:            well_level[w] = well_metrics(real, gens)
+610:        metrics_by_arm[arm_name] = well_level
+611:
+612:    def bootstrap_ci(values, n_boot=N_BOOTSTRAP, seed=SEED):
+613:        rng = np.random.default_rng(seed)
+614:        values = np.array(values)
+615:        boots = [np.mean(rng.choice(values, size=len(values), replace=True)) for _ in range(n_boot)]
+616:        return dict(mean=float(np.mean(values)), ci_low=float(np.percentile(boots, 2.5)),
+617:                    ci_high=float(np.percentile(boots, 97.5)))
+618:
+619:    summary = {}
+620:    for arm_name, well_level in metrics_by_arm.items():
+621:        arm_summary = {}
+622:        for metric in ["abs_bias", "w1", "rhob_bias", "gr_bias", "ac_rmse"]:
+623:            all_vals = []
+624:            per_well_summary = {}
+625:            for w, m in well_level.items():
+626:                vals = m[metric]
+627:                per_well_summary[w] = bootstrap_ci(vals)
+628:                all_vals.extend(vals)
+629:            arm_summary[metric] = dict(per_well=per_well_summary, aggregate=bootstrap_ci(all_vals))
+630:        real_means = [m["real_mean_nphi"] for m in well_level.values()]
+631:        overall_real_mean = float(np.mean(real_means))
+632:        rel_bias_vals = []
+633:        for w, m in well_level.items():
+634:            for b in m["abs_bias"]:
+635:                rel_bias_vals.append(b / m["real_mean_nphi"] * 100)
+636:        arm_summary["nphi_relative_bias_pct_vs_real_mean"] = bootstrap_ci(rel_bias_vals)
+637:        arm_summary["overall_real_mean_nphi"] = overall_real_mean
+638:        summary[arm_name] = arm_summary
+639:        log(f"[{arm_name}] NPHI abs_bias={arm_summary['abs_bias']['aggregate']} "
+640:            f"rel_bias%={arm_summary['nphi_relative_bias_pct_vs_real_mean']} "
+641:            f"W1={arm_summary['w1']['aggregate']}")
+
+ORIGINAL script's bootstrap_ci resamples over: (a) per-well, the 5 REALIZATION-level
+values for that well ("vals = m[metric]", 5 numbers) -- NOT the 8 wells; (b) "aggregate",
+a POOLED list of all 40 realization-level values across all 8 wells concatenated
+("all_vals.extend(vals)" inside the well loop) -- realizations from different wells ARE
+pooled and resampled as if independent, and n_boot=1000, not 10000.
+
+--- atce_v3_recompute.py, lines 211-237, verbatim ---
+Command: sed -n '211,237p' scripts/atce/atce_v3_recompute.py
+
+211:def bootstrap_well_level(values_by_well, n_boot=N_BOOT, seed=BOOT_SEED):
+212:    rng = np.random.default_rng(seed)
+213:    wells = list(values_by_well.keys())
+214:    vals = np.array([values_by_well[w] for w in wells])
+215:    n = len(vals)
+216:    boots = np.array([rng.choice(vals, size=n, replace=True).mean() for _ in range(n_boot)])
+217:    return dict(mean=float(vals.mean()), ci_low=float(np.percentile(boots, 2.5)),
+218:                ci_high=float(np.percentile(boots, 97.5)), n_wells=n)
+219:
+220:
+221:def bootstrap_paired_diff(vals_a_by_well, vals_b_by_well, n_boot=N_BOOT, seed=BOOT_SEED):
+222:    """Paired well-level bootstrap on (b - a): same resampled well indices used
+223:    for both arms in each resample, so the comparison stays matched."""
+224:    rng = np.random.default_rng(seed)
+225:    wells = list(vals_a_by_well.keys())
+226:    assert wells == list(vals_b_by_well.keys())
+227:    a = np.array([vals_a_by_well[w] for w in wells])
+228:    b = np.array([vals_b_by_well[w] for w in wells])
+229:    n = len(a)
+230:    diffs = []
+231:    for _ in range(n_boot):
+232:        idx = rng.integers(0, n, size=n)
+233:        diffs.append(b[idx].mean() - a[idx].mean())
+234:    diffs = np.array(diffs)
+235:    point_diff = float(b.mean() - a.mean())
+236:    return dict(point_diff=point_diff, ci_low=float(np.percentile(diffs, 2.5)),
+237:                ci_high=float(np.percentile(diffs, 97.5)))
+
+(N_BOOT = 10000, BOOT_SEED = ref.SEED = 20260715, per atce_v3_recompute.py:22-23)
+This resamples over the 8 WELLS (values_by_well keyed by well, size=n=8), matched
+indices shared between the two arms in bootstrap_paired_diff -- the corrected,
+paired well-level estimator.
+
+--- git log: first/last commit, both files, vs benchmark ef8883e ---
+Commands:
+  git log --all --follow --format='%H %ad %s' --date=iso -- scripts/atce/atce_ablation_v3.py
+  git log --all --follow --format='%H %ad %s' --date=iso -- scripts/atce/atce_v3_recompute.py
+  git show -s --format='%H %ad' --date=iso ef8883e
+
+atce_ablation_v3.py: ONE commit only.
+  ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+  "Item J: ATCE ablation - exploratory (K) + diagnostic v2 (W) + sealed v3 runs"
+
+atce_v3_recompute.py: ONE commit only.
+  4c626d9c0ecdb9258a700dfe9a930b6b4cb7a436 2026-07-27 20:35:28 +0000
+  "AA-series items AM-AP: CPU-only recompute of v3 bias stats, well-level bootstrap,
+   tokenizer reconstruction bias, and Arm D/units/grid code audit"
+
+benchmark (first result commit): ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+
+VERDICT: atce_ablation_v3.py's commit IS the benchmark commit itself (same hash, same
+instant) -- the original script (with its 1000-resample, non-well-level, pooled-
+realization bootstrap) exists exactly as of the first result. atce_v3_recompute.py
+(the 10,000-resample PAIRED WELL-LEVEL estimator) was committed ~17 hours LATER, same
+day. STATED PLAINLY: yes, the 10,000 paired well-level estimator POSTDATES the first
+result commit.
+
+
+TASK 4. WEIGHT INITIALISATION SEED
+------------------------------------
+Command: grep -ni "manual_seed\|np.random.seed\|random.seed\|torch.cuda.manual_seed\|generator=" scripts/atce/atce_ablation_v3.py
+Result: NO MATCHES. Zero occurrences of torch.manual_seed, torch.cuda.manual_seed,
+np.random.seed (bare, non-Generator form), random.seed, or generator= anywhere in the
+file.
+
+Broader check, command: grep -ni "seed" scripts/atce/atce_ablation_v3.py
+Result: SEED = 20260715 (line 55) is used pervasively for np.random.default_rng(SEED)
+across data splitting (line 119), batch building (194, 212), the tokenizer's
+MiniBatchKMeans random_state (353), generation sampling (267), and the bootstrap (613)
+-- but never passed to torch in any form.
+
+ANSWER: weight initialization is NOT seeded. PyTorch's global RNG governs
+nn.Linear/nn.Embedding default init (and any other torch-side randomness, e.g. dropout
+if present) with whatever state exists at that point in the process -- uncontrolled,
+not reproducible run-to-run, independent of the pervasively-seeded numpy-side pipeline
+(splits, batching, tokenizer, generation, bootstrap).
+
+
+TASK 7. TOKENIZER REFIT UNDER ARCHIVED PINS
+----------------------------------------------
+
+(a) Archived environment freeze, verbatim (scikit-learn version IS recorded --
+    proceeding, not stopping):
+File: reports/basinshift/atce_ablation_v3/pip_freeze_2026-07-27.txt
+Relevant lines:
+  numpy==1.26.3
+  pandas==2.2.3
+  scikit-learn==1.9.0
+  scipy==1.16.3
+  torch==2.4.1+cu124
+  torchaudio==2.4.1+cu124
+  torchvision==0.19.1+cu124
+(full ~140-line freeze also on file, includes jupyter/nvidia-cuda/system packages
+irrelevant to the tokenizer computation)
+
+(b) Isolated venv created: python3 -m venv ~/lithogpt_tokver (exit 0).
+Working environment pip freeze BEFORE (python3 -m pip freeze):
+  altgraph @ file:///AppleInternal/... (system wheel)
+  future @ file:///AppleInternal/... (system wheel)
+  joblib==1.5.3
+  macholib @ file:///AppleInternal/... (system wheel)
+  numpy==2.0.2
+  pandas==2.3.3
+  python-dateutil==2.9.0.post0
+  pytz==2026.3.post1
+  scikit-learn==1.6.1
+  scipy==1.13.1
+  six @ file:///AppleInternal/... (system wheel)
+  threadpoolctl==3.6.0
+  tzdata==2026.3
+
+Attempt 1 -- full archived freeze into venv:
+Command: ~/lithogpt_tokver/bin/pip install -r .../pip_freeze_2026-07-27.txt
+Result: FAILED.
+  ERROR: Could not find a version that satisfies the requirement ipython==8.27.0
+  (from versions: ... 8.18.1)
+  ERROR: No matching distribution found for ipython==8.27.0
+Cause: this venv's Python is 3.9.6 (system /usr/bin/python3); ipython==8.27.0 has no
+cp39 wheel (requires newer Python). Transaction aborted before installing anything
+(venv freeze empty after this attempt).
+
+Attempt 2 -- scientific subset only (numpy, pandas, scikit-learn, scipy, joblib) at
+exact archived pins:
+Command: ~/lithogpt_tokver/bin/pip install "numpy==1.26.3" "pandas==2.2.3" \
+  "scikit-learn==1.9.0" "scipy==1.16.3" "joblib==1.5.3"
+Result: FAILED.
+  ERROR: Could not find a version that satisfies the requirement scikit-learn==1.9.0
+  (from versions: ... 1.6.1)
+  ERROR: No matching distribution found for scikit-learn==1.9.0
+Cause: same as above -- scikit-learn==1.9.0 requires Python >=3.10; this Mac's only
+available interpreter is Python 3.9.6 (checked: no python3.10/3.11/3.12/3.13 anywhere
+on PATH, no Homebrew installed). Transaction aborted before installing anything.
+
+Working environment pip freeze AFTER both attempts:
+Command: diff <(python3 -m pip freeze, captured before) <(python3 -m pip freeze,
+captured after)
+Result: empty diff. WORKING ENVIRONMENT CONFIRMED BYTE-IDENTICAL, untouched.
+
+(c)/(d) NOT PERFORMED. The archived pin scikit-learn==1.9.0 cannot be installed on
+this Mac under any available Python interpreter -- this is a genuine, verified
+limitation of this machine, not a version substituted or guessed around. No tokenizer
+refit was attempted in the venv (there is no working scikit-learn in it to run it
+with), and no numbers are reported for cluster usage / entropy / per-curve RMSE from
+this venv. This is a real "cannot be performed" result, reported as such rather than
+approximated with a different sklearn version. (A separate refit WAS performed on the
+RunPod pod in the DB-DI brief, under scikit-learn 1.4.2 -- not the archived 1.9.0 pin
+-- entropy 9.786, NPHI RMSE 0.0134; that result stands as a different-environment
+comparison point, already reported, not a substitute for this venv's failed attempt.)
+
+TASK 7 STATUS, STATED PLAINLY: subtask (a) DONE, (b) DONE (venv created, both install
+attempts genuinely failed, working env confirmed untouched), (c) and (d) DID NOT RUN --
+no cluster/entropy/RMSE numbers exist from this venv attempt.
+
+
+--- TASK 3 (the 44 rows): reports/dk_brief_2026-07-29/dk_task3_thirdconvention.py +
+    reports/dk_brief_2026-07-29/dk_task3_output.txt ---
+size=395 bytes  sha256=da69e600316521cc71261497d705c13644257f9cc2ae459283df1e2d2d84443e
+introduced in commit 254940bfa54fbb8d03ddc78c058c36f9a2a59450
+
+INDEPENDENT REPRODUCTION of ATCE_V1_5_PAIRED_CONTRASTS.csv row 26
+(B-linear minus B-abs, nphi_mean_realization_absolute_bias):
+  point=0.01694228520739768  CI=[0.001503430087624967,0.03326014400310465]
+  CSV row 26 says: point=0.016942285207397677  CI=[0.0015034300876249668,0.03326014400310464]
+  MATCH (1e-9): point=True  lo=True  hi=True
+  EXCLUDES ZERO: True
+
+TASK3_THIRDCONVENTION_COMPLETE
+
+
+--- TASK 5 (post-hoc depth-slope): reports/dk_brief_2026-07-29/dk_task5_depthslope.py +
+    reports/dk_brief_2026-07-29/dk_task5_output.txt ---
+size=6227 bytes  sha256=ea147ab70208ef0791ea317419ce79b378ca265a77497118198235854e3cb527
+introduced in commit 254940bfa54fbb8d03ddc78c058c36f9a2a59450
+
+Depth arrays validated element-aligned to stored real arrays for all 8 wells.
+
+====================================================================================================
+POST-HOC 5b/5e. PER-WELL REAL NPHI-vs-DEPTH SLOPE (v/v per 1000 m)
+====================================================================================================
+  POST-HOC  16/4-1       real slope = -0.304485
+  POST-HOC  25/2-14      real slope = -0.005837
+  POST-HOC  30/6-5       real slope = -0.204637
+  POST-HOC  15/9-15      real slope = -0.253100
+  POST-HOC  25/8-5 S     real slope = -0.333747
+  POST-HOC  16/1-6 A     real slope = +0.150502
+  POST-HOC  34/5-1 S     real slope = +0.004368
+  POST-HOC  34/7-13      real slope = -0.088231
+
+====================================================================================================
+POST-HOC 5a/5e. PER-WELL, PER-ARM SLOPE (mean of 5 realization slopes)
+====================================================================================================
+
+  Arm A:
+    POST-HOC  16/4-1       arm slope = -0.004751  real slope = -0.304485  diff = +0.299734
+    POST-HOC  25/2-14      arm slope = +0.069096  real slope = -0.005837  diff = +0.074932
+    POST-HOC  30/6-5       arm slope = -0.001219  real slope = -0.204637  diff = +0.203418
+    POST-HOC  15/9-15      arm slope = -0.033197  real slope = -0.253100  diff = +0.219903
+    POST-HOC  25/8-5 S     arm slope = -0.014989  real slope = -0.333747  diff = +0.318757
+    POST-HOC  16/1-6 A     arm slope = -0.246173  real slope = +0.150502  diff = -0.396675
+    POST-HOC  34/5-1 S     arm slope = +0.377897  real slope = +0.004368  diff = +0.373529
+    POST-HOC  34/7-13      arm slope = +0.025688  real slope = -0.088231  diff = +0.113919
+
+  Arm B-linear:
+    POST-HOC  16/4-1       arm slope = -0.055824  real slope = -0.304485  diff = +0.248661
+    POST-HOC  25/2-14      arm slope = -0.122524  real slope = -0.005837  diff = -0.116687
+    POST-HOC  30/6-5       arm slope = -0.045374  real slope = -0.204637  diff = +0.159263
+    POST-HOC  15/9-15      arm slope = -0.046648  real slope = -0.253100  diff = +0.206452
+    POST-HOC  25/8-5 S     arm slope = -0.035942  real slope = -0.333747  diff = +0.297805
+    POST-HOC  16/1-6 A     arm slope = -0.296003  real slope = +0.150502  diff = -0.446506
+    POST-HOC  34/5-1 S     arm slope = -0.001444  real slope = +0.004368  diff = -0.005812
+    POST-HOC  34/7-13      arm slope = -0.044093  real slope = -0.088231  diff = +0.044137
+
+  Arm B-abs:
+    POST-HOC  16/4-1       arm slope = -0.084283  real slope = -0.304485  diff = +0.220202
+    POST-HOC  25/2-14      arm slope = +0.071839  real slope = -0.005837  diff = +0.077676
+    POST-HOC  30/6-5       arm slope = -0.051742  real slope = -0.204637  diff = +0.152895
+    POST-HOC  15/9-15      arm slope = -0.001780  real slope = -0.253100  diff = +0.251320
+    POST-HOC  25/8-5 S     arm slope = -0.022008  real slope = -0.333747  diff = +0.311739
+    POST-HOC  16/1-6 A     arm slope = -0.172304  real slope = +0.150502  diff = -0.322806
+    POST-HOC  34/5-1 S     arm slope = +0.091349  real slope = +0.004368  diff = +0.086981
+    POST-HOC  34/7-13      arm slope = +0.086758  real slope = -0.088231  diff = +0.174989
+
+  Arm B2:
+    POST-HOC  16/4-1       arm slope = -0.120989  real slope = -0.304485  diff = +0.183497
+    POST-HOC  25/2-14      arm slope = -0.091588  real slope = -0.005837  diff = -0.085751
+    POST-HOC  30/6-5       arm slope = -0.049261  real slope = -0.204637  diff = +0.155375
+    POST-HOC  15/9-15      arm slope = -0.158826  real slope = -0.253100  diff = +0.094274
+    POST-HOC  25/8-5 S     arm slope = -0.127874  real slope = -0.333747  diff = +0.205873
+    POST-HOC  16/1-6 A     arm slope = -0.490518  real slope = +0.150502  diff = -0.641020
+    POST-HOC  34/5-1 S     arm slope = -0.326612  real slope = +0.004368  diff = -0.330980
+    POST-HOC  34/7-13      arm slope = -0.059378  real slope = -0.088231  diff = +0.028853
+
+  Arm C:
+    POST-HOC  16/4-1       arm slope = -0.001992  real slope = -0.304485  diff = +0.302493
+    POST-HOC  25/2-14      arm slope = +0.020663  real slope = -0.005837  diff = +0.026500
+    POST-HOC  30/6-5       arm slope = -0.016950  real slope = -0.204637  diff = +0.187687
+    POST-HOC  15/9-15      arm slope = -0.001673  real slope = -0.253100  diff = +0.251427
+    POST-HOC  25/8-5 S     arm slope = -0.086173  real slope = -0.333747  diff = +0.247574
+    POST-HOC  16/1-6 A     arm slope = +0.012788  real slope = +0.150502  diff = -0.137714
+    POST-HOC  34/5-1 S     arm slope = -0.020522  real slope = +0.004368  diff = -0.024890
+    POST-HOC  34/7-13      arm slope = +0.003664  real slope = -0.088231  diff = +0.091894
+
+====================================================================================================
+POST-HOC 5c. PER-WELL DIFFERENCE (arm minus real), equal-weight mean + paired bootstrap over wells
+====================================================================================================
+  POST-HOC  A          mean(arm-real) = +0.150940  CI=[-0.026762,+0.282162]
+  POST-HOC  B-linear   mean(arm-real) = +0.048414  CI=[-0.120633,+0.188537]
+  POST-HOC  B-abs      mean(arm-real) = +0.119124  CI=[-0.022422,+0.223509]
+  POST-HOC  B2         mean(arm-real) = -0.048735  CI=[-0.256457,+0.121812]
+  POST-HOC  C          mean(arm-real) = +0.118121  CI=[+0.015025,+0.213968]
+
+====================================================================================================
+POST-HOC 5d. FOUR CONTRASTS APPLIED TO SLOPE (arm-vs-arm on the SLOPE quantity itself)
+====================================================================================================
+  POST-HOC  B2 minus A               operand_order=(B2 minus A)  slope_point=-0.199674 v/v-per-1000m  CI=[-0.355271,-0.098880]
+  POST-HOC  B-abs minus A            operand_order=(B-abs minus A)  slope_point=-0.031815 v/v-per-1000m  CI=[-0.115435,+0.032240]
+  POST-HOC  B-linear minus B-abs     operand_order=(B-linear minus B-abs)  slope_point=-0.070710 v/v-per-1000m  CI=[-0.122007,-0.021300]
+  POST-HOC  C minus A                operand_order=(C minus A)  slope_point=-0.032818 v/v-per-1000m  CI=[-0.159231,+0.078536]
+
+TASK5_DEPTHSLOPE_COMPLETE
+
+
+--- TASK 6 (dispersion): reports/dk_brief_2026-07-29/dk_task6_dispersion.py +
+    reports/dk_brief_2026-07-29/dk_task6_output.txt ---
+size=1349 bytes  sha256=3c6061a057f559d16a9b08b23ba7c0d156cb7fb03823323213b94efa3e7cf5f1
+introduced in commit 254940bfa54fbb8d03ddc78c058c36f9a2a59450
+
+REAL pooled std = 0.160875  (expect ~0.161)
+
+POOLED per arm:
+  A          std=0.090579  understatement=43.70%
+  B-linear   std=0.088272  understatement=45.13%
+  B-abs      std=0.078311  understatement=51.32%
+  B2         std=0.103124  understatement=35.90%
+  C          std=0.086985  understatement=45.93%
+
+EQUAL-WEIGHT PER WELL (per-well std, then average across 8 wells):
+  REAL equal-weight mean per-well std = 0.115213
+  A          eqw_std=0.084237  understatement=26.89%
+  B-linear   eqw_std=0.080798  understatement=29.87%
+  B-abs      eqw_std=0.078748  understatement=31.65%
+  B2         eqw_std=0.091323  understatement=20.74%
+  C          eqw_std=0.014155  understatement=87.71%
+
+PER-WELL C GENERATED STD (investigating the pooled-vs-eqw divergence for C):
+  16/4-1       C_gen_std=0.006705  real_std=0.173987
+  25/2-14      C_gen_std=0.007706  real_std=0.105272
+  30/6-5       C_gen_std=0.019734  real_std=0.131068
+  15/9-15      C_gen_std=0.002090  real_std=0.150738
+  25/8-5 S     C_gen_std=0.071268  real_std=0.218457
+  16/1-6 A     C_gen_std=0.002261  real_std=0.052573
+  34/5-1 S     C_gen_std=0.002282  real_std=0.049532
+  34/7-13      C_gen_std=0.001197  real_std=0.040077
+
+RANGE OF UNDERSTATEMENT ACROSS ARMS:
+  pooled basis: 35.9% to 51.3%
+  v1.9 claimed bracket 40-50%: correct on pooled basis = False
+
+TASK6_DISPERSION_COMPLETE
+
+
+====================================================================================================
+TASK 1 SUMMARY -- all seven tasks accounted for
+====================================================================================================
+  Task 1 (full-precision re-derivation): output file present, ran to completion (COMPLETE marker).
+  Task 2 (estimator provenance):         part of dk_task2_4_7_log.txt, ran to completion (verdict printed).
+  Task 3 (the 44 rows / 3rd convention): output file present, ran to completion (COMPLETE marker).
+  Task 4 (weight init seed):             part of dk_task2_4_7_log.txt, ran to completion (answer printed).
+  Task 5 (post-hoc depth-slope):         output file present, ran to completion (COMPLETE marker).
+  Task 6 (dispersion):                   output file present, ran to completion (COMPLETE marker).
+  Task 7 (tokenizer refit under pins):   part of dk_task2_4_7_log.txt -- (a)/(b) ran to completion,
+                                          (c)/(d) DID NOT RUN (scikit-learn==1.9.0 has no Python-3.9
+                                          wheel on this Mac; stated plainly above, not inferred).
+
+
+====================================================================================================
+TASK 2a. FILES WHOSE NAME CONTAINS atce_ablation
+====================================================================================================
+### reports/basinshift/atce_ablation/atce_ablation_raw_results_2026-07-26.json ###
+size=14743476 bytes
+sha256=511b82cbd3aa9068ba156bdc2357168fdda93da96e806793e556570e8467862f
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels(json top-level keys): ['A', 'B', 'C', 'D']
+
+### reports/basinshift/atce_ablation/atce_ablation_raw_results_2026-07-26.sha256 ###
+size=65 bytes
+sha256=d2f15acb3261a78737ada6d5a6dde670a992dc65e9ddb249deff09b58812c66d
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels: n/a (sidecar/env file, no arm content)
+
+### reports/basinshift/atce_ablation/atce_ablation_summary_2026-07-26.json ###
+size=33800 bytes
+sha256=7ed9c52f31f83c3f9ae5e211c7b2a8ff6e7d0819726497ec12d4a0cdbaa1ebcc
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels(json top-level keys): ['arm_a_params', 'arm_b_param_delta_vs_a', 'arm_b_params', 'arm_c_params', 'arm_d_run', 'config', 'metrics_summary', 'nphi_relative_bias_definition', 'split', 'total_wall_s', 'w1_definition']
+
+### reports/basinshift/atce_ablation/atce_ablation_summary_2026-07-26.sha256 ###
+size=65 bytes
+sha256=d9336f38c4f2a11f339aa62f5fe351eabd104b5ed4668a96653122a00522b24b
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels: n/a (sidecar/env file, no arm content)
+
+### reports/basinshift/atce_ablation/run_log.txt ###
+size=4146 bytes
+sha256=6d09c86f363294c8a2a7877a1d65f40b27f1bf8114fc4af9283c258772dffc2e
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels(run_log "=== Arm X:" headers): === Arm A: === Arm B: === Arm C: === Arm D:
+
+### reports/basinshift/atce_ablation_v2/atce_ablation_v2_raw_results_2026-07-26.sha256 ###
+size=65 bytes
+sha256=5a3b75510588fd6333518b3e9b70729c2d584054cfb45b538e3fb3d22cc05db1
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels: n/a (sidecar/env file, no arm content)
+
+### reports/basinshift/atce_ablation_v2/atce_ablation_v2_summary_2026-07-26.json ###
+size=43413 bytes
+sha256=bcd35671942265b2937f6fd9f1d69734d1ff213d7293e7574829cffb562b4a48
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels(json top-level keys): ['arm_a_params', 'arm_b2_feature_list', 'arm_b2_param_delta_vs_a', 'arm_b2_params', 'arm_blinear_param_delta_vs_a', 'arm_blinear_params', 'arm_c_params', 'arm_d_run', 'config', 'context_tokens_to_metres', 'depth_scale_precheck', 'generation_cap', 'measured_depth_spacing_m', 'metrics_summary', 'nphi_relative_bias_definition', 'split', 'tokenizer_provenance', 'total_wall_s', 'w1_definition']
+
+### reports/basinshift/atce_ablation_v2/atce_ablation_v2_summary_2026-07-26.sha256 ###
+size=65 bytes
+sha256=f116bfaa4d012fc1c755fda5043e479fc58cea70476fd5c5f39ba2d724579ee8
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels: n/a (sidecar/env file, no arm content)
+
+### reports/basinshift/atce_ablation_v2/run_log.txt ###
+size=7999 bytes
+sha256=adcdeb3ec6476d4445bd31a380b4263b073584016c0d250a53cafe1cbfe03c1c
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels(run_log "=== Arm X:" headers): === Arm A: === Arm B-linear: === Arm B2: === Arm C: === Arm D:
+
+### reports/basinshift/atce_ablation_v3/atce_ablation_v3_raw_results_2026-07-26.sha256 ###
+size=65 bytes
+sha256=c38269c6e402820b97ccc3bf8d7816a56588526b874177a2d414be2619f66bcd
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels: n/a (sidecar/env file, no arm content)
+
+### reports/basinshift/atce_ablation_v3/atce_ablation_v3_summary_2026-07-26.json ###
+size=51991 bytes
+sha256=82b5e9e49ef091a3bb5a24316016c3e555c8099a755b2a143f13cc1f97122c26
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels(json top-level keys): ['arm_a_params', 'arm_b2_feature_list', 'arm_b2_param_delta_vs_a', 'arm_b2_params', 'arm_babs_param_delta_vs_a', 'arm_babs_params', 'arm_blinear_param_delta_vs_a', 'arm_blinear_params', 'arm_c_params', 'arm_d_run', 'config', 'context_tokens_to_metres', 'depth_abs_standardization', 'depth_scale_precheck', 'depth_signal_during_generation', 'generation_cap', 'measured_depth_spacing_m', 'metrics_summary', 'nphi_relative_bias_definition', 'split', 'tokenizer_provenance', 'total_wall_s', 'w1_definition']
+
+### reports/basinshift/atce_ablation_v3/atce_ablation_v3_summary_2026-07-26.sha256 ###
+size=65 bytes
+sha256=77e4d49c04759b4886eb1763dd5fdaa76bf971e03f56cfb8dd052691aca85dfa
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels: n/a (sidecar/env file, no arm content)
+
+### reports/basinshift/atce_ablation_v3/atce_v3_recompute_2026-07-27.json ###
+size=21476 bytes
+sha256=7bddeee1b006e605ff822fe5dcdbb32aa5d0dfe5b1129f5abffce02e68a31357
+last_commit=4c626d9c0ecdb9258a700dfe9a930b6b4cb7a436 2026-07-27 20:35:28 +0000
+arm_labels(json top-level keys): ['AM', 'AN', 'AO', 'bootstrap_seed', 'generated_at', 'n_bootstrap']
+
+### reports/basinshift/atce_ablation_v3/atce_v3_recompute_2026-07-27.sha256 ###
+size=65 bytes
+sha256=7e32f953fe70f25082548d6cf617c3cd23d23a4238e1195cb8e9679ee7e1d6cb
+last_commit=4c626d9c0ecdb9258a700dfe9a930b6b4cb7a436 2026-07-27 20:35:28 +0000
+arm_labels: n/a (sidecar/env file, no arm content)
+
+### reports/basinshift/atce_ablation_v3/pip_freeze_2026-07-27.txt ###
+size=3079 bytes
+sha256=43448375e0d57c2734040e5c4a2803b675b20c037800ad0573d4d387d4930426
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels: n/a (sidecar/env file, no arm content)
+
+### reports/basinshift/atce_ablation_v3/pip_freeze_recompute_2026-07-27.txt ###
+size=3048 bytes
+sha256=72e63761ae535686dd746a16819b9e1b493a41ebcc9216a760c9493736367a95
+last_commit=4c626d9c0ecdb9258a700dfe9a930b6b4cb7a436 2026-07-27 20:35:28 +0000
+arm_labels: n/a (sidecar/env file, no arm content)
+
+### reports/basinshift/atce_ablation_v3/run_log.txt ###
+size=10783 bytes
+sha256=7ac28e99de9aa91560ad19f9b158e521ca5992242f429b55efa8c841f7326c40
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels(run_log "=== Arm X:" headers): === Arm A: === Arm B-linear: === Arm B-abs: === Arm B2: === Arm C: === Arm D:
+
+### scripts/atce/atce_ablation.py ###
+size=22239 bytes
+sha256=e3dfb2378ea67362ab003655cc9d1346f5fdbbf806395ecf296539d93e81ef6b
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels(py, literal string tokens): "A" "B" "C" "D"
+
+### scripts/atce/atce_ablation_v2.py ###
+size=34695 bytes
+sha256=2f51596e68de6266c6d6dae87ca4c548c120cf378841f165e826c3e904006a57
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels(py, literal string tokens): "A" "B" "B-linear" "B2" "C" "D"
+
+### scripts/atce/atce_ablation_v3.py ###
+size=39676 bytes
+sha256=b9d8e32af0ba1bebc74357f34886c97e2393b16da07f2134ae3bffdd80ef8699
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+arm_labels(py, literal string tokens): "A" "B-abs" "B-linear" "B2" "C" "D"
+
+====================================================================================================
+TASK 2b. DIFF: free-running generation loop, atce_ablation.py vs atce_ablation_v3.py
+====================================================================================================
+--- v1 lines 204-245 (generate_batch) ---
+@torch.no_grad()
+def generate_batch(model, prime_tokens, prime_depth_norm, gen_len, n_realizations,
+                    kmeans_centers=None, temperature=1.0, seed=SEED):
+    """Batched generation: all n_realizations of one well generated together (batch dim),
+    since there is no KV-cache, this at least amortizes the per-step Python/kernel-launch
+    overhead across realizations instead of looping over them sequentially."""
+    model.eval()
+    device = next(model.parameters()).device
+    B = n_realizations
+    rng = np.random.default_rng(seed)
+    tokens = np.tile(np.array(prime_tokens), (B, 1)).tolist()
+    tokens = [list(t) for t in tokens]
+    dnorm = [list(prime_depth_norm) for _ in range(B)]
+    depth_step = prime_depth_norm[-1] - prime_depth_norm[-2] if len(prime_depth_norm) > 1 else 0.001
+    centers_t = torch.tensor(kmeans_centers, dtype=torch.float32, device=device)
+    outputs = np.zeros((B, gen_len, centers_t.shape[1]), dtype=np.float32)
+    for i in range(gen_len):
+        window = np.array([t[-CONTEXT:] for t in tokens])
+        dwindow = np.array([d[-CONTEXT:] for d in dnorm], dtype=np.float32)
+        x = torch.tensor(window, dtype=torch.long, device=device)
+        d = torch.tensor(dwindow, dtype=torch.float32, device=device) if model.use_depth_embed else None
+        logits = model(x, depth_norm=d)
+        last = logits[:, -1]   # [B, K] or [B, n_features]
+        next_dnorm = dwindow[:, -1] + depth_step
+        if model.output_head_type == "discrete":
+            probs = torch.softmax(last / temperature, dim=-1).cpu().numpy()
+            for b in range(B):
+                p = probs[b] / probs[b].sum()
+                next_tok = rng.choice(K, p=p) if temperature > 0 else int(np.argmax(p))
+                tokens[b].append(int(next_tok))
+                outputs[b, i] = kmeans_centers[next_tok]
+        else:
+            feat = last.cpu().numpy()
+            # nearest centroid, vectorized across the batch
+            d2 = ((feat[:, None, :] - kmeans_centers[None, :, :]) ** 2).sum(axis=-1)
+            next_toks = d2.argmin(axis=1)
+            for b in range(B):
+                outputs[b, i] = feat[b]
+                tokens[b].append(int(next_toks[b]))
+        for b in range(B):
+            dnorm[b].append(float(next_dnorm[b]))
+    return outputs   # [B, gen_len, n_features]
+
+--- v3 lines 255-297 (generate_batch) ---
+@torch.no_grad()
+def generate_batch(model, prime_tokens, prime_depth_feat, gen_len, n_realizations,
+                    kmeans_centers=None, temperature=1.0, seed=SEED,
+                    depth_feat_stepper=None):
+    """Batched generation: all n_realizations of one well generated together (batch dim),
+    since there is no KV-cache, this at least amortizes the per-step Python/kernel-launch
+    overhead across realizations instead of looping over them sequentially.
+    depth_feat_stepper(prev_depth_feat_row, step_index) -> next_depth_feat_row, so callers
+    can advance either the 1-wide (B-linear) or 12-wide (B2) depth feature correctly."""
+    model.eval()
+    device = next(model.parameters()).device
+    B = n_realizations
+    rng = np.random.default_rng(seed)
+    tokens = np.tile(np.array(prime_tokens), (B, 1)).tolist()
+    tokens = [list(t) for t in tokens]
+    dfeat = [list(prime_depth_feat) for _ in range(B)]
+    centers_t = torch.tensor(kmeans_centers, dtype=torch.float32, device=device)
+    outputs = np.zeros((B, gen_len, centers_t.shape[1]), dtype=np.float32)
+    for i in range(gen_len):
+        window = np.array([t[-CONTEXT:] for t in tokens])
+        dwindow = np.array([d[-CONTEXT:] for d in dfeat], dtype=np.float32)
+        x = torch.tensor(window, dtype=torch.long, device=device)
+        d = torch.tensor(dwindow, dtype=torch.float32, device=device) if model.use_depth_embed else None
+        logits = model(x, depth_feat=d)
+        last = logits[:, -1]   # [B, K] or [B, n_features]
+        if model.output_head_type == "discrete":
+            probs = torch.softmax(last / temperature, dim=-1).cpu().numpy()
+            for b in range(B):
+                p = probs[b] / probs[b].sum()
+                next_tok = rng.choice(K, p=p) if temperature > 0 else int(np.argmax(p))
+                tokens[b].append(int(next_tok))
+                outputs[b, i] = kmeans_centers[next_tok]
+        else:
+            feat = last.cpu().numpy()
+            d2 = ((feat[:, None, :] - kmeans_centers[None, :, :]) ** 2).sum(axis=-1)
+            next_toks = d2.argmin(axis=1)
+            for b in range(B):
+                outputs[b, i] = feat[b]
+                tokens[b].append(int(next_toks[b]))
+        if model.use_depth_embed:
+            for b in range(B):
+                dfeat[b].append(depth_feat_stepper(dfeat[b][-1], i))
+    return outputs   # [B, gen_len, n_features]
+
+--- unified diff ---
+--- /tmp/gen_v1.txt	2026-07-29 20:53:20
++++ /tmp/gen_v3.txt	2026-07-29 20:53:20
+@@ -1,27 +1,28 @@
+ @torch.no_grad()
+-def generate_batch(model, prime_tokens, prime_depth_norm, gen_len, n_realizations,
+-                    kmeans_centers=None, temperature=1.0, seed=SEED):
++def generate_batch(model, prime_tokens, prime_depth_feat, gen_len, n_realizations,
++                    kmeans_centers=None, temperature=1.0, seed=SEED,
++                    depth_feat_stepper=None):
+     """Batched generation: all n_realizations of one well generated together (batch dim),
+     since there is no KV-cache, this at least amortizes the per-step Python/kernel-launch
+-    overhead across realizations instead of looping over them sequentially."""
++    overhead across realizations instead of looping over them sequentially.
++    depth_feat_stepper(prev_depth_feat_row, step_index) -> next_depth_feat_row, so callers
++    can advance either the 1-wide (B-linear) or 12-wide (B2) depth feature correctly."""
+     model.eval()
+     device = next(model.parameters()).device
+     B = n_realizations
+     rng = np.random.default_rng(seed)
+     tokens = np.tile(np.array(prime_tokens), (B, 1)).tolist()
+     tokens = [list(t) for t in tokens]
+-    dnorm = [list(prime_depth_norm) for _ in range(B)]
+-    depth_step = prime_depth_norm[-1] - prime_depth_norm[-2] if len(prime_depth_norm) > 1 else 0.001
++    dfeat = [list(prime_depth_feat) for _ in range(B)]
+     centers_t = torch.tensor(kmeans_centers, dtype=torch.float32, device=device)
+     outputs = np.zeros((B, gen_len, centers_t.shape[1]), dtype=np.float32)
+     for i in range(gen_len):
+         window = np.array([t[-CONTEXT:] for t in tokens])
+-        dwindow = np.array([d[-CONTEXT:] for d in dnorm], dtype=np.float32)
++        dwindow = np.array([d[-CONTEXT:] for d in dfeat], dtype=np.float32)
+         x = torch.tensor(window, dtype=torch.long, device=device)
+         d = torch.tensor(dwindow, dtype=torch.float32, device=device) if model.use_depth_embed else None
+-        logits = model(x, depth_norm=d)
++        logits = model(x, depth_feat=d)
+         last = logits[:, -1]   # [B, K] or [B, n_features]
+-        next_dnorm = dwindow[:, -1] + depth_step
+         if model.output_head_type == "discrete":
+             probs = torch.softmax(last / temperature, dim=-1).cpu().numpy()
+             for b in range(B):
+@@ -31,12 +32,12 @@
+                 outputs[b, i] = kmeans_centers[next_tok]
+         else:
+             feat = last.cpu().numpy()
+-            # nearest centroid, vectorized across the batch
+             d2 = ((feat[:, None, :] - kmeans_centers[None, :, :]) ** 2).sum(axis=-1)
+             next_toks = d2.argmin(axis=1)
+             for b in range(B):
+                 outputs[b, i] = feat[b]
+                 tokens[b].append(int(next_toks[b]))
+-        for b in range(B):
+-            dnorm[b].append(float(next_dnorm[b]))
++        if model.use_depth_embed:
++            for b in range(B):
++                dfeat[b].append(depth_feat_stepper(dfeat[b][-1], i))
+     return outputs   # [B, gen_len, n_features]
+
+-- N_REALIZATIONS / CONTEXT constants in both files --
+scripts/atce/atce_ablation.py:36:CONTEXT = 512
+scripts/atce/atce_ablation.py:43:N_REALIZATIONS = 5       # generation realizations per held-out well
+scripts/atce/atce_ablation_v3.py:62:CONTEXT = 512
+scripts/atce/atce_ablation_v3.py:69:N_REALIZATIONS = 5       # generation realizations per held-out well
+
+====================================================================================================
+TASK 2c. PROVENANCE OF atce_ablation_v3_raw_results_2026-07-26.json
+====================================================================================================
+-- (1) the JSON's own metadata/provenance fields, checked first --
+top-level keys: ['A', 'B-linear', 'B-abs', 'B2', 'C', 'D']
+per-well keys (one example): ['real', 'generated_realizations', 'n_samples', 'depth_min_m', 'depth_max_m', 'coverage_pct_of_remaining']
+NO provenance/source/script/generated_by field present at any level shown above.
+
+-- (2) commit history / source code, checked second --
+90:    (OUT / "run_log.txt").write_text("\n".join(_LINES) + "\n")
+694:    payload = json.dumps(final, indent=2, sort_keys=True, default=str)
+696:    out_path.write_text(payload)
+698:    (OUT / "atce_ablation_v3_summary_2026-07-26.sha256").write_text(sha + "\n")
+700:    raw_path = OUT / "atce_ablation_v3_raw_results_2026-07-26.json"
+701:    raw_path.write_text(json.dumps(results, default=str))
+703:    (OUT / "atce_ablation_v3_raw_results_2026-07-26.sha256").write_text(raw_sha + "\n")
+
+95:WRITTEN /workspace/LithoGPT-2/reports/basinshift/atce_ablation_v3/atce_ablation_v3_raw_results_2026-07-26.json, sha256=ac963f2c56ec27ac8f2fd837faa90108dc580a53560dbeb3c50a41c35f0110ed
+
+ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000 Item J: ATCE ablation - exploratory (K) + diagnostic v2 (W) + sealed v3 runs
+
+====================================================================================================
+TASK 2d. reports/basinshift/atce_ablation/run_log.txt VERBATIM
+====================================================================================================
+path: reports/basinshift/atce_ablation/run_log.txt
+last_commit=ef8883e27d34deac198ab14b7db6601aedaefb14 2026-07-27 03:29:42 +0000
+--- verbatim content ---
+     1	=== ATCE v1.5 ablation (Item J) START ===
+     2	device=cuda K=1000 context=512 d_model=256 n_layers=6 n_heads=8 lr=0.0003 batch_size=32 n_steps=3000 seed=20260715
+     3	split: train=80 dev=10 test=8
+     4	tokenizer fit: 628916 train samples, k=1000
+     5	=== Arm A: prior-off (reimplemented from spec, not comparable to v1 Table 3) ===
+     6	  [ArmA] step 0/3000 loss=7.0751 elapsed=1s
+     7	  [ArmA] step 500/3000 loss=1.8384 elapsed=46s
+     8	  [ArmA] step 1000/3000 loss=2.0033 elapsed=91s
+     9	  [ArmA] step 1500/3000 loss=1.7511 elapsed=137s
+    10	  [ArmA] step 2000/3000 loss=1.6508 elapsed=182s
+    11	  [ArmA] step 2500/3000 loss=1.4480 elapsed=228s
+    12	  [ArmA] step 2999/3000 loss=1.4025 elapsed=274s
+    13	[ArmA] trained 3000 steps in 273.8s, final loss=1.4212, n_params=5383144
+    14	=== Arm B: prior-on (additive learned depth embedding) ===
+    15	Arm B parameter delta vs Arm A: 512 (0.0095% of Arm A; vs corrected v1 4.8M: 0.0107%)
+    16	  [ArmB] step 0/3000 loss=7.0729 elapsed=0s
+    17	  [ArmB] step 500/3000 loss=1.8514 elapsed=46s
+    18	  [ArmB] step 1000/3000 loss=2.0137 elapsed=92s
+    19	  [ArmB] step 1500/3000 loss=1.7615 elapsed=138s
+    20	  [ArmB] step 2000/3000 loss=1.6651 elapsed=184s
+    21	  [ArmB] step 2500/3000 loss=1.4532 elapsed=230s
+    22	  [ArmB] step 2999/3000 loss=1.4071 elapsed=276s
+    23	[ArmB] trained 3000 steps in 275.8s, final loss=1.4230, n_params=5383656
+    24	=== Arm C: external baseline (continuous MSE output head) ===
+    25	  [ArmC] step 0/3000 loss=1.1571 elapsed=0s
+    26	  [ArmC] step 500/3000 loss=0.0572 elapsed=54s
+    27	  [ArmC] step 1000/3000 loss=0.0445 elapsed=105s
+    28	  [ArmC] step 1500/3000 loss=0.0280 elapsed=161s
+    29	  [ArmC] step 2000/3000 loss=0.0279 elapsed=218s
+    30	  [ArmC] step 2500/3000 loss=0.0260 elapsed=269s
+    31	  [ArmC] step 2999/3000 loss=0.0226 elapsed=319s
+    32	[ArmC] trained 3000 steps in 319.3s, final loss=0.0291, n_params=5127172
+    33	=== Arm D: explicit trend-residual (Norway Athy phi0=0.6052 lambda_m=4068.0) ===
+    34	  [ArmD] step 0/3000 loss=7.0725 elapsed=0s
+    35	  [ArmD] step 500/3000 loss=1.7647 elapsed=46s
+    36	  [ArmD] step 1000/3000 loss=1.8232 elapsed=92s
+    37	  [ArmD] step 1500/3000 loss=1.6103 elapsed=138s
+    38	  [ArmD] step 2000/3000 loss=1.5780 elapsed=184s
+    39	  [ArmD] step 2500/3000 loss=1.4424 elapsed=230s
+    40	  [ArmD] step 2999/3000 loss=1.3386 elapsed=276s
+    41	[ArmD] trained 3000 steps in 275.5s, final loss=1.3707, n_params=5383656
+    42	=== Generation + evaluation on held-out test wells ===
+    43	[A] generated 8 test wells x 5 realizations
+    44	[B] generated 8 test wells x 5 realizations
+    45	[C] generated 8 test wells x 5 realizations
+    46	[D] generated 8 test wells x 5 realizations
+    47	=== Computing predeclared metrics ===
+    48	[A] NPHI abs_bias={'mean': -0.09858344169627356, 'ci_low': -0.14298454116463075, 'ci_high': -0.0558467161957204} rel_bias%={'mean': -15.576315417334854, 'ci_low': -22.12178766111293, 'ci_high': -8.93907942620191} W1={'mean': 0.11867565822296226, 'ci_low': 0.08010564517408263, 'ci_high': 0.16106869879538113}
+    49	[B] NPHI abs_bias={'mean': -0.08785342526282595, 'ci_low': -0.1272205241380441, 'ci_high': -0.05018650381742549} rel_bias%={'mean': -13.646431343579895, 'ci_low': -20.51016089421184, 'ci_high': -6.521804007485634} W1={'mean': 0.1156102035687961, 'ci_low': 0.08529617588344887, 'ci_high': 0.14947850150366668}
+    50	[C] NPHI abs_bias={'mean': -0.028600375586705685, 'ci_low': -0.03724440262152333, 'ci_high': -0.019922959084941582} rel_bias%={'mean': -6.932439033607099, 'ci_low': -9.401127932217722, 'ci_high': -4.629260817468034} W1={'mean': 0.0432842884491826, 'ci_low': 0.03649074525044942, 'ci_high': 0.050322223582798066}
+    51	[D] NPHI abs_bias={'mean': -0.10016737858686076, 'ci_low': -0.14361922730315116, 'ci_high': -0.06015016439066384} rel_bias%={'mean': -15.909971180141, 'ci_low': -23.1077109493131, 'ci_high': -8.301859695314471} W1={'mean': 0.1310341507328329, 'ci_low': 0.09923124909449166, 'ci_high': 0.16706112030890294}
+    52	WRITTEN /workspace/LithoGPT-2/reports/basinshift/atce_ablation/atce_ablation_summary_2026-07-26.json, sha256=7ed9c52f31f83c3f9ae5e211c7b2a8ff6e7d0819726497ec12d4a0cdbaa1ebcc
+    53	WRITTEN /workspace/LithoGPT-2/reports/basinshift/atce_ablation/atce_ablation_raw_results_2026-07-26.json, sha256=511b82cbd3aa9068ba156bdc2357168fdda93da96e806793e556570e8467862f
+    54	TOTAL WALL TIME: 1370.7s = 0.38h
+    55	ATCE_ABLATION_COMPLETE
+
+arm headers found: === Arm A: === Arm B: === Arm C: === Arm D:
+
+====================================================================================================
+TASK 2e. WALL-CLOCK TIME FOR THE FIVE ARMS A, B-linear, B-abs, B2, C -- WHOLE-REPO SEARCH
+====================================================================================================
+-- search 1: literal string 'pilot' anywhere in tracked files --
+reports/dl_brief_2026-07-29/dl_q1_generation_loop.txt:1:DL Q1. GENERATION LOOP EFFICIENCY -- pilot code = scripts/atce/atce_ablation.py (item K, the
+reports/dl_brief_2026-07-29/dl_q1_generation_loop.txt:6:itself the sealed v3 run -- both point to the same file as "the pilot".)
+reports/dl_brief_2026-07-29/dl_q2_walltime_artifact.txt:1:DL Q2. PILOT WALL TIME AND ARTIFACT FACTS
+reports/dl_brief_2026-07-29/dl_q2_walltime_artifact.txt:3:Q2a. Recorded wall-clock training time per arm, pilot (item K) run.
+reports/dl_brief_2026-07-29/dl_q2_walltime_artifact.txt:10:reports/basinshift/atce_ablation/run_log.txt (the pilot/item-K run; same script examined in Q1,
+reports/dl_brief_2026-07-29/dl_q2_walltime_artifact.txt:79:Note for scope: this is the item-K/pilot run. The sealed v3 run (a different, later script,
+reports/dl_brief_2026-07-29/dl_q2_walltime_artifact.txt:82:here since Q1/Q2 both specify "the pilot code"/"pilot wall time", which the evidence above ties to
+
+-- search 2: which run_log files contain ALL FIVE literal arm-header labels A/B-linear/B-abs/B2/C --
+  reports/basinshift/atce_ablation/run_log.txt: === Arm A: === Arm B: === Arm C: === Arm D:
+  reports/basinshift/atce_ablation_v2/run_log.txt: === Arm A: === Arm B-linear: === Arm B2: === Arm C: === Arm D:
+  reports/basinshift/atce_ablation_v3/run_log.txt: === Arm A: === Arm B-linear: === Arm B-abs: === Arm B2: === Arm C: === Arm D:
+
+-- v3 run_log per-arm training times (only file with all five requested labels) --
+15:=== Arm A: prior-off (fresh-refit tokenizer per item U, transformer reimplemented from spec) ===
+23:[ArmA] trained 3000 steps in 276.4s, final loss=1.4262, n_params=5383144
+24:=== Arm B-linear: prior-on (rank-1 additive linear depth embedding on PER-WELL relative dnorm, renamed from Arm B per item O, kept exactly as built per item V) ===
+33:[ArmBlinear] trained 3000 steps in 276.8s, final loss=1.4213, n_params=5383656
+34:=== Arm B-abs: prior-on (rank-1 additive linear depth embedding on corpus-wide standardized ABSOLUTE depth, item V -- isolates the B-linear reference-frame defect) ===
+43:[ArmBabs] trained 3000 steps in 276.0s, final loss=1.4331, n_params=5383656
+44:=== Arm B2: prior-on (corpus-wide absolute depth + Athy exp-decay + 5 log-spaced sin/cos pairs, item V amendment to item O's original B2 spec) ===
+54:[ArmB2] trained 3000 steps in 323.0s, final loss=1.3520, n_params=5386472
+55:=== Arm C: external baseline (continuous MSE output head) ===
+63:[ArmC] trained 3000 steps in 313.2s, final loss=0.0292, n_params=5127172
+64:=== Arm D: explicit trend-residual (Norway Athy phi0=0.6052 lambda_m=4068.0) ===
+72:[ArmD] trained 3000 steps in 276.0s, final loss=1.3641, n_params=5383656
+96:TOTAL WALL TIME: 3757.1s = 1.04h
+
+====================================================================================================
+TASK 2f. reports/basinshift/ -- PILOT/ATCE SCOPE VS OUT-OF-SCOPE BasinShift
+====================================================================================================
+total 424
+drwxr-xr-x@ 34 ammar  staff   1088 Jul 28 21:29 .
+drwxr-xr-x@ 35 ammar  staff   1120 Jul 29 20:52 ..
+drwxr-xr-x@  7 ammar  staff    224 Jul 28 21:29 atce_ablation
+drwxr-xr-x@  6 ammar  staff    192 Jul 28 21:29 atce_ablation_v2
+drwxr-xr-x@ 10 ammar  staff    320 Jul 28 21:29 atce_ablation_v3
+-rw-r--r--@  1 ammar  staff   1108 Jul 28 21:29 atce_sequence_counts_2026-07-25.json
+-rw-r--r--@  1 ammar  staff   5237 Jul 28 21:29 baseline_results.json
+-rw-r--r--@  1 ammar  staff  43685 Jul 28 21:29 basinshift_test_manifest.json
+-rw-r--r--@  1 ammar  staff     96 Jul 28 21:29 basinshift_test_manifest.sha256
+-rw-r--r--@  1 ammar  staff   1145 Jul 28 21:29 dtc_margin_correction_2026-07-26.json
+-rw-r--r--@  1 ammar  staff   2194 Jul 28 21:29 eval_composition.json
+-rw-r--r--@  1 ammar  staff   3015 Jul 28 21:29 frozen_raw_baseline_2026-07-25.json
+-rw-r--r--@  1 ammar  staff     65 Jul 28 21:29 frozen_raw_baseline_2026-07-25.sha256
+-rw-r--r--@  1 ammar  staff  13493 Jul 28 21:29 fsq_6p3_diagnostic_report.md
+-rw-r--r--@  1 ammar  staff   6475 Jul 28 21:29 fsq_6p3_perbasin_addendum.md
+drwxr-xr-x@ 14 ammar  staff    448 Jul 28 21:29 fsq_diag
+drwxr-xr-x@  7 ammar  staff    224 Jul 28 21:29 fsq_phaseB
+-rw-r--r--@  1 ammar  staff    887 Jul 28 21:29 fsq_smoke.json
+-rw-r--r--@  1 ammar  staff   2206 Jul 28 21:29 fsq_smoke_log.txt
+-rw-r--r--@  1 ammar  staff   8883 Jul 28 21:29 fsq_stage6p3_phaseA_report.md
+-rw-r--r--@  1 ammar  staff   7130 Jul 28 21:29 fsq_stage6p3_phaseB_milestone.md
+-rw-r--r--@  1 ammar  staff    408 Jul 28 21:29 fsq_sweep_sizing.json
+-rw-r--r--@  1 ammar  staff   2776 Jul 28 21:29 harness_validation.txt
+-rw-r--r--@  1 ammar  staff   2832 Jul 28 21:29 harness_validation_6p3.txt
+-rw-r--r--@  1 ammar  staff   9936 Jul 28 21:29 leakage_suite.txt
+-rw-r--r--@  1 ammar  staff   4795 Jul 28 21:29 phase5_nine_curve_check_2026-07-25.json
+drwxr-xr-x@  7 ammar  staff    224 Jul 28 21:29 phaseB
+-rw-r--r--@  1 ammar  staff   3223 Jul 28 21:29 r9_physics_prior_2026-07-26.json
+-rw-r--r--@  1 ammar  staff     65 Jul 28 21:29 r9_physics_prior_2026-07-26.sha256
+-rw-r--r--@  1 ammar  staff   2625 Jul 28 21:29 run_log.txt
+-rw-r--r--@  1 ammar  staff  13243 Jul 28 21:29 test_manifest_PROPOSED.json
+-rw-r--r--@  1 ammar  staff    874 Jul 28 21:29 tsfm_cost_estimate.txt
+-rw-r--r--@  1 ammar  staff   4983 Jul 28 21:29 tsfm_smoke.json
+-rw-r--r--@  1 ammar  staff   8234 Jul 28 21:29 tsfm_stage1_phaseA_report.md
+
+-- first-add commit for each top-level non-ATCE item (sample) --
+  reports/basinshift/run_log.txt:
+    662df5584127edd306d194bb91ae1f380aebe4d8 2026-07-20 19:32:50 +0000 BasinShift Phase 0-1 (roadmap 6.1): task def appended to BENCHMARK.md + XGBoost baseline with blind/leak assertions + proposed (UNHASHED) test manifest + Rule-13 env snapshot. CP1 review pending; manifest not yet hashed. Outside hashed set; d5b35a00 untouched.
+  reports/basinshift/baseline_results.json:
+    662df5584127edd306d194bb91ae1f380aebe4d8 2026-07-20 19:32:50 +0000 BasinShift Phase 0-1 (roadmap 6.1): task def appended to BENCHMARK.md + XGBoost baseline with blind/leak assertions + proposed (UNHASHED) test manifest + Rule-13 env snapshot. CP1 review pending; manifest not yet hashed. Outside hashed set; d5b35a00 untouched.
+  reports/basinshift/basinshift_test_manifest.json:
+    bd344e5fafc1ea85c037809b62955b05d7c3ba42 2026-07-20 19:40:10 +0000 BasinShift Phase 2: FREEZE test manifest sha256 e5f653077587f2fa80aa4bf1c236e45735798d1421329c735e7dbb620bcfbb71 (n=9 Kansas-DTC caveat folded in) + BENCHMARK.md CP1 ruling/label. Outside hashed set; d5b35a00 untouched.
+  reports/basinshift/atce_sequence_counts_2026-07-25.json:
+    a22f66f7426d0874b67e396be98de8eefb6a783f 2026-07-25 21:02:57 +0000 Phase 4: architecture contract + swappable input/output head scaffold
+
+-- reports/basinshift/run_log.txt head (identifies it) --
+[splits] blind_force wells (never loaded): 10  names=['15/9-23', '16/2-7', '16/7-6', '17/4-1', '25/10-9', '31/2-10', '31/2-21 S', '34/3-2 S', '35/11-5', '35/9-7']
+[pool] kgs_train: 5734 wells
+[pool] nlog_train: 1757 wells
+[pool] force_train: 98 wells
+[pool] test_kgs: 263 wells
+
+====================================================================================================
+TASK 2 -- ANSWERS, STATED PLAINLY (from the evidence above only)
+====================================================================================================
+
+2b. Neither generate_batch maintains a KV cache -- both docstrings say so verbatim, unchanged
+between versions ("since there is no KV-cache..."), and both still recompute
+`window = np.array([t[-CONTEXT:] for t in tokens])` fresh every step. Their batch dimensions do
+NOT differ: both use `B = n_realizations`, both set N_REALIZATIONS = 5, both CONTEXT = 512. The
+diff is about depth-feature plumbing (v1's fixed-step `dnorm`/1-wide per-well-relative depth vs
+v3's generalized `dfeat`/`depth_feat_stepper` callback supporting B-linear's 1-wide AND B2's
+12-wide feature) plus v3 gating the depth-feature append behind `if model.use_depth_embed` (Arm C
+has no depth embedding) -- not a KV-cache or batching-mechanism change.
+
+2d. reports/basinshift/atce_ablation/run_log.txt records the ORIGINAL/EXPLORATORY run (item K,
+per commit ef8883e's message; not sealed, not reported in the paper, superseded by v2 then v3).
+It trains 4 arms: A, B, C, D. It does NOT record the five-arm pilot (A, B-linear, B-abs, B2, C) --
+those exact labels (B-linear, B-abs, B2) do not exist anywhere in this file; arm B here is the
+single, un-split "additive learned depth embedding" arm that only later got renamed/split into
+B-linear/B-abs/B2 across v2 and v3.
+
+2e. IMPORTANT: the string "pilot" occurs ZERO times anywhere in this project's own tracked files.
+Every hit git grep found is from my OWN prior DL-brief output (reports/dl_brief_2026-07-29/), where
+I introduced "pilot" myself as a label for item K -- it is not repo terminology, and per 2d, item
+K's own arms (A, B, C, D) do not carry the B-linear/B-abs/B2 names this task's "five-arm pilot"
+phrase specifies. The only file anywhere that trains and times arms under exactly the five literal
+labels A, B-linear, B-abs, B2, C is reports/basinshift/atce_ablation_v3/run_log.txt -- but that run
+trains SIX arms (also D), is explicitly labeled SEALED/manuscript-candidate in its own log line 3
+("this v3 run is the manuscript-candidate result"), and is the same run analyzed throughout DK
+(task 1's ARMS list is exactly this five, with D excluded post-hoc, not by non-training). Per-arm
+times there: A 276.4s, B-linear 276.8s, B-abs 276.0s, B2 323.0s, C 313.2s, D 276.0s, total (with
+generation+eval) 3757.1s. Stated plainly, not inferred: no file records wall-clock time for a run
+that trained ONLY these five arms as a standalone group -- the closest and only matching-label
+source is v3's six-arm run_log, which is never called "pilot" anywhere. My prior DL brief's
+identification of "the pilot" with item K should be read as MY inference from context, not a
+repo-sourced fact, and it does not satisfy this task's literal five-arm label match.
+
+2f. Only the three subdirectories reports/basinshift/atce_ablation/, atce_ablation_v2/, and
+atce_ablation_v3/ belong to this paper's ATCE ablation work (item J/K/W/v3). Everything else
+directly under reports/basinshift/ -- run_log.txt, baseline_results.json,
+basinshift_test_manifest*, fsq_*, tsfm_*, harness_validation*, leakage_suite.txt,
+eval_composition.json, r9_physics_prior*, dtc_margin_correction*, phase5_nine_curve_check*,
+frozen_raw_baseline*, phaseB/, fsq_diag/, fsq_phaseB/, and atce_sequence_counts_2026-07-25.json
+(commit message: "Phase 4: architecture contract" -- 7,589-well/context-4096 sizing for the main
+G3 cross-basin S-model, unrelated to the 98-train/8-test-well, CONTEXT=512 ATCE ablation despite
+the filename containing "atce") -- belongs to the separate BasinShift cross-basin-generalization
+benchmark (roadmap item 6.1) and its downstream FSQ-tokenizer (6.3) / TS-FM (6.2) tracks, evidenced
+by reports/basinshift/run_log.txt's own content (kgs_train/nlog_train/force_train pool splits,
+blind_force holdout -- BasinShift's benchmark construction, not the ATCE ablation's 98-well/8-well
+split) and by their earliest commits (662df55/bd344e5, both explicitly titled "BasinShift Phase
+0-1"/"BasinShift Phase 2"). The two tracks are co-located under the same reports/basinshift/
+parent directory only because BasinShift was created first (2026-07-20) and the ATCE ablation
+results were dropped into the same tree a week later (2026-07-26/27); the directory name is not a
+scope signal for the ATCE files within it.
+
