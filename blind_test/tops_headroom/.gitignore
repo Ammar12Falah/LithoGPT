@@ -1,0 +1,8 @@
+# local virtual environment
+.venv/
+# raw downloads stay out of git (see manifest.csv for names, sources, hashes)
+raw/
+# caches and scratch
+__pycache__/
+*.pyc
+cache/

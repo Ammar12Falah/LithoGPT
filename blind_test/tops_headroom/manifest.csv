@@ -1,0 +1,12 @@
+file,url,source_page,date_downloaded_utc,size_bytes,sha256
+kansas/HorizWells.html,https://chasm.kgs.ku.edu/ords/qualified.ogw5.HorizWells,"KGS horizontal-well list, first page only: read for the rule the KGS uses to mark horizontal wells",2026-11-13,26305,faa51c12200158b1554c49d78276427a2c35164576ff5e6c1179e0883d4901f3
+kansas/OG_Column_Definitions.xlsx,https://www.kgs.ku.edu/PRS/OG_Column_Definitions.xlsx,https://www.kgs.ku.edu/PRS/petroDB.html (column definitions),2026-11-13,19684,6b6b2eedf2bd8d6ff8d927030e5d526d84f022a9e893e814a58447747f104073
+kansas/copyright.html,https://www.kgs.ku.edu/General/copyright.html,KGS terms of use,2026-11-13,7323,4d35374b51a93837798844d629accf17c4e8ec22173d80c36164a2f43e63b4b4
+kansas/dataLib.html,https://www.kgs.ku.edu/General/dataLib.html,KGS data resources library page (looked for terms of use),2026-11-13,84011,494a3bad30367a8fd8e596fde31a6bf94f49758b7b64a3c3b259b70e7d5585a9
+kansas/file_format.html,https://www.kgs.ku.edu/PRS/file_format.html,KGS format of the well file,2026-11-13,8101,dcfb3e18fef37ba5a3ed20676c7634664557cd68b549e0dacc14b42d6dcbc3eb
+kansas/kgs_home.html,https://kgs.ku.edu/,KGS home page (looked for terms of use),2026-11-13,137660,92d4cbfb9deb5f8aabd78cb2c68e2965163c7d4016da1f8a26cdaca88793c916
+kansas/ks_tops.zip,https://www.kgs.ku.edu/PRS/Ora_Archive/ks_tops.zip,"https://www.kgs.ku.edu/PRS/petroDB.html (All Tops, statewide, file dated October 9, 2026)",2026-11-13,27073432,79f00c224ec4d91f99236fad2d886f85ba75026b5398e3aceeebb8a3bfda0d13
+kansas/ks_wells.zip,https://www.kgs.ku.edu/PRS/Ora_Archive/ks_wells.zip,"https://www.kgs.ku.edu/PRS/petroDB.html (All Wells, statewide, file dated October 9, 2026)",2026-11-13,44028388,7d6f2148c08d88a840390bf832bd9d22ea43e3a48a00e7fa2bfef31991db3dab
+kansas/ogwell_fgdc.html,https://www.kgs.ku.edu/Magellan/Qualified/ogwell_fgdc.html,KGS metadata of the well database,2026-11-13,49510,8e243afeae7d998c76637aac7cce0ef9765d82070e2befed8860e57f774dc1ca
+kansas/petroDB.html,https://www.kgs.ku.edu/PRS/petroDB.html,KGS oil and gas database page (lists the downloads),2026-11-13,22737,ebad422965f7711c10d2df7a5a6cda58ef37747ad6f0807095cc940111c5c0c1
+kansas/status.html,https://www.kgs.ku.edu/Magellan/Elog/status.html,KGS well status codes,2026-11-13,6202,54d699d7f76a4747c9abec21543b304d5a51f2cca108187348656485c93d4f0e

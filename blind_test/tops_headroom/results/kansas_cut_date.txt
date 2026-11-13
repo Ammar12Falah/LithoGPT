@@ -1,0 +1,5 @@
+cut date: 2010-07-15
+test wells: 26877
+development (test date before the cut date): 13435
+sealed (test date on or after the cut date): 13442
+test date = earliest spud date of the hole

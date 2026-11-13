@@ -1,0 +1,54 @@
+source_name,canonical_name,records_with_variant,records_with_both,median_abs_depth_diff_ft,share_identical,share_within_10ft
+ARBUCKLE,Arbuckle Group,23,1,2.0,0.0,1.0
+Anhydrite,Stone Corral Formation,13799,105,4.0,0.41904761904761906,0.6476190476190476
+Arbuckle,Arbuckle Group,10988,108,2.0,0.35185185185185186,0.7129629629629629
+CHEROKEE,Cherokee Group,9,0,,,
+CHerokee,Cherokee Group,1,0,,,
+Chase,Chase Group,855,0,,,
+Cherokee,Cherokee Group,10435,119,16.0,0.24369747899159663,0.42857142857142855
+FORT SCOTT,Fort Scott Limestone Formation,1,0,,,
+Fort Scott,Fort Scott Limestone Formation,8046,32,36.5,0.25,0.375
+HEEBNER,Heebner Shale Member,4,0,,,
+Heebner,Heebner Shale Member,20985,130,2.0,0.3384615384615385,0.7923076923076923
+Heebner Shale,Heebner Shale Member,4365,6,3.25,0.16666666666666666,0.8333333333333334
+Herington,Herington Limestone Member,921,21,9.0,0.19047619047619047,0.5714285714285714
+KANSAS CITY,Kansas City Group,18,1,0.0,1.0,1.0
+Kansas CIty,Kansas City Group,1,0,,,
+Kansas City,Kansas City Group,8926,254,0.0,0.7283464566929134,0.8700787401574803
+Kansas city,Kansas City Group,4,0,,,
+Krider,Krider Limestone Member,679,33,3.0,0.12121212121212122,0.6666666666666666
+LANSING,Lansing Group,16,0,,,
+Lansing,Lansing Group,13257,187,3.0,0.3422459893048128,0.6684491978609626
+Lansing - Kansas City Supergroup,Lansing Group,2720,272,1.0,0.4338235294117647,0.8529411764705882
+Lansing-Kansas CIty,Lansing Group,24,0,,,
+Lansing-Kansas City,Lansing Group,15898,41,3.0,0.12195121951219512,0.7073170731707317
+Lansing-Kansas city,Lansing Group,1,0,,,
+MARMATON,Marmaton Group,2,0,,,
+MISSISSIPPI,Mississippian System,31,0,,,
+MISSISSIPPIAN,Mississippian System,4,0,,,
+Marmaton,Marmaton Group,10539,126,15.0,0.2777777777777778,0.4603174603174603
+Miss,Mississippian System,3216,52,0.0,0.6153846153846154,0.7884615384615384
+Mississippi,Mississippian System,1397,47,7.0,0.23404255319148937,0.574468085106383
+Mississippian,Mississippian System,12104,251,1.0,0.46613545816733065,0.8127490039840638
+PAWNEE,Pawnee Limestone Formation,1,1,0.0,1.0,1.0
+Pawnee,Pawnee Limestone Formation,8605,11,0.0,0.6363636363636364,0.9090909090909091
+SIMPSON,Simpson Group,4,0,,,
+SImpson,Simpson Group,4,0,,,
+Simpson,Simpson Group,2676,144,1.5,0.3888888888888889,0.7708333333333334
+Stone Corral,Stone Corral Formation,97,1,11.0,0.0,0.0
+Stone Corral Anhydrite,Stone Corral Formation,1284,1,7.0,0.0,1.0
+TOPEKA,Topeka Limestone Formation,4,0,,,
+TORONTO,Toronto Limestone Member,1,0,,,
+TOronto,Toronto Limestone Member,1,0,,,
+Topeka,Topeka Limestone Formation,11813,53,51.0,0.22641509433962265,0.3584905660377358
+Toronto,Toronto Limestone Member,10169,13,0.0,0.5384615384615384,0.9230769230769231
+Toronto Limestone,Toronto Limestone Member,167,0,,,
+VIOLA,Viola Limestone Formation,19,1,0.0,1.0,1.0
+VIola,Viola Limestone Formation,2,0,,,
+Viola,Viola Limestone Formation,4976,155,1.5,0.4064516129032258,0.6709677419354839
+WInfield,Winfield Limestone Formation,7,0,,,
+Winfield,Winfield Limestone Formation,1070,77,2.5,0.2077922077922078,0.6883116883116883
+chase,Chase Group,1,0,,,
+krider,Krider Limestone Member,1,0,,,
+marmaton,Marmaton Group,2,0,,,
+viola,Viola Limestone Formation,1,0,,,

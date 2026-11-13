@@ -1,0 +1,12 @@
+step,well_records,holes,detail
+0. all records in the wells file,519691,474876,"356 holes merged into another hole as duplicates (same position, elevation, depth, spud date)"
+1. records with at least one top row,196743,194621,2135525 top rows
+"2. top depth present, above 0 and not over 12,000 ft",195530,193453,"2052549 top rows left. Rows with no top depth (base only), zero or negative depth, or a depth deeper than any Kansas well are dropped."
+3. top not deeper than the well's total depth plus 50 ft,195003,192950,2035617 top rows left. A pick below the bottom of the hole is a data error.
+"4. elevation and its reference present, and the same in the wells file and the tops file",194989,192936,2035512 top rows left. 0 top rows had a different elevation or reference in the two files.
+5. usable position,194802,192752,"2034482 top rows left. Dropped: position given only as the centre of the section (up to about 1 km off), unknown source, or outside Kansas."
+6. not horizontal or deviated,194072,192061,"2030207 top rows left. Dropped: records whose API number carries a sidetrack code (digits 11-12 not 00, the KGS's own rule for its horizontal-well list) or whose comment mentions horizontal, directional, deviated, slant, sidetrack, whipstock, BHL or TVD. The file gives no true vertical depth or top position for them."
+7. one elevation per hole and top,193417,192045,"1824531 hole-top values. Picks of one top in one record from several sources: the median. 8153 record-top groups dropped because their picks disagree by more than 100 ft. Records of one hole (re-entries, workovers; same first 10 digits of the API number): the earliest finished record that reports the top is used (14120 record-top values were in holes with more than one record for that top)."
+8. holes in the analysis,193417,192045,"22940 holes flagged for elevation (GL or TOPO), 10207 flagged for position from quarter calls, 3555 holes whose records sit more than 30 m apart. Flagged holes are kept."
+9. holes with a valid first spud date,0,189252,"spud before 2000: 158325; can be a test well (every drilled record spudded in 2000 or later, no completion or plugging date before 2000): 30258. Dates outside 1860 to 9 Oct 2026 were treated as missing: {'SPUD': 5, 'COMPLETION': 9, 'PLUGGING': 20}."
+10. holes whose tops can serve as known wells (finish date present),0,190931,Finish date = completion date; the spud date if it is later; the plugging date if there is no completion date. Holes with none of these are never used as known wells.

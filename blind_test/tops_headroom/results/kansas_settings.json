@@ -1,0 +1,123 @@
+{
+ "screen_k": 6.0,
+ "screen_min_m": 3.0,
+ "support_min_wells": 5,
+ "screen": true,
+ "m3": {
+  "Stone Corral Formation": {
+   "n": 24,
+   "alpha": 1.5,
+   "r": 0.3,
+   "s2_fallback": 11.851911776724915
+  },
+  "Topeka Limestone Formation": {
+   "n": 24,
+   "alpha": 1.5,
+   "r": 0.1,
+   "s2_fallback": 39.702374500489924
+  },
+  "Heebner Shale Member": {
+   "n": 24,
+   "alpha": 1.0,
+   "r": 0.03,
+   "s2_fallback": 12.53752131862928
+  },
+  "Toronto Limestone Member": {
+   "n": 24,
+   "alpha": 0.5,
+   "r": 0.03,
+   "s2_fallback": 11.149999365221031
+  },
+  "Lansing Group": {
+   "n": 24,
+   "alpha": 1.0,
+   "r": 0.1,
+   "s2_fallback": 16.050176817521855
+  },
+  "Kansas City Group": {
+   "n": 24,
+   "alpha": 1.0,
+   "r": 0.1,
+   "s2_fallback": 52.98880596877639
+  },
+  "Marmaton Group": {
+   "n": 24,
+   "alpha": 1.0,
+   "r": 0.01,
+   "s2_fallback": 29.040761696320043
+  },
+  "Fort Scott Limestone Formation": {
+   "n": 24,
+   "alpha": 1.0,
+   "r": 0.1,
+   "s2_fallback": 21.264152282514917
+  },
+  "Cherokee Group": {
+   "n": 24,
+   "alpha": 1.0,
+   "r": 0.03,
+   "s2_fallback": 29.881842885064465
+  },
+  "Mississippian System": {
+   "n": 24,
+   "alpha": 0.5,
+   "r": 0.3,
+   "s2_fallback": 33.471777612473595
+  },
+  "Simpson Group": {
+   "n": 24,
+   "alpha": 1.0,
+   "r": 0.1,
+   "s2_fallback": 70.38250457899287
+  },
+  "Arbuckle Group": {
+   "n": 24,
+   "alpha": 1.0,
+   "r": 0.1,
+   "s2_fallback": 73.58727710476299
+  }
+ },
+ "interval_calib": 0.9975914256038372,
+ "interval_cover_before_calib": 0.8006308761828929,
+ "m2_n": 8,
+ "th_n": 16,
+ "th_linear": false,
+ "th_alpha": 0.5,
+ "th_r": 0.03,
+ "support_radius_m": 10000.0,
+ "pre_test_year_check": {
+  "wells": 4000,
+  "by_method": {
+   "m1_nearest": {
+    "n_items": 17131,
+    "mae_m": 3.352800000000002,
+    "p90_m": 14.935200000000009,
+    "n_far": 4143,
+    "mae_far_m": 6.096000000000004
+   },
+   "m2_plane": {
+    "n_items": 17131,
+    "mae_m": 3.2234690213305157,
+    "p90_m": 14.295495473974995,
+    "n_far": 4143,
+    "mae_far_m": 4.714074272645178
+   },
+   "m3_kriging": {
+    "n_items": 17131,
+    "mae_m": 2.6329017462789466,
+    "p90_m": 11.153983098112349,
+    "n_far": 4143,
+    "mae_far_m": 4.292349541846534
+   },
+   "m4_thickness": {
+    "n_items": 17131,
+    "mae_m": 4.818420796767953,
+    "p90_m": 26.795628835871398,
+    "n_far": 4143,
+    "mae_far_m": 5.979264412483069
+   }
+  },
+  "m3_cover80": 0.7974432315685015,
+  "note": "pseudo-test on wells drilled before the test years, same date rule"
+ }
+}
