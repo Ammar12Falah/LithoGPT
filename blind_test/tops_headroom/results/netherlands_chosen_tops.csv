@@ -1,0 +1,31 @@
+top,holes_before_test_years,chosen,order_top_down
+KNGLM Middle Holland Claystone Member,1685,True,3.0
+KNGLU Upper Holland Marl Member,1670,True,2.0
+KNGLL Lower Holland Marl Member,1306,True,4.0
+ZEZ1K Coppershale Member,1123,True,12.0
+ZEZ2C Z2 Carbonate Member,1049,True,9.0
+ZEZ2A Z2 Basal Anhydrite Member,1022,True,8.0
+ZEZ1C Z1 Carbonate Member,1009,True,11.0
+ZEZ1W Z1 Anhydrite Member,980,True,10.0
+RNRO1 Main Röt Evaporite Member,864,True,5.0
+NLLFC Landen Clay Member,860,True,1.0
+RNSOC Solling Claystone Member,844,True,6.0
+ZEZ2H Z2 Salt Member,843,True,7.0
+ZEZ3G Grey Salt Clay Member,843,False,
+RNMUL Lower Muschelkalk Member,836,False,
+ZEZ3C Z3 Carbonate Member,829,False,
+RBSHM Main Claystone Member,787,False,
+ZEZ3A Z3 Main Anhydrite Member,773,False,
+ROCLT Ten Boer Member,771,False,
+NLFFY Ieper Member,728,False,
+NLFFT Basal Dongen Tuffite Member,692,False,
+RBSHR Rogenstein Member,660,False,
+CKTXM Texel Marlstone Member,649,False,
+ZEZ4R Red Salt Clay Member,631,False,
+ZEZ2T Z2 Roof Anhydrite Member,589,False,
+KNNSP Bentheim Sandstone Member,584,False,
+RBMVL Lower Volpriehausen Sandstone Member,582,False,
+ZEZ4A Z4 Pegmatite Anhydrite Member,582,False,
+ZEZ3H Z3 Salt Member,577,False,
+RBMVC Volpriehausen Clay-Siltstone Member,512,False,
+NMRFC Rupel Clay Member,507,False,

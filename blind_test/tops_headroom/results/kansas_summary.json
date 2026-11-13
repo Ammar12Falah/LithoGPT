@@ -18,6 +18,8 @@
  "n_test": 26877,
  "n_dev": 13435,
  "n_sealed": 13442,
+ "dev_first_date": "2000-01-03",
+ "sealed_last_date": "2026-07-27",
  "floor_a_m": 1.828800000000001,
  "floor_a_pairs": 35782,
  "floor_a_hole_pairs": 12915,
@@ -94,6 +96,7 @@
   "floor_a_clean_m": 1.828800000000001,
   "floor_a_clean_pairs": 32162
  },
+ "side_set_meaning": "holes without an elevation flag (no GL or TOPO) and with a precise position",
  "settings": {
   "screen_k": 6.0,
   "screen_min_m": 3.0,

@@ -1,0 +1,210 @@
+source_code,canonical_code,source_name,canonical_name,rule
+ZEZ1C,ZEZ1C,Z1 Carbonate Member,Z1 Carbonate Member,same
+ZEZ1K,ZEZ1K,Coppershale Member,Coppershale Member,same
+ZEZ1W,ZEZ1W,Z1 Anhydrite Member,Z1 Anhydrite Member,same
+ZEZ2A,ZEZ2A,Z2 Basal Anhydrite Member,Z2 Basal Anhydrite Member,same
+ZEZ2C,ZEZ2C,Z2 Carbonate Member,Z2 Carbonate Member,same
+ZEZ2H,ZEZ2H,Z2 Salt Member,Z2 Salt Member,same
+ZEZ2T,ZEZ2T,Z2 Roof Anhydrite Member,Z2 Roof Anhydrite Member,same
+ZEZ3A,ZEZ3A,Z3 Main Anhydrite Member,Z3 Main Anhydrite Member,same
+ZEZ3G,ZEZ3G,Grey Salt Clay Member,Grey Salt Clay Member,same
+ZEZ3H,ZEZ3H,Z3 Salt Member,Z3 Salt Member,same
+ZEZ4A,ZEZ4A,Z4 Pegmatite Anhydrite Member,Z4 Pegmatite Anhydrite Member,same
+ZEZ4H,ZEZ4H,Z4 Salt Member,Z4 Salt Member,same
+ZEZ4R,ZEZ4R,Red Salt Clay Member,Red Salt Clay Member,same
+NLFFT,NLFFT,Basal Dongen Tuffite Member,Basal Dongen Tuffite Member,same
+NLFFY,NLFFY,Ieper Member,Ieper Member,same
+SGLUC,SGLUC,Clay Deep Member,Clay Deep Member,same
+SGSKN,SGSKN,Noordvaarder Member,Noordvaarder Member,same
+KNGLU,KNGLU,Upper Holland Marl Member,Upper Holland Marl Member,same
+RBSHM,RBSHM,Main Claystone Member,Main Claystone Member,same
+ZEZ3B,ZEZ3B,Z3 Anhydrite/Carbonate Member,Z3 Anhydrite/Carbonate Member,same
+CKTXP,CKTXP,Plenus Marl Member,Plenus Marl Member,same
+KNNCK,KNNCK,Vlieland Marl Member,Vlieland Marl Member,same
+RBMDC,RBMDC,Detfurth Claystone Member,Detfurth Claystone Member,same
+RBMDL,RBMDL,Lower Detfurth Sandstone Member,Lower Detfurth Sandstone Member,same
+RBMVC,RBMVC,Volpriehausen Clay-Siltstone Member,Volpriehausen Clay-Siltstone Member,same
+RBMVL,RBMVL,Lower Volpriehausen Sandstone Member,Lower Volpriehausen Sandstone Member,same
+RBSHR,RBSHR,Rogenstein Member,Rogenstein Member,same
+RNKPL,RNKPL,Lower Keuper Claystone Member,Lower Keuper Claystone Member,same
+RNMUA,RNMUA,Middle Muschelkalk Marl Member,Middle Muschelkalk Marl Member,same
+RNMUE,RNMUE,Muschelkalk Evaporite Member,Muschelkalk Evaporite Member,same
+RNMUL,RNMUL,Lower Muschelkalk Member,Lower Muschelkalk Member,same
+RNMUU,RNMUU,Upper Muschelkalk Member,Upper Muschelkalk Member,same
+RNRO1,RNRO1,Main Röt Evaporite Member,Main Röt Evaporite Member,same
+RNROU,RNROU,Upper Röt Claystone Member,Upper Röt Claystone Member,same
+RNSOB,RNSOB,Basal Solling Sandstone Member,Basal Solling Sandstone Member,same
+RNSOC,RNSOC,Solling Claystone Member,Solling Claystone Member,same
+ZEZ1A,ZEZ1A,Z1 Lower Anhydrite Member,Z1 Lower Anhydrite Member,same
+NLFFC,NLFFC,Dongen Clay Member,Dongen Clay Member,same
+NLLFC,NLLFC,Landen Clay Member,Landen Clay Member,same
+ORBUR,ORBUR,RHYOLITE MB,RHYOLITE MB,same
+KNGLL,KNGLL,Lower Holland Marl Member,Lower Holland Marl Member,same
+KNGLM,KNGLM,Middle Holland Claystone Member,Middle Holland Claystone Member,same
+RNKPD,RNKPD,Dolomitic Keuper Member,Dolomitic Keuper Member,same
+RNKPE,RNKPE,Red Keuper Evaporite Member,Red Keuper Evaporite Member,same
+RNKPM,RNKPM,Middle Keuper Claystone Member,Middle Keuper Claystone Member,same
+RNKPR,RNKPR,Red Keuper Claystone Member,Red Keuper Claystone Member,same
+RNKPS,RNKPS,Main Keuper Evaporite Member,Main Keuper Evaporite Member,same
+NMRFC,NMRFC,Rupel Clay Member,Rupel Clay Member,same
+NMRFV,NMRFV,VESSEM MB,VESSEM MB,same
+NLLFG,NLLFG,Gelinden Member,Gelinden Member,same
+NLLFL,NLLFL,Swalmen Member,Swalmen Member,same
+NLLFS,NLLFS,Heers Member,Heers Member,same
+NMVFO,NMVFO,Veldhoven Clay Member,Veldhoven Clay Member,same
+RBSHN,RBSHN,Nederweert Sandstone Member,Nederweert Sandstone Member,same
+ZEZ3C,ZEZ3C,Z3 Carbonate Member,Z3 Carbonate Member,same
+CKTXM,CKTXM,Texel Marlstone Member,Texel Marlstone Member,same
+NLFFB,NLFFB,Asse Member,Asse Member,same
+NLFFS,NLFFS,Brussels Sand Member,Brussels Sand Member,same
+NMVFV,NMVFV,Voort Member,Voort Member,same
+KNGLG,KNGLG,Holland Greensand Member,Holland Greensand Member,same
+NLFFD,NLFFD,Basal Dongen Sand Member,Basal Dongen Sand Member,same
+KNNSF,KNNSF,Friesland Member,Friesland Member,same
+ROCLT,ROCLT,Ten Boer Member,Ten Boer Member,same
+ROSLA,ROSLA,Akkrum Sandstone member,Akkrum Sandstone member,same
+KNNSL,KNNSL,De Lier Member,De Lier Member,same
+KNNSY,KNNSY,IJsselmonde Sandstone Member,IJsselmonde Sandstone Member,same
+SLDNA,SLDNA,Alblasserdam Member,Alblasserdam Member,same
+ZEZ1G,ZEZ1G,Z1 Lower Claystone Member,Z1 Lower Claystone Member,same
+ZEZ1H,ZEZ1H,Z1 Salt Member,Z1 Salt Member,same
+ZEZ1T,ZEZ1T,Z1 Upper Anhydrite Member,Z1 Upper Anhydrite Member,same
+ZEZ2M,ZEZ2M,Z2 Middle Claystone Member,Z2 Middle Claystone Member,same
+RNROC,RNROC,Röt Claystone Member,Röt Claystone Member,same
+ZEZ1F,ZEZ1F,Z1 Fringe Carbonate Member,Z1 Fringe Carbonate Member,same
+ZEZ1M,ZEZ1M,Z1 Middle Claystone Member,Z1 Middle Claystone Member,same
+ATBR1,ATBR1,Lower Brabant Limestone Member,Lower Brabant Limestone Member,same
+ATBR2,ATBR2,Middle Brabant Limestone Member,Middle Brabant Limestone Member,same
+ATBR3,ATBR3,Upper Brabant Limestone Member,Upper Brabant Limestone Member,same
+ATBRL,ATBRL,Lower Brabant Marl Member,Lower Brabant Marl Member,same
+ATBRM,ATBRM,Middle Brabant Marl Member,Middle Brabant Marl Member,same
+ATBRU,ATBRU,Upper Brabant Marl Member,Upper Brabant Marl Member,same
+ATWDL,ATWDL,Lower Werkendam Member,Lower Werkendam Member,same
+ATWDU,ATWDU,Upper Werkendam Member,Upper Werkendam Member,same
+ROCLA,ROCLA,Ameland Member,Ameland Member,same
+ROSLL,ROSLL,Lower Slochteren Member,Lower Slochteren Member,same
+ROSLU,ROSLU,Upper Slochteren Member,Upper Slochteren Member,same
+NLFFM,NLFFM,Brussels Marl Member,Brussels Marl Member,same
+ROCLH,ROCLH,Hollum Member,Hollum Member,same
+KNNCE,KNNCE,Ruinen Member,Ruinen Member,same
+KNNCV,KNNCV,Bentheim Claystone Member,Bentheim Claystone Member,same
+KNNSG,KNNSG,Gildehaus Sandstone Member,Gildehaus Sandstone Member,same
+KNNSP,KNNSP,Bentheim Sandstone Member,Bentheim Sandstone Member,same
+SKCFL,SKCFL,Lower Coevorden Member,Lower Coevorden Member,same
+SKWFF,SKWFF,Serpulite Member,Serpulite Member,same
+NLDOAS,NLDOAS,Asse Member,Asse Member,same
+NMRUBO,NMRUBO,Boom Member,Boom Member,same
+NMVEWI,NMVEWI,Wintelre Member,Wintelre Member,same
+ZEZ2F,ZEZ2F,Z2 Fringe Anhydrite Member,Z2 Fringe Anhydrite Member,same
+ZEZ2R,ZEZ2R,Red-brown Salt Clay Member,Red-brown Salt Clay Member,same
+RNRO2,RNRO2,Upper Röt Evaporite Member,Upper Röt Evaporite Member,same
+RNROM,RNROM,Intermediate Röt Claystone Member,Intermediate Röt Claystone Member,same
+ATWDM,ATWDM,Middle Werkendam Member,Middle Werkendam Member,same
+ATBRO,ATBRO,Oisterwijk Limestone Member,Oisterwijk Limestone Member,same
+RBMDU,RBMDU,Upper Detfurth Sandstone Member,Upper Detfurth Sandstone Member,same
+RBMVU,RBMVU,Upper Volpriehausen Sandstone Member,Upper Volpriehausen Sandstone Member,same
+RNKPU,RNKPU,Upper Keuper Claystone Member,Upper Keuper Claystone Member,same
+RNROF,RNROF,Röt Fringe Sandstone Member,Röt Fringe Sandstone Member,same
+RNROL,RNROL,Lower Röt Fringe Claystone Member,Lower Röt Fringe Claystone Member,same
+RNROY,RNROY,Upper Röt Fringe Claystone Member,Upper Röt Fringe Claystone Member,same
+NMRFT,NMRFT,Steensel Member,Steensel Member,same
+NMVFS,NMVFS,Someren member,Someren member,same
+KNNSR,KNNSR,Rijswijk Member,Rijswijk Member,same
+SLDND,SLDND,Delft Sandstone Member,Delft Sandstone Member,same
+SLDNR,SLDNR,Rodenrijs Claystone Member,Rodenrijs Claystone Member,same
+NLDOIE,NLDOIE,Ieper Member,Ieper Member,same
+NLLFR,NLLFR,Reusel Member,Reusel Member,same
+NUBAL,NUBAL,lower Breda member,lower Breda member,same
+NUBAU,NUBAU,upper Breda member,upper Breda member,same
+NUVIH,NUVIH,Heksenberg Member,Heksenberg Member,same
+NUBAK,NUBAK,KAKERT MB,KAKERT MB,same
+KNNCM,KNNCM,main Vlieland Claystone member,main Vlieland Claystone member,same
+SLDZL,SLDZL,lower Zurich member,lower Zurich member,same
+SLDZU,SLDZU,upper Zurich member,upper Zurich member,same
+KNNCW,KNNCW,Westerbork Member,Westerbork Member,same
+SKCFM,SKCFM,Middle Coevorden Member,Middle Coevorden Member,same
+SKWFD,SKWFD,Weiteveen Upper Evaporite Member,Weiteveen Upper Evaporite Member,same
+SKWFE,SKWFE,Weiteveen Upper Marl Member,Weiteveen Upper Marl Member,same
+ZEZ4T,ZEZ4T,Z4 Upper Anhydrite member,Z4 Upper Anhydrite member,same
+ZEZ3U,ZEZ3U,Z3 Fringe Claystone Member,Z3 Fringe Claystone Member,same
+RNSOU,RNSOU,upper Solling Claystone member,upper Solling Claystone member,same
+CLZLB,CLZLB,Beveland Member,Beveland Member,same
+CLZLG,CLZLG,Goeree Member,Goeree Member,same
+DCGEU,DCGEU,Ubachsberg Member,Ubachsberg Member,same
+SKWFB,SKWFB,Weiteveen Lower Evaporite Member,Weiteveen Lower Evaporite Member,same
+SKWFC,SKWFC,Weiteveen Lower Marl Member,Weiteveen Lower Marl Member,same
+CKTXG,CKTXG,Texel Greensand Member,Texel Greensand Member,same
+KNNCU,KNNCU,Eemhaven Member,Eemhaven Member,same
+NMRUBE,NMRUBE,Berg Member,Berg Member,same
+ZEZ1E,ZEZ1E,Fringe Coppershale Member,Fringe Coppershale Member,same
+SKWFA,SKWFA,Weiteveen Basal Clastic Member,Weiteveen Basal Clastic Member,same
+KNNSB,KNNSB,Berkel Sandstone Member,Berkel Sandstone Member,same
+KNNSC,KNNSC,Berkel Sand-Claystone Member,Berkel Sand-Claystone Member,same
+DCGEG,DCGEG,Geverik Member,Geverik Member,same
+SKCFU,SKCFU,Upper Coevorden Member,Upper Coevorden Member,same
+RNKPC,RNKPC,Argillaceous Keuper member,Argillaceous Keuper member,same
+DCCKB,DCCKB,Botney Member,Botney Member,same
+DCCKM,DCCKM,main Klaverbank member,main Klaverbank member,same
+ROCLE,ROCLE,Silverpit Evaporite Member,Silverpit Evaporite Member,same
+ROCLL,ROCLL,Lower Silverpit Claystone Member,Lower Silverpit Claystone Member,same
+ROCLU,ROCLU,Upper Silverpit Claystone Member,Upper Silverpit Claystone Member,same
+ZEZ5H,ZEZ5H,Z5 Salt Member,Z5 Salt Member,same
+NLDOBR,NLDOBR,Brussels Sand Member,Brussels Sand Member,same
+NLDOOO,NLDOOO,Oosteind Member,Oosteind Member,same
+NLDOBM,NLDOBM,Brussels Marl Member,Brussels Marl Member,same
+SGLUS,SGLUS,Schill Grund Member,Schill Grund Member,same
+NLLALI,NLLALI,Liessel Member,Liessel Member,same
+NLLAOR,NLLAOR,Orp Member,Orp Member,same
+NMVEVO,NMVEVO,Voort Member,Voort Member,same
+SLCML,SLCML,lower claystone member,lower claystone member,same
+SLCMS,SLCMS,Middle Graben Sandstone Member,Middle Graben Sandstone Member,same
+SLCMU,SLCMU,upper claystone member,upper claystone member,same
+SGGSP,SGGSP,Scruff Spiculite Member,Scruff Spiculite Member,same
+RNMUC,RNMUC,Muschelkalk Claystone member,Muschelkalk Claystone member,same
+SGGSS,SGGSS,Stortemelk Member,Stortemelk Member,same
+SGSKO,SGSKO,Oyster Ground Member,Oyster Ground Member,same
+SLDZV,SLDZV,Wadden Volcaniclastic Member,Wadden Volcaniclastic Member,same
+SLCFM,SLCFM,main Friese Front member,main Friese Front member,same
+SLCFR,SLCFR,Rifgronden Member,Rifgronden Member,same
+RNSOL,RNSOL,lower Solling Claystone member,lower Solling Claystone member,same
+RNSOM,RNSOM,middle Solling Sandstone member,middle Solling Sandstone member,same
+SGSKL,SGSKL,Lies Member,Lies Member,same
+KNNCS,KNNCS,Schoonebeek member,Schoonebeek member,same
+CLZLS,CLZLS,Schouwen Member,Schouwen Member,same
+NLLAGE,NLLAGE,Gelinden Member,Gelinden Member,same
+KNNCA,KNNCA,IJsselmonde Claystone Member,IJsselmonde Claystone Member,same
+SLDBB,SLDBB,Bloemendaal Member,Bloemendaal Member,same
+RBMVA,RBMVA,Volpriehausen Avicula member,Volpriehausen Avicula member,same
+KNNSK,KNNSK,Kotter Member,Kotter Member,same
+SLDBA,SLDBA,Aerdenhout Member,Aerdenhout Member,same
+SLDBC,SLDBC,Fourteens Claystone Member,Fourteens Claystone Member,same
+SLDBN,SLDBN,Neomiodon Claystone Member,Neomiodon Claystone Member,same
+SLDBD,SLDBD,Driehuis Mottled Claystone Member,Driehuis Mottled Claystone Member,same
+SLDBS,SLDBS,Santpoort Member,Santpoort Member,same
+KNNSH,KNNSH,Helder Member,Helder Member,same
+SLDBH,SLDBH,Helm Member,Helm Member,same
+ZEZ1B,ZEZ1B,Z1 Anhydrite/Carbonate member,Z1 Anhydrite/Carbonate member,same
+KNNSD,KNNSD,Berkel Clastics member,Berkel Clastics member,same
+SLDNM,SLDNM,Amstel member (inf.),Amstel member (inf.),same
+ZEZ3S,ZEZ3S,Z3 Fringe Sandstone Member,Z3 Fringe Sandstone Member,same
+DCCUK,DCCUK,Kemperkoul Member,Kemperkoul Member,same
+NMTFG,NMTFG,Goudsberg Member,Goudsberg Member,same
+NMTFK,NMTFK,Klimmen Member,Klimmen Member,same
+NLDOWY,NLDOWY,De Wijk Member,De Wijk Member,same
+SGSKT,SGSKT,Terschelling Sandstone Member,Terschelling Sandstone Member,same
+ZEZ5R,ZEZ5R,Z5 Salt Clay Member,Z5 Salt Clay Member,same
+SGGSA,SGGSA,Scruff Argillaceous Member,Scruff Argillaceous Member,same
+SGKIS,SGKIS,Schill Grund Member,Schill Grund Member,same
+NLLASW,NLLASW,Swalmen Member,Swalmen Member,same
+DCGEM,DCGEM,main Epen member,main Epen member,same
+DCGET,DCGET,upper Epen member,upper Epen member,same
+KNNSI,KNNSI,Rijn Member,Rijn Member,same
+ZEZ2S,ZEZ2S,Z2 Fringe Sandstone Member,Z2 Fringe Sandstone Member,same
+ZEZ4S,ZEZ4S,Z4 Fringe Sandstone Member,Z4 Fringe Sandstone Member,same
+ZEZ1S,ZEZ1S,Z1 Fringe Sandstone Member,Z1 Fringe Sandstone Member,same
+KNGLS,KNGLS,Spijkenisse Greensand Member,Spijkenisse Greensand Member,same
+NUBAV,NUBAV,VRIJHERENBERG MB,VRIJHERENBERG MB,same
+ROCLB,ROCLB,Buren Member,Buren Member,same
+NLLARE,NLLARE,Reusel Member,Reusel Member,same
+NMRUST,NMRUST,Steensel Member,Steensel Member,same
+NMVESO,NMVESO,Someren Member,Someren Member,same

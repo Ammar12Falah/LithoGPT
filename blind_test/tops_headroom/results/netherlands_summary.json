@@ -1,0 +1,228 @@
+{
+ "country": "Netherlands",
+ "chosen_tops_top_down": [
+  "NLLFC Landen Clay Member",
+  "KNGLU Upper Holland Marl Member",
+  "KNGLM Middle Holland Claystone Member",
+  "KNGLL Lower Holland Marl Member",
+  "RNRO1 Main R\u00f6t Evaporite Member",
+  "RNSOC Solling Claystone Member",
+  "ZEZ2H Z2 Salt Member",
+  "ZEZ2A Z2 Basal Anhydrite Member",
+  "ZEZ2C Z2 Carbonate Member",
+  "ZEZ1W Z1 Anhydrite Member",
+  "ZEZ1C Z1 Carbonate Member",
+  "ZEZ1K Coppershale Member"
+ ],
+ "cut_date": "2001-03-30",
+ "n_test": 1070,
+ "n_dev": 535,
+ "n_sealed": 535,
+ "dev_first_date": "1990-01-16",
+ "sealed_last_date": "2025-10-16",
+ "floor_a_m": 4.190000000000055,
+ "floor_a_pairs": 7139,
+ "floor_a_hole_pairs": 2470,
+ "floor_a_reliable": true,
+ "far_dev_wells": 371,
+ "far_dev_items": 1891,
+ "far_sealed_wells": 342,
+ "pass_a": true,
+ "best_method_far": "m3_kriging",
+ "best_far_mae_m": 122.39289830822736,
+ "best_far_mae_ci_m": [
+  107.95352922652819,
+  141.7679149128062
+ ],
+ "far_mae_by_method_m": {
+  "m1_nearest": 148.9699999999998,
+  "m2_plane": 158.91362712933028,
+  "m3_kriging": 122.39289830822736,
+  "m4_thickness": 133.05920736149346
+ },
+ "ratio_best_far_to_floor_a": 29.21071558668873,
+ "ratio_ci_wells_resampled_floor_fixed": [
+  25.76456544785842,
+  33.834824561528485
+ ],
+ "pass_b": "pass",
+ "verdict": "pass",
+ "items_dev": 2587,
+ "wells_dev_scored": 535,
+ "items_dev_without_any_known_well": 0,
+ "no_wait_far_mae_m": {
+  "m1_nearest": 115.71500000000015,
+  "m2_plane": 120.27853785735533,
+  "m3_kriging": 94.06695844014985,
+  "m4_thickness": 104.6293402549652
+ },
+ "no_wait_all_mae_m": {
+  "m1_nearest": 60.440000000000055,
+  "m2_plane": 65.44484521769482,
+  "m3_kriging": 54.571744149672895,
+  "m4_thickness": 74.20595372915068
+ },
+ "all_mae_m": {
+  "m1_nearest": 89.25999999999976,
+  "m2_plane": 100.99692925737963,
+  "m3_kriging": 78.71511694059768,
+  "m4_thickness": 98.89460166212893,
+  "side_4b_best_route": 76.50320445886837
+ },
+ "side_4b_best_route": {
+  "far_mae_m": 122.83750536374146,
+  "far_mae_ci_m": [
+   107.77933664734833,
+   142.32902231521265
+  ],
+  "ratio_to_floor_a": 29.31682705578517,
+  "would_pass_b": true,
+  "share_of_far_items_not_direct": 0.19725013220518245,
+  "note": "not one of the four methods of the brief; not used in the pass marks"
+ },
+ "unflagged_only": {
+  "far_mae_m": {
+   "m1_nearest": 195.14999999999986,
+   "m2_plane": 250.89365953446827,
+   "m3_kriging": 192.83789135500592,
+   "m4_thickness": 193.50328884927376,
+   "side_4b_best_route": 192.83789135500592
+  },
+  "far_wells": 89,
+  "far_items": 402,
+  "floor_a_clean_m": 2.8799999999996544,
+  "floor_a_clean_pairs": 2063
+ },
+ "side_set_meaning": "vertical holes only, without a reference-height flag",
+ "settings": {
+  "screen_k": 6.0,
+  "screen_min_m": 3.0,
+  "support_min_wells": 5,
+  "screen": false,
+  "m3": {
+   "NLLFC Landen Clay Member": {
+    "n": 24,
+    "alpha": 1.0,
+    "r": 0.1,
+    "s2_fallback": 886.12395446812
+   },
+   "KNGLU Upper Holland Marl Member": {
+    "n": 12,
+    "alpha": 1.5,
+    "r": 0.1,
+    "s2_fallback": 3246.4576525909633
+   },
+   "KNGLM Middle Holland Claystone Member": {
+    "n": 12,
+    "alpha": 1.5,
+    "r": 0.3,
+    "s2_fallback": 3098.3858250604217
+   },
+   "KNGLL Lower Holland Marl Member": {
+    "n": 12,
+    "alpha": 1.5,
+    "r": 0.3,
+    "s2_fallback": 2926.8733610541426
+   },
+   "RNRO1 Main R\u00f6t Evaporite Member": {
+    "n": 24,
+    "alpha": 0.5,
+    "r": 0.01,
+    "s2_fallback": 18299.199661470826
+   },
+   "RNSOC Solling Claystone Member": {
+    "n": 24,
+    "alpha": 1.0,
+    "r": 0.3,
+    "s2_fallback": 7722.091380070049
+   },
+   "ZEZ2H Z2 Salt Member": {
+    "n": 12,
+    "alpha": 1.0,
+    "r": 0.03,
+    "s2_fallback": 9373.339354211745
+   },
+   "ZEZ2A Z2 Basal Anhydrite Member": {
+    "n": 24,
+    "alpha": 1.5,
+    "r": 3.0,
+    "s2_fallback": 1191.055809208712
+   },
+   "ZEZ2C Z2 Carbonate Member": {
+    "n": 12,
+    "alpha": 1.5,
+    "r": 0.1,
+    "s2_fallback": 1588.7528223633972
+   },
+   "ZEZ1W Z1 Anhydrite Member": {
+    "n": 24,
+    "alpha": 1.0,
+    "r": 0.01,
+    "s2_fallback": 3039.7842343979087
+   },
+   "ZEZ1C Z1 Carbonate Member": {
+    "n": 12,
+    "alpha": 1.5,
+    "r": 1.0,
+    "s2_fallback": 1128.1252251480462
+   },
+   "ZEZ1K Coppershale Member": {
+    "n": 12,
+    "alpha": 1.5,
+    "r": 0.3,
+    "s2_fallback": 1569.4474710382729
+   }
+  },
+  "interval_calib": 1.0280339538489842,
+  "interval_cover_before_calib": 0.7895255525834155,
+  "m2_n": 4,
+  "th_n": 8,
+  "th_linear": false,
+  "th_alpha": 0.5,
+  "th_r": 0.03,
+  "support_radius_m": 10000.0,
+  "m4_chain": "fewest_layers",
+  "pre_test_year_check": {
+   "wells": 1835,
+   "by_method": {
+    "m1_nearest": {
+     "n_items": 7103,
+     "mae_m": 78.42999999999984,
+     "p90_m": 467.1660000000001,
+     "n_far": 5372,
+     "mae_far_m": 129.85000000000014
+    },
+    "m2_plane": {
+     "n_items": 7103,
+     "mae_m": 86.96239736325742,
+     "p90_m": 567.427426793981,
+     "n_far": 5372,
+     "mae_far_m": 134.5414752947289
+    },
+    "m3_kriging": {
+     "n_items": 7103,
+     "mae_m": 64.01792613041471,
+     "p90_m": 385.7178162930147,
+     "n_far": 5372,
+     "mae_far_m": 102.80012997254528
+    },
+    "m4_thickness": {
+     "n_items": 7103,
+     "mae_m": 75.6003862353291,
+     "p90_m": 395.45464465229117,
+     "n_far": 5372,
+     "mae_far_m": 113.30189394158015
+    },
+    "side_4b_best_route": {
+     "n_items": 7103,
+     "mae_m": 63.053381540300734,
+     "p90_m": 382.684809937718,
+     "n_far": 5372,
+     "mae_far_m": 100.79356398343452
+    }
+   },
+   "m3_cover80": 0.7999436857665775,
+   "note": "pseudo-test on wells drilled before the test years, same date rule"
+  }
+ }
+}

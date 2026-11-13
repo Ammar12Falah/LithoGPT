@@ -26,12 +26,15 @@ CONFIGS = {
         test_start=pd.Timestamp("2000-01-01"), tune_start=pd.Timestamp("1990-01-01"),
         wait=pd.DateOffset(months=12),
         test_date_meaning="earliest spud date of the hole",
+        side_label="holes without an elevation flag (no GL or TOPO) and with a precise position",
         tune_sample=3000, tune_wells_m4=4000),
     "netherlands": dict(
-        code="netherlands", name="Netherlands", feet=False,
+        code="netherlands", name="Netherlands", feet=False, per_top_position=True,
         test_start=pd.Timestamp("1990-01-01"), tune_start=pd.Timestamp("1975-01-01"),
         wait=pd.DateOffset(years=5),
-        test_date_meaning="end date of drilling of the borehole",
+        test_date_meaning="end date of drilling of the borehole (the 5-year rule uses its start date of drilling)",
+        side_label="vertical holes only, without a reference-height flag",
+        radius_grid_m=[10000.0, 30000.0], pair_max_offset_m=250.0,
         tune_sample=3000, tune_wells_m4=4000),
 }
 

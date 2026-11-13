@@ -65,6 +65,18 @@ class Ctx:
         self.avail[pk["h"], pk["t"]] = pk["day"].to_numpy()
         self.rec = np.full((H, self.T), "", dtype=object)
         self.rec[pk["h"], pk["t"]] = pk["record_id"].to_numpy()
+        # position of each pick: the hole position, or the position of the top
+        # itself where the source gives it (deviated holes)
+        self.px = np.full((H, self.T), np.nan)
+        self.py = np.full((H, self.T), np.nan)
+        if "px" in pk.columns:
+            self.px[pk["h"], pk["t"]] = pk["px"].to_numpy(float)
+            self.py[pk["h"], pk["t"]] = pk["py"].to_numpy(float)
+        else:
+            self.px[pk["h"], pk["t"]] = self.x[pk["h"]]
+            self.py[pk["h"], pk["t"]] = self.y[pk["h"]]
+        self.per_top = bool(cfg.get("per_top_position", False))
+        self.system = (self.holes["system"] if "system" in self.holes.columns else self.holes["hole_id"]).astype("category").cat.codes.to_numpy()
         self._pools = {}
         self._pairs = {}
 
@@ -75,7 +87,7 @@ class Ctx:
             if mask is not None:
                 ok &= mask
             h = np.nonzero(ok)[0]
-            self._pools[key] = M.Pool(h, self.x[h], self.y[h], self.elev[h, j], self.avail[h, j])
+            self._pools[key] = M.Pool(h, self.px[h, j], self.py[h, j], self.elev[h, j], self.avail[h, j])
         return self._pools[key]
 
     def pair_pool(self, a, b, mask=None):
@@ -84,11 +96,31 @@ class Ctx:
         if key not in self._pairs:
             th = self.elev[:, a] - self.elev[:, b]
             ok = np.isfinite(th) & (th > 0) & (self.avail[:, a] != NAT_DAY) & (self.avail[:, b] != NAT_DAY)
+            # in a deviated hole the two tops sit at different places: use the
+            # pair only if they are close together; the thickness is placed at the lower top
+            off = np.hypot(self.px[:, a] - self.px[:, b], self.py[:, a] - self.py[:, b])
+            ok &= ~(off > self.cfg.get("pair_max_offset_m", 250.0))
             if mask is not None:
                 ok &= mask
             h = np.nonzero(ok)[0]
-            self._pairs[key] = M.Pool(h, self.x[h], self.y[h], th[h], np.maximum(self.avail[h, a], self.avail[h, b]))
+            self._pairs[key] = M.Pool(h, self.px[h, b], self.py[h, b], th[h], np.maximum(self.avail[h, a], self.avail[h, b]))
         return self._pairs[key]
+
+
+def build_rows(ctx, wells):
+    """Forecast rows for a set of test wells: (hole of each row, target top
+    of each row or None, x, y).
+
+    Hole position for every top (Kansas): one row per well, every chosen top
+    is a target. Position per top (Netherlands): one row per well and top, at
+    the position of that top in the test well; other tops are forecast at
+    that same spot only as the start of a thickness chain.
+    """
+    wells = np.asarray(wells, dtype=np.int64)
+    if not ctx.per_top:
+        return wells, None, ctx.x[wells], ctx.y[wells]
+    wi, tj = np.nonzero(np.isfinite(ctx.elev[wells]))
+    return wells[wi], tj, ctx.px[wells[wi], tj], ctx.py[wells[wi], tj]
 
 
 def cutoff_days(rule_date, wait):
@@ -103,7 +135,7 @@ def cutoff_days(rule_date, wait):
 # --------------------------------------------------------------------------
 # forecasts for a set of wells
 # --------------------------------------------------------------------------
-def forecast_wells(ctx, widx, cutoff, S, mask=None, keep_audit=False, do_m4=True):
+def forecast_wells(ctx, widx, cutoff, S, mask=None, keep_audit=False, do_m4=True, tx=None, ty=None):
     """All four methods at wells `widx` for every chosen top.
 
     Returns dict of (W, T) arrays: m1..m4, d1 (distance to the nearest known
@@ -111,7 +143,8 @@ def forecast_wells(ctx, widx, cutoff, S, mask=None, keep_audit=False, do_m4=True
     anchor, chain (bit mask of the tops in the thickness chain).
     """
     W, T = len(widx), ctx.T
-    tx, ty = ctx.x[widx], ctx.y[widx]
+    if tx is None:
+        tx, ty = ctx.x[widx], ctx.y[widx]
     out = {k: np.full((W, T), np.nan) for k in ["m1", "m2", "m3", "m4", "m4b", "d1", "hw3", "var3"]}
     out["anchor"] = np.full((W, T), -1)
     out["chain"] = np.zeros((W, T), dtype=np.int64)
@@ -257,7 +290,7 @@ def tune(ctx, cfg, outdir):
             cand = np.sort(rng.choice(cand, cfg["tune_sample"], replace=False))
         cut = cut_all[[pos[w] for w in cand]]
         pool = ctx.pool(j)
-        tx, ty = ctx.x[cand], ctx.y[cand]
+        tx, ty = ctx.px[cand, j], ctx.py[cand, j]
         idx, dist = pool.known_neighbours(tx, ty, cand, cut, max(n_grid3 + n_grid2))
         xk, yk, z, valid = M.gather(pool, idx, tx, ty)
         truth = ctx.elev[cand, j]
@@ -328,7 +361,7 @@ def tune(ctx, cfg, outdir):
             continue
         cut = cut_all[[pos[w] for w in cand]]
         pool = ctx.pair_pool(a, b)
-        tx, ty = ctx.x[cand], ctx.y[cand]
+        tx, ty = ctx.px[cand, b], ctx.py[cand, b]
         idx, dist = pool.known_neighbours(tx, ty, cand, cut, 16)
         xk, yk, z, valid = M.gather(pool, idx, tx, ty)
         truth = ctx.elev[cand, a] - ctx.elev[cand, b]
@@ -350,16 +383,21 @@ def tune(ctx, cfg, outdir):
     S["th_n"], S["th_linear"], S["th_alpha"], S["th_r"] = int(kb[0]), bool(kb[1]), float(kb[2]), float(kb[3])
     # ---- support radius of the thickness chain ---------------------------
     samp = pt if len(pt) <= cfg["tune_wells_m4"] else np.sort(rng.choice(pt, cfg["tune_wells_m4"], replace=False))
-    cut = cut_all[[pos[w] for w in samp]]
-    truth = ctx.elev[samp].copy()
-    late = ~((ctx.avail[samp] < start_day) & (ctx.avail[samp] != NAT_DAY))
+    rh, rt, rx, ry = build_rows(ctx, samp)
+    cut = cut_all[[pos[w] for w in rh]]
+    truth = ctx.elev[rh].copy()
+    late = ~((ctx.avail[rh] < start_day) & (ctx.avail[rh] != NAT_DAY))
     truth[late] = np.nan
+    if rt is not None:
+        only = np.zeros_like(truth, dtype=bool)
+        only[np.arange(len(rh)), rt] = True
+        truth[~only] = np.nan
     r_res = {}
     for mode in ("every_layer", "fewest_layers"):
         for R in cfg.get("radius_grid_m", [10000.0, 30000.0]):
             S["support_radius_m"] = float(R)
             S["m4_chain"] = mode
-            f, _ = forecast_wells(ctx, samp, cut, S)
+            f, _ = forecast_wells(ctx, rh, cut, S, tx=rx, ty=ry)
             okk = np.isfinite(truth) & np.isfinite(f["m4"])
             r_res[(mode, R)] = float(np.median(np.abs(f["m4"] - truth)[okk]))
             rows.append(dict(part="method 4 chain rule and support radius", top="all chosen tops pooled", screen=screen,
@@ -367,7 +405,7 @@ def tune(ctx, cfg, outdir):
                              mae_side_4b_m=float(np.median(np.abs(f["m4b"] - truth)[okk]))))
     kb = min(r_res, key=lambda q: (r_res[q], q))
     S["m4_chain"], S["support_radius_m"] = kb[0], float(kb[1])
-    f, _ = forecast_wells(ctx, samp, cut, S)
+    f, _ = forecast_wells(ctx, rh, cut, S, tx=rx, ty=ry)
     okk = np.isfinite(truth) & np.isfinite(f["m3"])
     pre = {}
     for mth, key in zip(ALL_METHODS, ["m1", "m2", "m3", "m4", "m4b"]):
@@ -386,20 +424,22 @@ def tune(ctx, cfg, outdir):
 # floors
 # --------------------------------------------------------------------------
 def floor_a(ctx, hole_ok, precise):
-    """Same top in two different holes less than 150 m apart."""
+    """Same top in two different holes less than 150 m apart (distance
+    between the two picks of the top). A borehole and its own sidetracks are
+    one hole system and never form a pair."""
     rows = []
     for j, top in enumerate(ctx.tops):
         ok = np.isfinite(ctx.elev[:, j]) & hole_ok
         h = np.nonzero(ok)[0]
         if len(h) < 2:
             continue
-        tree = cKDTree(np.c_[ctx.x[h], ctx.y[h]])
+        tree = cKDTree(np.c_[ctx.px[h, j], ctx.py[h, j]])
         pr = tree.query_pairs(150.0, output_type="ndarray")
         if len(pr) == 0:
             continue
         a, b = h[pr[:, 0]], h[pr[:, 1]]
-        d = np.hypot(ctx.x[a] - ctx.x[b], ctx.y[a] - ctx.y[b])
-        keep = d < 150.0
+        d = np.hypot(ctx.px[a, j] - ctx.px[b, j], ctx.py[a, j] - ctx.py[b, j])
+        keep = (d < 150.0) & (ctx.system[a] != ctx.system[b])
         a, b, d = a[keep], b[keep], d[keep]
         rows.append(pd.DataFrame(dict(top=top, hole_a=a, hole_b=b, dist_m=d,
                                       abs_diff_m=np.abs(ctx.elev[a, j] - ctx.elev[b, j]),
@@ -518,9 +558,13 @@ def score(items, ctx, outdir, c, tag, feet=False, n_boot=N_BOOT):
     return by_band, by_top, cover, far_boot
 
 
-def make_items(ctx, widx, f, truth):
+def make_items(ctx, widx, f, truth, target=None):
     """Long table of test items: one chosen top in one test well."""
-    wi, tj = np.nonzero(np.isfinite(truth))
+    if target is None:
+        wi, tj = np.nonzero(np.isfinite(truth))
+    else:
+        wi = np.nonzero(np.isfinite(truth[np.arange(len(widx)), target]))[0]
+        tj = np.asarray(target)[wi]
     df = pd.DataFrame(dict(hole=widx[wi], top=tj, actual=truth[wi, tj], d1=f["d1"][wi, tj]))
     for k in KEYS + ["hw3"]:
         df[k] = f[k][wi, tj]
@@ -595,7 +639,8 @@ def run_country(cfg, holes, picks, log, extra, outdir, cachedir):
 
     # ---- chosen tops: the 12 most reported in holes drilled before the test years
     pre_ids = set(holes.loc[holes["pre_test"], "hole_id"])
-    cnt = picks[picks["hole_id"].isin(pre_ids)].groupby("top")["hole_id"].nunique().sort_values(ascending=False)
+    cnt = picks[picks["hole_id"].isin(pre_ids)].groupby("top")["hole_id"].nunique()
+    cnt = cnt.reset_index().sort_values(["hole_id", "top"], ascending=[False, True]).set_index("top")["hole_id"]
     if cfg.get("top_filter") is not None:
         cnt = cnt[cnt.index.map(cfg["top_filter"])]
     cnt_df = cnt.head(30).rename("holes_before_test_years").reset_index()
@@ -632,16 +677,21 @@ def run_country(cfg, holes, picks, log, extra, outdir, cachedir):
         f"test wells: {len(test)}\ndevelopment (test date before the cut date): {len(dev_ids)}\n"
         f"sealed (test date on or after the cut date): {len(sealed_ids)}\n"
         f"test date = {cfg['test_date_meaning']}\n")
-    summary.update(cut_date=str(cut_date.date()), n_test=len(test), n_dev=len(dev_ids), n_sealed=len(sealed_ids))
+    summary.update(cut_date=str(cut_date.date()), n_test=len(test), n_dev=len(dev_ids), n_sealed=len(sealed_ids),
+                   dev_first_date=str(test["test_date"].min().date()), sealed_last_date=str(test["test_date"].max().date()))
 
     # presence table (which hole reports which top, and when): counting only
     presence = picks.loc[picks["top"].isin(chosen), ["hole_id", "top", "avail"]].copy()
     # ---- from here on, no depth of a sealed well exists in memory ---------
-    picks_known = picks[~picks["hole_id"].isin(sealed_ids)].copy()
+    # a sidetrack of a sealed well is part of that well: its depths go too
+    sealed_all = set(sealed_ids)
+    if "system" in holes.columns:
+        sealed_all |= set(holes.loc[holes["system"].isin(sealed_ids), "hole_id"])
+    picks_known = picks[~picks["hole_id"].isin(sealed_all)].copy()
     del picks
     ctx = Ctx(cfg, holes, picks_known, chosen)
     h = ctx.holes
-    is_sealed = h["hole_id"].isin(sealed_ids).to_numpy()
+    is_sealed = h["hole_id"].isin(sealed_all).to_numpy()
     assert not np.isfinite(ctx.elev[is_sealed]).any()
 
     # ---- settings from wells drilled before the test years ----------------
@@ -650,30 +700,31 @@ def run_country(cfg, holes, picks, log, extra, outdir, cachedir):
 
     # ---- development forecasts -------------------------------------------
     widx = np.array([ctx.hid[i] for i in dev_ids], dtype=np.int64)
-    truth = ctx.elev[widx].copy()
-    rule = h["rule_date"].to_numpy()[widx]
+    rh, rt, rx, ry = build_rows(ctx, widx)
+    truth = ctx.elev[rh].copy()
+    rule = h["rule_date"].to_numpy()[rh]
     variants = {"": cfg["wait"], "_no_wait": None}
     results = {}
     for tag, wait in variants.items():
         cut = cutoff_days(rule, wait)
-        f, audit = forecast_wells(ctx, widx, cut, S, keep_audit=True)
-        items = make_items(ctx, widx, f, truth)
+        f, audit = forecast_wells(ctx, rh, cut, S, keep_audit=True, tx=rx, ty=ry)
+        items = make_items(ctx, rh, f, truth, rt)
         n_all = len(items)
         items = items[np.isfinite(items["m1"])].reset_index(drop=True)
         results[tag] = dict(f=f, items=items, n_no_known=n_all - len(items), cut=cut, audit=audit)
-        save_audit(cachedir / f"{c}_audit{tag}.npz", ctx, widx, cut, audit, items, S, tag)
+        save_audit(cachedir / f"{c}_audit{tag}.npz", ctx, rh, cut, audit, items, S, tag)
 
     # ---- floors ------------------------------------------------------------
     precise = h["loc_precise"].to_numpy(bool)
     pairsA = floor_a(ctx, ~is_sealed, precise)
     fl = summarise_floor(pairsA[pairsA["both_precise"]], "A: two holes under 150 m apart, both positions precise (used in pass marks)")
     fl += summarise_floor(pairsA, "A-all: two holes under 150 m apart, any position quality")
-    clean = (h["flag_elev"] == "").to_numpy()
-    pc = pairsA[pairsA["both_precise"] & clean[pairsA["hole_a"].to_numpy(int)] & clean[pairsA["hole_b"].to_numpy(int)]] if len(pairsA) else pairsA
-    fl += summarise_floor(pc, "A-clean: as A, both holes without an elevation flag")
+    cleanmask = (h["side_clean"] if "side_clean" in h.columns else ((h["flag_elev"] == "") & h["loc_precise"])).to_numpy(bool)
+    pc = pairsA[pairsA["both_precise"] & cleanmask[pairsA["hole_a"].to_numpy(int)] & cleanmask[pairsA["hole_b"].to_numpy(int)]] if len(pairsA) else pairsA
+    fl += summarise_floor(pc, "A-clean: as A, both holes in the unflagged side set")
     pb = extra.get("floor_b_pairs")
     if pb is not None:
-        pb = pb[pb["top"].isin(chosen) & ~pb["hole_id"].isin(sealed_ids)]
+        pb = pb[pb["top"].isin(chosen) & ~pb["hole_id"].isin(sealed_all)]
         d = pb["abs_diff_m"]
         fl.append(dict(floor="B: two picks of one top in one hole from different sources", top="all chosen tops",
                        n_pairs=len(pb), n_hole_pairs=pb["hole_id"].nunique(),
@@ -784,12 +835,11 @@ def run_country(cfg, holes, picks, log, extra, outdir, cachedir):
         note="not one of the four methods of the brief; not used in the pass marks")
 
     # ---- side run: holes without flags only -------------------------------
-    cleanmask = ((h["flag_elev"] == "") & h["loc_precise"]).to_numpy()
     if cfg.get("clean_side_run", True) and (~cleanmask).any():
-        wc = widx[cleanmask[widx]]
-        cut = cutoff_days(h["rule_date"].to_numpy()[wc], cfg["wait"])
-        f, _ = forecast_wells(ctx, wc, cut, S, mask=cleanmask)
-        it = make_items(ctx, wc, f, ctx.elev[wc])
+        ch, ct, cx, cy = build_rows(ctx, widx[cleanmask[widx]])
+        cut = cutoff_days(h["rule_date"].to_numpy()[ch], cfg["wait"])
+        f, _ = forecast_wells(ctx, ch, cut, S, mask=cleanmask, tx=cx, ty=cy)
+        it = make_items(ctx, ch, f, ctx.elev[ch], ct)
         it = it[np.isfinite(it["m1"])].reset_index(drop=True)
         bbc, _, _, _ = score(it, ctx, outdir, c, "_unflagged_only", feet=cfg.get("feet", False), n_boot=200)
         fr = bbc[bbc["cell"] == "far (>1 km)"].set_index("method")
@@ -801,12 +851,15 @@ def run_country(cfg, holes, picks, log, extra, outdir, cachedir):
             floor_a_clean_pairs=int(fAc["n_pairs"]))
 
     # ---- spot-check sheet ---------------------------------------------------
-    spot_check(ctx, main, widx, S, outdir / f"{c}_spot_check.csv", chosen, cfg)
+    spot_check(ctx, main, rh, S, outdir / f"{c}_spot_check.csv", chosen, cfg)
+    summary["side_set_meaning"] = cfg.get("side_label", "holes without an elevation flag and with a precise position")
 
     log.to_csv(outdir / f"{c}_cleaning_log.csv", index=False)
     for k_, name in [("name_map", "name_map"), ("variant_evidence", "name_map_evidence")]:
         if extra.get(k_) is not None:
             extra[k_].to_csv(outdir / f"{c}_{name}.csv", index=False)
+    if extra.get("levels") is not None:
+        extra["levels"].to_csv(outdir / f"{c}_naming_levels.csv", index=False)
     summary["settings"] = S
     (outdir / f"{c}_summary.json").write_text(json.dumps(summary, indent=1, default=float))
     return summary
@@ -828,7 +881,12 @@ def count_far_sealed(ctx, cfg, presence, sealed_ids, chosen):
     for j, top in enumerate(chosen):
         p = pres[(pres["top"] == top)]
         pk = p[p["day"] != NAT_DAY]
-        pool = M.Pool(pk["h"].to_numpy(), ctx.x[pk["h"]], ctx.y[pk["h"]], np.zeros(len(pk)), pk["day"].to_numpy())
+        # position: the pick of the top for holes that are not sealed; the
+        # surface position of the borehole for sealed holes (no depth-derived value is used)
+        kh = pk["h"].to_numpy()
+        kx = np.where(np.isfinite(ctx.px[kh, j]), ctx.px[kh, j], ctx.x[kh])
+        ky = np.where(np.isfinite(ctx.py[kh, j]), ctx.py[kh, j], ctx.y[kh])
+        pool = M.Pool(kh, kx, ky, np.zeros(len(pk)), pk["day"].to_numpy())
         tw = np.array([w for w in p["h"].to_numpy() if w in spos], dtype=np.int64)
         if len(tw) == 0:
             continue

@@ -1,0 +1,40 @@
+floor,top,n_pairs,n_hole_pairs,median_abs_diff_m,p90_abs_diff_m,share_zero
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",all chosen tops,7139,2470,4.190000000000055,20.75999999999999,0.0005603025633842274
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",NLLFC Landen Clay Member,325,325,4.080000000000041,11.706000000000042,0.006153846153846154
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",KNGLU Upper Holland Marl Member,710,710,7.834999999999951,32.07199999999999,0.0014084507042253522
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",KNGLM Middle Holland Claystone Member,938,938,6.305000000000007,19.773000000000014,0.0
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",KNGLL Lower Holland Marl Member,845,845,5.6400000000001,19.96199999999995,0.0
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",RNRO1 Main Röt Evaporite Member,503,503,2.7700000000000387,16.772000000000016,0.0
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",RNSOC Solling Claystone Member,367,367,3.0,17.382,0.0
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",ZEZ2H Z2 Salt Member,573,573,15.450000000000045,44.950000000000045,0.0
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",ZEZ2A Z2 Basal Anhydrite Member,579,579,2.8299999999999272,11.537999999999858,0.0017271157167530224
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",ZEZ2C Z2 Carbonate Member,579,579,2.480000000000018,11.656000000000041,0.0
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",ZEZ1W Z1 Anhydrite Member,573,573,2.5299999999997453,10.987999999999829,0.0
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",ZEZ1C Z1 Carbonate Member,577,577,2.9299999999998363,11.750000000000087,0.0
+"A: two holes under 150 m apart, both positions precise (used in pass marks)",ZEZ1K Coppershale Member,570,570,2.480000000000018,11.41299999999965,0.0
+"A-all: two holes under 150 m apart, any position quality",all chosen tops,7139,2470,4.190000000000055,20.75999999999999,0.0005603025633842274
+"A-all: two holes under 150 m apart, any position quality",NLLFC Landen Clay Member,325,325,4.080000000000041,11.706000000000042,0.006153846153846154
+"A-all: two holes under 150 m apart, any position quality",KNGLU Upper Holland Marl Member,710,710,7.834999999999951,32.07199999999999,0.0014084507042253522
+"A-all: two holes under 150 m apart, any position quality",KNGLM Middle Holland Claystone Member,938,938,6.305000000000007,19.773000000000014,0.0
+"A-all: two holes under 150 m apart, any position quality",KNGLL Lower Holland Marl Member,845,845,5.6400000000001,19.96199999999995,0.0
+"A-all: two holes under 150 m apart, any position quality",RNRO1 Main Röt Evaporite Member,503,503,2.7700000000000387,16.772000000000016,0.0
+"A-all: two holes under 150 m apart, any position quality",RNSOC Solling Claystone Member,367,367,3.0,17.382,0.0
+"A-all: two holes under 150 m apart, any position quality",ZEZ2H Z2 Salt Member,573,573,15.450000000000045,44.950000000000045,0.0
+"A-all: two holes under 150 m apart, any position quality",ZEZ2A Z2 Basal Anhydrite Member,579,579,2.8299999999999272,11.537999999999858,0.0017271157167530224
+"A-all: two holes under 150 m apart, any position quality",ZEZ2C Z2 Carbonate Member,579,579,2.480000000000018,11.656000000000041,0.0
+"A-all: two holes under 150 m apart, any position quality",ZEZ1W Z1 Anhydrite Member,573,573,2.5299999999997453,10.987999999999829,0.0
+"A-all: two holes under 150 m apart, any position quality",ZEZ1C Z1 Carbonate Member,577,577,2.9299999999998363,11.750000000000087,0.0
+"A-all: two holes under 150 m apart, any position quality",ZEZ1K Coppershale Member,570,570,2.480000000000018,11.41299999999965,0.0
+"A-clean: as A, both holes in the unflagged side set",all chosen tops,2063,678,2.8799999999996544,14.852000000000128,0.0004847309743092584
+"A-clean: as A, both holes in the unflagged side set",NLLFC Landen Clay Member,33,33,0.9699999999999989,6.871999999999992,0.030303030303030304
+"A-clean: as A, both holes in the unflagged side set",KNGLU Upper Holland Marl Member,85,85,6.970000000000027,20.050000000000015,0.0
+"A-clean: as A, both holes in the unflagged side set",KNGLM Middle Holland Claystone Member,100,100,6.10000000000008,17.27300000000004,0.0
+"A-clean: as A, both holes in the unflagged side set",KNGLL Lower Holland Marl Member,80,80,5.080000000000041,10.737000000000036,0.0
+"A-clean: as A, both holes in the unflagged side set",RNRO1 Main Röt Evaporite Member,432,432,2.1350000000000477,9.740000000000048,0.0
+"A-clean: as A, both holes in the unflagged side set",RNSOC Solling Claystone Member,305,305,2.660000000000025,11.459999999999972,0.0
+"A-clean: as A, both holes in the unflagged side set",ZEZ2H Z2 Salt Member,141,141,13.690000000000055,36.47000000000003,0.0
+"A-clean: as A, both holes in the unflagged side set",ZEZ2A Z2 Basal Anhydrite Member,177,177,2.5700000000001637,12.868000000000213,0.0
+"A-clean: as A, both holes in the unflagged side set",ZEZ2C Z2 Carbonate Member,178,178,2.189999999999827,12.939999999999968,0.0
+"A-clean: as A, both holes in the unflagged side set",ZEZ1W Z1 Anhydrite Member,177,177,2.1799999999998363,13.053999999999814,0.0
+"A-clean: as A, both holes in the unflagged side set",ZEZ1C Z1 Carbonate Member,179,179,2.449999999999818,12.837999999999743,0.0
+"A-clean: as A, both holes in the unflagged side set",ZEZ1K Coppershale Member,176,176,1.875,12.775000000000091,0.0

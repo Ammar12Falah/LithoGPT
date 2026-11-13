@@ -1,0 +1,11 @@
+what,count
+sealed wells,535
+sealed items (chosen top reported in a sealed well),2229
+sealed far items (nearest known well with the top more than 1 km away),1158
+sealed items with no known well at all for the top,0
+sealed wells with at least one far item,342
+"sealed items, nearest known well same site (<30 m)",243
+"sealed items, nearest known well 30 m-1 km",828
+"sealed items, nearest known well 1-5 km",830
+"sealed items, nearest known well 5-20 km",317
+"sealed items, nearest known well >20 km",11

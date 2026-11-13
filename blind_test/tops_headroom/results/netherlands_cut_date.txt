@@ -1,0 +1,5 @@
+cut date: 2001-03-30
+test wells: 1070
+development (test date before the cut date): 535
+sealed (test date on or after the cut date): 535
+test date = end date of drilling of the borehole (the 5-year rule uses its start date of drilling)

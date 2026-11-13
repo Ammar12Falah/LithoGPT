@@ -114,7 +114,7 @@ def main(c):
     out.append("No waiting time (known wells = finished before the test well was spudded). Median absolute error, metres (95 % interval).\n")
     out.append(band_table(c, "_no_wait", what="mae"))
     if (R / f"{c}_scores_by_distance_unflagged_only.csv").exists():
-        out.append("\nOnly holes without an elevation flag and with a precise position, as test wells and as known wells "
+        out.append(f"\nSide set: {s.get('side_set_meaning', 'unflagged holes')}, as test wells and as known wells "
                    "(200 resamples). Median absolute error, metres (95 % interval).\n")
         out.append(band_table(c, "_unflagged_only", what="mae"))
 
@@ -131,6 +131,12 @@ def main(c):
     nxt = nxt[~nxt["chosen"]].head(3)
     out.append("\nNext three, not chosen: " + "; ".join(f"{r.top} ({r.holes_before_test_years:,})" for r in nxt.itertuples()) + ".")
 
+    if (R / f"{c}_naming_levels.csv").exists():
+        lv = pd.read_csv(R / f"{c}_naming_levels.csv")
+        out.append(f"\n### {s['country']}: which level of the naming scheme has the most data\n")
+        out.append(md(pd.DataFrame({"Level": lv["level"], "Hole-top values": lv["hole_top_values"].map("{:,}".format),
+                                    "In holes finished before the test years": lv["hole_top_values_finished_before_1990"].map("{:,}".format),
+                                    "Different units": lv["units"], "Chosen": lv["chosen"].map({True: "yes", False: ""})})))
     cl = pd.read_csv(R / f"{c}_cleaning_log.csv").fillna("")
     out.append(f"\n### {s['country']}: cleaning steps and wells left\n")
     cl2 = pd.DataFrame({"Step": cl["step"], "Well records left": cl["well_records"].map(lambda v: "" if v == 0 else f"{int(v):,}"),

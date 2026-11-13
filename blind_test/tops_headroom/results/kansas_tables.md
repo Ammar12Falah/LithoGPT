@@ -97,7 +97,7 @@ In a test well each top is one item, so items and wells are the same number here
 |---|---|---|---|---|---|
 | A: two holes under 150 m apart, both positions precise (used in pass marks) | 35,782 | 12,915 | 1.83 | 9.45 | 5.5 % |
 | A-all: two holes under 150 m apart, any position quality | 38,571 | 14,416 | 1.83 | 9.75 | 5.7 % |
-| A-clean: as A, both holes without an elevation flag | 32,162 | 10,626 | 1.83 | 9.14 | 5.6 % |
+| A-clean: as A, both holes in the unflagged side set | 32,162 | 10,626 | 1.83 | 9.14 | 5.6 % |
 | B: two picks of one top in one hole from different sources | 55,738 | 13,837 | 0.30 | 14.02 | 42.1 % |
 
 ### Kansas: side results
@@ -114,7 +114,7 @@ No waiting time (known wells = finished before the test well was spudded). Media
 | 5-20 km | 354 | 260 | 19.81 (16.15-22.56) | 13.41 (11.27-14.93) | 10.44 (9.10-12.34) | 10.50 (8.90-12.76) | 9.76 (8.44-11.70) |
 | >20 km | 9 | 9 | 55.47 (17.98-131.06) | 34.85 (15.95-100.08) | 24.28 (9.56-80.33) | 24.28 (9.56-80.33) | 24.28 (9.56-80.33) |
 
-Only holes without an elevation flag and with a precise position, as test wells and as known wells (200 resamples). Median absolute error, metres (95 % interval).
+Side set: holes without an elevation flag (no GL or TOPO) and with a precise position, as test wells and as known wells (200 resamples). Median absolute error, metres (95 % interval).
 
 | Distance to nearest known well with the top | Items | Wells | 1 Nearest | 2 Plane | 3 Kriging | 4 Thickness | (side) 4b best route |
 |---|---|---|---|---|---|---|---|
