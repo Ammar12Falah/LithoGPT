@@ -69,6 +69,13 @@ def main(argv):
         print(f"[{c}] loaded: {len(holes)} holes, {len(picks)} hole-top values ({time.time() - t0:.0f} s)", flush=True)
         s = pipeline.run_country(CONFIGS[c], holes, picks, log, extra, out, cache)
         print(json.dumps({k: v for k, v in s.items() if k != "settings"}, indent=1, default=float), flush=True)
+        import io
+        from contextlib import redirect_stdout
+        import report_tables
+        buf = io.StringIO()
+        with redirect_stdout(buf):
+            report_tables.main(c)
+        (out / f"{c}_tables.md").write_text(buf.getvalue())
         print(f"[{c}] done in {time.time() - t0:.0f} s", flush=True)
     import check_date_rule
     ok = check_date_rule.main(["check_date_rule.py"] + want)

@@ -39,7 +39,7 @@
   "m1_nearest": 6.096000000000004,
   "m2_plane": 5.030346039227339,
   "m3_kriging": 4.355567781289892,
-  "m4_thickness": 6.43365211281025
+  "m4_thickness": 5.407631542471904
  },
  "ratio_best_far_to_floor_a": 2.381653423714944,
  "ratio_ci_wells_resampled_floor_fixed": [
@@ -55,26 +55,39 @@
   "m1_nearest": 6.096000000000004,
   "m2_plane": 5.0356132213058515,
   "m3_kriging": 4.369263653881433,
-  "m4_thickness": 6.554956697830338
+  "m4_thickness": 5.428932279473685
  },
  "no_wait_all_mae_m": {
   "m1_nearest": 2.7432000000000016,
   "m2_plane": 2.7902449572011676,
   "m3_kriging": 2.3211911507763148,
-  "m4_thickness": 4.394546260960823
+  "m4_thickness": 3.0564332874097317
  },
  "all_mae_m": {
   "m1_nearest": 3.048000000000002,
   "m2_plane": 2.9769409599249883,
   "m3_kriging": 2.5260146036762876,
-  "m4_thickness": 4.6048539523956435
+  "m4_thickness": 3.2440854512922215,
+  "side_4b_best_route": 2.4619985234030537
+ },
+ "side_4b_best_route": {
+  "far_mae_m": 4.2086801574849915,
+  "far_mae_ci_m": [
+   4.0730748606020075,
+   4.342063066866956
+  ],
+  "ratio_to_floor_a": 2.3013342943378112,
+  "would_pass_b": true,
+  "share_of_far_items_not_direct": 0.4692887464264056,
+  "note": "not one of the four methods of the brief; not used in the pass marks"
  },
  "unflagged_only": {
   "far_mae_m": {
    "m1_nearest": 5.7912000000000035,
    "m2_plane": 4.877807428729838,
    "m3_kriging": 4.221274633958274,
-   "m4_thickness": 6.448131209557957
+   "m4_thickness": 5.303389815734562,
+   "side_4b_best_route": 4.060734706523419
   },
   "far_wells": 3799,
   "far_items": 10232,
@@ -168,6 +181,7 @@
   "th_alpha": 0.5,
   "th_r": 0.03,
   "support_radius_m": 10000.0,
+  "m4_chain": "fewest_layers",
   "pre_test_year_check": {
    "wells": 4000,
    "by_method": {
@@ -194,10 +208,17 @@
     },
     "m4_thickness": {
      "n_items": 17131,
-     "mae_m": 4.818420796767953,
-     "p90_m": 26.795628835871398,
+     "mae_m": 3.4712855279866517,
+     "p90_m": 18.49611573086662,
      "n_far": 4143,
-     "mae_far_m": 5.979264412483069
+     "mae_far_m": 5.057033304303275
+    },
+    "side_4b_best_route": {
+     "n_items": 17131,
+     "mae_m": 2.570896482327356,
+     "p90_m": 10.730235721589679,
+     "n_far": 4143,
+     "mae_far_m": 4.107878756399259
     }
    },
    "m3_cover80": 0.7974432315685015,

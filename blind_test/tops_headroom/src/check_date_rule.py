@@ -112,6 +112,17 @@ def check(country):
             for x, y in zip(tops[:-1], tops[1:]):
                 test_block(a[f"link{x}_{y}_hole"][w, :nt], w, [x, y])
             nf += int(m.sum())
+        # side method 4b: direct kriging, or one overlying top plus one thickness
+        route = a["item_route4b"]
+        for j in range(T):
+            for r in np.unique(route[item_top == j]):
+                m = (item_top == j) & (route == r)
+                w = item_w[m]
+                r = int(r)
+                test_block(a[f"top{r}_hole"][w, :int(n3[r])], w, [r])
+                if r != j:
+                    test_block(a[f"link{r}_{j}_hole"][w, :nt], w, [r, j])
+                nf += int(m.sum())
         # pipeline dates equal the independent dates wherever a value was used
         mism = int((a["avail"][used_any] != fin[used_any]).sum())
         loose = int((a["cut"] > cut_ind).sum())

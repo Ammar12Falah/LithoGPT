@@ -19,7 +19,10 @@ import methods as M
 SEED = 20261113
 BANDS = [(0, 30, "same site (<30 m)"), (30, 1000, "30 m-1 km"), (1000, 5000, "1-5 km"),
          (5000, 20000, "5-20 km"), (20000, np.inf, ">20 km")]
-METHODS = ["m1_nearest", "m2_plane", "m3_kriging", "m4_thickness"]
+METHODS = ["m1_nearest", "m2_plane", "m3_kriging", "m4_thickness"]          # the four methods of the brief
+SIDE = "side_4b_best_route"                                                  # extra, not in the pass marks
+ALL_METHODS = METHODS + [SIDE]
+KEYS = ["m1", "m2", "m3", "m4", "m4b"]
 METHOD_LABEL = {"m1_nearest": "1 Nearest known well", "m2_plane": "2 Local plane",
                 "m3_kriging": "3 Kriging with local trend", "m4_thickness": "4 Thickness method"}
 NAT_DAY = np.iinfo(np.int64).min
@@ -109,9 +112,10 @@ def forecast_wells(ctx, widx, cutoff, S, mask=None, keep_audit=False, do_m4=True
     """
     W, T = len(widx), ctx.T
     tx, ty = ctx.x[widx], ctx.y[widx]
-    out = {k: np.full((W, T), np.nan) for k in ["m1", "m2", "m3", "m4", "d1", "hw3"]}
+    out = {k: np.full((W, T), np.nan) for k in ["m1", "m2", "m3", "m4", "m4b", "d1", "hw3", "var3"]}
     out["anchor"] = np.full((W, T), -1)
     out["chain"] = np.zeros((W, T), dtype=np.int64)
+    out["route4b"] = np.full((W, T), -1)
     sup_top = np.zeros((T, W), dtype=bool)
     audit = {"top_idx": {}, "link_idx": {}} if keep_audit else None
     m_sup, R = S["support_min_wells"], S["support_radius_m"]
@@ -138,6 +142,8 @@ def forecast_wells(ctx, widx, cutoff, S, mask=None, keep_audit=False, do_m4=True
         p3, uv, s2, dof = M.krige(xk[:, :n3], yk[:, :n3], z[:, :n3], v3, cfg3["alpha"], cfg3["r"])
         out["m3"][:, j] = p3
         out["hw3"][:, j] = M.interval_halfwidth(uv, s2, dof, cfg3["s2_fallback"], S["interval_calib"])
+        loc = (dof >= 3) & np.isfinite(s2) & (s2 > 0)
+        out["var3"][:, j] = np.maximum(uv, 0) * np.where(loc, s2, cfg3["s2_fallback"])
         sup_top[j] = dist[:, m_sup - 1] <= R
         if keep_audit:
             audit["top_idx"][j] = (pool.hole_idx, idx.astype(np.int32), dist.astype(np.float32), z.astype(np.float32))
@@ -145,6 +151,7 @@ def forecast_wells(ctx, widx, cutoff, S, mask=None, keep_audit=False, do_m4=True
         return out, audit
     # ---- method 4: shallowest supported top by kriging, then thicknesses --
     th = np.full((T, T, W), np.nan)
+    var_th = np.full((T, T, W), np.inf)
     sup_link = np.zeros((T, T, W), dtype=bool)
     nt = S["th_n"]
     for a in range(T):
@@ -158,11 +165,14 @@ def forecast_wells(ctx, widx, cutoff, S, mask=None, keep_audit=False, do_m4=True
                 xk, yk, z, valid = M.gather(pool, idx[rows, :nt], tx[rows], ty[rows])
                 if S["screen"]:
                     valid = M.screen_outliers(xk, yk, z, valid, S["screen_k"], S["screen_min_m"])
-                p, _, _, _ = M.krige(xk, yk, z, valid, S["th_alpha"], S["th_r"], drift_linear=S["th_linear"])
+                p, uv, s2, dof = M.krige(xk, yk, z, valid, S["th_alpha"], S["th_r"], drift_linear=S["th_linear"])
                 th[a, b, rows] = p
+                loc = (dof >= 3) & np.isfinite(s2) & (s2 > 0)
+                var_th[a, b, rows] = np.where(loc, np.maximum(uv, 0) * np.where(loc, s2, 1.0), np.inf)
             if keep_audit:
                 audit["link_idx"][(a, b)] = (pool.hole_idx, idx[:, :nt].astype(np.int32), dist[:, :nt].astype(np.float32))
     ar = np.arange(W)
+    fewest = S.get("m4_chain", "every_layer") == "fewest_layers"
     for k in range(T):
         done = np.zeros(W, dtype=bool)
         for a in range(k):
@@ -172,11 +182,26 @@ def forecast_wells(ctx, widx, cutoff, S, mask=None, keep_audit=False, do_m4=True
             cur = np.full(W, a)
             total = np.zeros(W)
             chain = np.full(W, 1 << a, dtype=np.int64)
-            for b in range(a + 1, k + 1):
-                s = sup_link[cur, b, ar] & np.isfinite(th[cur, b, ar])
-                total = np.where(s, total + th[cur, b, ar], total)
-                chain = np.where(s, chain | (1 << b), chain)
-                cur = np.where(s, b, cur)
+            if fewest:
+                # from the current top jump to the deepest top (not below the
+                # target) that has a supported thickness; repeat
+                for _ in range(k - a):
+                    moved = np.zeros(W, dtype=bool)
+                    for b in range(k, a, -1):
+                        s = (cur < b) & ~moved & sup_link[np.minimum(cur, b - 1), b, ar] & np.isfinite(th[np.minimum(cur, b - 1), b, ar])
+                        total = np.where(s, total + th[np.minimum(cur, b - 1), b, ar], total)
+                        chain = np.where(s, chain | (1 << b), chain)
+                        cur = np.where(s, b, cur)
+                        moved |= s
+                    if not moved.any():
+                        break
+            else:
+                # step through every chosen top below that has a supported thickness
+                for b in range(a + 1, k + 1):
+                    s = sup_link[cur, b, ar] & np.isfinite(th[cur, b, ar])
+                    total = np.where(s, total + th[cur, b, ar], total)
+                    chain = np.where(s, chain | (1 << b), chain)
+                    cur = np.where(s, b, cur)
             ok &= cur == k
             out["m4"][ok, k] = out["m3"][ok, a] - total[ok]
             out["anchor"][ok, k] = a
@@ -186,6 +211,23 @@ def forecast_wells(ctx, widx, cutoff, S, mask=None, keep_audit=False, do_m4=True
         out["m4"][rest, k] = out["m3"][rest, k]
         out["anchor"][rest, k] = k
         out["chain"][rest, k] = 1 << k
+    # ---- side method 4b (not one of the four): best route -----------------
+    # Either direct kriging of the target top, or kriging of one overlying
+    # chosen top plus one kriged thickness down to the target. The route with
+    # the smallest predicted error variance is taken.
+    for k in range(T):
+        best = out["m3"][:, k].copy()
+        bvar = np.where(np.isfinite(out["var3"][:, k]), out["var3"][:, k], np.inf)
+        route = np.full(W, k)
+        for a in range(k):
+            ok = sup_top[a] & sup_link[a, k] & np.isfinite(th[a, k]) & np.isfinite(out["m3"][:, a])
+            v = out["var3"][:, a] + var_th[a, k]
+            better = ok & np.isfinite(v) & (v < bvar)
+            best = np.where(better, out["m3"][:, a] - th[a, k], best)
+            bvar = np.where(better, v, bvar)
+            route = np.where(better, a, route)
+        out["m4b"][:, k] = best
+        out["route4b"][:, k] = route
     return out, audit
 
 
@@ -313,18 +355,22 @@ def tune(ctx, cfg, outdir):
     late = ~((ctx.avail[samp] < start_day) & (ctx.avail[samp] != NAT_DAY))
     truth[late] = np.nan
     r_res = {}
-    for R in cfg.get("radius_grid_m", [10000.0, 30000.0]):
-        S["support_radius_m"] = float(R)
-        f, _ = forecast_wells(ctx, samp, cut, S)
-        okk = np.isfinite(truth) & np.isfinite(f["m4"])
-        r_res[R] = float(np.median(np.abs(f["m4"] - truth)[okk]))
-        rows.append(dict(part="method 4 support radius", top="all chosen tops pooled", screen=screen, radius_m=R,
-                         n_items=int(okk.sum()), mae_m=r_res[R]))
-    S["support_radius_m"] = float(min(r_res, key=lambda R: (r_res[R], R)))
+    for mode in ("every_layer", "fewest_layers"):
+        for R in cfg.get("radius_grid_m", [10000.0, 30000.0]):
+            S["support_radius_m"] = float(R)
+            S["m4_chain"] = mode
+            f, _ = forecast_wells(ctx, samp, cut, S)
+            okk = np.isfinite(truth) & np.isfinite(f["m4"])
+            r_res[(mode, R)] = float(np.median(np.abs(f["m4"] - truth)[okk]))
+            rows.append(dict(part="method 4 chain rule and support radius", top="all chosen tops pooled", screen=screen,
+                             radius_m=R, chain=mode, n_items=int(okk.sum()), mae_m=r_res[(mode, R)],
+                             mae_side_4b_m=float(np.median(np.abs(f["m4b"] - truth)[okk]))))
+    kb = min(r_res, key=lambda q: (r_res[q], q))
+    S["m4_chain"], S["support_radius_m"] = kb[0], float(kb[1])
     f, _ = forecast_wells(ctx, samp, cut, S)
     okk = np.isfinite(truth) & np.isfinite(f["m3"])
     pre = {}
-    for mth, key in zip(METHODS, ["m1", "m2", "m3", "m4"]):
+    for mth, key in zip(ALL_METHODS, ["m1", "m2", "m3", "m4", "m4b"]):
         e = np.abs(f[key] - truth)[okk]
         far = (f["d1"] > FAR_M)[okk]
         pre[mth] = dict(n_items=int(okk.sum()), mae_m=float(np.median(e)), p90_m=float(np.percentile(e, 90)),
@@ -410,7 +456,7 @@ def score(items, ctx, outdir, c, tag, feet=False, n_boot=N_BOOT):
     wells, wcode = np.unique(items["hole"].to_numpy(), return_inverse=True)
     Wn = len(wells)
     counts = rng.multinomial(Wn, np.full(Wn, 1.0 / Wn), size=n_boot).astype(np.int32)
-    err = np.column_stack([items[k].to_numpy() - items["actual"].to_numpy() for k in ["m1", "m2", "m3", "m4"]])
+    err = np.column_stack([items[k].to_numpy() - items["actual"].to_numpy() for k in KEYS])
     ae = np.abs(err)
     band = band_of(items["d1"].to_numpy())
     far = items["d1"].to_numpy() > FAR_M
@@ -420,15 +466,15 @@ def score(items, ctx, outdir, c, tag, feet=False, n_boot=N_BOOT):
     far_boot = None
     for name, mk in cells:
         if mk.sum() == 0:
-            for k, mth in enumerate(METHODS):
+            for k, mth in enumerate(ALL_METHODS):
                 rows.append(dict(cell=name, method=mth, n_items=0, n_wells=0))
             continue
         r = boot_stats(ae[mk], wcode[mk], counts)
         med, p90, cim, cip, bm = r
         if name == "far (>1 km)":
             far_boot = bm
-        for k, mth in enumerate(METHODS):
-            rows.append(dict(cell=name, method=mth, n_items=int(mk.sum()), n_wells=int(len(np.unique(wcode[mk]))),
+        for k, mth in enumerate(ALL_METHODS):
+            rows.append(dict(cell=name, method=mth, one_of_the_four=mth in METHODS, n_items=int(mk.sum()), n_wells=int(len(np.unique(wcode[mk]))),
                              mae_m=med[k], mae_ci_lo_m=cim[0, k], mae_ci_hi_m=cim[1, k],
                              p90_m=p90[k], p90_ci_lo_m=cip[0, k], p90_ci_hi_m=cip[1, k],
                              median_signed_error_m=float(np.median(err[mk][:, k]))))
@@ -440,8 +486,8 @@ def score(items, ctx, outdir, c, tag, feet=False, n_boot=N_BOOT):
             if mk.sum() == 0:
                 continue
             med, p90, cim, cip, _ = boot_stats(ae[mk], wcode[mk], counts)
-            for k, mth in enumerate(METHODS):
-                rows.append(dict(top=top, cell=name, method=mth, n_items=int(mk.sum()), n_wells=int(len(np.unique(wcode[mk]))),
+            for k, mth in enumerate(ALL_METHODS):
+                rows.append(dict(top=top, cell=name, method=mth, one_of_the_four=mth in METHODS, n_items=int(mk.sum()), n_wells=int(len(np.unique(wcode[mk]))),
                                  mae_m=med[k], mae_ci_lo_m=cim[0, k], mae_ci_hi_m=cim[1, k],
                                  p90_m=p90[k], p90_ci_lo_m=cip[0, k], p90_ci_hi_m=cip[1, k]))
     by_top = pd.DataFrame(rows)
@@ -476,8 +522,9 @@ def make_items(ctx, widx, f, truth):
     """Long table of test items: one chosen top in one test well."""
     wi, tj = np.nonzero(np.isfinite(truth))
     df = pd.DataFrame(dict(hole=widx[wi], top=tj, actual=truth[wi, tj], d1=f["d1"][wi, tj]))
-    for k in ["m1", "m2", "m3", "m4", "hw3"]:
+    for k in KEYS + ["hw3"]:
         df[k] = f[k][wi, tj]
+    df["route4b"] = f["route4b"][wi, tj]
     df["anchor"] = f["anchor"][wi, tj]
     df["chain"] = f["chain"][wi, tj]
     df["wi"] = wi
@@ -665,9 +712,11 @@ def run_country(cfg, holes, picks, log, extra, outdir, cachedir):
         out["top"] = [chosen[j] for j in out["top"]]
         out["anchor"] = [chosen[j] for j in out["anchor"]]
         out["chain"] = [" > ".join(chosen[b] for b in range(ctx.T) if (m >> b) & 1) for m in out["chain"]]
+        out["route4b"] = ["direct" if r == j else f"via {chosen[r]}" for r, j in zip(out["route4b"], items["top"])]
         out = out.drop(columns=["hole"]).rename(columns={
             "actual": "actual_elev_m", "d1": "dist_nearest_known_m", "m1": "m1_nearest_m", "m2": "m2_plane_m",
-            "m3": "m3_kriging_m", "m4": "m4_thickness_m", "hw3": "m3_half_width_80pct_m",
+            "m3": "m3_kriging_m", "m4": "m4_thickness_m", "m4b": "side_4b_best_route_m",
+            "route4b": "side_4b_route", "hw3": "m3_half_width_80pct_m",
             "anchor": "m4_anchor_top", "chain": "m4_chain"})
         if cfg.get("feet"):
             out["actual_elev_ft"] = out["actual_elev_m"] / 0.3048
@@ -683,7 +732,8 @@ def run_country(cfg, holes, picks, log, extra, outdir, cachedir):
 
     # ---- pass marks --------------------------------------------------------
     bb = main["by_band"]
-    farrow = bb[bb["cell"] == "far (>1 km)"].set_index("method")
+    farall = bb[bb["cell"] == "far (>1 km)"].set_index("method")
+    farrow = farall.loc[METHODS]                      # pass marks: the four methods of the brief only
     best = farrow["mae_m"].astype(float).idxmin()
     best_mae = float(farrow.loc[best, "mae_m"])
     n_far_wells = int(farrow.loc[best, "n_wells"])
@@ -705,7 +755,33 @@ def run_country(cfg, holes, picks, log, extra, outdir, cachedir):
                    items_dev_without_any_known_well=int(main["n_no_known"]),
                    no_wait_far_mae_m={m: float(results["_no_wait"]["by_band"].query("cell=='far (>1 km)'").set_index("method").loc[m, "mae_m"]) for m in METHODS},
                    no_wait_all_mae_m={m: float(results["_no_wait"]["by_band"].query("cell=='all items'").set_index("method").loc[m, "mae_m"]) for m in METHODS},
-                   all_mae_m={m: float(bb.query("cell=='all items'").set_index("method").loc[m, "mae_m"]) for m in METHODS})
+                   all_mae_m={m: float(bb.query("cell=='all items'").set_index("method").loc[m, "mae_m"]) for m in ALL_METHODS})
+    # far items against floor A, top by top (detail; the pass mark uses all tops pooled)
+    bt = main["by_top"]
+    btf = bt[(bt["cell"] == "far (>1 km)") & bt["method"].isin(METHODS)]
+    fa = floors[floors["floor"].str.startswith("A:")].set_index("top")
+    rows = []
+    for top in chosen:
+        g = btf[btf["top"] == top].set_index("method")
+        if len(g) == 0:
+            continue
+        bm_ = g["mae_m"].astype(float).idxmin()
+        fl_ = float(fa.loc[top, "median_abs_diff_m"]) if top in fa.index else np.nan
+        npair = int(fa.loc[top, "n_pairs"]) if top in fa.index else 0
+        rows.append(dict(top=top, far_items=int(g.loc[bm_, "n_items"]), far_wells=int(g.loc[bm_, "n_wells"]),
+                         best_of_four=bm_, best_far_mae_m=float(g.loc[bm_, "mae_m"]),
+                         best_far_mae_ci_lo_m=float(g.loc[bm_, "mae_ci_lo_m"]), best_far_mae_ci_hi_m=float(g.loc[bm_, "mae_ci_hi_m"]),
+                         floor_a_m=fl_, floor_a_pairs=npair,
+                         ratio=(float(g.loc[bm_, "mae_m"]) / fl_ if (npair >= 50 and fl_ > 0) else np.nan)))
+    pd.DataFrame(rows).to_csv(outdir / f"{c}_far_vs_floor_by_top.csv", index=False)
+    side_mae = float(farall.loc[SIDE, "mae_m"])
+    summary["side_4b_best_route"] = dict(
+        far_mae_m=side_mae, far_mae_ci_m=[float(farall.loc[SIDE, "mae_ci_lo_m"]), float(farall.loc[SIDE, "mae_ci_hi_m"])],
+        ratio_to_floor_a=float(side_mae / floorA) if (nA and floorA > 0) else None,
+        would_pass_b=(None if nA < 50 else bool(side_mae / floorA >= 2)),
+        share_of_far_items_not_direct=float((main["items"].loc[main["items"]["d1"] > FAR_M, "route4b"] !=
+                                             main["items"].loc[main["items"]["d1"] > FAR_M, "top"]).mean()),
+        note="not one of the four methods of the brief; not used in the pass marks")
 
     # ---- side run: holes without flags only -------------------------------
     cleanmask = ((h["flag_elev"] == "") & h["loc_precise"]).to_numpy()
@@ -717,9 +793,10 @@ def run_country(cfg, holes, picks, log, extra, outdir, cachedir):
         it = it[np.isfinite(it["m1"])].reset_index(drop=True)
         bbc, _, _, _ = score(it, ctx, outdir, c, "_unflagged_only", feet=cfg.get("feet", False), n_boot=200)
         fr = bbc[bbc["cell"] == "far (>1 km)"].set_index("method")
+        summary_side_keys = ALL_METHODS
         fAc = floors[(floors["floor"].str.startswith("A-clean")) & (floors["top"] == "all chosen tops")].iloc[0]
         summary["unflagged_only"] = dict(
-            far_mae_m={m: float(fr.loc[m, "mae_m"]) for m in METHODS}, far_wells=int(fr["n_wells"].iloc[0]),
+            far_mae_m={m: float(fr.loc[m, "mae_m"]) for m in summary_side_keys}, far_wells=int(fr["n_wells"].iloc[0]),
             far_items=int(fr["n_items"].iloc[0]), floor_a_clean_m=float(fAc.get("median_abs_diff_m", np.nan)),
             floor_a_clean_pairs=int(fAc["n_pairs"]))
 
@@ -782,7 +859,8 @@ def save_audit(path, ctx, widx, cut, audit, items, S, tag):
     T = ctx.T
     d = dict(widx=widx, cut=cut, test_rule_day=to_day(ctx.holes["rule_date"].to_numpy()[widx]),
              item_w=items["wi"].to_numpy(), item_top=items["top"].to_numpy(), item_chain=items["chain"].to_numpy(),
-             item_anchor=items["anchor"].to_numpy(), T=T, n2=S["m2_n"], nt=S["th_n"],
+             item_anchor=items["anchor"].to_numpy(), item_route4b=items["route4b"].to_numpy(),
+             T=T, n2=S["m2_n"], nt=S["th_n"],
              n3=np.array([S["m3"][t]["n"] for t in ctx.tops]))
     hole_ids = ctx.holes["hole_id"].to_numpy().astype(str)
     d["test_hole_id"] = hole_ids[widx]
@@ -817,7 +895,8 @@ def spot_check(ctx, main, widx, S, path, chosen, cfg):
         base = dict(item=no, test_well=hid[hole], top=chosen[j], test_well_date=str(pd.Timestamp(h["rule_date"].iloc[hole]).date()),
                     latest_finish_date_allowed=day(main["cut"][w]),
                     actual_elev_m=round(float(it["actual"]), 2))
-        fc = dict(m1_nearest=it["m1"], m2_plane=it["m2"], m3_kriging=it["m3"], m4_thickness=it["m4"])
+        fc = dict(m1_nearest=it["m1"], m2_plane=it["m2"], m3_kriging=it["m3"], m4_thickness=it["m4"],
+                  side_4b_best_route=it["m4b"])
         def emit(method, role, ph, idx, dist, n, val=None, quantity=None):
             for kk in range(n):
                 p = idx[w, kk]
@@ -848,4 +927,10 @@ def spot_check(ctx, main, widx, S, path, chosen, cfg):
         for a, b in zip(chain[:-1], chain[1:]):
             ph, idx, dist = audit["link_idx"][(a, b)]
             emit("m4_thickness", f"thickness {chosen[a]} to {chosen[b]}", ph, idx, dist, S["th_n"], quantity=(a, b))
+        r4 = int(it["route4b"])
+        ph, idx, dist, _ = audit["top_idx"][r4]
+        emit(SIDE, f"elevation of {chosen[r4]} (kriging)", ph, idx, dist, S["m3"][chosen[r4]]["n"], quantity=(r4, None))
+        if r4 != j:
+            ph, idx, dist = audit["link_idx"][(r4, j)]
+            emit(SIDE, f"thickness {chosen[r4]} to {chosen[j]}", ph, idx, dist, S["th_n"], quantity=(r4, j))
     pd.DataFrame(rows).to_csv(path, index=False)

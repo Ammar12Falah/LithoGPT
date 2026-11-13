@@ -1,3 +1,3 @@
-kansas, main run: 220776 forecasts checked, 6316474 uses of a known well checked, 0 violations, 0 date mismatches between pipeline and input table, 0 test wells with a cut-off later than the independent one
-kansas, no waiting time: 220776 forecasts checked, 6321642 uses of a known well checked, 0 violations, 0 date mismatches between pipeline and input table, 0 test wells with a cut-off later than the independent one
-kansas: total 441552 forecasts and 12638116 known-well uses checked; PASS
+kansas, main run: 275970 forecasts checked, 5648842 uses of a known well checked, 0 violations, 0 date mismatches between pipeline and input table, 0 test wells with a cut-off later than the independent one
+kansas, no waiting time: 275970 forecasts checked, 5647178 uses of a known well checked, 0 violations, 0 date mismatches between pipeline and input table, 0 test wells with a cut-off later than the independent one
+kansas: total 551940 forecasts and 11296020 known-well uses checked; PASS
