@@ -143,6 +143,27 @@ def country_tables(c):
     return "\n".join(out)
 
 
+def importance(c):
+    """Share of the split gain of model C per feature, from the frozen model
+    file. Written as a result file; returns a sentence for the report."""
+    mf = ROOT / "models" / f"{c}_C.txt"
+    if not mf.exists():
+        return ""
+    import lightgbm as lgb
+    b = lgb.Booster(model_file=str(mf))
+    g = pd.Series(b.feature_importance("gain"), index=b.feature_name())
+    g = g / g.sum()
+    feats = pd.read_csv(R / "features.csv").set_index("feature")
+    imp = pd.DataFrame({"feature": g.index, "group": feats["group"].reindex(g.index).to_numpy(), "share_of_split_gain": g.to_numpy()})
+    imp = imp.sort_values("share_of_split_gain", ascending=False)
+    imp.round(5).to_csv(R / f"{c}_feature_importance.csv", index=False)
+    grp = imp.groupby("group")["share_of_split_gain"].sum().sort_values(ascending=False)
+    top = imp.head(5)
+    return ("\nWhere model C puts its weight (share of split gain, `results/" + f"{c}_feature_importance.csv`): "
+            + ", ".join(f"{k} {v * 100:.0f} %" for k, v in grp.items()) + ". Largest single features: "
+            + ", ".join(f"`{r.feature}` {r.share_of_split_gain * 100:.1f} %" for r in top.itertuples()) + ".")
+
+
 def sha256(p):
     h = hashlib.sha256()
     with open(p, "rb") as fh:
@@ -154,7 +175,7 @@ def sha256(p):
 def main():
     for c in ["kansas", "netherlands"]:
         if (R / f"{c}_summary.json").exists():
-            (R / f"{c}_tables.md").write_text(country_tables(c) + "\n")
+            (R / f"{c}_tables.md").write_text(country_tables(c) + "\n" + importance(c) + "\n")
     lines = [f"{sha256(p)}  results/{p.name}" for p in sorted(R.glob("*")) if p.is_file()]
     (ROOT / "hashes.txt").write_text("\n".join(lines) + "\n")
     print("tables and hashes.txt written;", len(lines), "result files")

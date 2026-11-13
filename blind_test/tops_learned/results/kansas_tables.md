@@ -108,3 +108,5 @@ Median absolute error in metres (mean in brackets). In a well each layer is one 
 Training targets from before the test years: 341,005 items in 72,056 wells (dated from 1970-01-01). Tuning half: 25,067 items in 6,714 wells, 5,837 far items. Drift table of method B: targets of the last 10 years before the scoring half (36,675 items). Side model 'targets known before the scoring half': 359,533 items, actual values finished on or before 2005-04-12.
 
 What the tuning half showed (far items; models fitted only on targets from before the test years, but with settings picked on this same half, so these numbers flatter the models): kriging 4.69 m, C 4.35 m, D 4.60 m.
+
+Where model C puts its weight (share of split gain, `results/kansas_feature_importance.csv`): depth 74 %, distance 10 %, position 6 %, date 5 %, direction 3 %, count 2 %. Largest single features: `route_median_rel` 13.8 %, `L2_route_rel` 9.2 %, `m4b_rel` 8.8 %, `L4_route_rel` 4.9 %, `route_nearest_rel` 3.9 %.
