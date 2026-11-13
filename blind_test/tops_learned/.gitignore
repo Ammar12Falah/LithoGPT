@@ -1,0 +1,6 @@
+# local virtual environment
+.venv/
+# scratch and audit files (rebuilt by run.sh)
+cache/
+__pycache__/
+*.pyc

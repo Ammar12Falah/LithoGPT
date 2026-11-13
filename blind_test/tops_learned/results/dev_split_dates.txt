@@ -1,0 +1,11 @@
+kansas: development wells of the first run: 13435
+kansas: date that separates the halves: 2006-04-12 (tuning half: dated before it; scoring half: on or after it)
+kansas: tuning half 6716 wells, 2000-01-03 to 2006-04-11
+kansas: scoring half 6719 wells, 2006-04-12 to 2010-07-14
+kansas: sealed period of the first run starts 2010-07-15 (never loaded)
+
+netherlands: development wells of the first run: 535
+netherlands: date that separates the halves: 1994-09-02 (tuning half: dated before it; scoring half: on or after it)
+netherlands: tuning half 267 wells, 1990-01-16 to 1994-08-13
+netherlands: scoring half 268 wells, 1994-09-02 to 2001-03-27
+netherlands: sealed period of the first run starts 2001-03-30 (never loaded)
