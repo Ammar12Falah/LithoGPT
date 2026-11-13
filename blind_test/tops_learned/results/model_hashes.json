@@ -1,0 +1,21 @@
+{
+ "models/kansas_C.txt": "6c84d5138f397a746d615e37d3b2418540380949c6a973201783a37d00f9a2be",
+ "models/kansas_C_fit_before_test_years_only.txt": "826a2a8d06bf5b82133ac28b49c3f8eb387fddd7de49349deb5312904fb96fbe",
+ "models/kansas_C_q10.txt": "8ca4be5e3a5e743d75dafc6bd52504d687b54ad1101518387e509e0be9226c8c",
+ "models/kansas_C_q90.txt": "d19e6151689aaf2b6abeea3dcf6dd8da887fd43dbd9c7e1d0e012de6424f7c08",
+ "models/kansas_C_shuffled.txt": "d21e772a224a7820f5814a124b5383df9f8994d011bb8e52d921cb64dfde6d20",
+ "models/kansas_C_strict.txt": "1aa320b8adf083623510dd0d5626025c275668c6048d53cd8bd0bbdc230c2642",
+ "models/kansas_D.txt": "d3e3f63bd89c940555d62b3bb682a9f96c15e0babbf0643b2151f3d2406ee8fc",
+ "models/netherlands_C.txt": "64769042f2e6140c4baa9b347da8d420d47887d23c36f67de45a85bf638f1e7b",
+ "models/netherlands_C_fit_before_test_years_only.txt": "6cd0cf5a00826f226dd80e81732791f9698ab236c972278a12423837c27f7a4f",
+ "models/netherlands_C_q10.txt": "c3d7f506b3ae9301d5a1309b23359051d3a459a920c16c174b4b03050ce51292",
+ "models/netherlands_C_q90.txt": "c608ace1f2a273cac54a9bde299c352a1d679c403199e48ed9d3a4ea494c757a",
+ "models/netherlands_C_shuffled.txt": "cbd90a0c11c8acedb08f83629b8171c74b7bfcb030273929dcede9ed10a22173",
+ "models/netherlands_C_strict.txt": "c6e8d058dbc20b96a7300d0cfa9b0cb55162b2ec3d06088cb4e08d956018d455",
+ "models/netherlands_D.txt": "438d2e47625311402dce5dcfa8ac3a404d3fcd10421e17ca9078e1103b1ed73b",
+ "results/features.csv": "0ff5274391ca0a05429c6870938da048c63c9ac136c914d0432b3401a1ae4297",
+ "results/kansas_drift_table.csv": "2a87512810c593f41cd75ee35df110c22bb5fad4f5875c2d3df0e5f07ae6553b",
+ "results/kansas_settings_learned.json": "9d2a5e17211d880c645a37bcdfd01c02b4a586e7ae3780b3c1cd32c4f6a4ca9f",
+ "results/netherlands_drift_table.csv": "9fb425b7fbd8d884c05488bbf732b176c4c01d04800abfc9bae352d4d947cb32",
+ "results/netherlands_settings_learned.json": "38fb5d9a9c6d30dd9471e79d9fb1ba7ff2268d614a13d867edeb98efadbcf623"
+}

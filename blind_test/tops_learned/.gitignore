@@ -4,3 +4,5 @@
 cache/
 __pycache__/
 *.pyc
+# model files are rebuilt by run.sh; their sha256 is in results/model_hashes.json
+models/

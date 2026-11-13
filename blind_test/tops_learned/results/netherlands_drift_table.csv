@@ -1,0 +1,61 @@
+top,band,n,shift_m,source,top_name,band_name
+0,0,10,-1.3609106523533683,layer,NLLFC Landen Clay Member,same site (<30 m)
+0,1,66,1.73715525850713,cell,NLLFC Landen Clay Member,30 m-1 km
+0,2,179,-8.644257357819583,cell,NLLFC Landen Clay Member,1-5 km
+0,3,223,-5.914482958138706,cell,NLLFC Landen Clay Member,5-20 km
+0,4,41,18.431454559663507,cell,NLLFC Landen Clay Member,>20 km
+1,0,15,-5.5591374103833004,layer,KNGLU Upper Holland Marl Member,same site (<30 m)
+1,1,271,-2.8739392092404614,cell,KNGLU Upper Holland Marl Member,30 m-1 km
+1,2,345,-11.036655926967569,cell,KNGLU Upper Holland Marl Member,1-5 km
+1,3,309,-24.947793045915205,cell,KNGLU Upper Holland Marl Member,5-20 km
+1,4,41,-80.78769477726678,cell,KNGLU Upper Holland Marl Member,>20 km
+2,0,10,-7.171514860285697,layer,KNGLM Middle Holland Claystone Member,same site (<30 m)
+2,1,262,-1.1815172161974488,cell,KNGLM Middle Holland Claystone Member,30 m-1 km
+2,2,285,-12.894324082509684,cell,KNGLM Middle Holland Claystone Member,1-5 km
+2,3,296,-29.195504790870586,cell,KNGLM Middle Holland Claystone Member,5-20 km
+2,4,38,-207.56621725889647,cell,KNGLM Middle Holland Claystone Member,>20 km
+3,0,9,-4.211052748381007,layer,KNGLL Lower Holland Marl Member,same site (<30 m)
+3,1,157,1.7077189632323098,cell,KNGLL Lower Holland Marl Member,30 m-1 km
+3,2,275,-18.10104986398983,cell,KNGLL Lower Holland Marl Member,1-5 km
+3,3,287,-27.744444049027834,cell,KNGLL Lower Holland Marl Member,5-20 km
+3,4,37,6.614634788359808,cell,KNGLL Lower Holland Marl Member,>20 km
+4,0,3,-0.7841974992285259,layer,RNRO1 Main Röt Evaporite Member,same site (<30 m)
+4,1,216,1.8251350000056163,cell,RNRO1 Main Röt Evaporite Member,30 m-1 km
+4,2,131,-19.69499064557931,cell,RNRO1 Main Röt Evaporite Member,1-5 km
+4,3,101,-116.25256596114738,cell,RNRO1 Main Röt Evaporite Member,5-20 km
+4,4,38,28.736324230439777,cell,RNRO1 Main Röt Evaporite Member,>20 km
+5,0,3,-4.56219126168574,layer,RNSOC Solling Claystone Member,same site (<30 m)
+5,1,170,3.277200213467097,cell,RNSOC Solling Claystone Member,30 m-1 km
+5,2,128,-34.19127265670548,cell,RNSOC Solling Claystone Member,1-5 km
+5,3,140,-112.17085617711189,cell,RNSOC Solling Claystone Member,5-20 km
+5,4,29,-4.56219126168574,layer,RNSOC Solling Claystone Member,>20 km
+6,0,0,-21.07988392484731,layer,ZEZ2H Z2 Salt Member,same site (<30 m)
+6,1,68,-1.8879272704657524,cell,ZEZ2H Z2 Salt Member,30 m-1 km
+6,2,168,-23.841320471516156,cell,ZEZ2H Z2 Salt Member,1-5 km
+6,3,151,-47.084554422431665,cell,ZEZ2H Z2 Salt Member,5-20 km
+6,4,24,-21.07988392484731,layer,ZEZ2H Z2 Salt Member,>20 km
+7,0,0,-3.6480458856012774,layer,ZEZ2A Z2 Basal Anhydrite Member,same site (<30 m)
+7,1,89,11.010857400410714,cell,ZEZ2A Z2 Basal Anhydrite Member,30 m-1 km
+7,2,209,-6.783717632707976,cell,ZEZ2A Z2 Basal Anhydrite Member,1-5 km
+7,3,197,-25.201150516968482,cell,ZEZ2A Z2 Basal Anhydrite Member,5-20 km
+7,4,31,-88.078235211221,cell,ZEZ2A Z2 Basal Anhydrite Member,>20 km
+8,0,0,-0.25014640386370957,layer,ZEZ2C Z2 Carbonate Member,same site (<30 m)
+8,1,99,3.604709728719172,cell,ZEZ2C Z2 Carbonate Member,30 m-1 km
+8,2,204,-1.088964448819297,cell,ZEZ2C Z2 Carbonate Member,1-5 km
+8,3,210,-10.393731251806457,cell,ZEZ2C Z2 Carbonate Member,5-20 km
+8,4,32,15.441127666341117,cell,ZEZ2C Z2 Carbonate Member,>20 km
+9,0,0,0.010066080057413274,layer,ZEZ1W Z1 Anhydrite Member,same site (<30 m)
+9,1,84,4.845219125729955,cell,ZEZ1W Z1 Anhydrite Member,30 m-1 km
+9,2,198,3.040639166556275,cell,ZEZ1W Z1 Anhydrite Member,1-5 km
+9,3,188,-24.726689991801095,cell,ZEZ1W Z1 Anhydrite Member,5-20 km
+9,4,32,-21.592139331740782,cell,ZEZ1W Z1 Anhydrite Member,>20 km
+10,0,0,1.2580874189379756,layer,ZEZ1C Z1 Carbonate Member,same site (<30 m)
+10,1,86,7.1919087925612075,cell,ZEZ1C Z1 Carbonate Member,30 m-1 km
+10,2,202,2.0794726514398008,cell,ZEZ1C Z1 Carbonate Member,1-5 km
+10,3,196,-13.282634080582056,cell,ZEZ1C Z1 Carbonate Member,5-20 km
+10,4,33,-64.60965405674415,cell,ZEZ1C Z1 Carbonate Member,>20 km
+11,0,0,3.918556892322613,layer,ZEZ1K Coppershale Member,same site (<30 m)
+11,1,93,4.306147679000787,cell,ZEZ1K Coppershale Member,30 m-1 km
+11,2,220,8.422237241894663,cell,ZEZ1K Coppershale Member,1-5 km
+11,3,218,-5.331057563896138,cell,ZEZ1K Coppershale Member,5-20 km
+11,4,35,-72.02403220032966,cell,ZEZ1K Coppershale Member,>20 km

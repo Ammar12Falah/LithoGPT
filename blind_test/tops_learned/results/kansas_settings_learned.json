@@ -1,0 +1,86 @@
+{
+ "country": "kansas",
+ "seed": 20261113,
+ "threads": 4,
+ "load": {
+  "country": "kansas",
+  "stage": "train",
+  "block_date": "2006-04-12",
+  "sealed_wells": 13442,
+  "blocked_well_records": 57252,
+  "blocked_top_rows": 188657,
+  "holes": 169456,
+  "hole_top_values": 1643686,
+  "cut2": "2006-04-12",
+  "train_from": "1970-01-01",
+  "checks_training_and_tuning": {
+   "known_well_uses": 182271584,
+   "rows": 10552080,
+   "date_violations": 0,
+   "date_mismatch": 0,
+   "loose_cutoff": 0,
+   "own_pick": 0,
+   "own_system": 0,
+   "passed": true
+  },
+  "strict_known_day": 12885,
+  "strict_known_date": "2005-04-12"
+ },
+ "n_training_items_before_test_years": 341005,
+ "n_training_wells_before_test_years": 72056,
+ "n_tuning_items": 25067,
+ "n_tuning_wells": 6714,
+ "n_tuning_far_items": 5837,
+ "drift_window_years": 10,
+ "drift_table_targets": 36675,
+ "tuning_half_kriging": {
+  "mae_far": 4.694315116047562,
+  "mae_all": 2.6917427460975887
+ },
+ "model_C": {
+  "country": "kansas",
+  "model": "C",
+  "target_scaled_by_kriging_sd": true,
+  "far_weight": 3.0,
+  "num_leaves": 63,
+  "min_data_in_leaf": 200,
+  "best_rounds": 50,
+  "tuning_mae_far": 4.346900085013786,
+  "tuning_mae_all": 2.4927812439234573,
+  "tuning_mean_far": 9.940501144617057,
+  "seconds": 85.8
+ },
+ "model_D": {
+  "country": "kansas",
+  "model": "D",
+  "target_scaled_by_kriging_sd": false,
+  "far_weight": 1.0,
+  "num_leaves": 63,
+  "min_data_in_leaf": 200,
+  "best_rounds": 25,
+  "tuning_mae_far": 4.603127882926573,
+  "tuning_mae_all": 2.5712249012046233,
+  "tuning_mean_far": 10.695759237672673,
+  "seconds": 22.1
+ },
+ "range_offset_in_target_units": 0.07467754030878977,
+ "range_cover_tuning_before_offset": 0.7769976463078948,
+ "tuning_half_preview_models_fit_before_test_years": {
+  "C": {
+   "mae_far": 4.346900085013786,
+   "mae_all": 2.4927812439234573,
+   "mean_far": 9.940501144617057,
+   "mean_all": 6.820943938788324
+  },
+  "D": {
+   "mae_far": 4.603127882926573,
+   "mae_all": 2.5712249012046233,
+   "mean_far": 10.695759237672673,
+   "mean_all": 7.127352006368087
+  }
+ },
+ "strict_side_model_training_items": 359533,
+ "features_C": 160,
+ "features_D": 68,
+ "seconds": 1767.8
+}
