@@ -1,0 +1,265 @@
+layer,cell,method,key,n_items,n_wells,median_abs_error_m,mean_abs_error_m
+Stone Corral Formation,all items,A1 nearest known well,m1,3492,3492,1.828800000000001,8.236844673539519
+Stone Corral Formation,all items,A2 local plane,m2,3492,3492,1.9783392168177443,8.19878861180224
+Stone Corral Formation,all items,A3 kriging,m3,3492,3492,1.6165295715302221,5.893452488991204
+Stone Corral Formation,all items,A4 thickness method,m4,3492,3492,1.6165295715302221,5.893452488991204
+Stone Corral Formation,all items,A side 4b best route,m4b,3492,3492,1.6165295715302221,5.893452488991204
+Stone Corral Formation,all items,B drift-corrected kriging,B,3492,3492,1.5218132516952352,5.86897222384464
+Stone Corral Formation,all items,C learned model,C,3492,3492,1.466907063233407,5.633286110581222
+Stone Corral Formation,all items,D drift-only model,D,3492,3492,1.5369232326455062,5.86513868914734
+Stone Corral Formation,all items,C trained on shuffled targets,C_shuffled,3492,3492,1.5728715954989099,5.872568787908736
+Stone Corral Formation,all items,"side: C, only targets known before the scoring half",C_strict,3492,3492,1.454076007953347,5.636618135300913
+Stone Corral Formation,all items,"side: C, only targets from before the test years",C_pre,3492,3492,1.4650254174024582,5.6343927586135365
+Stone Corral Formation,far (>1 km),A1 nearest known well,m1,484,484,3.352800000000002,11.605385950413226
+Stone Corral Formation,far (>1 km),A2 local plane,m2,484,484,3.3281073765420786,12.668402835586939
+Stone Corral Formation,far (>1 km),A3 kriging,m3,484,484,2.7301345102829515,9.811248598359345
+Stone Corral Formation,far (>1 km),A4 thickness method,m4,484,484,2.7301345102829515,9.811248598359345
+Stone Corral Formation,far (>1 km),A side 4b best route,m4b,484,484,2.7301345102829515,9.811248598359345
+Stone Corral Formation,far (>1 km),B drift-corrected kriging,B,484,484,2.7115959628761104,9.814281399308442
+Stone Corral Formation,far (>1 km),C learned model,C,484,484,2.6606978984153002,9.318378193360767
+Stone Corral Formation,far (>1 km),D drift-only model,D,484,484,2.7178692620381213,9.784685960164134
+Stone Corral Formation,far (>1 km),C trained on shuffled targets,C_shuffled,484,484,2.777906050349223,9.78962718152391
+Stone Corral Formation,far (>1 km),"side: C, only targets known before the scoring half",C_strict,484,484,2.6028240558174502,9.321646056284862
+Stone Corral Formation,far (>1 km),"side: C, only targets from before the test years",C_pre,484,484,2.5560099569355827,9.307688186113326
+Topeka Limestone Formation,all items,A1 nearest known well,m1,2678,2678,3.048000000000002,11.936084092606425
+Topeka Limestone Formation,all items,A2 local plane,m2,2678,2678,3.474088662746457,11.218437974509808
+Topeka Limestone Formation,all items,A3 kriging,m3,2678,2678,2.686039697497648,8.633947473276015
+Topeka Limestone Formation,all items,A4 thickness method,m4,2678,2678,2.966958890056162,9.580365671895919
+Topeka Limestone Formation,all items,A side 4b best route,m4b,2678,2678,2.636960457587378,8.378842648038107
+Topeka Limestone Formation,all items,B drift-corrected kriging,B,2678,2678,2.621144885881506,8.621549126350578
+Topeka Limestone Formation,all items,C learned model,C,2678,2678,2.3520066394917194,7.904563474486732
+Topeka Limestone Formation,all items,D drift-only model,D,2678,2678,2.633008091240214,8.62185855057093
+Topeka Limestone Formation,all items,C trained on shuffled targets,C_shuffled,2678,2678,2.6450374768946006,8.617811547274435
+Topeka Limestone Formation,all items,"side: C, only targets known before the scoring half",C_strict,2678,2678,2.354693920633423,7.852225152834238
+Topeka Limestone Formation,all items,"side: C, only targets from before the test years",C_pre,2678,2678,2.3264414381937684,7.808211910590102
+Topeka Limestone Formation,far (>1 km),A1 nearest known well,m1,533,533,4.876800000000003,18.71517748592871
+Topeka Limestone Formation,far (>1 km),A2 local plane,m2,533,533,5.80112357991527,18.495119385260196
+Topeka Limestone Formation,far (>1 km),A3 kriging,m3,533,533,4.713773890861461,14.126370046995229
+Topeka Limestone Formation,far (>1 km),A4 thickness method,m4,533,533,4.602185696117942,14.912563290714534
+Topeka Limestone Formation,far (>1 km),A side 4b best route,m4b,533,533,4.360857031588779,13.465231248630216
+Topeka Limestone Formation,far (>1 km),B drift-corrected kriging,B,533,533,4.776584935410938,14.079936053832565
+Topeka Limestone Formation,far (>1 km),C learned model,C,533,533,3.908497071199406,12.61788109503742
+Topeka Limestone Formation,far (>1 km),D drift-only model,D,533,533,4.798434109042205,14.075121091840861
+Topeka Limestone Formation,far (>1 km),C trained on shuffled targets,C_shuffled,533,533,4.789519105169177,14.112187367087305
+Topeka Limestone Formation,far (>1 km),"side: C, only targets known before the scoring half",C_strict,533,533,3.722363409672994,12.513611245152653
+Topeka Limestone Formation,far (>1 km),"side: C, only targets from before the test years",C_pre,533,533,3.574272727067921,12.474510677911486
+Heebner Shale Member,all items,A1 nearest known well,m1,5522,5522,2.1336000000000013,8.162452372328866
+Heebner Shale Member,all items,A2 local plane,m2,5522,5522,2.14763367967106,7.220296607657656
+Heebner Shale Member,all items,A3 kriging,m3,5522,5522,1.823447103467032,5.766312090764502
+Heebner Shale Member,all items,A4 thickness method,m4,5522,5522,2.379050074711813,10.218203391542447
+Heebner Shale Member,all items,A side 4b best route,m4b,5522,5522,1.796080447809743,5.721224841819779
+Heebner Shale Member,all items,B drift-corrected kriging,B,5522,5522,1.6889933362434988,5.672986150315898
+Heebner Shale Member,all items,C learned model,C,5522,5522,1.6226600454812115,5.549603495756192
+Heebner Shale Member,all items,D drift-only model,D,5522,5522,1.609958778331304,5.613561225808532
+Heebner Shale Member,all items,C trained on shuffled targets,C_shuffled,5522,5522,1.7940606023280168,5.740661869159113
+Heebner Shale Member,all items,"side: C, only targets known before the scoring half",C_strict,5522,5522,1.6551460968447032,5.558876764343131
+Heebner Shale Member,all items,"side: C, only targets from before the test years",C_pre,5522,5522,1.6784180326422984,5.597356949045315
+Heebner Shale Member,far (>1 km),A1 nearest known well,m1,818,818,3.9624000000000024,12.800482151589243
+Heebner Shale Member,far (>1 km),A2 local plane,m2,818,818,3.158202332647903,10.392392059339365
+Heebner Shale Member,far (>1 km),A3 kriging,m3,818,818,2.8492847471924705,9.278178094113315
+Heebner Shale Member,far (>1 km),A4 thickness method,m4,818,818,3.669991570877869,12.031842327164666
+Heebner Shale Member,far (>1 km),A side 4b best route,m4b,818,818,2.8344092893483435,9.238143792140662
+Heebner Shale Member,far (>1 km),B drift-corrected kriging,B,818,818,2.7457077007615,9.225668452509023
+Heebner Shale Member,far (>1 km),C learned model,C,818,818,2.6727353689354345,9.016913252033994
+Heebner Shale Member,far (>1 km),D drift-only model,D,818,818,2.7502396601546195,9.17722605400339
+Heebner Shale Member,far (>1 km),C trained on shuffled targets,C_shuffled,818,818,2.8327241851211227,9.278062031638479
+Heebner Shale Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,818,818,2.6418117585431276,9.023457232139267
+Heebner Shale Member,far (>1 km),"side: C, only targets from before the test years",C_pre,818,818,2.640812061306491,9.083703721389297
+Toronto Limestone Member,all items,A1 nearest known well,m1,2445,2445,2.1336000000000013,7.766790184049079
+Toronto Limestone Member,all items,A2 local plane,m2,2445,2445,2.3245269868567107,6.048570859742801
+Toronto Limestone Member,all items,A3 kriging,m3,2445,2445,1.946779425286934,4.536226520935173
+Toronto Limestone Member,all items,A4 thickness method,m4,2445,2445,2.3756301220481646,8.64376875875517
+Toronto Limestone Member,all items,A side 4b best route,m4b,2445,2445,1.867917620117737,4.361900214962928
+Toronto Limestone Member,all items,B drift-corrected kriging,B,2445,2445,1.7319936036278705,4.397954122603731
+Toronto Limestone Member,all items,C learned model,C,2445,2445,1.5884080513536674,4.110816115184354
+Toronto Limestone Member,all items,D drift-only model,D,2445,2445,1.7105157571208451,4.354479248860751
+Toronto Limestone Member,all items,C trained on shuffled targets,C_shuffled,2445,2445,1.8854378659610802,4.492594508644403
+Toronto Limestone Member,all items,"side: C, only targets known before the scoring half",C_strict,2445,2445,1.6092486336009983,4.150518370465199
+Toronto Limestone Member,all items,"side: C, only targets from before the test years",C_pre,2445,2445,1.6725585418743663,4.207377341365612
+Toronto Limestone Member,far (>1 km),A1 nearest known well,m1,492,492,4.572000000000003,11.442390243902441
+Toronto Limestone Member,far (>1 km),A2 local plane,m2,492,492,3.4505497855618046,8.187131169568794
+Toronto Limestone Member,far (>1 km),A3 kriging,m3,492,492,2.7162135342744307,6.3629819823853575
+Toronto Limestone Member,far (>1 km),A4 thickness method,m4,492,492,3.6097110846048395,15.401536498957407
+Toronto Limestone Member,far (>1 km),A side 4b best route,m4b,492,492,2.4378762932026063,5.909888536528845
+Toronto Limestone Member,far (>1 km),B drift-corrected kriging,B,492,492,2.7517011240581155,6.368809881444272
+Toronto Limestone Member,far (>1 km),C learned model,C,492,492,2.2927176027076825,5.750861589092609
+Toronto Limestone Member,far (>1 km),D drift-only model,D,492,492,2.6754917534063907,6.3230038608768355
+Toronto Limestone Member,far (>1 km),C trained on shuffled targets,C_shuffled,492,492,2.6787377895471423,6.3431348043935785
+Toronto Limestone Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,492,492,2.3222433417282673,5.829054978315243
+Toronto Limestone Member,far (>1 km),"side: C, only targets from before the test years",C_pre,492,492,2.3886359710619445,5.883445818553561
+Lansing Group,all items,A1 nearest known well,m1,5560,5560,2.4384000000000015,7.276236582733814
+Lansing Group,all items,A2 local plane,m2,5560,5560,2.395319222614688,6.887506641317577
+Lansing Group,all items,A3 kriging,m3,5560,5560,2.0601294337548097,5.758062521655252
+Lansing Group,all items,A4 thickness method,m4,5560,5560,2.6669035069863014,9.808548968145416
+Lansing Group,all items,A side 4b best route,m4b,5560,5560,1.9855103055590746,5.692044019014559
+Lansing Group,all items,B drift-corrected kriging,B,5560,5560,1.8906118320977043,5.601539988954921
+Lansing Group,all items,C learned model,C,5560,5560,1.820580068984384,5.464251849985429
+Lansing Group,all items,D drift-only model,D,5560,5560,1.825759744575862,5.5576873196761865
+Lansing Group,all items,C trained on shuffled targets,C_shuffled,5560,5560,2.0126889736636144,5.72517913114594
+Lansing Group,all items,"side: C, only targets known before the scoring half",C_strict,5560,5560,1.8366285253189005,5.471158216236352
+Lansing Group,all items,"side: C, only targets from before the test years",C_pre,5560,5560,1.8965016402335095,5.53565471436365
+Lansing Group,far (>1 km),A1 nearest known well,m1,785,785,4.2672000000000025,10.129067006369429
+Lansing Group,far (>1 km),A2 local plane,m2,785,785,3.6502392189194666,8.952868809458801
+Lansing Group,far (>1 km),A3 kriging,m3,785,785,3.2215482232541603,8.45086642139372
+Lansing Group,far (>1 km),A4 thickness method,m4,785,785,3.838600675626992,11.400855388538245
+Lansing Group,far (>1 km),A side 4b best route,m4b,785,785,3.2930566657393,8.436234501584712
+Lansing Group,far (>1 km),B drift-corrected kriging,B,785,785,3.1122834303182856,8.308571872977742
+Lansing Group,far (>1 km),C learned model,C,785,785,2.942007062910193,8.066168846439142
+Lansing Group,far (>1 km),D drift-only model,D,785,785,3.1061166719705966,8.307867329569278
+Lansing Group,far (>1 km),C trained on shuffled targets,C_shuffled,785,785,3.198368665424539,8.430035470868667
+Lansing Group,far (>1 km),"side: C, only targets known before the scoring half",C_strict,785,785,3.039267512689378,8.063506911881545
+Lansing Group,far (>1 km),"side: C, only targets from before the test years",C_pre,785,785,3.07430841845553,8.124842647245032
+Kansas City Group,all items,A1 nearest known well,m1,511,511,4.2672000000000025,20.84211663405088
+Kansas City Group,all items,A2 local plane,m2,511,511,7.611910517805086,20.79097727676189
+Kansas City Group,all items,A3 kriging,m3,511,511,4.486108944478751,15.186127959671902
+Kansas City Group,all items,A4 thickness method,m4,511,511,13.628625532287401,31.192674200157885
+Kansas City Group,all items,A side 4b best route,m4b,511,511,4.69821929019767,18.8864848804424
+Kansas City Group,all items,B drift-corrected kriging,B,511,511,4.382964958909383,15.152365346133227
+Kansas City Group,all items,C learned model,C,511,511,5.065707620957937,15.734740445419336
+Kansas City Group,all items,D drift-only model,D,511,511,4.492757980662304,15.176064480581507
+Kansas City Group,all items,C trained on shuffled targets,C_shuffled,511,511,4.615337059789454,15.161215624416238
+Kansas City Group,all items,"side: C, only targets known before the scoring half",C_strict,511,511,4.942591600048303,15.845982328192743
+Kansas City Group,all items,"side: C, only targets from before the test years",C_pre,511,511,5.307141220288202,15.935926800148932
+Kansas City Group,far (>1 km),A1 nearest known well,m1,160,160,8.839200000000005,29.887545
+Kansas City Group,far (>1 km),A2 local plane,m2,160,160,12.907934490205207,30.52217457646028
+Kansas City Group,far (>1 km),A3 kriging,m3,160,160,10.675171630583122,23.93908023408442
+Kansas City Group,far (>1 km),A4 thickness method,m4,160,160,15.493894847667917,30.07238173784152
+Kansas City Group,far (>1 km),A side 4b best route,m4b,160,160,10.291040763192314,24.141693556490956
+Kansas City Group,far (>1 km),B drift-corrected kriging,B,160,160,10.567877473904275,23.9444433675044
+Kansas City Group,far (>1 km),C learned model,C,160,160,11.727323656929514,23.52652749826475
+Kansas City Group,far (>1 km),D drift-only model,D,160,160,11.173888378514704,24.09786260394627
+Kansas City Group,far (>1 km),C trained on shuffled targets,C_shuffled,160,160,10.39724246449859,24.140364082744995
+Kansas City Group,far (>1 km),"side: C, only targets known before the scoring half",C_strict,160,160,12.748635247243326,23.529681866602026
+Kansas City Group,far (>1 km),"side: C, only targets from before the test years",C_pre,160,160,12.033600152720126,23.790397293003885
+Marmaton Group,all items,A1 nearest known well,m1,1703,1703,4.1148000000000025,8.88788566999413
+Marmaton Group,all items,A2 local plane,m2,1703,1703,4.006889896029577,8.511520225006151
+Marmaton Group,all items,A3 kriging,m3,1703,1703,3.645814741229401,7.26935761558295
+Marmaton Group,all items,A4 thickness method,m4,1703,1703,4.330358026858619,10.221628050324652
+Marmaton Group,all items,A side 4b best route,m4b,1703,1703,3.3900501958209475,6.703286555045613
+Marmaton Group,all items,B drift-corrected kriging,B,1703,1703,3.350485794641486,7.146797982110012
+Marmaton Group,all items,C learned model,C,1703,1703,3.181948611238056,6.49959159480868
+Marmaton Group,all items,D drift-only model,D,1703,1703,3.437663376470937,7.156178694473171
+Marmaton Group,all items,C trained on shuffled targets,C_shuffled,1703,1703,3.572946241892055,7.228198811549895
+Marmaton Group,all items,"side: C, only targets known before the scoring half",C_strict,1703,1703,3.145108172686662,6.511348062018879
+Marmaton Group,all items,"side: C, only targets from before the test years",C_pre,1703,1703,3.2178535118699756,6.575458805866772
+Marmaton Group,far (>1 km),A1 nearest known well,m1,597,597,6.400800000000004,12.459019095477387
+Marmaton Group,far (>1 km),A2 local plane,m2,597,597,5.300202702615593,11.579821601890862
+Marmaton Group,far (>1 km),A3 kriging,m3,597,597,4.835879983886002,9.370000994195614
+Marmaton Group,far (>1 km),A4 thickness method,m4,597,597,5.674787816962521,15.091938989769076
+Marmaton Group,far (>1 km),A side 4b best route,m4b,597,597,4.192547924991686,8.534828281409512
+Marmaton Group,far (>1 km),B drift-corrected kriging,B,597,597,4.82045207008963,9.202456321459989
+Marmaton Group,far (>1 km),C learned model,C,597,597,4.341463105599928,8.223693284266712
+Marmaton Group,far (>1 km),D drift-only model,D,597,597,4.789548199743422,9.28532611525479
+Marmaton Group,far (>1 km),C trained on shuffled targets,C_shuffled,597,597,4.837790317687563,9.314840279902599
+Marmaton Group,far (>1 km),"side: C, only targets known before the scoring half",C_strict,597,597,4.314172647624673,8.210716456572326
+Marmaton Group,far (>1 km),"side: C, only targets from before the test years",C_pre,597,597,4.439859071913247,8.308219117254044
+Fort Scott Limestone Formation,all items,A1 nearest known well,m1,1460,1460,3.657600000000002,7.9539960821917814
+Fort Scott Limestone Formation,all items,A2 local plane,m2,1460,1460,3.633295017241039,7.701321271396666
+Fort Scott Limestone Formation,all items,A3 kriging,m3,1460,1460,3.2113325367886034,6.634640048541465
+Fort Scott Limestone Formation,all items,A4 thickness method,m4,1460,1460,3.5881146862749915,7.791685097505882
+Fort Scott Limestone Formation,all items,A side 4b best route,m4b,1460,1460,3.1198783185052434,6.415645108352744
+Fort Scott Limestone Formation,all items,B drift-corrected kriging,B,1460,1460,3.1061403896310935,6.588697492812058
+Fort Scott Limestone Formation,all items,C learned model,C,1460,1460,2.7470008741350114,6.04756109157985
+Fort Scott Limestone Formation,all items,D drift-only model,D,1460,1460,2.9804123722071836,6.539784102134536
+Fort Scott Limestone Formation,all items,C trained on shuffled targets,C_shuffled,1460,1460,3.165117667499885,6.653045097967461
+Fort Scott Limestone Formation,all items,"side: C, only targets known before the scoring half",C_strict,1460,1460,2.82851713171317,6.057514888666282
+Fort Scott Limestone Formation,all items,"side: C, only targets from before the test years",C_pre,1460,1460,2.860421531062741,6.073041249796903
+Fort Scott Limestone Formation,far (>1 km),A1 nearest known well,m1,375,375,7.010400000000004,11.550936511999998
+Fort Scott Limestone Formation,far (>1 km),A2 local plane,m2,375,375,5.658438179445909,10.29708514527623
+Fort Scott Limestone Formation,far (>1 km),A3 kriging,m3,375,375,5.610885681234606,9.226862626450862
+Fort Scott Limestone Formation,far (>1 km),A4 thickness method,m4,375,375,6.1006683911367645,11.54554844746371
+Fort Scott Limestone Formation,far (>1 km),A side 4b best route,m4b,375,375,5.09140793297405,8.66892038505685
+Fort Scott Limestone Formation,far (>1 km),B drift-corrected kriging,B,375,375,5.782547854150948,9.239788722739924
+Fort Scott Limestone Formation,far (>1 km),C learned model,C,375,375,4.7158641172694615,8.09384963435104
+Fort Scott Limestone Formation,far (>1 km),D drift-only model,D,375,375,5.361263338990284,9.246093651705207
+Fort Scott Limestone Formation,far (>1 km),C trained on shuffled targets,C_shuffled,375,375,5.640620694336064,9.329796109076781
+Fort Scott Limestone Formation,far (>1 km),"side: C, only targets known before the scoring half",C_strict,375,375,4.654828984064238,8.075352590815552
+Fort Scott Limestone Formation,far (>1 km),"side: C, only targets from before the test years",C_pre,375,375,4.497687103247017,8.004149826708908
+Cherokee Group,all items,A1 nearest known well,m1,1463,1463,4.2672000000000025,10.759565003417636
+Cherokee Group,all items,A2 local plane,m2,1463,1463,3.7568045424665115,8.514957248338566
+Cherokee Group,all items,A3 kriging,m3,1463,1463,3.3996924743963746,7.299987999986315
+Cherokee Group,all items,A4 thickness method,m4,1463,1463,4.5865325656000095,16.647712304826634
+Cherokee Group,all items,A side 4b best route,m4b,1463,1463,3.250385711174431,7.033263797744399
+Cherokee Group,all items,B drift-corrected kriging,B,1463,1463,3.37236574485496,7.279007434986046
+Cherokee Group,all items,C learned model,C,1463,1463,3.053823689167075,6.803810968997464
+Cherokee Group,all items,D drift-only model,D,1463,1463,3.3469107002857754,7.266303959553675
+Cherokee Group,all items,C trained on shuffled targets,C_shuffled,1463,1463,3.414167034876982,7.261099985062216
+Cherokee Group,all items,"side: C, only targets known before the scoring half",C_strict,1463,1463,2.965794122303066,6.792362199629005
+Cherokee Group,all items,"side: C, only targets from before the test years",C_pre,1463,1463,3.0316970799276532,6.815961078399427
+Cherokee Group,far (>1 km),A1 nearest known well,m1,442,442,7.010400000000004,16.66469864253394
+Cherokee Group,far (>1 km),A2 local plane,m2,442,442,5.276885039866556,9.414958056511693
+Cherokee Group,far (>1 km),A3 kriging,m3,442,442,4.56963252327796,8.602095550179348
+Cherokee Group,far (>1 km),A4 thickness method,m4,442,442,6.407326345273134,18.65779146229657
+Cherokee Group,far (>1 km),A side 4b best route,m4b,442,442,4.643472790729078,8.282366538669068
+Cherokee Group,far (>1 km),B drift-corrected kriging,B,442,442,4.584380605884732,8.522327151171446
+Cherokee Group,far (>1 km),C learned model,C,442,442,4.189023460404087,7.988538042730847
+Cherokee Group,far (>1 km),D drift-only model,D,442,442,4.539489825413995,8.556624145982795
+Cherokee Group,far (>1 km),C trained on shuffled targets,C_shuffled,442,442,4.712966771162343,8.576721523598486
+Cherokee Group,far (>1 km),"side: C, only targets known before the scoring half",C_strict,442,442,4.196403918120964,7.911555448617485
+Cherokee Group,far (>1 km),"side: C, only targets from before the test years",C_pre,442,442,4.34358915922374,8.011722752099258
+Mississippian System,all items,A1 nearest known well,m1,2732,2732,4.572000000000003,8.896872689604688
+Mississippian System,all items,A2 local plane,m2,2732,2732,4.3326767956672825,7.705163820844919
+Mississippian System,all items,A3 kriging,m3,2732,2732,3.888211944604553,6.723026146376712
+Mississippian System,all items,A4 thickness method,m4,2732,2732,6.322298951416087,15.759292281488067
+Mississippian System,all items,A side 4b best route,m4b,2732,2732,3.8311697226850754,6.733081402112418
+Mississippian System,all items,B drift-corrected kriging,B,2732,2732,3.781160026368809,6.726406214445716
+Mississippian System,all items,C learned model,C,2732,2732,3.5195298342919443,6.4373098604322845
+Mississippian System,all items,D drift-only model,D,2732,2732,3.6229108625730646,6.6011291820630245
+Mississippian System,all items,C trained on shuffled targets,C_shuffled,2732,2732,3.8112171591062634,6.686306525001089
+Mississippian System,all items,"side: C, only targets known before the scoring half",C_strict,2732,2732,3.5711870948098223,6.4638269100332275
+Mississippian System,all items,"side: C, only targets from before the test years",C_pre,2732,2732,3.6306953312494556,6.492354316938846
+Mississippian System,far (>1 km),A1 nearest known well,m1,635,635,7.620000000000061,12.679327200000001
+Mississippian System,far (>1 km),A2 local plane,m2,635,635,7.114923429047167,10.596191840485922
+Mississippian System,far (>1 km),A3 kriging,m3,635,635,5.895578756155771,8.751359615932227
+Mississippian System,far (>1 km),A4 thickness method,m4,635,635,7.378270627205229,13.396077497238904
+Mississippian System,far (>1 km),A side 4b best route,m4b,635,635,5.563241423500074,8.416684204819274
+Mississippian System,far (>1 km),B drift-corrected kriging,B,635,635,6.4084463387912365,9.004090895930043
+Mississippian System,far (>1 km),C learned model,C,635,635,5.12634215945252,8.23613438967749
+Mississippian System,far (>1 km),D drift-only model,D,635,635,5.629081851874503,8.629180212794866
+Mississippian System,far (>1 km),C trained on shuffled targets,C_shuffled,635,635,5.627716138822393,8.701141328055469
+Mississippian System,far (>1 km),"side: C, only targets known before the scoring half",C_strict,635,635,5.104985011759311,8.263326355581682
+Mississippian System,far (>1 km),"side: C, only targets from before the test years",C_pre,635,635,5.227135782758353,8.246543650427679
+Simpson Group,all items,A1 nearest known well,m1,369,369,4.571999999999889,8.832591869918696
+Simpson Group,all items,A2 local plane,m2,369,369,4.238032358100554,9.406562447528634
+Simpson Group,all items,A3 kriging,m3,369,369,3.305797159398253,6.045702454406862
+Simpson Group,all items,A4 thickness method,m4,369,369,15.014097501326432,37.89339394741806
+Simpson Group,all items,A side 4b best route,m4b,369,369,3.396415870081114,6.7552193064566355
+Simpson Group,all items,B drift-corrected kriging,B,369,369,3.413516732367043,6.068615251475993
+Simpson Group,all items,C learned model,C,369,369,3.1219992805057473,5.613660649387912
+Simpson Group,all items,D drift-only model,D,369,369,3.1354226285178584,5.952068601166167
+Simpson Group,all items,C trained on shuffled targets,C_shuffled,369,369,3.292963066109678,6.0467576600547
+Simpson Group,all items,"side: C, only targets known before the scoring half",C_strict,369,369,3.1901262457436133,5.674970106061832
+Simpson Group,all items,"side: C, only targets from before the test years",C_pre,369,369,3.2596160389385886,5.772780026813506
+Simpson Group,far (>1 km),A1 nearest known well,m1,117,117,7.924800000000005,15.088902564102552
+Simpson Group,far (>1 km),A2 local plane,m2,117,117,5.347463847310337,12.019623363636477
+Simpson Group,far (>1 km),A3 kriging,m3,117,117,4.201949172920649,8.795021199272115
+Simpson Group,far (>1 km),A4 thickness method,m4,117,117,32.64882505840342,46.757834150817885
+Simpson Group,far (>1 km),A side 4b best route,m4b,117,117,4.201949172920649,10.74574009003014
+Simpson Group,far (>1 km),B drift-corrected kriging,B,117,117,4.750975398151695,8.991332076587637
+Simpson Group,far (>1 km),C learned model,C,117,117,4.4135059456010595,8.29340602340315
+Simpson Group,far (>1 km),D drift-only model,D,117,117,4.066275769449476,8.806566779904722
+Simpson Group,far (>1 km),C trained on shuffled targets,C_shuffled,117,117,4.041409858557699,8.808758554830094
+Simpson Group,far (>1 km),"side: C, only targets known before the scoring half",C_strict,117,117,3.845517639747527,8.294427561853226
+Simpson Group,far (>1 km),"side: C, only targets from before the test years",C_pre,117,117,4.104975945520891,8.46431655360127
+Arbuckle Group,all items,A1 nearest known well,m1,2168,2168,4.572000000000003,10.285031734317343
+Arbuckle Group,all items,A2 local plane,m2,2168,2168,5.106155031472326,10.17007846401528
+Arbuckle Group,all items,A3 kriging,m3,2168,2168,4.399014435140202,8.598939217460885
+Arbuckle Group,all items,A4 thickness method,m4,2168,2168,5.035757962464828,12.185688543884453
+Arbuckle Group,all items,A side 4b best route,m4b,2168,2168,4.032829187244346,8.426043058472063
+Arbuckle Group,all items,B drift-corrected kriging,B,2168,2168,3.5781712656392415,8.000500417508634
+Arbuckle Group,all items,C learned model,C,2168,2168,3.3993512272099338,7.585530768393633
+Arbuckle Group,all items,D drift-only model,D,2168,2168,3.637210964772521,7.998653466246537
+Arbuckle Group,all items,C trained on shuffled targets,C_shuffled,2168,2168,4.188960241439958,8.487135382412962
+Arbuckle Group,all items,"side: C, only targets known before the scoring half",C_strict,2168,2168,3.417664100196049,7.607744440786485
+Arbuckle Group,all items,"side: C, only targets from before the test years",C_pre,2168,2168,3.635150846957373,7.799504436710698
+Arbuckle Group,far (>1 km),A1 nearest known well,m1,262,262,10.058400000000063,18.251354198473287
+Arbuckle Group,far (>1 km),A2 local plane,m2,262,262,7.646818584646098,14.040968823401665
+Arbuckle Group,far (>1 km),A3 kriging,m3,262,262,6.9646432827840385,12.708606971636947
+Arbuckle Group,far (>1 km),A4 thickness method,m4,262,262,10.10577946842838,23.072019340776134
+Arbuckle Group,far (>1 km),A side 4b best route,m4b,262,262,6.643134018221815,12.0387886265835
+Arbuckle Group,far (>1 km),B drift-corrected kriging,B,262,262,6.813122008493394,12.41331207557289
+Arbuckle Group,far (>1 km),C learned model,C,262,262,6.293086605632084,11.7483983553914
+Arbuckle Group,far (>1 km),D drift-only model,D,262,262,6.423853409356212,12.332219055936577
+Arbuckle Group,far (>1 km),C trained on shuffled targets,C_shuffled,262,262,7.005443179790603,12.682183767967055
+Arbuckle Group,far (>1 km),"side: C, only targets known before the scoring half",C_strict,262,262,6.080751177068976,11.514026832876217
+Arbuckle Group,far (>1 km),"side: C, only targets from before the test years",C_pre,262,262,6.2359057955535775,11.76950324033376

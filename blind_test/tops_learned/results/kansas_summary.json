@@ -1,0 +1,136 @@
+{
+ "country": "Kansas",
+ "half": "scoring",
+ "frozen_files_verified": 10,
+ "load": {
+  "country": "kansas",
+  "stage": "score",
+  "block_date": "2010-07-15",
+  "sealed_wells": 13442,
+  "blocked_well_records": 40145,
+  "blocked_top_rows": 130541,
+  "holes": 176871,
+  "hole_top_values": 1700195
+ },
+ "wells_in_half": 6719,
+ "wells_scored": 6719,
+ "wells_without_item_here": 0,
+ "items": 30103,
+ "far_items": 5700,
+ "far_wells": 2162,
+ "far_median_abs_error_m": {
+  "m1": 5.486400000000003,
+  "m2": 4.629294728590224,
+  "m3": 3.997632099236,
+  "m4": 4.976761115849968,
+  "m4b": 3.8742187584864496,
+  "B": 3.9688922683797756,
+  "C": 3.5974815812585206,
+  "D": 3.868562460905764,
+  "C_shuffled": 3.9898761431355183,
+  "C_strict": 3.5709360757433046,
+  "C_pre": 3.6391729022863064
+ },
+ "far_mean_abs_error_m": {
+  "m1": 13.712286520000001,
+  "m2": 11.785891975993836,
+  "m3": 9.865648337869132,
+  "m4": 14.997570708670795,
+  "m4b": 9.58563977738593,
+  "B": 9.830813396544302,
+  "C": 9.1738417693312,
+  "D": 9.783621412717547,
+  "C_shuffled": 9.856037601561757,
+  "C_strict": 9.155511284171192,
+  "C_pre": 9.206431554983016
+ },
+ "all_median_abs_error_m": {
+  "m1": 2.7432000000000016,
+  "m2": 2.8350575572652588,
+  "m3": 2.390844746741948,
+  "m4": 3.0102709988206016,
+  "m4b": 2.328911788754226,
+  "B": 2.2428799822589554,
+  "C": 2.1070379627358875,
+  "D": 2.192920503485368,
+  "C_shuffled": 2.350616998247233,
+  "C_strict": 2.124034931487813,
+  "C_pre": 2.171818282180425
+ },
+ "best_simple_method": "m4b",
+ "best_simple_method_name": "A side 4b best route",
+ "C_improvement_over_best_simple_pct": 7.143044687957745,
+ "C_improvement_ci_pct": [
+  3.8742182843766826,
+  9.467102848953182
+ ],
+ "D_improvement_over_best_simple_pct": 0.14599840466662517,
+ "D_improvement_ci_pct": [
+  -3.4432930776455644,
+  2.7340664452635703
+ ],
+ "C_gain_m": 0.276737177227929,
+ "D_gain_m": 0.005656297580685532,
+ "share_of_C_gain_reached_by_D": 0.020439239994223243,
+ "passed": false,
+ "shuffle_test": {
+  "improvement_over_best_simple_pct": -2.9853085708111404,
+  "ci_pct": [
+   -6.169929524627677,
+   -0.1891493436130134
+  ],
+  "improvement_over_kriging_pct": 0.19401375384103803,
+  "ci_over_kriging_pct": [
+   -1.2184492761628785,
+   1.945017184743425
+  ],
+  "gain_vanished": true
+ },
+ "date_rule_test": {
+  "known_well_uses": 15291760,
+  "rows": 885318,
+  "date_violations": 0,
+  "date_mismatch": 0,
+  "loose_cutoff": 0,
+  "own_pick": 0,
+  "own_system": 0,
+  "passed": true
+ },
+ "own_pick_test": {
+  "wells_tested": 60,
+  "items_tested": 280,
+  "wells_where_a_feature_moved": 0,
+  "control_wells_where_features_moved": 60,
+  "passed": true
+ },
+ "range_coverage": {
+  "all items": {
+   "learned": 0.8216456831545029,
+   "kriging": 0.7811513802611035
+  },
+  "far (>1 km)": {
+   "learned": 0.7929824561403509,
+   "kriging": 0.7870175438596492
+  },
+  "same site (<30 m)": {
+   "learned": 0.7391304347826086,
+   "kriging": 0.6434782608695652
+  },
+  "30 m-1 km": {
+   "learned": 0.8287631752305665,
+   "kriging": 0.7804265480895916
+  },
+  "1-5 km": {
+   "learned": 0.794792984993672,
+   "kriging": 0.7873802205749413
+  },
+  "5-20 km": {
+   "learned": 0.7349397590361446,
+   "kriging": 0.7771084337349398
+  },
+  ">20 km": {
+   "learned": 0.6666666666666666,
+   "kriging": 0.6666666666666666
+  }
+ }
+}

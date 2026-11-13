@@ -1,0 +1,265 @@
+layer,cell,method,key,n_items,n_wells,median_abs_error_m,mean_abs_error_m
+NLLFC Landen Clay Member,all items,A1 nearest known well,m1,80,80,62.53499999999991,126.86387499999996
+NLLFC Landen Clay Member,all items,A2 local plane,m2,80,80,71.11728287165988,172.65680609238842
+NLLFC Landen Clay Member,all items,A3 kriging,m3,80,80,45.43802397318791,93.33854392664628
+NLLFC Landen Clay Member,all items,A4 thickness method,m4,80,80,45.43802397318791,93.33854392664628
+NLLFC Landen Clay Member,all items,A side 4b best route,m4b,80,80,45.43802397318791,93.33854392664628
+NLLFC Landen Clay Member,all items,B drift-corrected kriging,B,80,80,47.882015090112816,94.40131090500344
+NLLFC Landen Clay Member,all items,C learned model,C,80,80,40.94807506178131,97.65785719831123
+NLLFC Landen Clay Member,all items,D drift-only model,D,80,80,64.98140311463285,99.0521604545946
+NLLFC Landen Clay Member,all items,C trained on shuffled targets,C_shuffled,80,80,50.7997984544142,98.3867013513006
+NLLFC Landen Clay Member,all items,"side: C, only targets known before the scoring half",C_strict,80,80,55.002224438390385,93.72230587368539
+NLLFC Landen Clay Member,all items,"side: C, only targets from before the test years",C_pre,80,80,47.78072465695499,99.14612206577632
+NLLFC Landen Clay Member,far (>1 km),A1 nearest known well,m1,61,61,119.61000000000001,163.08967213114752
+NLLFC Landen Clay Member,far (>1 km),A2 local plane,m2,61,61,105.81208180999579,219.320808898657
+NLLFC Landen Clay Member,far (>1 km),A3 kriging,m3,61,61,101.12432041977695,118.7006136660775
+NLLFC Landen Clay Member,far (>1 km),A4 thickness method,m4,61,61,101.12432041977695,118.7006136660775
+NLLFC Landen Clay Member,far (>1 km),A side 4b best route,m4b,61,61,101.12432041977695,118.7006136660775
+NLLFC Landen Clay Member,far (>1 km),B drift-corrected kriging,B,61,61,92.48006306195737,119.83810482906128
+NLLFC Landen Clay Member,far (>1 km),C learned model,C,61,61,102.64276416532289,124.76152593601196
+NLLFC Landen Clay Member,far (>1 km),D drift-only model,D,61,61,77.08182774249462,119.50924167590163
+NLLFC Landen Clay Member,far (>1 km),C trained on shuffled targets,C_shuffled,61,61,92.77011958948549,125.78478399401575
+NLLFC Landen Clay Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,61,61,92.14178660196296,119.37162200331962
+NLLFC Landen Clay Member,far (>1 km),"side: C, only targets from before the test years",C_pre,61,61,84.93856751223643,125.82564716116934
+KNGLU Upper Holland Marl Member,all items,A1 nearest known well,m1,136,136,98.46999999999997,204.72705882352943
+KNGLU Upper Holland Marl Member,all items,A2 local plane,m2,136,136,106.85764358907898,264.89087275996013
+KNGLU Upper Holland Marl Member,all items,A3 kriging,m3,136,136,77.19655478029392,173.28103111725565
+KNGLU Upper Holland Marl Member,all items,A4 thickness method,m4,136,136,77.19655478029392,173.93364436152908
+KNGLU Upper Holland Marl Member,all items,A side 4b best route,m4b,136,136,77.19655478029392,175.10202791563668
+KNGLU Upper Holland Marl Member,all items,B drift-corrected kriging,B,136,136,82.40012526878093,170.58003362460897
+KNGLU Upper Holland Marl Member,all items,C learned model,C,136,136,81.55242001337842,200.55775974497553
+KNGLU Upper Holland Marl Member,all items,D drift-only model,D,136,136,91.6792673711949,166.20141674330935
+KNGLU Upper Holland Marl Member,all items,C trained on shuffled targets,C_shuffled,136,136,81.22695056695784,173.91183273766194
+KNGLU Upper Holland Marl Member,all items,"side: C, only targets known before the scoring half",C_strict,136,136,82.71917657565336,184.68951891083427
+KNGLU Upper Holland Marl Member,all items,"side: C, only targets from before the test years",C_pre,136,136,79.38372016328651,183.22483525899727
+KNGLU Upper Holland Marl Member,far (>1 km),A1 nearest known well,m1,93,93,241.48000000000002,281.03086021505374
+KNGLU Upper Holland Marl Member,far (>1 km),A2 local plane,m2,93,93,171.17826619398193,362.6492224341651
+KNGLU Upper Holland Marl Member,far (>1 km),A3 kriging,m3,93,93,162.04970204528627,236.44080013784574
+KNGLU Upper Holland Marl Member,far (>1 km),A4 thickness method,m4,93,93,151.85308928272525,230.13969356452895
+KNGLU Upper Holland Marl Member,far (>1 km),A side 4b best route,m4b,93,93,162.04970204528627,239.09505265717183
+KNGLU Upper Holland Marl Member,far (>1 km),B drift-corrected kriging,B,93,93,154.51807444545466,232.35250770365184
+KNGLU Upper Holland Marl Member,far (>1 km),C learned model,C,93,93,128.53109537603473,276.41738672876346
+KNGLU Upper Holland Marl Member,far (>1 km),D drift-only model,D,93,93,159.2590522554176,223.97971095967688
+KNGLU Upper Holland Marl Member,far (>1 km),C trained on shuffled targets,C_shuffled,93,93,140.40047108261479,236.7386272768547
+KNGLU Upper Holland Marl Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,93,93,133.90503162959408,251.61970534723704
+KNGLU Upper Holland Marl Member,far (>1 km),"side: C, only targets from before the test years",C_pre,93,93,153.6571861539262,250.4018695904592
+KNGLM Middle Holland Claystone Member,all items,A1 nearest known well,m1,131,131,101.48000000000002,207.61687022900765
+KNGLM Middle Holland Claystone Member,all items,A2 local plane,m2,131,131,120.49000626966654,403.5673240985071
+KNGLM Middle Holland Claystone Member,all items,A3 kriging,m3,131,131,85.611287805227,171.52467856938952
+KNGLM Middle Holland Claystone Member,all items,A4 thickness method,m4,131,131,97.15646955312423,176.49190763529026
+KNGLM Middle Holland Claystone Member,all items,A side 4b best route,m4b,131,131,90.80700173340279,173.93525995007715
+KNGLM Middle Holland Claystone Member,all items,B drift-corrected kriging,B,131,131,86.71874263371092,168.04354751341035
+KNGLM Middle Holland Claystone Member,all items,C learned model,C,131,131,80.76724071694389,146.82869308038207
+KNGLM Middle Holland Claystone Member,all items,D drift-only model,D,131,131,90.36826478918238,161.48230400180825
+KNGLM Middle Holland Claystone Member,all items,C trained on shuffled targets,C_shuffled,131,131,85.4785520634614,164.27437497024638
+KNGLM Middle Holland Claystone Member,all items,"side: C, only targets known before the scoring half",C_strict,131,131,94.11137683687184,151.21296101363455
+KNGLM Middle Holland Claystone Member,all items,"side: C, only targets from before the test years",C_pre,131,131,88.04803114343008,154.6885425063455
+KNGLM Middle Holland Claystone Member,far (>1 km),A1 nearest known well,m1,89,89,233.8800000000001,285.10213483146066
+KNGLM Middle Holland Claystone Member,far (>1 km),A2 local plane,m2,89,89,195.77563937601758,566.8316866372982
+KNGLM Middle Holland Claystone Member,far (>1 km),A3 kriging,m3,89,89,150.2416180256091,231.93464035121343
+KNGLM Middle Holland Claystone Member,far (>1 km),A4 thickness method,m4,89,89,146.9266512130671,230.72361171736713
+KNGLM Middle Holland Claystone Member,far (>1 km),A side 4b best route,m4b,89,89,151.391769380529,235.90912870698227
+KNGLM Middle Holland Claystone Member,far (>1 km),B drift-corrected kriging,B,89,89,138.49744529801933,226.81072834746877
+KNGLM Middle Holland Claystone Member,far (>1 km),C learned model,C,89,89,130.34791700419396,196.1562290129647
+KNGLM Middle Holland Claystone Member,far (>1 km),D drift-only model,D,89,89,143.75019300472854,216.4262199203007
+KNGLM Middle Holland Claystone Member,far (>1 km),C trained on shuffled targets,C_shuffled,89,89,131.54109186502046,221.52507180204685
+KNGLM Middle Holland Claystone Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,89,89,135.1500812770903,202.69011423929365
+KNGLM Middle Holland Claystone Member,far (>1 km),"side: C, only targets from before the test years",C_pre,89,89,156.67107516104306,208.4205917657953
+KNGLL Lower Holland Marl Member,all items,A1 nearest known well,m1,136,136,101.75999999999999,204.16014705882353
+KNGLL Lower Holland Marl Member,all items,A2 local plane,m2,136,136,124.96682563648199,400.5714345630026
+KNGLL Lower Holland Marl Member,all items,A3 kriging,m3,136,136,79.41478324515901,163.72057466205837
+KNGLL Lower Holland Marl Member,all items,A4 thickness method,m4,136,136,104.38561364224813,191.5937983962175
+KNGLL Lower Holland Marl Member,all items,A side 4b best route,m4b,136,136,89.76835189614599,167.9428746625658
+KNGLL Lower Holland Marl Member,all items,B drift-corrected kriging,B,136,136,82.46106527523852,161.33123109882357
+KNGLL Lower Holland Marl Member,all items,C learned model,C,136,136,79.76254444170331,148.67048487389033
+KNGLL Lower Holland Marl Member,all items,D drift-only model,D,136,136,83.92259055658951,158.37540305915718
+KNGLL Lower Holland Marl Member,all items,C trained on shuffled targets,C_shuffled,136,136,91.01968968085959,160.67101849863835
+KNGLL Lower Holland Marl Member,all items,"side: C, only targets known before the scoring half",C_strict,136,136,85.16730874478537,151.82510482746534
+KNGLL Lower Holland Marl Member,all items,"side: C, only targets from before the test years",C_pre,136,136,80.85370711297116,156.33549927160198
+KNGLL Lower Holland Marl Member,far (>1 km),A1 nearest known well,m1,90,90,226.3750000000001,286.2966666666667
+KNGLL Lower Holland Marl Member,far (>1 km),A2 local plane,m2,90,90,201.21476122689955,556.2517780139024
+KNGLL Lower Holland Marl Member,far (>1 km),A3 kriging,m3,90,90,153.24123679355193,226.50284562549103
+KNGLL Lower Holland Marl Member,far (>1 km),A4 thickness method,m4,90,90,170.41870492276905,243.01370474922004
+KNGLL Lower Holland Marl Member,far (>1 km),A side 4b best route,m4b,90,90,165.8438446641668,232.00971514470115
+KNGLL Lower Holland Marl Member,far (>1 km),B drift-corrected kriging,B,90,90,150.63132555605864,222.86155526311862
+KNGLL Lower Holland Marl Member,far (>1 km),C learned model,C,90,90,144.43707042897086,202.68923195757787
+KNGLL Lower Holland Marl Member,far (>1 km),D drift-only model,D,90,90,167.77660825579335,214.98713381491322
+KNGLL Lower Holland Marl Member,far (>1 km),C trained on shuffled targets,C_shuffled,90,90,135.4698288385572,220.3530965816117
+KNGLL Lower Holland Marl Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,90,90,143.95205075892977,203.8442575679059
+KNGLL Lower Holland Marl Member,far (>1 km),"side: C, only targets from before the test years",C_pre,90,90,161.66185788924565,213.51270612745972
+RNRO1 Main Röt Evaporite Member,all items,A1 nearest known well,m1,132,132,28.08000000000004,124.04113636363638
+RNRO1 Main Röt Evaporite Member,all items,A2 local plane,m2,132,132,38.07677423456539,166.45018566756104
+RNRO1 Main Röt Evaporite Member,all items,A3 kriging,m3,132,132,38.81357715708634,105.36344338023005
+RNRO1 Main Röt Evaporite Member,all items,A4 thickness method,m4,132,132,33.51340066853675,108.35612919118621
+RNRO1 Main Röt Evaporite Member,all items,A side 4b best route,m4b,132,132,34.162748351987716,106.10130592885872
+RNRO1 Main Röt Evaporite Member,all items,B drift-corrected kriging,B,132,132,43.60180407390601,113.03841850715537
+RNRO1 Main Röt Evaporite Member,all items,C learned model,C,132,132,39.817952064189285,96.5335879287711
+RNRO1 Main Röt Evaporite Member,all items,D drift-only model,D,132,132,48.05147279612494,110.33274251460716
+RNRO1 Main Röt Evaporite Member,all items,C trained on shuffled targets,C_shuffled,132,132,51.508168881910024,110.7083225459144
+RNRO1 Main Röt Evaporite Member,all items,"side: C, only targets known before the scoring half",C_strict,132,132,24.12139860505306,93.17569456186045
+RNRO1 Main Röt Evaporite Member,all items,"side: C, only targets from before the test years",C_pre,132,132,27.379223168830208,96.08136631004359
+RNRO1 Main Röt Evaporite Member,far (>1 km),A1 nearest known well,m1,58,58,208.95499999999993,245.57586206896553
+RNRO1 Main Röt Evaporite Member,far (>1 km),A2 local plane,m2,58,58,178.06092760467902,341.8277984659879
+RNRO1 Main Röt Evaporite Member,far (>1 km),A3 kriging,m3,58,58,156.0467584913565,207.50543044713757
+RNRO1 Main Röt Evaporite Member,far (>1 km),A4 thickness method,m4,58,58,156.59175121079488,212.90333059537977
+RNRO1 Main Röt Evaporite Member,far (>1 km),A side 4b best route,m4b,58,58,156.38542972556093,210.02471699388545
+RNRO1 Main Röt Evaporite Member,far (>1 km),B drift-corrected kriging,B,58,58,174.56564304643257,224.8522727470479
+RNRO1 Main Röt Evaporite Member,far (>1 km),C learned model,C,58,58,109.19979164182655,185.09936915402767
+RNRO1 Main Röt Evaporite Member,far (>1 km),D drift-only model,D,58,58,164.20815671255468,209.76029808409606
+RNRO1 Main Röt Evaporite Member,far (>1 km),C trained on shuffled targets,C_shuffled,58,58,162.9993679125712,219.91143249546738
+RNRO1 Main Röt Evaporite Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,58,58,97.55329688165807,176.59483935608097
+RNRO1 Main Röt Evaporite Member,far (>1 km),"side: C, only targets from before the test years",C_pre,58,58,117.25515063112698,187.66670132713244
+RNSOC Solling Claystone Member,all items,A1 nearest known well,m1,107,107,55.73000000000002,162.00869158878513
+RNSOC Solling Claystone Member,all items,A2 local plane,m2,107,107,68.01218331118571,145.07150228828405
+RNSOC Solling Claystone Member,all items,A3 kriging,m3,107,107,56.599004449333734,120.96132900720086
+RNSOC Solling Claystone Member,all items,A4 thickness method,m4,107,107,57.77669724194925,127.1650989799108
+RNSOC Solling Claystone Member,all items,A side 4b best route,m4b,107,107,57.77669724194925,121.15077582143275
+RNSOC Solling Claystone Member,all items,B drift-corrected kriging,B,107,107,57.81271031164124,124.26115455686713
+RNSOC Solling Claystone Member,all items,C learned model,C,107,107,68.37015669461061,128.87368893338166
+RNSOC Solling Claystone Member,all items,D drift-only model,D,107,107,61.346772469075404,121.79645904185219
+RNSOC Solling Claystone Member,all items,C trained on shuffled targets,C_shuffled,107,107,68.95733156381493,125.00910890267579
+RNSOC Solling Claystone Member,all items,"side: C, only targets known before the scoring half",C_strict,107,107,55.914711011849704,114.01416012975844
+RNSOC Solling Claystone Member,all items,"side: C, only targets from before the test years",C_pre,107,107,58.89002243466621,116.30976625178447
+RNSOC Solling Claystone Member,far (>1 km),A1 nearest known well,m1,57,57,177.09000000000015,262.5115789473685
+RNSOC Solling Claystone Member,far (>1 km),A2 local plane,m2,57,57,169.84285855153485,228.12438114706524
+RNSOC Solling Claystone Member,far (>1 km),A3 kriging,m3,57,57,147.89460911747074,191.64208186551122
+RNSOC Solling Claystone Member,far (>1 km),A4 thickness method,m4,57,57,144.20445820866553,195.61219632052408
+RNSOC Solling Claystone Member,far (>1 km),A side 4b best route,m4b,57,57,147.89460911747074,193.3694908838601
+RNSOC Solling Claystone Member,far (>1 km),B drift-corrected kriging,B,57,57,134.50942747768522,198.57986276203494
+RNSOC Solling Claystone Member,far (>1 km),C learned model,C,57,57,130.56042246238349,201.02397789574795
+RNSOC Solling Claystone Member,far (>1 km),D drift-only model,D,57,57,126.13023833964871,189.90181026019994
+RNSOC Solling Claystone Member,far (>1 km),C trained on shuffled targets,C_shuffled,57,57,152.23878702066077,195.00988049375218
+RNSOC Solling Claystone Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,57,57,107.95950971202637,176.81034263739957
+RNSOC Solling Claystone Member,far (>1 km),"side: C, only targets from before the test years",C_pre,57,57,112.82770175395501,183.69287906723164
+ZEZ2H Z2 Salt Member,all items,A1 nearest known well,m1,75,75,219.69000000000005,356.22573333333327
+ZEZ2H Z2 Salt Member,all items,A2 local plane,m2,75,75,269.01740633320924,585.5663978839002
+ZEZ2H Z2 Salt Member,all items,A3 kriging,m3,75,75,181.3726185898131,333.4807688617159
+ZEZ2H Z2 Salt Member,all items,A4 thickness method,m4,75,75,181.3726185898131,339.05103772159765
+ZEZ2H Z2 Salt Member,all items,A side 4b best route,m4b,75,75,178.26917972935053,333.48965301305765
+ZEZ2H Z2 Salt Member,all items,B drift-corrected kriging,B,75,75,171.97296989486813,326.23505528848165
+ZEZ2H Z2 Salt Member,all items,C learned model,C,75,75,217.31045378009298,293.7625344389888
+ZEZ2H Z2 Salt Member,all items,D drift-only model,D,75,75,174.59977989004528,302.50863384466663
+ZEZ2H Z2 Salt Member,all items,C trained on shuffled targets,C_shuffled,75,75,160.10078389527007,296.6655366407241
+ZEZ2H Z2 Salt Member,all items,"side: C, only targets known before the scoring half",C_strict,75,75,201.76227570931678,338.092863434186
+ZEZ2H Z2 Salt Member,all items,"side: C, only targets from before the test years",C_pre,75,75,193.6159396120088,344.0034767127411
+ZEZ2H Z2 Salt Member,far (>1 km),A1 nearest known well,m1,60,60,255.09000000000015,406.99033333333324
+ZEZ2H Z2 Salt Member,far (>1 km),A2 local plane,m2,60,60,301.21513904543417,688.2176044953196
+ZEZ2H Z2 Salt Member,far (>1 km),A3 kriging,m3,60,60,225.44815006661906,381.2166433180542
+ZEZ2H Z2 Salt Member,far (>1 km),A4 thickness method,m4,60,60,199.37774499440616,376.30549802709515
+ZEZ2H Z2 Salt Member,far (>1 km),A side 4b best route,m4b,60,60,218.93119216760488,379.6231824503437
+ZEZ2H Z2 Salt Member,far (>1 km),B drift-corrected kriging,B,60,60,240.82940933188524,372.1909668060191
+ZEZ2H Z2 Salt Member,far (>1 km),C learned model,C,60,60,255.06059269611728,329.23268699674026
+ZEZ2H Z2 Salt Member,far (>1 km),D drift-only model,D,60,60,207.25985553772125,341.69324811817626
+ZEZ2H Z2 Salt Member,far (>1 km),C trained on shuffled targets,C_shuffled,60,60,202.92120483726444,334.74771803486095
+ZEZ2H Z2 Salt Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,60,60,246.69205936447338,382.5775250858443
+ZEZ2H Z2 Salt Member,far (>1 km),"side: C, only targets from before the test years",C_pre,60,60,259.62611100490653,389.4929614040032
+ZEZ2A Z2 Basal Anhydrite Member,all items,A1 nearest known well,m1,107,107,84.51999999999998,160.71102803738316
+ZEZ2A Z2 Basal Anhydrite Member,all items,A2 local plane,m2,107,107,85.57453587708369,219.74775588470231
+ZEZ2A Z2 Basal Anhydrite Member,all items,A3 kriging,m3,107,107,80.01515144727136,120.49293276126339
+ZEZ2A Z2 Basal Anhydrite Member,all items,A4 thickness method,m4,107,107,103.69688407175636,147.6394617357074
+ZEZ2A Z2 Basal Anhydrite Member,all items,A side 4b best route,m4b,107,107,79.83794419951482,119.70130787719762
+ZEZ2A Z2 Basal Anhydrite Member,all items,B drift-corrected kriging,B,107,107,73.23143381456339,115.3763361132228
+ZEZ2A Z2 Basal Anhydrite Member,all items,C learned model,C,107,107,71.81186853188092,111.63642542481212
+ZEZ2A Z2 Basal Anhydrite Member,all items,D drift-only model,D,107,107,65.30866887953289,101.47226385308159
+ZEZ2A Z2 Basal Anhydrite Member,all items,C trained on shuffled targets,C_shuffled,107,107,76.07592997381835,115.3922966776717
+ZEZ2A Z2 Basal Anhydrite Member,all items,"side: C, only targets known before the scoring half",C_strict,107,107,88.81785350470454,119.96075130905939
+ZEZ2A Z2 Basal Anhydrite Member,all items,"side: C, only targets from before the test years",C_pre,107,107,87.76881959590355,123.6332233963761
+ZEZ2A Z2 Basal Anhydrite Member,far (>1 km),A1 nearest known well,m1,86,86,91.68999999999983,166.88930232558138
+ZEZ2A Z2 Basal Anhydrite Member,far (>1 km),A2 local plane,m2,86,86,102.92390827685745,251.04383437587938
+ZEZ2A Z2 Basal Anhydrite Member,far (>1 km),A3 kriging,m3,86,86,90.56816639255021,125.42105667215566
+ZEZ2A Z2 Basal Anhydrite Member,far (>1 km),A4 thickness method,m4,86,86,102.7178866560721,149.61133270481807
+ZEZ2A Z2 Basal Anhydrite Member,far (>1 km),A side 4b best route,m4b,86,86,89.19347516735706,124.74232605763132
+ZEZ2A Z2 Basal Anhydrite Member,far (>1 km),B drift-corrected kriging,B,86,86,94.9216326239092,119.260281958037
+ZEZ2A Z2 Basal Anhydrite Member,far (>1 km),C learned model,C,86,86,92.73496455604845,117.18919597001556
+ZEZ2A Z2 Basal Anhydrite Member,far (>1 km),D drift-only model,D,86,86,75.07572979834822,103.70537898313312
+ZEZ2A Z2 Basal Anhydrite Member,far (>1 km),C trained on shuffled targets,C_shuffled,86,86,83.60558937582186,118.1747755356496
+ZEZ2A Z2 Basal Anhydrite Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,86,86,95.77921764362532,127.07701628249653
+ZEZ2A Z2 Basal Anhydrite Member,far (>1 km),"side: C, only targets from before the test years",C_pre,86,86,99.79309958845806,134.2291551407293
+ZEZ2C Z2 Carbonate Member,all items,A1 nearest known well,m1,107,107,85.14999999999964,148.30355140186916
+ZEZ2C Z2 Carbonate Member,all items,A2 local plane,m2,107,107,89.68277141811814,158.35542059559236
+ZEZ2C Z2 Carbonate Member,all items,A3 kriging,m3,107,107,78.45733560814915,108.68984192631837
+ZEZ2C Z2 Carbonate Member,all items,A4 thickness method,m4,107,107,103.9740346588651,134.30329813122984
+ZEZ2C Z2 Carbonate Member,all items,A side 4b best route,m4b,107,107,66.47779181315627,106.6667946545033
+ZEZ2C Z2 Carbonate Member,all items,B drift-corrected kriging,B,107,107,77.36837115932985,107.20444695403944
+ZEZ2C Z2 Carbonate Member,all items,C learned model,C,107,107,70.93873937949866,98.6505731350785
+ZEZ2C Z2 Carbonate Member,all items,D drift-only model,D,107,107,64.87310474350306,96.9866666673433
+ZEZ2C Z2 Carbonate Member,all items,C trained on shuffled targets,C_shuffled,107,107,76.34101340436882,107.69263917595282
+ZEZ2C Z2 Carbonate Member,all items,"side: C, only targets known before the scoring half",C_strict,107,107,63.217100448416204,106.63280787079823
+ZEZ2C Z2 Carbonate Member,all items,"side: C, only targets from before the test years",C_pre,107,107,71.06522661561439,108.69588306168872
+ZEZ2C Z2 Carbonate Member,far (>1 km),A1 nearest known well,m1,86,86,96.58500000000004,169.51755813953486
+ZEZ2C Z2 Carbonate Member,far (>1 km),A2 local plane,m2,86,86,108.91548855772498,183.9805464094019
+ZEZ2C Z2 Carbonate Member,far (>1 km),A3 kriging,m3,86,86,93.39737998567011,124.00648830472693
+ZEZ2C Z2 Carbonate Member,far (>1 km),A4 thickness method,m4,86,86,101.30779924563535,132.74472536837348
+ZEZ2C Z2 Carbonate Member,far (>1 km),A side 4b best route,m4b,86,86,87.22816247190326,120.74336875584218
+ZEZ2C Z2 Carbonate Member,far (>1 km),B drift-corrected kriging,B,86,86,93.39737998567011,122.19704811882696
+ZEZ2C Z2 Carbonate Member,far (>1 km),C learned model,C,86,86,79.48712977096102,110.99568720676075
+ZEZ2C Z2 Carbonate Member,far (>1 km),D drift-only model,D,86,86,88.54967444591784,109.82956323836957
+ZEZ2C Z2 Carbonate Member,far (>1 km),C trained on shuffled targets,C_shuffled,86,86,88.47655018833166,121.9612598336674
+ZEZ2C Z2 Carbonate Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,86,86,69.30490143386248,120.3499318878978
+ZEZ2C Z2 Carbonate Member,far (>1 km),"side: C, only targets from before the test years",C_pre,86,86,79.08996496420855,123.97452468788855
+ZEZ1W Z1 Anhydrite Member,all items,A1 nearest known well,m1,99,99,93.0,163.02747474747474
+ZEZ1W Z1 Anhydrite Member,all items,A2 local plane,m2,99,99,88.6047601821947,157.40075899837385
+ZEZ1W Z1 Anhydrite Member,all items,A3 kriging,m3,99,99,74.26666478336892,120.81478702962355
+ZEZ1W Z1 Anhydrite Member,all items,A4 thickness method,m4,99,99,104.03768182578142,148.07721651296345
+ZEZ1W Z1 Anhydrite Member,all items,A side 4b best route,m4b,99,99,66.05304206892015,121.03475778485898
+ZEZ1W Z1 Anhydrite Member,all items,B drift-corrected kriging,B,99,99,80.18139964788179,116.35413102605085
+ZEZ1W Z1 Anhydrite Member,all items,C learned model,C,99,99,73.83908753907781,104.62405565368095
+ZEZ1W Z1 Anhydrite Member,all items,D drift-only model,D,99,99,69.24459452005385,95.96016152899932
+ZEZ1W Z1 Anhydrite Member,all items,C trained on shuffled targets,C_shuffled,99,99,71.58694765139444,113.85086102704257
+ZEZ1W Z1 Anhydrite Member,all items,"side: C, only targets known before the scoring half",C_strict,99,99,69.0223225587738,118.96083924847397
+ZEZ1W Z1 Anhydrite Member,all items,"side: C, only targets from before the test years",C_pre,99,99,70.33993695321215,120.477318512486
+ZEZ1W Z1 Anhydrite Member,far (>1 km),A1 nearest known well,m1,82,82,112.98500000000013,182.7379268292683
+ZEZ1W Z1 Anhydrite Member,far (>1 km),A2 local plane,m2,82,82,116.59869143609603,182.0672381861788
+ZEZ1W Z1 Anhydrite Member,far (>1 km),A3 kriging,m3,82,82,85.33354563124703,135.6264079022609
+ZEZ1W Z1 Anhydrite Member,far (>1 km),A4 thickness method,m4,82,82,108.08193557046843,151.07817362926062
+ZEZ1W Z1 Anhydrite Member,far (>1 km),A side 4b best route,m4b,82,82,71.95899829515861,136.1275155066484
+ZEZ1W Z1 Anhydrite Member,far (>1 km),B drift-corrected kriging,B,82,82,88.37418479780354,130.4051064526693
+ZEZ1W Z1 Anhydrite Member,far (>1 km),C learned model,C,82,82,76.7428196412377,116.96465403865425
+ZEZ1W Z1 Anhydrite Member,far (>1 km),D drift-only model,D,82,82,82.72374641403485,108.06224352847688
+ZEZ1W Z1 Anhydrite Member,far (>1 km),C trained on shuffled targets,C_shuffled,82,82,87.08863405167972,127.43321635369963
+ZEZ1W Z1 Anhydrite Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,82,82,79.25288210875578,133.8710741573229
+ZEZ1W Z1 Anhydrite Member,far (>1 km),"side: C, only targets from before the test years",C_pre,82,82,94.07473942865568,136.08347829243291
+ZEZ1C Z1 Carbonate Member,all items,A1 nearest known well,m1,105,105,82.08999999999969,158.65857142857143
+ZEZ1C Z1 Carbonate Member,all items,A2 local plane,m2,105,105,88.20941051054933,158.10801672882658
+ZEZ1C Z1 Carbonate Member,all items,A3 kriging,m3,105,105,77.9876255705949,117.46505440166081
+ZEZ1C Z1 Carbonate Member,all items,A4 thickness method,m4,105,105,98.15100622698128,144.86061015972246
+ZEZ1C Z1 Carbonate Member,all items,A side 4b best route,m4b,105,105,67.41496348324063,113.31588259234765
+ZEZ1C Z1 Carbonate Member,all items,B drift-corrected kriging,B,105,105,78.99085702717093,114.82196070294737
+ZEZ1C Z1 Carbonate Member,all items,C learned model,C,105,105,71.95117949077076,99.83094641908355
+ZEZ1C Z1 Carbonate Member,all items,D drift-only model,D,105,105,72.60490772257344,98.88755835771548
+ZEZ1C Z1 Carbonate Member,all items,C trained on shuffled targets,C_shuffled,105,105,83.84265503545976,118.08297831803075
+ZEZ1C Z1 Carbonate Member,all items,"side: C, only targets known before the scoring half",C_strict,105,105,72.44053475528199,116.94197671032873
+ZEZ1C Z1 Carbonate Member,all items,"side: C, only targets from before the test years",C_pre,105,105,76.67397055707806,118.26246322689865
+ZEZ1C Z1 Carbonate Member,far (>1 km),A1 nearest known well,m1,88,88,112.36000000000013,178.15477272727273
+ZEZ1C Z1 Carbonate Member,far (>1 km),A2 local plane,m2,88,88,108.3003703901818,178.08112419951172
+ZEZ1C Z1 Carbonate Member,far (>1 km),A3 kriging,m3,88,88,91.82942540046884,130.14502207349378
+ZEZ1C Z1 Carbonate Member,far (>1 km),A4 thickness method,m4,88,88,97.96937223824148,145.86628189886778
+ZEZ1C Z1 Carbonate Member,far (>1 km),A side 4b best route,m4b,88,88,79.31083197807402,126.7936243388659
+ZEZ1C Z1 Carbonate Member,far (>1 km),B drift-corrected kriging,B,88,88,90.67182860923572,127.51183867420905
+ZEZ1C Z1 Carbonate Member,far (>1 km),C learned model,C,88,88,79.11882567619955,109.51750666407439
+ZEZ1C Z1 Carbonate Member,far (>1 km),D drift-only model,D,88,88,82.87698043155251,109.67397706455625
+ZEZ1C Z1 Carbonate Member,far (>1 km),C trained on shuffled targets,C_shuffled,88,88,92.56983684633565,130.2150004100038
+ZEZ1C Z1 Carbonate Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,88,88,82.2763076825479,129.3304565010355
+ZEZ1C Z1 Carbonate Member,far (>1 km),"side: C, only targets from before the test years",C_pre,88,88,90.2517840544931,131.733865965093
+ZEZ1K Coppershale Member,all items,A1 nearest known well,m1,108,108,73.79499999999985,153.6047222222222
+ZEZ1K Coppershale Member,all items,A2 local plane,m2,108,108,86.44785506045491,161.9965231183296
+ZEZ1K Coppershale Member,all items,A3 kriging,m3,108,108,78.17013427680808,122.8925400553044
+ZEZ1K Coppershale Member,all items,A4 thickness method,m4,108,108,104.15248486627365,151.04684250051403
+ZEZ1K Coppershale Member,all items,A side 4b best route,m4b,108,108,69.95404587132225,116.23037458475804
+ZEZ1K Coppershale Member,all items,B drift-corrected kriging,B,108,108,74.9332758115388,121.68533392687704
+ZEZ1K Coppershale Member,all items,C learned model,C,108,108,63.30016421245318,100.72365827970636
+ZEZ1K Coppershale Member,all items,D drift-only model,D,108,108,70.49979774158487,103.86679495360032
+ZEZ1K Coppershale Member,all items,C trained on shuffled targets,C_shuffled,108,108,84.43636155555896,119.29774842067793
+ZEZ1K Coppershale Member,all items,"side: C, only targets known before the scoring half",C_strict,108,108,63.8553243658132,119.21851164748809
+ZEZ1K Coppershale Member,all items,"side: C, only targets from before the test years",C_pre,108,108,66.9888089683759,119.48809565750005
+ZEZ1K Coppershale Member,far (>1 km),A1 nearest known well,m1,88,88,92.64500000000021,175.29999999999998
+ZEZ1K Coppershale Member,far (>1 km),A2 local plane,m2,88,88,109.2926039892559,188.5057475274053
+ZEZ1K Coppershale Member,far (>1 km),A3 kriging,m3,88,88,94.32507729476288,140.12399802606498
+ZEZ1K Coppershale Member,far (>1 km),A4 thickness method,m4,88,88,104.15248486627365,153.02273902297645
+ZEZ1K Coppershale Member,far (>1 km),A side 4b best route,m4b,88,88,86.10040274986545,131.98669419601572
+ZEZ1K Coppershale Member,far (>1 km),B drift-corrected kriging,B,88,88,95.48938149797232,138.88966548498973
+ZEZ1K Coppershale Member,far (>1 km),C learned model,C,88,88,73.19603075294253,113.7172644770224
+ZEZ1K Coppershale Member,far (>1 km),D drift-only model,D,88,88,89.37169364328201,118.4934879469737
+ZEZ1K Coppershale Member,far (>1 km),C trained on shuffled targets,C_shuffled,88,88,100.1849496130119,135.1500629924203
+ZEZ1K Coppershale Member,far (>1 km),"side: C, only targets known before the scoring half",C_strict,88,88,81.50874461397166,134.8862957091188
+ZEZ1K Coppershale Member,far (>1 km),"side: C, only targets from before the test years",C_pre,88,88,85.80010511733144,135.8931542241527

@@ -1,0 +1,131 @@
+{
+ "country": "Netherlands",
+ "half": "scoring",
+ "frozen_files_verified": 10,
+ "load": {
+  "country": "netherlands",
+  "stage": "score",
+  "block_date": "2001-03-30",
+  "sealed_wells": 535,
+  "blocked_top_rows": 19932,
+  "holes": 4543,
+  "hole_top_values": 50813
+ },
+ "wells_in_half": 268,
+ "wells_scored": 268,
+ "wells_without_item_here": 0,
+ "items": 1323,
+ "far_items": 938,
+ "far_wells": 194,
+ "far_median_abs_error_m": {
+  "m1": 162.99,
+  "m2": 152.11506779660908,
+  "m3": 112.53247442947577,
+  "m4": 117.34617999380646,
+  "m4b": 109.42670869165431,
+  "B": 114.18945099092656,
+  "C": 101.18094182769687,
+  "D": 109.02701033163532,
+  "C_shuffled": 110.07373128567053,
+  "C_strict": 102.00224223484793,
+  "C_pre": 109.94191180760981
+ },
+ "far_mean_abs_error_m": {
+  "m1": 230.1392643923241,
+  "m2": 326.5874631749093,
+  "m3": 183.84316765470405,
+  "m4": 192.00346175357265,
+  "m4b": 183.77520652272037,
+  "B": 182.0430979685313,
+  "C": 170.38908115329656,
+  "D": 167.93911914704415,
+  "C_shuffled": 178.72677181264424,
+  "C_strict": 176.81265077194806,
+  "C_pre": 181.62963166024682
+ },
+ "all_median_abs_error_m": {
+  "m1": 84.59000000000015,
+  "m2": 94.48329928028897,
+  "m3": 75.6736045210821,
+  "m4": 92.72231653349763,
+  "m4b": 71.14546140822392,
+  "B": 76.86089599794968,
+  "C": 73.01480280057513,
+  "D": 74.51672868983496,
+  "C_shuffled": 76.9832913862083,
+  "C_strict": 71.84143349559099,
+  "C_pre": 73.61951616293209
+ },
+ "best_simple_method": "m4b",
+ "best_simple_method_name": "A side 4b best route",
+ "C_improvement_over_best_simple_pct": 7.53542436078618,
+ "C_improvement_ci_pct": [
+  -5.695746400007104,
+  21.891040972839566
+ ],
+ "D_improvement_over_best_simple_pct": 0.36526581562941196,
+ "D_improvement_ci_pct": [
+  -13.108048569054937,
+  18.513151755865653
+ ],
+ "C_gain_m": 8.245766863957442,
+ "D_gain_m": 0.39969836001898784,
+ "share_of_C_gain_reached_by_D": 0.048473157998934514,
+ "passed": false,
+ "shuffle_test": {
+  "improvement_over_best_simple_pct": -0.5912839760532584,
+  "ci_pct": [
+   -9.65673156127476,
+   7.577769101949544
+  ],
+  "improvement_over_kriging_pct": 2.1849187590255448,
+  "ci_over_kriging_pct": [
+   -7.236442429469834,
+   7.754006074316633
+  ],
+  "gain_vanished": true
+ },
+ "date_rule_test": {
+  "known_well_uses": 1127196,
+  "rows": 119070,
+  "date_violations": 0,
+  "date_mismatch": 0,
+  "loose_cutoff": 0,
+  "own_pick": 0,
+  "own_system": 0,
+  "passed": true
+ },
+ "own_pick_test": {
+  "wells_tested": 60,
+  "items_tested": 273,
+  "wells_where_a_feature_moved": 0,
+  "control_wells_where_features_moved": 60,
+  "passed": true
+ },
+ "range_coverage": {
+  "all items": {
+   "learned": 0.7838246409674982,
+   "kriging": 0.7286470143613001
+  },
+  "far (>1 km)": {
+   "learned": 0.7579957356076759,
+   "kriging": 0.7025586353944563
+  },
+  "30 m-1 km": {
+   "learned": 0.8467532467532467,
+   "kriging": 0.7922077922077922
+  },
+  "1-5 km": {
+   "learned": 0.7411545623836127,
+   "kriging": 0.6871508379888268
+  },
+  "5-20 km": {
+   "learned": 0.76657824933687,
+   "kriging": 0.7108753315649867
+  },
+  ">20 km": {
+   "learned": 1.0,
+   "kriging": 0.9166666666666666
+  }
+ }
+}
