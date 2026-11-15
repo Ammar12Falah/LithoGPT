@@ -1,99 +1,99 @@
-draw_order,well,n_rows
-1,36/7-3,3628
-2,31/3-1,13236
-3,30/6-5,21636
-4,35/11-13,2430
-5,35/11-11,12844
-6,25/6-2,2925
-7,25/7-2,23879
-8,17/11-1,20099
-9,25/4-5,23005
-10,16/5-3,3021
-11,30/3-3,21163
-12,16/1-2,1734
-13,33/9-17,17718
-14,32/2-1,3049
-15,34/12-1,9350
-16,16/7-5,15590
-17,31/2-9,8699
-18,16/8-1,6685
-19,29/6-1,24464
-20,16/2-11 A,10708
-21,16/7-4,10010
-22,16/10-2,2437
-23,35/11-12,19112
-24,34/10-35,20619
-25,25/5-4,12997
-26,34/7-13,3900
-27,25/11-5,5060
-28,16/2-6,9138
-29,31/3-4,5377
-30,25/5-1,18473
-31,35/11-7,13005
-32,26/4-1,19577
-33,34/3-1 A,2251
-34,35/11-6,23544
-35,25/11-19 S,6975
-36,25/3-1,21186
-37,16/11-1 ST3,14938
-38,25/8-7,8999
-39,31/4-5,13352
-40,35/4-1,20823
-41,31/6-5,11098
-42,34/8-3,13341
-43,35/9-5,4942
-44,34/8-7 R,7084
-45,34/7-20,13157
-46,34/5-1 A,14592
-47,25/9-1,15743
-48,35/11-10,6206
-49,30/3-5 S,4382
-50,35/9-10 S,4313
-51,31/2-19 S,16455
-52,25/11-15,2284
-53,34/10-21,22491
-54,15/9-17,17350
-55,16/10-5,2765
-56,31/4-10,8679
-57,31/2-7,8004
-58,16/2-16,10025
-59,25/2-13 T4,21062
-60,25/8-5 S,14596
-61,34/11-1,4226
-62,35/8-4,2709
-63,35/9-6 S,13094
-64,31/5-4 S,11314
-65,34/10-33,6046
-66,33/5-2,4091
-67,31/2-8,19025
-68,31/2-1,8274
-69,35/3-7 S,5087
-70,34/8-1,17877
-71,15/9-13,18270
-72,7/1-2 S,2040
-73,34/2-4,23403
-74,25/2-14,15840
-75,16/4-1,14082
-76,25/2-7,25131
-77,31/6-8,9531
-78,35/9-2,12313
-79,33/6-3 S,12681
-80,35/12-1,13125
-81,34/7-21,12424
-82,33/9-1,17278
-83,34/10-19,12644
-84,25/6-1,6209
-85,16/10-3,15956
-86,35/11-1,15584
-87,25/6-3,11985
-88,31/3-3,11624
-89,31/3-2,10750
-90,34/11-2 S,23310
-91,15/9-15,17717
-92,35/8-6 S,14378
-93,7/1-1,16241
-94,34/4-10 R,3880
-95,16/10-1,17675
-96,16/1-6 A,3623
-97,35/11-15 S,2596
-98,34/5-1 S,2273
+draw_order,well,n_rows,factpages_name,name_match,n_log_docs,n_report_docs,has_both,log_docs,report_docs,role,practice_well,reason
+1,36/7-3,3628,36/7-3,exact,2,0,False,4427 | 4427_36_7_3_COMPLETION_LOG,,extra,False,passed over as test well: no report of the named kinds in the documents table
+2,31/3-1,13236,31/3-1,exact,3,6,True,20 | 20_02_WDSS_completion_log | 20_01_31_3_1_Completion_Report_and_Completion_log,20_02_31_3_1_Final_well_report_by_Exlog | 20_06_31_3_1_Final_well_report_encl_04 | 20_03_31_3_1_Final_well_report_encl_01 | 20_01_31_3_1_Completion_Report_and_Completion_log | 20_05_31_3_1_Final_well_report_encl_03 | 20_04_31_3_1_Final_well_report_encl_02,test,False,"one of the first 5 wells in the drawn order with both documents; documents checked: completion log 1:500 (Completion_Report_and_Completion_log.pdf p211) shows a rock column with depth marks and written descriptions; the report holds lithology summaries, cuttings sample descriptions, core and sidewall core descriptions by depth"
+3,30/6-5,21636,30/6-5,exact,2,1,True,118_02_WDSS_completion_log | 118_30_6_5_COMPLETION_REPORT_AND_LOG,118_30_6_5_COMPLETION_REPORT_AND_LOG,test,False,one of the first 5 wells in the drawn order with both documents; documents checked: completion log 1:500 (COMPLETION_REPORT_AND_LOG.pdf p185) shows a rock column with depth marks and written descriptions; the report holds lithology summaries and sample descriptions by depth
+4,35/11-13,2430,35/11-13,exact,1,1,True,5063_35_11_13_COMPLETION_LOG,5063_35_11_13_COMPLETION_REPORT,test,False,"one of the first 5 wells in the drawn order with both documents; documents checked: completion log 1:500 (COMPLETION_LOG.pdf, colour, 2005) shows a rock column and written descriptions; the report holds lithological descriptions by depth range"
+5,35/11-11,12844,35/11-11,exact,1,1,True,3356,3356_35_11_11_COMPLETION_REPORT,test,False,"one of the first 5 wells in the drawn order with both documents; documents checked: completion log 1:500 (COMPLETION_REPORT.pdf p103) shows a rock column against depth with written descriptions, but it is a black-and-white scan of a colour sheet and the fill of the column is partly lost; the report describes the rock by formation with depths"
+6,25/6-2,2925,25/6-2,exact,3,1,True,1949 | 1949_02_WDSS_completion_log | 1949_25_6_2_COMPLETION_REPORT_AND_LOG,1949_25_6_2_COMPLETION_REPORT_AND_LOG,test,False,"one of the first 5 wells in the drawn order with both documents; documents checked: composite well log 1:500 (COMPLETION_REPORT_AND_LOG.pdf p115) shows a rock column and written descriptions; the report describes sidewall cores by depth and gives a lithostratigraphic summary, but holds no cuttings sample list"
+7,25/7-2,23879,25/7-2,exact,3,1,True,1494 | 1494_02_WDSS_completion_log | 1494_25_7_2_COMPLETION_REPORT_AND_LOG,1494_25_7_2_COMPLETION_REPORT_AND_LOG,example,True,one of the 10 wells after the last test well
+8,17/11-1,20099,17/11-1,exact,2,0,False,906 | 906_02_Composite_well_log,,example,False,one of the 10 wells after the last test well
+9,25/4-5,23005,25/4-5,exact,3,1,True,201 | 201_02_WDSS_completion_log | 201_02_25_4_5_Completion_log,201_01_25_4_5_Completion_report,example,True,one of the 10 wells after the last test well
+10,16/5-3,3021,16/5-3,exact,0,0,False,,,example,False,one of the 10 wells after the last test well
+11,30/3-3,21163,30/3-3,exact,2,1,True,10_02_WDSS_completion_log | 10_30_3_3_Completion_log,10_30_3_3_Completion_Report,example,False,one of the 10 wells after the last test well
+12,16/1-2,1734,16/1-2,exact,2,1,True,332 | 332_01_16_1_2_Completion_Log,332_01_16_1_2_Completion_report,example,False,one of the 10 wells after the last test well
+13,33/9-17,17718,33/9-17,exact,2,1,True,2114_33_9_17 | 2114_33_9_17_COMPLETION_REPORT_AND_LOG,2114_33_9_17_COMPLETION_REPORT_AND_LOG,example,False,one of the 10 wells after the last test well
+14,32/2-1,3049,32/2-1,exact,0,0,False,,,example,False,one of the 10 wells after the last test well
+15,34/12-1,9350,34/12-1,exact,0,0,False,,,example,False,one of the 10 wells after the last test well
+16,16/7-5,15590,16/7-5,exact,2,3,True,134_02_WDSS_completion_log | 134_01_16_7_5_CompletionReport_and_Completionlog,134_02_16_7_5_Final_Well_Report | 134_01_16_7_5_CompletionReport_and_Completionlog | 134_03_16_7_5_End_of_Well_report_Gearhart_Geodata_Services,example,False,one of the 10 wells after the last test well
+17,31/2-9,8699,31/2-9,exact,2,1,True,88_02_WDSS_completion_log | 88_01_31_2_9_Completion_Report_and_Completion_log,88_01_31_2_9_Completion_Report_and_Completion_log,curve,False,one of the 23 wells after the last example well
+18,16/8-1,6685,16/8-1,exact,2,2,True,335 | 335_1_Completion_Report_&_Completion_log,335_2_Final_well_Report | 335_1_Completion_Report_&_Completion_log,curve,False,one of the 23 wells after the last example well
+19,29/6-1,24464,29/6-1,exact,2,3,True,375 | 375_02_WDSS_completion_log,375_29_6_1_COMPLETION_REPORT_DRILLING | 375_29_6_1_PETROLEUM_ENGINEERING_COMPLETION_REPORT | 375_29_6_1_GEOLOGICAL_COMPLETION_REPORT,curve,False,one of the 23 wells after the last example well
+20,16/2-11 A,10708,16/2-11 A,exact,0,0,False,,,curve,False,one of the 23 wells after the last example well
+21,16/7-4,10010,16/7-4,exact,2,3,True,91_02_WDSS_completion_log | 91_01_16_7_4_Geological_Completion_Report_and_Completion_log,91_01_16_7_4_Final_Well_Report | 91_01_16_7_4_Geological_Completion_Report_and_Completion_log | 91_02_16_7_4_End_of_well_Report_Gearhart_Geodata_Services,curve,False,one of the 23 wells after the last example well
+22,16/10-2,2437,16/10-2,exact,3,1,True,1767 | 1767_02_WDSS_completion_log | 1767_16_10_2_COMPLETION_REPORT_AND_LOG,1767_16_10_2_COMPLETION_REPORT_AND_LOG,curve,False,one of the 23 wells after the last example well
+23,35/11-12,19112,35/11-12,exact,2,1,True,4054 | 4054_35_11_12_COMPLETION_LOG,4054_35_11_12_COMPLETION_REPORT,curve,False,one of the 23 wells after the last example well
+24,34/10-35,20619,34/10-35,exact,2,2,True,1874_02_WDSS_completion_log | 1874_34_10_35_Completion_log,1874_34_10_35_Completion_report | 1874_34_10_35_Completion_report_Appendix,curve,False,one of the 23 wells after the last example well
+25,25/5-4,12997,25/5-4,exact,2,2,True,1691_02_WDSS_completion_log | 1691_25_5_4_COMPLETION_REPORT_AND_LOG,1691_25_5_4_COMPLETION_REPORT_AND_LOG | 1691_25_5_4_COMPLETION_REPORT,curve,False,one of the 23 wells after the last example well
+26,34/7-13,3900,34/7-13,exact,2,1,True,1233_02_WDSS_completion_log | 1233_34_7_13_COMPLETION_REPORT_AND_LOG,1233_34_7_13_COMPLETION_REPORT_AND_LOG,curve,False,one of the 23 wells after the last example well
+27,25/11-5,5060,25/11-5,exact,1,1,True,366_01_25_11_5_Completion_log,366_01_25_11_5_Completion_Report,curve,False,one of the 23 wells after the last example well
+28,16/2-6,9138,16/2-6,exact,0,0,False,,,curve,False,one of the 23 wells after the last example well
+29,31/3-4,5377,31/3-4,exact,0,0,False,,,curve,False,one of the 23 wells after the last example well
+30,25/5-1,18473,25/5-1,exact,3,1,True,884 | 884_02_WDSS_completion_log | 884_25_5_1_COMPLETION_REPORT_AND_LOG,884_25_5_1_COMPLETION_REPORT_AND_LOG,curve,False,one of the 23 wells after the last example well
+31,35/11-7,13005,35/11-7,exact,3,1,True,1979 | 1979_02_WDSS_completion_log | 1979_35_11_7_COMPLETION_LOG,1979_35_11_7_COMPLETION_REPORT,curve,False,one of the 23 wells after the last example well
+32,26/4-1,19577,26/4-1,exact,3,1,True,1046 | 1046_02_WDSS_completion_log | 1046_26_4_1_COMPLETION_LOG,1046_26_4_1_DRILLING_COMPLETION_REPORT,curve,False,one of the 23 wells after the last example well
+33,34/3-1 A,2251,34/3-1 A,exact,1,0,False,5921,,curve,False,one of the 23 wells after the last example well
+34,35/11-6,23544,35/11-6,exact,3,1,True,1879 | 1879_02_WDSS_completion_log | 1879_35_11_6_COMPLETION_LOG,1879_35_11_6_COMPLETION_REPORT,curve,False,one of the 23 wells after the last example well
+35,25/11-19 S,6975,25/11-19 S,exact,2,1,True,2562 | 2562_25_11_19_S_COMPLETION_REPORT_AND_LOG,2562_25_11_19_S_COMPLETION_REPORT_AND_LOG,curve,False,one of the 23 wells after the last example well
+36,25/3-1,21186,25/3-1,exact,3,1,True,1419 | 1419_02_WDSS_completion_log | 1419_25_3_1_COMPLETION_REPORT_AND_LOG,1419_25_3_1_COMPLETION_REPORT_AND_LOG,curve,False,one of the 23 wells after the last example well
+37,16/11-1 ST3,14938,,unsure (no exact name in the documents table),0,0,False,,,curve,False,one of the 23 wells after the last example well
+38,25/8-7,8999,25/8-7,exact,1,1,True,2612_25_8_7_COMPLETION_REPORT_AND_LOG,2612_25_8_7_COMPLETION_REPORT_AND_LOG,curve,False,one of the 23 wells after the last example well
+39,31/4-5,13352,31/4-5,exact,2,1,True,403_02_WDSS_completion_log | 403_31_4_5_COMPLETION_LOG,403_31_4_5_COMPLETION_REPORT,curve,False,one of the 23 wells after the last example well
+40,35/4-1,20823,35/4-1,exact,1,1,True,2993,2993_35_4_1_COMPLETION_REPORT,extra,False,remaining well
+41,31/6-5,11098,31/6-5,exact,2,1,True,105 | 105_02_WDSS_completion_log,105_01_31_6_5_Completion_Report_and_Completio_log,extra,False,remaining well
+42,34/8-3,13341,34/8-3,exact,2,1,True,940_02_WDSS_completion_log | 940_34_8_3_Completion_log,940_34_8_3_Completion_report,extra,False,remaining well
+43,35/9-5,4942,35/9-5,exact,0,0,False,,,extra,False,remaining well
+44,34/8-7 R,7084,34/8-7 R,exact,0,0,False,,,extra,False,remaining well
+45,34/7-20,13157,34/7-20,exact,2,1,True,1967_02_WDSS_completion_log | 1967_34_7_20_COMPLETION_REPORT_AND_LOG,1967_34_7_20_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+46,34/5-1 A,14592,34/5-1 A,exact,0,0,False,,,extra,False,remaining well
+47,25/9-1,15743,25/9-1,exact,2,1,True,2476 | 2476_25_9_1_COMPLETION_REPORT_AND_LOG,2476_25_9_1_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+48,35/11-10,6206,35/11-10,exact,2,1,True,3042_35_11_10 | 3042_35_11_10_COMPLETION_LOG,3042_35_11_10_COMPLETION_REPORT,extra,False,remaining well
+49,30/3-5 S,4382,30/3-5 S,exact,2,1,True,1950_02_WDSS_completion_log | 1950_30_3_5_S_Completion_log,1950_30_3_5_S_Final_Well_report,extra,False,remaining well
+50,35/9-10 S,4313,35/9-10 S,exact,0,0,False,,,extra,False,remaining well
+51,31/2-19 S,16455,31/2-19 S,exact,2,1,True,2798 | 2798_31_2_19_S_COMPLETION_REPORT_AND_COMPLETION_LOG,2798_31_2_19_S_COMPLETION_REPORT_AND_COMPLETION_LOG,extra,False,remaining well
+52,25/11-15,2284,25/11-15,exact,2,1,True,1872_02_WDSS_completion_log | 1872_25_11_15_COMPLETION_REPORT_AND_LOG,1872_25_11_15_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+53,34/10-21,22491,34/10-21,exact,2,1,True,221_02_WDSS_completion_log | 221_34_10_21_Completion_log,221_34_10_21_Completion_Report,extra,False,remaining well
+54,15/9-17,17350,15/9-17,exact,2,1,True,60_02_WDSS_completion_log | 60_15_9_17_Completion_report_and_log,60_15_9_17_Completion_report_and_log,extra,False,remaining well
+55,16/10-5,2765,16/10-5,exact,0,0,False,,,extra,False,remaining well
+56,31/4-10,8679,31/4-10,exact,1,1,True,2617_31_4_10_COMPLETION_REPORT_AND_LOG,2617_31_4_10_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+57,31/2-7,8004,31/2-7,exact,2,1,True,70_02_WDSS_completion_log | 70_01_31_2_7_Completion_Report_and_Completion_log,70_01_31_2_7_Completion_Report_and_Completion_log,extra,False,remaining well
+58,16/2-16,10025,16/2-16,exact,0,0,False,,,extra,False,remaining well
+59,25/2-13 T4,21062,,unsure (no exact name in the documents table),0,0,False,,,extra,False,remaining well
+60,25/8-5 S,14596,25/8-5 S,exact,1,1,True,2390_25_8_5_S_COMPLETION_REPORT_AND_LOG,2390_25_8_5_S_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+61,34/11-1,4226,34/11-1,exact,1,1,True,2377_34_11_1_COMPLETION_REPORT_AND_LOG,2377_34_11_1_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+62,35/8-4,2709,35/8-4,exact,2,2,True,3791 | 3791_35_8_4_COMPLETION_LOG,3791_35_8_4_COMPLETION_DRILLING_REPORT | 3791_35_8_4_COMPLETION_REPORT,extra,False,remaining well
+63,35/9-6 S,13094,35/9-6 S,exact,0,0,False,,,extra,False,remaining well
+64,31/5-4 S,11314,31/5-4 S,exact,2,0,False,1669 | 1669_02_WDSS_completion_log,,extra,False,remaining well
+65,34/10-33,6046,34/10-33,exact,2,2,True,1302_02_WDSS_completion_log | 1302_34_10_33_Completion_log,1302_34_10_33_Completion_report_1 | 1302_34_10_33_Completion_report_II,extra,False,remaining well
+66,33/5-2,4091,33/5-2,exact,3,1,True,405 | 405_02_WDSS_completion_log | 405_1_Completion_Report_and_Completion_log,405_1_Completion_Report_and_Completion_log,extra,False,remaining well
+67,31/2-8,19025,31/2-8,exact,3,1,True,78 | 78_02_WDSS_completion_log | 78_02_31_2_8_Completion_log,78_01_31_2_8_Completion_Report,extra,False,remaining well
+68,31/2-1,8274,31/2-1,exact,3,1,True,398 | 398_02_WDSS_completion_log | 398_31_2_1_COMPLETION_REPORT_AND_LOG,398_31_2_1_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+69,35/3-7 S,5087,35/3-7 S,exact,0,0,False,,,extra,False,remaining well
+70,34/8-1,17877,34/8-1,exact,3,1,True,854 | 854_02_WDSS_completion_log | 854_34_8_1_COMPLETION_REPORT_AND_LOG,854_34_8_1_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+71,15/9-13,18270,15/9-13,exact,2,1,True,45_02_WDSS_completion_log | 45_15_9_13_Completion_report_and_log,45_15_9_13_Completion_report_and_log,extra,False,remaining well
+72,7/1-2 S,2040,7/1-2 S,exact,0,0,False,,,extra,False,remaining well
+73,34/2-4,23403,34/2-4,exact,3,1,True,467 | 467_02_WDSS_completion_log | 467_34_2_4_COMPLETION_REPORT_AND_LOG,467_34_2_4_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+74,25/2-14,15840,25/2-14,exact,3,1,True,1712 | 1712_02_WDSS_completion_log | 1712_25_2_14_COMPLETION_REPORT_AND_LOG,1712_25_2_14_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+75,16/4-1,14082,16/4-1,exact,3,1,True,229 | 229_02_WDSS_completion_log | 229_16_4_1_COMPLETION_LOG,229_16_4_1_COMPLETION_REPORT,extra,False,remaining well
+76,25/2-7,25131,25/2-7,exact,2,1,True,47_02_WDSS_completion_log | 47_25_2_7_COMPLETION_REPORT_AND_LOG,47_25_2_7_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+77,31/6-8,9531,31/6-8,exact,2,0,False,466 | 466_02_WDSS_completion_log,,extra,False,remaining well
+78,35/9-2,12313,35/9-2,exact,2,1,True,1600_02_WDSS_completion_log | 1600_35_9_2_COMPLETION_REPORT_AND_LOG,1600_35_9_2_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+79,33/6-3 S,12681,33/6-3 S,exact,0,0,False,,,extra,False,remaining well
+80,35/12-1,13125,35/12-1,exact,3,1,True,1881 | 1881_02_WDSS_completion_log | 1881_35_12_1_COMPLETION_REPORT_AND_LOG,1881_35_12_1_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+81,34/7-21,12424,34/7-21,exact,2,1,True,2026_02_WDSS_completion_log | 2026_34_7_21_COMPLETION_REPORT_AND_LOG,2026_34_7_21_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+82,33/9-1,17278,33/9-1,exact,1,1,True,407_33_9_1_COMPLETION_LOG,407_33_9_1_COMPLETION_REPORT,extra,False,remaining well
+83,34/10-19,12644,34/10-19,exact,2,1,True,33_02_WDSS_completion_log | 33_34_10_19_Completion_log,33_34_10_19_Completion_Report,extra,False,remaining well
+84,25/6-1,6209,25/6-1,exact,3,1,True,524 | 524_02_WDSS_completion_log | 524_25_6_1_COMPLETION_REPORT_AND_LOG,524_25_6_1_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+85,16/10-3,15956,16/10-3,exact,2,1,True,2703 | 2703_16_10_3_COMPLETION_REPORT_AND_COMPLETION_LOG,2703_16_10_3_COMPLETION_REPORT_AND_COMPLETION_LOG,extra,False,remaining well
+86,35/11-1,15584,35/11-1,exact,3,1,True,128 | 128_02_WDSS_completion_log | 128_01_Completion_report_and_Composite_log ,128_01_Completion_report_and_Composite_log ,extra,False,remaining well
+87,25/6-3,11985,25/6-3,exact,2,1,True,3885 | 3885_25_6_3_COMPLETION_LOG,3885_25_6_3_COMPLETION_REPORT,extra,False,remaining well
+88,31/3-3,11624,31/3-3,exact,2,2,True,447_02_WDSS_completion_log | 447_01_31_3_3_Completion_Report_and_Completion_log,447_02_31_3_3_Final_well_report | 447_01_31_3_3_Completion_Report_and_Completion_log,extra,False,remaining well
+89,31/3-2,10750,31/3-2,exact,2,1,True,100 | 100_02_WDSS_completion_log,100_01_31_3_2_Final_Well_Report_by_Exlog,extra,False,remaining well
+90,34/11-2 S,23310,34/11-2 S,exact,1,1,True,2733_34_11_2_S_COMPLETION_REPORT_AND_COMPLETION_LOG,2733_34_11_2_S_COMPLETION_REPORT_AND_COMPLETION_LOG,extra,False,remaining well
+91,15/9-15,17717,15/9-15,exact,3,2,True,74_02_WDSS_completion_log | 74_15_9_15_Completion_report_and_log | 74_15_9_15_COMPLETION_LOG,74_15_9_15_COMPLETION_REPORT | 74_15_9_15_Completion_report_and_log,extra,False,remaining well
+92,35/8-6 S,14378,35/8-6 S,exact,0,0,False,,,extra,False,remaining well
+93,7/1-1,16241,7/1-1,exact,1,1,True,192_00_7_1_1_Completion_log,192_00_7_1_1_Completion_Report,extra,False,remaining well
+94,34/4-10 R,3880,34/4-10 R,exact,1,1,True,4051,4051_34_4_10_R_COMPLETION_REPORT,extra,False,remaining well
+95,16/10-1,17675,16/10-1,exact,3,1,True,901 | 901_02_WDSS_completion_log | 901_16_10_1_COMPLETION_REPORT_AND_LOG,901_16_10_1_COMPLETION_REPORT_AND_LOG,extra,False,remaining well
+96,16/1-6 A,3623,16/1-6 A,exact,2,1,True,4767 | 4767_16_1_6_A_COMPLETION_LOG,4767_16_1_6_A_COMPLETION_REPORT,extra,False,remaining well
+97,35/11-15 S,2596,35/11-15 S,exact,0,0,False,,,extra,False,remaining well
+98,34/5-1 S,2273,34/5-1 S,exact,0,0,False,,,extra,False,remaining well
