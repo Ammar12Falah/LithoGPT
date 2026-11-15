@@ -217,9 +217,9 @@ def main():
         S.to_csv(out_dir / "second_class_side.csv", index=False)
     if agree_rows:
         A = pd.DataFrame(agree_rows)
-        tot = A.drop(columns="well").sum()
+        tot = A.drop(columns="well").sum().to_dict()
         tot["well"] = "POOLED"
-        A = pd.concat([A, tot.to_frame().T], ignore_index=True)
+        A = pd.concat([A, pd.DataFrame([tot])], ignore_index=True)
         A["share_both_read_pct"] = (100 * A.both_read / A.n_items).astype(float).round(1)
         A["share_same_class_of_all_pct"] = (100 * A.same_class / A.n_items).astype(float).round(1)
         A["share_same_class_of_both_read_pct"] = (100 * A.same_class / A.both_read.replace(0, np.nan)).astype(float).round(1)

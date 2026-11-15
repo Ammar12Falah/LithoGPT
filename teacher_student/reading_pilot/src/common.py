@@ -90,7 +90,7 @@ def summarise(items: pd.DataFrame, truth: np.ndarray, min_class_m: float = 20.0)
     tol = items["tolerant"].to_numpy()
     for c in range(len(CLASSES)):
         m = truth == c
-        if m.sum() * STEP_M >= min_class_m:
+        if m.any() and m.sum() * STEP_M >= min_class_m:
             per_all.append(tol[m].mean())
             if (m & r).any():
                 per_read.append(tol[m & r].mean())
