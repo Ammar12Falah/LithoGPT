@@ -194,3 +194,26 @@ Forecast against found depth (not extracted, as told): 25/7-2 report PDF p12 (Fi
 Summary); 25/4-5 completion report p52.
 
 Cost of one practice reader: log picture (1200 m) 5 to 11 minutes; text (whole well) 9 to 18 minutes.
+
+## B2. A fault in my picture cutting, found while well 2 was being read (22:45 to 23:05)
+
+- Fact: the long scanned sheets are not straight. The sheet of 30/6-5 wanders sideways by up to
+  21 mm and the sheet of 35/11-11 by up to 51 mm over its length. My first cut used fixed columns,
+  measured at one place in the middle of each sheet.
+- Fact: the first log-picture reader of 30/6-5 reported that the rock column was cut off in the
+  pictures below about 3150 m, and it left 3316 to 3548 m without a class. A check with thin
+  slices of the sheet (`src/drift_check.py`) showed the column was also clipped by 1 to 4 mm of its
+  12 mm width in the top 700 m.
+- What I did, before any expert label of a test well was opened:
+  1. Added a sideways shift by depth to the cutting (`x_shift` in `src/log_tiles.json`), measured on
+     the thin slices, and cut the sheets of 30/6-5 and 35/11-11 again. Spot checks of the new
+     pictures show the rock column and its depth numbers inside every sampled picture.
+  2. Set the first log-picture reading of 30/6-5 aside (kept in `work/`, not used) and had a fresh
+     reader read the whole well again from the new pictures. A second fresh reader had already
+     been started on a patch of the lower part only (3150 to 3548 m); that patch is also set aside.
+  3. 35/11-11 had not been read yet. It is read once, from the new pictures.
+  4. Checked the other sheets the same way: 31/3-1 wanders by 8 mm and its column stays inside the
+     cut (first reading kept); 25/6-2 does not wander; 35/11-13 is a drawn PDF, not a scan.
+- Judgment: this is a repair of my tool, not a second try at a reading. No label had been seen, so
+  the choice could not be steered by results. The set-aside reading is scored after the freeze and
+  shown next to the kept one, so that the size of the effect is in the open.
