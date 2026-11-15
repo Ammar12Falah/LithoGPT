@@ -1,0 +1,203 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+1245,1253,m RKB,"column blank below the 13 3/8 in casing shoe; description box (headed 1253-1420 m) says claystone",Shale,,low,01_log_about_1235-1345m.png
+1253,1324,m RKB,"column blank (no fill visible), silty and pyritic marks; rock taken from description: claystone",Shale,,medium,01_log_about_1235-1345m.png
+1324,1325,m RKB,limestone stringer (thin brick band),Limestone,,medium,01_log_about_1235-1345m.png
+1325,1329.5,m RKB,"column blank; rock taken from description: claystone",Shale,,medium,01_log_about_1235-1345m.png
+1329.5,1330.5,m RKB,limestone stringer (thin brick band),Limestone,,medium,01_log_about_1235-1345m.png
+1330.5,1466,m RKB,"column blank, silty and pyritic marks; rock taken from description: claystone",Shale,,medium,01_log_about_1235-1345m.png
+1466,1497.5,m RKB,"column blank with tuffaceous (V) marks all through, also micaceous and silty marks; description: claystone and tuff",Tuff,Shale,medium,03_log_about_1435-1545m.png
+1497.5,1499,m RKB,limestone (brick band),Limestone,,high,03_log_about_1435-1545m.png
+1499,1517.5,m RKB,"column blank with tuffaceous (V), micaceous and silty marks; description: claystone and tuff",Tuff,Shale,medium,03_log_about_1435-1545m.png
+1517.5,1518.5,m RKB,limestone stringer (thin brick band),Limestone,,medium,03_log_about_1435-1545m.png
+1518.5,1519.5,m RKB,"thin blank layer between two limestone stringers; description: claystone and tuff",Tuff,Shale,low,03_log_about_1435-1545m.png
+1519.5,1520.5,m RKB,limestone stringer (thin brick band),Limestone,,medium,03_log_about_1435-1545m.png
+1520.5,1523,m RKB,"column blank, silty mark only (no V mark here); description: claystone and tuff",Tuff,Shale,low,03_log_about_1435-1545m.png
+1523,1580.5,m RKB,"column blank, silty and micaceous marks; rock taken from description: claystone",Shale,,medium,03_log_about_1435-1545m.png
+1580.5,1582,m RKB,"thin layer between two drawn lines, fill not visible; description: claystone",Shale,,low,04_log_about_1535-1645m.png
+1582,1624,m RKB,"column blank, silty, pyritic, micaceous and carbonaceous marks; rock taken from description: claystone",Shale,,medium,04_log_about_1535-1645m.png
+1624,1633,m RKB,"sandstone (dotted fill), glauconitic and micaceous marks",Sandstone,,high,04_log_about_1535-1645m.png
+1633,1642,m RKB,"column blank between two sandstone blocks (blank = claystone elsewhere on this sheet); description of 1624-1679 m names sandstone only",Shale,,low,04_log_about_1535-1645m.png
+1642,1679,m RKB,"sandstone (dotted fill), micaceous, pyritic and glauconitic marks",Sandstone,,high,05_log_about_1635-1745m.png
+1679,1684.5,m RKB,"column blank, silty marks; rock taken from description: claystone",Shale,,medium,05_log_about_1635-1745m.png
+1684.5,1685.5,m RKB,"thin band, read as limestone stringer (fill hard to see)",Limestone,,low,05_log_about_1635-1745m.png
+1685.5,1691.5,m RKB,"column blank, micaceous mark; rock taken from description: claystone",Shale,,medium,05_log_about_1635-1745m.png
+1691.5,1692.5,m RKB,"thin band, read as limestone stringer (fill hard to see)",Limestone,,low,05_log_about_1635-1745m.png
+1692.5,1694,m RKB,"column blank; rock taken from description: claystone",Shale,,medium,05_log_about_1635-1745m.png
+1694,1695,m RKB,"thin band, read as limestone stringer (fill hard to see)",Limestone,,low,05_log_about_1635-1745m.png
+1695,1699,m RKB,"column blank, silty mark; rock taken from description: claystone",Shale,,medium,05_log_about_1635-1745m.png
+1699,1700,m RKB,"thin band, read as limestone stringer (fill hard to see)",Limestone,,low,05_log_about_1635-1745m.png
+1700,1729.5,m RKB,"column blank, silty, micaceous and carbonaceous marks; rock taken from description: claystone",Shale,,medium,05_log_about_1635-1745m.png
+1729.5,1730.5,m RKB,"thin band, read as limestone stringer (fill hard to see)",Limestone,,low,05_log_about_1635-1745m.png
+1730.5,1825,m RKB,"column blank, silty, micaceous, pyritic, glauconitic and carbonaceous marks; rock taken from description: claystone",Shale,,medium,05_log_about_1635-1745m.png
+1825,1889.5,m RKB,sandstone (dotted fill),Sandstone,,high,06_log_about_1735-1845m.png
+1889.5,1900.5,m RKB,"column blank between two sandstone blocks (blank = claystone elsewhere on this sheet); description of 1825-1914 m names sandstone and limestone only",Shale,,low,07_log_about_1835-1945m.png
+1900.5,1914,m RKB,sandstone (dotted fill),Sandstone,,high,07_log_about_1835-1945m.png
+1914,1916,m RKB,"column blank, glauconitic mark; rock taken from description: claystone",Shale,,medium,07_log_about_1835-1945m.png
+1916,1917.5,m RKB,"limestone (brick band), glauconitic",Limestone,,high,07_log_about_1835-1945m.png
+1917.5,1919,m RKB,"column blank; rock taken from description: claystone",Shale,,medium,07_log_about_1835-1945m.png
+1919,1920,m RKB,limestone stringer (thin band),Limestone,,medium,07_log_about_1835-1945m.png
+1920,1921.5,m RKB,"column blank; rock taken from description: claystone",Shale,,medium,07_log_about_1835-1945m.png
+1921.5,1922.5,m RKB,limestone stringer (thin band),Limestone,,medium,07_log_about_1835-1945m.png
+1922.5,1925,m RKB,"column blank, glauconitic mark; rock taken from description: claystone",Shale,,medium,07_log_about_1835-1945m.png
+1925,1926,m RKB,limestone stringer (thin brick band),Limestone,,medium,07_log_about_1835-1945m.png
+1926,1929.5,m RKB,"column blank, glauconitic mark; rock taken from description: claystone",Shale,,medium,07_log_about_1835-1945m.png
+1929.5,1931,m RKB,"limestone (brick band), glauconitic",Limestone,,high,07_log_about_1835-1945m.png
+1931,1933.5,m RKB,"column blank, pyritic mark; rock taken from description: claystone",Shale,,medium,07_log_about_1835-1945m.png
+1933.5,1934.5,m RKB,limestone stringer (thin band),Limestone,,medium,07_log_about_1835-1945m.png
+1934.5,1941,m RKB,"column blank, calcareous, silty and glauconitic marks; rock taken from description: claystone",Shale,,medium,07_log_about_1835-1945m.png
+1941,1942.5,m RKB,"band with dense dotted fill, read as sandy or argillaceous limestone (description: Ls loc slty - vf sdy)",Limestone,,low,08_log_about_1935-2045m.png
+1942.5,1944.5,m RKB,"column blank, glauconitic and silty marks; rock taken from description: claystone",Shale,,medium,08_log_about_1935-2045m.png
+1944.5,1945.5,m RKB,"very thin band, read as limestone stringer",Limestone,,low,08_log_about_1935-2045m.png
+1945.5,1951,m RKB,"column blank, calcareous, silty and glauconitic marks; rock taken from description: claystone",Shale,,medium,08_log_about_1935-2045m.png
+1951,1952,m RKB,limestone stringer (thin brick band),Limestone,,medium,08_log_about_1935-2045m.png
+1952,1955,m RKB,"column blank, glauconitic mark; rock taken from description: claystone",Shale,,medium,08_log_about_1935-2045m.png
+1955,1956,m RKB,"very thin band, read as limestone stringer",Limestone,,low,08_log_about_1935-2045m.png
+1956,1957.5,m RKB,"column blank, glauconitic mark; rock taken from description: claystone",Shale,,medium,08_log_about_1935-2045m.png
+1957.5,1959.5,m RKB,"limestone (brick band), glauconitic",Limestone,,high,08_log_about_1935-2045m.png
+1959.5,1984,m RKB,"column blank, calcareous, silty, glauconitic and pyritic marks; rock taken from description: claystone",Shale,,medium,08_log_about_1935-2045m.png
+1984,1986,m RKB,"limestone (brick band), glauconitic",Limestone,,high,08_log_about_1935-2045m.png
+1986,1988.5,m RKB,"column blank, glauconitic mark; rock taken from description: claystone",Shale,,medium,08_log_about_1935-2045m.png
+1988.5,1990,m RKB,"limestone (brick band), glauconitic",Limestone,,high,08_log_about_1935-2045m.png
+1990,1993,m RKB,"column blank, glauconitic mark; rock taken from description: claystone",Shale,,medium,08_log_about_1935-2045m.png
+1993,1994,m RKB,limestone stringer (thin brick band),Limestone,,medium,08_log_about_1935-2045m.png
+1994,2010.5,m RKB,"column blank, calcareous, silty, glauconitic and pyritic marks; rock taken from description: claystone",Shale,,medium,08_log_about_1935-2045m.png
+2010.5,2012,m RKB,limestone stringer (thin brick band),Limestone,,medium,08_log_about_1935-2045m.png
+2012,2020.5,m RKB,"column blank, silty and glauconitic marks; rock taken from description: claystone",Shale,,medium,08_log_about_1935-2045m.png
+2020.5,2021.5,m RKB,limestone stringer (thin brick band),Limestone,,medium,08_log_about_1935-2045m.png
+2021.5,2039.5,m RKB,"column blank, silty, glauconitic and pyritic marks; rock taken from description: claystone",Shale,,medium,08_log_about_1935-2045m.png
+2039.5,2040.5,m RKB,"limestone (brick band), glauconitic",Limestone,,high,09_log_about_2035-2145m.png
+2040.5,2085,m RKB,"column blank, silty, glauconitic and pyritic marks; rock taken from description: claystone",Shale,,medium,09_log_about_2035-2145m.png
+2085,2086,m RKB,"limestone (brick band), glauconitic",Limestone,,high,09_log_about_2035-2145m.png
+2086,2094,m RKB,"column blank, silty and glauconitic marks; rock taken from description: claystone",Shale,,medium,09_log_about_2035-2145m.png
+2094,2095,m RKB,limestone stringer (thin band),Limestone,,medium,09_log_about_2035-2145m.png
+2095,2112.5,m RKB,"column blank, silty, glauconitic and pyritic marks; rock taken from description: claystone",Shale,,medium,09_log_about_2035-2145m.png
+2112.5,2113.5,m RKB,limestone stringer (thin band),Limestone,,medium,09_log_about_2035-2145m.png
+2113.5,2116,m RKB,"column blank; rock taken from description: claystone",Shale,,medium,09_log_about_2035-2145m.png
+2116,2117,m RKB,limestone stringer (thin band),Limestone,,medium,09_log_about_2035-2145m.png
+2117,2121.5,m RKB,"column blank; rock taken from description: claystone",Shale,,medium,09_log_about_2035-2145m.png
+2121.5,2122.5,m RKB,"thin dark band, fill not readable; limestone or dolomite stringer (description names both)",Limestone,Dolomite,low,09_log_about_2035-2145m.png
+2122.5,2124.5,m RKB,"column blank; rock taken from description: claystone",Shale,,medium,09_log_about_2035-2145m.png
+2124.5,2125.5,m RKB,"limestone (brick band), glauconitic",Limestone,,high,09_log_about_2035-2145m.png
+2125.5,2150.5,m RKB,"column blank, silty, glauconitic and pyritic marks; rock taken from description: claystone",Shale,,medium,09_log_about_2035-2145m.png
+2150.5,2151.5,m RKB,limestone (brick band),Limestone,,high,10_log_about_2135-2245m.png
+2151.5,2154.5,m RKB,"column blank; rock taken from description: claystone",Shale,,medium,10_log_about_2135-2245m.png
+2154.5,2155.5,m RKB,limestone stringer (thin brick band),Limestone,,medium,10_log_about_2135-2245m.png
+2155.5,2158,m RKB,"column blank; rock taken from description: claystone",Shale,,medium,10_log_about_2135-2245m.png
+2158,2159,m RKB,"limestone (brick band), glauconitic",Limestone,,high,10_log_about_2135-2245m.png
+2159,2169.5,m RKB,"column blank, silty and glauconitic marks; rock taken from description: claystone",Shale,,medium,10_log_about_2135-2245m.png
+2169.5,2171,m RKB,"limestone (brick band), glauconitic",Limestone,,high,10_log_about_2135-2245m.png
+2171,2199,m RKB,"column blank, silty, glauconitic and pyritic marks; rock taken from description: claystone",Shale,,medium,10_log_about_2135-2245m.png
+2199,2201.5,m RKB,two thin limestone bands close together,Limestone,,medium,10_log_about_2135-2245m.png
+2201.5,2211.5,m RKB,"column blank, pyritic and glauconitic marks; rock taken from description: claystone",Shale,,medium,10_log_about_2135-2245m.png
+2211.5,2212.5,m RKB,limestone stringer (thin brick band),Limestone,,medium,10_log_about_2135-2245m.png
+2212.5,2234.5,m RKB,"column blank, silty, glauconitic and pyritic marks; rock taken from description: claystone",Shale,,medium,10_log_about_2135-2245m.png
+2234.5,2236,m RKB,"limestone (brick band), glauconitic",Limestone,,high,10_log_about_2135-2245m.png
+2236,2243,m RKB,"column blank, silty marks; rock taken from description: claystone",Shale,,medium,11_log_about_2235-2345m.png
+2243,2244.5,m RKB,limestone stringer (thin brick band),Limestone,,medium,11_log_about_2235-2345m.png
+2244.5,2251,m RKB,"column blank, pyritic mark; rock taken from description: claystone",Shale,,medium,11_log_about_2235-2345m.png
+2251,2252,m RKB,"limestone (brick band), glauconitic",Limestone,,high,11_log_about_2235-2345m.png
+2252,2276,m RKB,"column blank, silty, glauconitic and pyritic marks; rock taken from description: claystone",Shale,,medium,11_log_about_2235-2345m.png
+2276,2278,m RKB,two thin bands close together read as limestone stringers,Limestone,,medium,11_log_about_2235-2345m.png
+2278,2313,m RKB,"column blank, silty, glauconitic and pyritic marks; rock taken from description: claystone",Shale,,medium,11_log_about_2235-2345m.png
+2313,2315,m RKB,"band with dense fill, not clear bricks; limestone or dolomite (description names both)",Limestone,Dolomite,low,11_log_about_2235-2345m.png
+2315,2316,m RKB,"column blank; rock taken from description: claystone",Shale,,low,11_log_about_2235-2345m.png
+2316,2317,m RKB,"very thin band, read as limestone stringer",Limestone,,low,11_log_about_2235-2345m.png
+2317,2321.5,m RKB,"column blank, pyritic mark; rock taken from description: claystone",Shale,,medium,11_log_about_2235-2345m.png
+2321.5,2322.5,m RKB,"limestone (brick band), glauconitic",Limestone,,high,11_log_about_2235-2345m.png
+2322.5,2343,m RKB,"column blank, silty, glauconitic and pyritic marks; rock taken from description: claystone",Shale,,medium,11_log_about_2235-2345m.png
+2343,2387,m RKB,"argillaceous limestone (bricks with dashes), glauconitic marks",Limestone,,high,12_log_about_2335-2445m.png
+2387,2390,m RKB,"column blank with carbonaceous, micaceous and pyritic marks; description: claystone",Shale,,medium,12_log_about_2335-2445m.png
+2390,2413,m RKB,"argillaceous limestone (bricks with dashes), glauconitic and pyritic marks",Limestone,,high,12_log_about_2335-2445m.png
+2413,2415,m RKB,"closely spaced thin bands at base of the limestone, not clearly readable (thin limestone bands or marl)",Limestone,Marl,low,12_log_about_2335-2445m.png
+2415,2417.5,m RKB,"column blank, glauconitic mark; description: claystone",Shale,,medium,12_log_about_2335-2445m.png
+2417.5,2418.5,m RKB,"thin dark band, fill not readable; read as limestone stringer",Limestone,,low,12_log_about_2335-2445m.png
+2418.5,2425,m RKB,"column blank, pyritic mark; rock taken from description: claystone",Shale,,medium,12_log_about_2335-2445m.png
+2425,2426.5,m RKB,"band with dense dotted fill, read as argillaceous or sandy limestone (description: Ls arg - v arg, loc v sdy)",Limestone,,low,12_log_about_2335-2445m.png
+2426.5,2443,m RKB,"column blank, glauconitic, carbonaceous and pyritic marks; rock taken from description: claystone",Shale,,medium,12_log_about_2335-2445m.png
+2443,2446.5,m RKB,several thin bands stacked close together read as limestone stringers with claystone between,Limestone,Shale,low,13_log_about_2435-2545m.png
+2446.5,2468.5,m RKB,"column blank, micaceous and pyritic marks; rock taken from description: claystone",Shale,,medium,13_log_about_2435-2545m.png
+2468.5,2470,m RKB,limestone (brick band),Limestone,,high,13_log_about_2435-2545m.png
+2470,2473,m RKB,"column blank, silty mark; rock taken from description: claystone",Shale,,medium,13_log_about_2435-2545m.png
+2473,2474,m RKB,limestone (brick band),Limestone,,high,13_log_about_2435-2545m.png
+2474,2540,m RKB,"column blank with pyritic, silty, micaceous, carbonaceous and sandy-lamina marks; rock taken from description: claystone",Shale,,medium,13_log_about_2435-2545m.png
+2540,2552,m RKB,thin sandstone beds alternating with blank (claystone) layers with silty marks,Sandstone/Shale,,medium,14_log_about_2535-2645m.png
+2552,2564,m RKB,"sandstone (dotted fill), pyritic and micaceous marks, argillaceous-lamina marks in the middle part",Sandstone,,medium,14_log_about_2535-2645m.png
+2564,2567,m RKB,thin sandstone beds alternating with blank (claystone) layers,Sandstone/Shale,,medium,14_log_about_2535-2645m.png
+2567,2578.5,m RKB,"column blank with pyritic, micaceous, silty and carbonaceous marks; description: claystone",Shale,,medium,14_log_about_2535-2645m.png
+2578.5,2580.5,m RKB,sandstone (thin dotted bed),Sandstone,,medium,14_log_about_2535-2645m.png
+2580.5,2582,m RKB,siltstone (hatched band),Shale,Sandstone/Shale,medium,14_log_about_2535-2645m.png
+2582,2590,m RKB,"sandstone (dotted fill), pyritic and micaceous marks; top 2 m lighter and less clear",Sandstone,,medium,14_log_about_2535-2645m.png
+2590,2592,m RKB,siltstone (hatched band),Shale,Sandstone/Shale,medium,14_log_about_2535-2645m.png
+2592,2607,m RKB,"sandstone (dotted fill), pyritic, micaceous and carbonaceous marks",Sandstone,,high,14_log_about_2535-2645m.png
+2607,2608.5,m RKB,siltstone (hatched band),Shale,Sandstone/Shale,medium,14_log_about_2535-2645m.png
+2608.5,2616,m RKB,"sandstone (dotted fill), micaceous and carbonaceous marks",Sandstone,,high,14_log_about_2535-2645m.png
+2616,2621.5,m RKB,"siltstone, pyritic mark",Shale,Sandstone/Shale,high,14_log_about_2535-2645m.png
+2621.5,2623.5,m RKB,"column blank between siltstone blocks; description: claystone",Shale,,medium,14_log_about_2535-2645m.png
+2623.5,2627,m RKB,siltstone,Shale,Sandstone/Shale,high,14_log_about_2535-2645m.png
+2627,2630.5,m RKB,"column blank between siltstone blocks; description: claystone",Shale,,medium,14_log_about_2535-2645m.png
+2630.5,2632.5,m RKB,siltstone,Shale,Sandstone/Shale,high,14_log_about_2535-2645m.png
+2632.5,2635,m RKB,"column blank between siltstone blocks; description: claystone",Shale,,medium,14_log_about_2535-2645m.png
+2635,2683,m RKB,"siltstone, pyritic and micaceous marks",Shale,Sandstone/Shale,high,15_log_about_2635-2745m.png
+2683,2700.5,m RKB,"sandstone (dotted fill), micaceous marks; thin dark parting near 2691 m",Sandstone,,high,15_log_about_2635-2745m.png
+2700.5,2705.5,m RKB,siltstone,Shale,Sandstone/Shale,high,15_log_about_2635-2745m.png
+2705.5,2718.5,m RKB,"sandstone (dotted fill), micaceous marks; thin dark partings near 2712 and 2715 m",Sandstone,,high,15_log_about_2635-2745m.png
+2718.5,2719.5,m RKB,"two thin dark bands between sandstone beds, fill not readable; read as siltstone/claystone parting",Shale,,low,15_log_about_2635-2745m.png
+2719.5,2722.5,m RKB,"sandstone (dotted fill), micaceous mark",Sandstone,,high,15_log_about_2635-2745m.png
+2722.5,2723.5,m RKB,siltstone (thin hatched band),Shale,Sandstone/Shale,medium,15_log_about_2635-2745m.png
+2723.5,2726,m RKB,sandstone (dotted fill),Sandstone,,medium,15_log_about_2635-2745m.png
+2726,2729.5,m RKB,siltstone,Shale,Sandstone/Shale,high,15_log_about_2635-2745m.png
+2729.5,2730.5,m RKB,"thin white band in siltstone, read as limestone stringer (could be a thin sandstone)",Limestone,,low,15_log_about_2635-2745m.png
+2730.5,2734.5,m RKB,"siltstone, micaceous marks",Shale,Sandstone/Shale,high,15_log_about_2635-2745m.png
+2734.5,2735.5,m RKB,"thin white band in siltstone, read as limestone stringer",Limestone,,low,15_log_about_2635-2745m.png
+2735.5,2763.5,m RKB,"siltstone, pyritic and micaceous marks",Shale,Sandstone/Shale,high,16_log_about_2735-2845m.png
+2763.5,2765,m RKB,limestone (brick band),Limestone,,high,16_log_about_2735-2845m.png
+2765,2780,m RKB,"siltstone, pyritic mark",Shale,Sandstone/Shale,high,16_log_about_2735-2845m.png
+2780,2781.5,m RKB,limestone (brick band),Limestone,,high,16_log_about_2735-2845m.png
+2781.5,2819,m RKB,"siltstone, pyritic marks",Shale,Sandstone/Shale,high,16_log_about_2735-2845m.png
+2819,2821,m RKB,limestone (brick band),Limestone,,high,16_log_about_2735-2845m.png
+2821,2872,m RKB,"siltstone, pyritic marks; a short patch with calcareous marks near 2862-2864 m",Shale,Sandstone/Shale,high,16_log_about_2735-2845m.png
+2872,2873,m RKB,limestone (brick band),Limestone,,high,17_log_about_2835-2945m.png
+2873,2883,m RKB,"siltstone, pyritic mark",Shale,Sandstone/Shale,high,17_log_about_2835-2945m.png
+2883,2884.5,m RKB,"band with tick marks, read as limestone stringer (not sharp)",Limestone,,low,17_log_about_2835-2945m.png
+2884.5,2889,m RKB,siltstone,Shale,Sandstone/Shale,high,17_log_about_2835-2945m.png
+2889,2890,m RKB,"thin white band, read as limestone stringer",Limestone,,low,17_log_about_2835-2945m.png
+2890,2967.5,m RKB,"siltstone, pyritic marks; dark copy seam hides the column at about 2897-2901 m",Shale,Sandstone/Shale,medium,17_log_about_2835-2945m.png
+2967.5,2968.5,m RKB,"thin white band, read as limestone stringer",Limestone,,medium,18_log_about_2935-3045m.png
+2968.5,3004.5,m RKB,"siltstone, pyritic and micaceous marks",Shale,Sandstone/Shale,high,18_log_about_2935-3045m.png
+3004.5,3005.5,m RKB,"thick black line on top of the sandstone, read as thin coal bed (may be only a heavy boundary line)",Coal,,low,18_log_about_2935-3045m.png
+3005.5,3008.5,m RKB,sandstone (dotted fill),Sandstone,,high,18_log_about_2935-3045m.png
+3008.5,3009.5,m RKB,coal (thick black band),Coal,,medium,18_log_about_2935-3045m.png
+3009.5,3010.5,m RKB,"column blank, micaceous marks; description: claystone",Shale,,medium,18_log_about_2935-3045m.png
+3010.5,3011.5,m RKB,coal (thick black band),Coal,,medium,18_log_about_2935-3045m.png
+3011.5,3015.5,m RKB,"column blank; rock taken from description: claystone",Shale,,medium,18_log_about_2935-3045m.png
+3015.5,3016.5,m RKB,coal (thick black band),Coal,,medium,18_log_about_2935-3045m.png
+3016.5,3018.5,m RKB,"column blank, micaceous marks; description: claystone",Shale,,medium,18_log_about_2935-3045m.png
+3018.5,3019.5,m RKB,coal (thick black band),Coal,,medium,18_log_about_2935-3045m.png
+3019.5,3026,m RKB,"column blank with a limestone-lamina mark near 3021.5 m; rock taken from description: claystone",Shale,,medium,18_log_about_2935-3045m.png
+3026,3027,m RKB,coal (thick black band),Coal,,medium,18_log_about_2935-3045m.png
+3027,3034.5,m RKB,"column blank, carbonaceous and micaceous marks; rock taken from description: claystone",Shale,,medium,18_log_about_2935-3045m.png
+3034.5,3035.5,m RKB,coal (thick black band),Coal,,medium,18_log_about_2935-3045m.png
+3035.5,3041,m RKB,"column blank with a sandy-lamina mark; rock taken from description: claystone",Shale,,medium,19_log_about_3035-3145m.png
+3041,3044.5,m RKB,three coal beds (thick black bands) close together with thin blank layers between,Coal,Shale,medium,19_log_about_3035-3145m.png
+3044.5,3068.5,m RKB,"column blank, micaceous and carbonaceous marks and a limestone-lamina mark near 3058 m; rock taken from description: claystone",Shale,,medium,19_log_about_3035-3145m.png
+3068.5,3069.5,m RKB,coal (thick black band),Coal,,medium,19_log_about_3035-3145m.png
+3069.5,3075,m RKB,"column blank, micaceous marks; rock taken from description: claystone",Shale,,medium,19_log_about_3035-3145m.png
+3075,3076,m RKB,coal (thick black band),Coal,,medium,19_log_about_3035-3145m.png
+3076,3077,m RKB,"column blank; rock taken from description: claystone",Shale,,low,19_log_about_3035-3145m.png
+3077,3100,m RKB,"sandstone (dotted fill), micaceous marks; lighter fill at about 3085-3091 m",Sandstone,,high,19_log_about_3035-3145m.png
+3100,3119,m RKB,"siltstone (dense hatched fill), micaceous and carbonaceous marks",Shale,Sandstone/Shale,high,19_log_about_3035-3145m.png
+3119,3151.5,m RKB,"sandstone (light dotted fill), pyritic and micaceous marks",Sandstone,,medium,19_log_about_3035-3145m.png
+3151.5,3153.5,m RKB,"siltstone (hatched band), pyritic marks",Shale,Sandstone/Shale,medium,20_log_about_3135-3245m.png
+3153.5,3158.5,m RKB,sandstone (light dotted fill),Sandstone,,medium,20_log_about_3135-3245m.png
+3158.5,3161,m RKB,"siltstone (hatched band), micaceous marks",Shale,Sandstone/Shale,medium,20_log_about_3135-3245m.png
+3161,3170.5,m RKB,"sandstone (dotted fill), pyritic and micaceous marks",Sandstone,,high,20_log_about_3135-3245m.png
+3170.5,3171.5,m RKB,"thin dark band between sandstone beds, fill not readable; read as siltstone/claystone parting",Shale,,low,20_log_about_3135-3245m.png
+3171.5,3177,m RKB,"sandstone (light dotted fill), pyritic mark",Sandstone,,medium,20_log_about_3135-3245m.png
+3177,3180,m RKB,"siltstone, pyritic mark",Shale,Sandstone/Shale,medium,20_log_about_3135-3245m.png
+3180,3183,m RKB,"sandstone (dotted fill), micaceous mark",Sandstone,,medium,20_log_about_3135-3245m.png
+3183,3191,m RKB,"siltstone, pyritic marks",Shale,Sandstone/Shale,high,20_log_about_3135-3245m.png
+3191,3194,m RKB,"sandstone (dotted fill), micaceous mark",Sandstone,,medium,20_log_about_3135-3245m.png
+3194,3199,m RKB,"siltstone, micaceous and pyritic marks",Shale,Sandstone/Shale,high,20_log_about_3135-3245m.png
+3199,3204.5,m RKB,sandstone (dotted fill),Sandstone,,medium,20_log_about_3135-3245m.png
+3204.5,3209.5,m RKB,thin siltstone beds alternating with a thin sandstone bed,Sandstone/Shale,,medium,20_log_about_3135-3245m.png
+3209.5,3215,m RKB,"sandstone (light dotted fill), continues below 3215 m to the end of the column",Sandstone,,medium,20_log_about_3135-3245m.png
