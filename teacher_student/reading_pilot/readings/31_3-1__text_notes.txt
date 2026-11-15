@@ -1,0 +1,145 @@
+NOTES - text reading of well 31/3-1, depth range 349 - 2363 m measured depth
+=========================================================================
+
+OUTPUT
+The reading is written in seven parts, each with the header line, sorted by depth and to be
+joined in file-name order:
+  reading_part01.csv   420 - 999 m      86 rows
+  reading_part02.csv   999 - 1197 m     76 rows
+  reading_part03.csv  1197 - 1351 m     83 rows
+  reading_part04.csv  1351 - 1610 m    129 rows (cored interval)
+  reading_part05.csv  1610 - 1848 m    144 rows
+  reading_part06.csv  1848 - 2103 m    112 rows
+  reading_part07.csv  2103 - 2364 m     98 rows
+Total 728 rows: 450 cuttings_sample, 153 sidewall_core, 118 core, 7 interval_summary.
+Rows are sorted by depth_from (a point sample stands before the interval that starts at the
+same depth). Seven rows have an empty depth cell (misprinted depths, see below); they stand at
+their place in the list.
+
+TABLE OF FORECAST (PROGNOSED) DEPTH AGAINST FOUND DEPTH OF FORMATION TOPS
+None found in either document. (20_02 Exlog report p6 is a text page headed PROGNOSIS, with
+one forecast depth in a sentence and no table. 20_01 p13 and p14 are tables of found
+stratigraphy / lithostratigraphy only.)
+
+DOCUMENTS AND PAGES READ CLOSELY
+20_01_31_3_1_Completion_Report_and_Completion_log (210 pages kept)
+  p1-p12   title, contents, general information (casing, coring table, sidewall core table, logs)
+  p13-p14  tables of stratigraphy and lithostratigraphy (formation tops; no rock words - no rows)
+  p15-p22  section 2.2 Lithological description (summary by group / formation)
+  p70      coring record table in the drilling chapter (one-line lithology remark per core;
+           drilling chapter, so no rows made)
+  p90-p91  test tables (checked only to find the start of the appendix)
+  p92-p138 appendix 6.1 WELLSITE SAMPLE DESCRIPTION, sheets 1-47 of 47 (cuttings, 430 - 2374 m)
+  p139-p155 appendix 6.2 CORE DESCRIPTION, sedimentology data sheets 1-17 of 17 (1351 - 1610 m)
+  p156-p157 SIDEWALL CORE DESCRIPTION run 1 (919 - 1290.1 m)
+  p158-p163 SIDEWALL CORE DESCRIPTION run 2-3 (1297.5 - 1835 m)
+  p164-p166 SIDEWALL CORE DESCRIPTION run 4 (1817 - 2370 m)
+  p167-p168 title pages of the drilling fluids summary (end of the geological appendix)
+20_02_31_3_1_Final_well_report_by_Exlog (92 pages kept)
+  p4, p6   contents, prognosis text
+  p9, p11-p13 drilling chapter (read to check; no rows made from it)
+  p24-p36  section 3 GEOLOGY AND SHOWS (lithology by depth interval, 423 m - 2374 m)
+Other pages were searched by rock words (Grep) and gave nothing new.
+
+Page pictures opened (32): 20_01 p92, p103, p105, p116, p117, p118, p119, p120, p129, p131,
+p133, p134 (sample sheets with doubtful text), p139-p155 (all 17 core sheets), p157, p159,
+p162 (sidewall core sheets).
+
+KINDS OF DESCRIPTION FOUND
+1. Cuttings samples (20_01 p92-p138): one entry per sample depth with percentages. Every 10 m
+   from 430 to 860, then 865, 870, 880, 890, 900, then every 3 m from 903 to 1351 and from 1611
+   to 2374 (with a few off-grid depths as printed: 1082, 1085, 1089, 1804, 1811, 2288, 2374).
+   No samples 1351 - 1610 (cored; the sheet says SEE CORE DESCRIPTION).
+2. Conventional core description (20_01 p139-p155): graphic sedimentology sheets at scale 1:50
+   with a depth scale, lithology symbols, facies codes and short written descriptions.
+3. Sidewall core descriptions (20_01 p156-p166): one line per core, three lists (runs 1, 2-3, 4).
+4. Lithology summary by group / formation (20_01 p15-p22) and by depth interval (20_02 p25-p36).
+
+HOW THE ROWS WERE MADE
+Cuttings samples
+- A sample listed with one depth is given the interval from the previous listed sample depth to
+  its own depth. First sample (430): top one 10 m step above (420). First sample after the cored
+  interval (1611): top at 1610, the end of the cored interval named on the sheet. Where a grid
+  depth is not listed (2154, 2268) the next sample is given the longer interval and this is said
+  in the note. Sample 1845 starts at 1842 (the entry for 1842 is "Mostly cmt. Some med-crs sd
+  grns, mica and coal" - no rock description, no row).
+- Main rock = largest percentage. Two entries of the same rock (e.g. purple and green claystone,
+  Cly (1) and Cly (2), two sandstones) are added. Equal shares: first-listed rock.
+- second_class = a different rock of 20 percent or more.
+- Siltstone: Shale with Sandstone/Shale in second_class (word map). Where siltstone is the
+  second rock beside claystone or shale (20 percent or more) second_class is also
+  Sandstone/Shale; where siltstone is the second rock beside sandstone, second_class is Shale.
+  Where a different class (sandstone, limestone, marl) also reaches 20 percent, that class is
+  put in second_class instead.
+- Three-rock samples of the lower part (e.g. 40 Sst, 30 Sltst, 30 Clyst): the rock with the
+  largest single share is taken (Sandstone), confidence medium; the note says that siltstone
+  and claystone together are larger.
+- "Lst/Marl" is read as Limestone and "Marl/Lst" as Marl (first-named rock). Lst/Marl called
+  "chky" (1317 - 1326) is kept as Limestone, not Chalk.
+- Tuff: samples 993 - 1017 (siltstone "tuff matr", claystone "tuffaceous") and 1047 - 1062
+  (siltstone "tuffaceous") and the sidewall core at 924 ("Sltst ... tuffaceous") are classed
+  Tuff because the word map says so for siltstone or claystone called tuffaceous without a
+  weakening word. The rock itself is siltstone / claystone, which is put in second_class
+  (Shale). These rows are marked medium. Samples 960 - 990 only say "(tuff?)" with a question
+  mark and are kept as siltstone. The formation summary (p16) says "tuffaceous in parts".
+- Bare "a/a" entries take the class of the entry they refer to; confidence medium.
+- depth_unit_ref: the sample and sidewall core sheets head the depth column "DEPT" without a
+  unit and give "K.B.E.: 23"; the geology chapter of the same report gives depths as "m RKB".
+  Written as "m RKB (DEPT; K.B.E. 23)".
+Core
+- The core sheets give no typed top and base for the described units. Tops and bases were read
+  off the 1:50 depth scale of the page pictures (about +/- 0.2 m). All core rows are therefore
+  marked medium at best.
+- The depths on the core sheets are core (driller's) depths, column head "CORE DEPTH (m)".
+  20_01 p9 has a table of core intervals with "corrected core depths" (log depth, 0 to +2 m
+  deeper). The sheet depths were NOT shifted.
+- A written description was taken to cover the drawn unit it stands beside and, where the same
+  sand symbol continues without a new description, down to the next description (said in the
+  note). Pieces separated by a gap that have no text of their own but the same facies code and
+  symbol as a described piece are given as separate rows with the copied sentence and
+  confidence low (11 rows). Pieces with no text and a different facies code were NOT given a
+  row; they are named in the note of the neighbouring row.
+- Crossed boxes (no recovery) and boxes marked SP are left out or named in the note.
+Sidewall cores
+- One row per recovered core, depth in both depth cells. NO RECOVERY lines (1032, 2100, 2120,
+  2175) have no row. Runs 2-3 and 4 overlap at 1820, 1825, 1830, 1835: both rows are kept
+  (they differ at 1825 and 1830).
+Interval summaries
+- Added only where the fine descriptions leave depths uncovered:
+  (a) the cored interval, whose core description has unrecovered and undescribed pieces:
+      Sognefjord Fm 1351.5-1497, Heather Fm unit C 1497-1516, Fensfjord Fm 1516-1668 (20_01
+      p18-p19) and the Exlog entries 1351m-1465m and 1465m-1805m (20_02 p30-p31);
+  (b) 1833-1842, where no cuttings description exists: Ness Fm 1805-1848 (20_01 p20) and the
+      Exlog entry 1805m-1945m (20_02 p32).
+- All other formation / interval summaries (20_01 p15-p22: Nordland, Hordaland, Balder, Sele,
+  Lista, Maureen, Shetland, Cromer Knoll, Draupne, Krossfjord, Heather unit A, Tarbert, Drake,
+  Cook, Amundsen, Johansen, Statfjord, Hegre; 20_02 p25-p36: 423-681, 681-1036, 1036-1160,
+  1160-1227, 1227-1303, 1303-1351, 1945-2105, 2105-2160, 2160-2374) were read but NOT written
+  as rows, because those depths are covered sample by sample.
+
+MISPRINTS AND READING PROBLEMS
+- 20_01 p116: a sample depth is printed "1730" between 1710 and 1716. p117: "1646" between 1743
+  and 1749. p118: "1974" between 1791 and 1797. Checked on the page pictures - printed so. For
+  each, the misprinted row has depth_from = the sample above and empty depth_to, and the next
+  row (1716, 1749, 1797) has empty depth_from, because its top is the misprinted depth.
+- 20_01 p157: last sidewall core line of run 1 has depth "12901." (the line above is 1290.1);
+  depth cells left empty. The line "1285.8" has a faint last digit.
+- 20_01 p105: the entry for 1143 has a doubled line "100 Clyst: a/a".
+- Percentages that do not sum to 100, as printed: 1014 (95), 2166 (80), 2223 (110).
+- 20_01 p92: the text file has the columns of this page out of order; read from the picture.
+- Core sheets 10, 12, 13 and 14 (p148, p150, p151, p152) have faint description text; a few
+  words are uncertain (one word on p151 could not be read and is shown as "...").
+- Sample 2364 (interval 2361-2364) is included although it ends 1 m below the task range.
+
+WHAT COULD NOT BE FOUND
+- No rock description for 349 - 420 m. Sea floor is at 357 m RKB; the 36 in hole (357 - 422 m)
+  was drilled with returns to the sea bed and the first sample is 430 m. The Nordland Group
+  summary (20_01 p15) describes the lithology only "below the 30 in casing shoe (421 m)".
+- Core pieces without written description (no row): about 1354.65-1355.5, 1357.4-1358.3,
+  1411.45-1413.1, 1448.3-1448.8, 1461.1-1463.25, 1475.2-1476.8 (only "Laminae w/abund org mat"
+  and "Coquina layer"), 1484.0-1485.55, 1492.75-1493.6 (only "Abun: coal frags"),
+  1519.05-1519.35, 1551.5-1552.7, 1560.8-1563.95, 1574.7-1577.0, 1577.45-1579.75,
+  1600.25-1601.0, 1607.55-1609.8; and the unrecovered gaps, the largest at 1362.3-1366.3 and
+  1405.1-1407.0. These depths are covered only by the interval_summary rows.
+- The mud log, composite log and other enclosures named in the contents lists are not among the
+  page files of the folder.

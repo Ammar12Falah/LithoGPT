@@ -1,0 +1,292 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+349,358,m RKB,no rock column drawn above about 358 m (the drawn column starts there); nothing to read,,,low,01_log_about_340-450m.png
+358,420,m RKB,column crossed out and marked NO RETURN; no rock drawn and no description,,,low,01_log_about_340-450m.png
+420,423,m RKB,clay (description: clay very silty and very sandy),Shale,,high,01_log_about_340-450m.png
+423,425,m RKB,sand with granules (dots and small circles),Sandstone,,medium,01_log_about_340-450m.png
+425,426.5,m RKB,clay,Shale,,medium,01_log_about_340-450m.png
+426.5,428,m RKB,sand with granules (dots and small circles),Sandstone,,medium,01_log_about_340-450m.png
+428,460,m RKB,clay,Shale,,high,01_log_about_340-450m.png
+460,465,m RKB,sand,Sandstone,,high,02_log_about_440-550m.png
+465,487.5,m RKB,clay,Shale,,high,02_log_about_440-550m.png
+487.5,488.5,m RKB,limestone stringer,Limestone,,medium,02_log_about_440-550m.png
+488.5,506,m RKB,clay,Shale,,high,02_log_about_440-550m.png
+506,508,m RKB,sand (one row of dots),Sandstone,,medium,02_log_about_440-550m.png
+508,512.5,m RKB,clay,Shale,,high,02_log_about_440-550m.png
+512.5,516,m RKB,sand,Sandstone,,high,02_log_about_440-550m.png
+516,525.5,m RKB,clay,Shale,,high,02_log_about_440-550m.png
+525.5,526.5,m RKB,limestone stringer,Limestone,,medium,02_log_about_440-550m.png
+526.5,530,m RKB,sand with glauconite,Sandstone,,high,02_log_about_440-550m.png
+530,531.5,m RKB,clay,Shale,,medium,02_log_about_440-550m.png
+531.5,532.5,m RKB,limestone stringer,Limestone,,medium,02_log_about_440-550m.png
+532.5,537,m RKB,clay with pyrite,Shale,,high,02_log_about_440-550m.png
+537,542,m RKB,sand,Sandstone,,high,02_log_about_440-550m.png
+542,552.5,m RKB,clay,Shale,,high,02_log_about_440-550m.png
+552.5,556.5,m RKB,silt,Shale,Sandstone/Shale,medium,03_log_about_540-650m.png
+556.5,630,m RKB,clay,Shale,,high,03_log_about_540-650m.png
+630,632,m RKB,sand (one row of dots),Sandstone,,medium,03_log_about_540-650m.png
+632,680.5,m RKB,clay,Shale,,high,03_log_about_540-650m.png
+680.5,681.5,m RKB,limestone stringer,Limestone,,medium,04_log_about_640-750m.png
+681.5,683.5,m RKB,clay,Shale,,medium,04_log_about_640-750m.png
+683.5,686,m RKB,sand with glauconite,Sandstone,,medium,04_log_about_640-750m.png
+686,761,m RKB,clay / claystone,Shale,,high,04_log_about_640-750m.png
+761,762,m RKB,limestone stringer,Limestone,,medium,05_log_about_740-850m.png
+762,801,m RKB,clay / claystone,Shale,,high,05_log_about_740-850m.png
+801,804,m RKB,sand with a limestone stringer,Sandstone,Limestone,medium,05_log_about_740-850m.png
+804,840,m RKB,claystone,Shale,,high,05_log_about_740-850m.png
+840,856,m RKB,siltstone with claystone bands,Shale,Sandstone/Shale,medium,05_log_about_740-850m.png
+856,871.5,m RKB,claystone,Shale,,high,06_log_about_840-950m.png
+871.5,880,m RKB,siltstone,Shale,Sandstone/Shale,medium,06_log_about_840-950m.png
+880,916,m RKB,claystone,Shale,,high,06_log_about_840-950m.png
+916,918.5,m RKB,siltstone,Shale,Sandstone/Shale,medium,06_log_about_840-950m.png
+918.5,931,m RKB,claystone,Shale,,high,06_log_about_840-950m.png
+931,993,m RKB,siltstone with tuff marks all through (description: occ tuffaceous),Tuff,Shale,medium,06_log_about_840-950m.png
+993,994,m RKB,limestone band,Limestone,,high,07_log_about_940-1050m.png
+994,1009.5,m RKB,siltstone with tuff marks all through (description: occ tuffaceous),Tuff,Shale,medium,07_log_about_940-1050m.png
+1009.5,1010.5,m RKB,limestone stringer,Limestone,,medium,07_log_about_940-1050m.png
+1010.5,1036,m RKB,siltstone with tuff marks all through (description: occ tuffaceous),Tuff,Shale,medium,07_log_about_940-1050m.png
+1036,1040,m RKB,claystone,Shale,,medium,07_log_about_940-1050m.png
+1040,1070,m RKB,siltstone; no tuff marks drawn but the description calls the siltstone tuffaceous,Tuff,Shale,low,07_log_about_940-1050m.png
+1070,1141.5,m RKB,claystone,Shale,,high,08_log_about_1040-1150m.png
+1141.5,1142.5,m RKB,limestone stringer,Limestone,,medium,08_log_about_1040-1150m.png
+1142.5,1186,m RKB,claystone (traces of sand),Shale,,high,08_log_about_1040-1150m.png
+1186,1187,m RKB,limestone stringer,Limestone,,medium,09_log_about_1140-1250m.png
+1187,1220,m RKB,claystone,Shale,,high,09_log_about_1140-1250m.png
+1220,1224,m RKB,marl with clay,Marl,Shale,medium,09_log_about_1140-1250m.png
+1224,1232.5,m RKB,marl with limestone and clay,Marl,Limestone,medium,09_log_about_1140-1250m.png
+1232.5,1234.5,m RKB,limestone,Limestone,,high,09_log_about_1140-1250m.png
+1234.5,1247,m RKB,marl with limestone,Marl,Limestone,high,09_log_about_1140-1250m.png
+1247,1272,m RKB,marl with claystone,Marl,Shale,medium,09_log_about_1140-1250m.png
+1272,1274,m RKB,limestone,Limestone,,high,10_log_about_1240-1350m.png
+1274,1297,m RKB,limestone and marl alternating (description: marl/limestone chalky),Limestone,Marl,low,10_log_about_1240-1350m.png
+1297,1318,m RKB,siltstone with limestone stringers and marl,Shale,Limestone,medium,10_log_about_1240-1350m.png
+1318,1320,m RKB,limestone,Limestone,,high,10_log_about_1240-1350m.png
+1320,1340.5,m RKB,claystone,Shale,,high,10_log_about_1240-1350m.png
+1340.5,1341.5,m RKB,limestone stringer,Limestone,,medium,10_log_about_1240-1350m.png
+1341.5,1351.5,m RKB,claystone,Shale,,high,10_log_about_1240-1350m.png
+1351.5,1352.5,m RKB,limestone stringer,Limestone,,medium,11_log_about_1340-1450m.png
+1352.5,1360.5,m RKB,sandstone with silt laminae,Sandstone,Sandstone/Shale,high,11_log_about_1340-1450m.png
+1360.5,1362,m RKB,limestone stringer,Limestone,,medium,11_log_about_1340-1450m.png
+1362,1381,m RKB,sandstone with silt laminae,Sandstone,Sandstone/Shale,high,11_log_about_1340-1450m.png
+1381,1382,m RKB,limestone stringer,Limestone,,medium,11_log_about_1340-1450m.png
+1382,1387,m RKB,sandstone with pebbles,Sandstone,,high,11_log_about_1340-1450m.png
+1387,1388,m RKB,limestone stringer,Limestone,,medium,11_log_about_1340-1450m.png
+1388,1393,m RKB,sandstone,Sandstone,,high,11_log_about_1340-1450m.png
+1393,1394,m RKB,limestone stringer,Limestone,,medium,11_log_about_1340-1450m.png
+1394,1397.5,m RKB,sandstone,Sandstone,,high,11_log_about_1340-1450m.png
+1397.5,1398.5,m RKB,limestone stringer,Limestone,,medium,11_log_about_1340-1450m.png
+1398.5,1399.5,m RKB,sandstone,Sandstone,,medium,11_log_about_1340-1450m.png
+1399.5,1400.5,m RKB,limestone stringer,Limestone,,medium,11_log_about_1340-1450m.png
+1400.5,1405,m RKB,sandstone silty,Sandstone,Sandstone/Shale,medium,11_log_about_1340-1450m.png
+1405,1408,m RKB,siltstone,Shale,Sandstone/Shale,medium,11_log_about_1340-1450m.png
+1408,1417.5,m RKB,sandstone,Sandstone,,high,11_log_about_1340-1450m.png
+1417.5,1418.5,m RKB,limestone stringer,Limestone,,medium,11_log_about_1340-1450m.png
+1418.5,1432,m RKB,sandstone with silt laminae,Sandstone,Sandstone/Shale,high,11_log_about_1340-1450m.png
+1432,1433,m RKB,limestone stringer,Limestone,,medium,11_log_about_1340-1450m.png
+1433,1437.5,m RKB,sandstone with silt laminae,Sandstone,Sandstone/Shale,medium,11_log_about_1340-1450m.png
+1437.5,1438.5,m RKB,limestone stringer,Limestone,,medium,11_log_about_1340-1450m.png
+1438.5,1472,m RKB,sandstone with pebbles,Sandstone,,high,11_log_about_1340-1450m.png
+1472,1473,m RKB,coal (thick black dashes),Coal,,low,12_log_about_1440-1550m.png
+1473,1474,m RKB,sandstone,Sandstone,,medium,12_log_about_1440-1550m.png
+1474,1475,m RKB,limestone stringer,Limestone,,medium,12_log_about_1440-1550m.png
+1475,1487,m RKB,sandstone,Sandstone,,high,12_log_about_1440-1550m.png
+1487,1488,m RKB,limestone stringer,Limestone,,medium,12_log_about_1440-1550m.png
+1488,1497,m RKB,sandstone,Sandstone,,high,12_log_about_1440-1550m.png
+1497,1510,m RKB,sandstone and siltstone in thin beds (description: sandstone/siltstone),Sandstone/Shale,Sandstone,medium,12_log_about_1440-1550m.png
+1510,1511,m RKB,limestone stringer,Limestone,,medium,12_log_about_1440-1550m.png
+1511,1516,m RKB,sandstone and siltstone in thin beds (description: sandstone/siltstone),Sandstone/Shale,Sandstone,medium,12_log_about_1440-1550m.png
+1516,1517,m RKB,limestone stringer,Limestone,,medium,12_log_about_1440-1550m.png
+1517,1535.5,m RKB,sandstone,Sandstone,,high,12_log_about_1440-1550m.png
+1535.5,1536.5,m RKB,limestone stringer,Limestone,,medium,12_log_about_1440-1550m.png
+1536.5,1540,m RKB,sandstone,Sandstone,,high,12_log_about_1440-1550m.png
+1540,1541,m RKB,limestone stringer,Limestone,,medium,12_log_about_1440-1550m.png
+1541,1546,m RKB,sandstone,Sandstone,,high,12_log_about_1440-1550m.png
+1546,1547.5,m RKB,limestone stringer,Limestone,,medium,12_log_about_1440-1550m.png
+1547.5,1551,m RKB,sandstone,Sandstone,,high,12_log_about_1440-1550m.png
+1551,1552,m RKB,limestone stringer,Limestone,,medium,13_log_about_1540-1650m.png
+1552,1566.5,m RKB,sandstone with silt laminae,Sandstone,Sandstone/Shale,high,13_log_about_1540-1650m.png
+1566.5,1568.5,m RKB,limestone,Limestone,,medium,13_log_about_1540-1650m.png
+1568.5,1595,m RKB,sandstone with silt laminae,Sandstone,Sandstone/Shale,high,13_log_about_1540-1650m.png
+1595,1596,m RKB,limestone stringer,Limestone,,medium,13_log_about_1540-1650m.png
+1596,1620,m RKB,sandstone,Sandstone,,high,13_log_about_1540-1650m.png
+1620,1621,m RKB,limestone stringer,Limestone,,medium,13_log_about_1540-1650m.png
+1621,1630.5,m RKB,sandstone,Sandstone,,high,13_log_about_1540-1650m.png
+1630.5,1631.5,m RKB,limestone stringer,Limestone,,medium,13_log_about_1540-1650m.png
+1631.5,1635.5,m RKB,sandstone,Sandstone,,high,13_log_about_1540-1650m.png
+1635.5,1636.5,m RKB,limestone stringer,Limestone,,medium,13_log_about_1540-1650m.png
+1636.5,1647,m RKB,sandstone,Sandstone,,high,13_log_about_1540-1650m.png
+1647,1648,m RKB,limestone band (full width),Limestone,,high,13_log_about_1540-1650m.png
+1648,1651,m RKB,sandstone,Sandstone,,high,13_log_about_1540-1650m.png
+1651,1652,m RKB,limestone stringer,Limestone,,medium,14_log_about_1640-1750m.png
+1652,1663.5,m RKB,sandstone,Sandstone,,high,14_log_about_1640-1750m.png
+1663.5,1668.5,m RKB,shale,Shale,,medium,14_log_about_1640-1750m.png
+1668.5,1673,m RKB,sandstone,Sandstone,,high,14_log_about_1640-1750m.png
+1673,1674,m RKB,limestone stringer,Limestone,,medium,14_log_about_1640-1750m.png
+1674,1676,m RKB,sandstone,Sandstone,,medium,14_log_about_1640-1750m.png
+1676,1677,m RKB,limestone stringer,Limestone,,medium,14_log_about_1640-1750m.png
+1677,1682.5,m RKB,sandstone,Sandstone,,high,14_log_about_1640-1750m.png
+1682.5,1683.5,m RKB,limestone stringer,Limestone,,medium,14_log_about_1640-1750m.png
+1683.5,1690.5,m RKB,sandstone,Sandstone,,high,14_log_about_1640-1750m.png
+1690.5,1691.5,m RKB,limestone stringer,Limestone,,medium,14_log_about_1640-1750m.png
+1691.5,1698,m RKB,sandstone,Sandstone,,high,14_log_about_1640-1750m.png
+1698,1699,m RKB,limestone stringer,Limestone,,medium,14_log_about_1640-1750m.png
+1699,1711,m RKB,sandstone,Sandstone,,high,14_log_about_1640-1750m.png
+1711,1712,m RKB,limestone stringer,Limestone,,medium,14_log_about_1640-1750m.png
+1712,1717,m RKB,sandstone,Sandstone,,high,14_log_about_1640-1750m.png
+1717,1718.5,m RKB,limestone stringer,Limestone,,medium,14_log_about_1640-1750m.png
+1718.5,1736.5,m RKB,sandstone,Sandstone,,high,14_log_about_1640-1750m.png
+1736.5,1737.5,m RKB,limestone stringer,Limestone,,medium,14_log_about_1640-1750m.png
+1737.5,1747.5,m RKB,sandstone,Sandstone,,high,14_log_about_1640-1750m.png
+1747.5,1748.5,m RKB,limestone stringer,Limestone,,medium,14_log_about_1640-1750m.png
+1748.5,1754,m RKB,sandstone,Sandstone,,high,14_log_about_1640-1750m.png
+1754,1755,m RKB,limestone stringer,Limestone,,medium,15_log_about_1740-1850m.png
+1755,1758.5,m RKB,sandstone,Sandstone,,high,15_log_about_1740-1850m.png
+1758.5,1759.5,m RKB,limestone stringer,Limestone,,medium,15_log_about_1740-1850m.png
+1759.5,1771.5,m RKB,sandstone,Sandstone,,high,15_log_about_1740-1850m.png
+1771.5,1772.5,m RKB,limestone stringer,Limestone,,medium,15_log_about_1740-1850m.png
+1772.5,1777.5,m RKB,sandstone,Sandstone,,high,15_log_about_1740-1850m.png
+1777.5,1778.5,m RKB,limestone stringer,Limestone,,medium,15_log_about_1740-1850m.png
+1778.5,1780,m RKB,sand with silt and claystone/marl in thin beds,Sandstone/Shale,Sandstone,low,15_log_about_1740-1850m.png
+1780,1781,m RKB,limestone stringer,Limestone,,medium,15_log_about_1740-1850m.png
+1781,1788,m RKB,sand with silt and claystone/marl in thin beds,Sandstone/Shale,Sandstone,low,15_log_about_1740-1850m.png
+1788,1789,m RKB,limestone stringer,Limestone,,medium,15_log_about_1740-1850m.png
+1789,1797,m RKB,sand with silt and claystone/marl in thin beds,Sandstone/Shale,Sandstone,low,15_log_about_1740-1850m.png
+1797,1805,m RKB,sandstone,Sandstone,,high,15_log_about_1740-1850m.png
+1805,1806,m RKB,coal,Coal,,high,15_log_about_1740-1850m.png
+1806,1811,m RKB,sand over siltstone,Sandstone/Shale,,medium,15_log_about_1740-1850m.png
+1811,1814,m RKB,shale,Shale,,high,15_log_about_1740-1850m.png
+1814,1815,m RKB,coal,Coal,,high,15_log_about_1740-1850m.png
+1815,1826,m RKB,shale with pyrite; carbonaceous,Shale,,high,15_log_about_1740-1850m.png
+1826,1833,m RKB,sandstone,Sandstone,,high,15_log_about_1740-1850m.png
+1833,1837.5,m RKB,sandstone and siltstone in thin beds,Sandstone/Shale,Sandstone,medium,15_log_about_1740-1850m.png
+1837.5,1838.5,m RKB,limestone stringer,Limestone,,medium,15_log_about_1740-1850m.png
+1838.5,1859.5,m RKB,sandstone with silt laminae,Sandstone,Sandstone/Shale,high,15_log_about_1740-1850m.png
+1859.5,1860.5,m RKB,limestone stringer,Limestone,,medium,16_log_about_1840-1950m.png
+1860.5,1868,m RKB,sandstone,Sandstone,,high,16_log_about_1840-1950m.png
+1868,1869,m RKB,limestone stringer,Limestone,,medium,16_log_about_1840-1950m.png
+1869,1874.5,m RKB,sandstone with silt laminae,Sandstone,Sandstone/Shale,high,16_log_about_1840-1950m.png
+1874.5,1875.5,m RKB,limestone stringer,Limestone,,medium,16_log_about_1840-1950m.png
+1875.5,1878,m RKB,sandstone,Sandstone,,high,16_log_about_1840-1950m.png
+1878,1879,m RKB,limestone stringer,Limestone,,medium,16_log_about_1840-1950m.png
+1879,1886,m RKB,sandstone,Sandstone,,high,16_log_about_1840-1950m.png
+1886,1887,m RKB,limestone stringer,Limestone,,medium,16_log_about_1840-1950m.png
+1887,1901.5,m RKB,sandstone with silt laminae,Sandstone,Sandstone/Shale,high,16_log_about_1840-1950m.png
+1901.5,1902.5,m RKB,limestone stringer,Limestone,,medium,16_log_about_1840-1950m.png
+1902.5,1907,m RKB,sandstone,Sandstone,,high,16_log_about_1840-1950m.png
+1907,1908.5,m RKB,limestone stringer,Limestone,,medium,16_log_about_1840-1950m.png
+1908.5,1911,m RKB,sandstone,Sandstone,,high,16_log_about_1840-1950m.png
+1911,1912,m RKB,limestone stringer,Limestone,,medium,16_log_about_1840-1950m.png
+1912,1913.5,m RKB,sandstone,Sandstone,,medium,16_log_about_1840-1950m.png
+1913.5,1918,m RKB,shale,Shale,,high,16_log_about_1840-1950m.png
+1918,1919,m RKB,limestone stringer,Limestone,,medium,16_log_about_1840-1950m.png
+1919,1932,m RKB,shale,Shale,,high,16_log_about_1840-1950m.png
+1932,1945,m RKB,shale with silt,Shale,Sandstone/Shale,medium,16_log_about_1840-1950m.png
+1945,1952,m RKB,sandstone,Sandstone,,high,16_log_about_1840-1950m.png
+1952,1953,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+1953,1958,m RKB,sandstone,Sandstone,,high,17_log_about_1940-2050m.png
+1958,1959,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+1959,1963,m RKB,sandstone,Sandstone,,high,17_log_about_1940-2050m.png
+1963,1964,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+1964,1966,m RKB,sandstone,Sandstone,,medium,17_log_about_1940-2050m.png
+1966,1967,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+1967,1971,m RKB,sandstone,Sandstone,,high,17_log_about_1940-2050m.png
+1971,1972,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+1972,1975,m RKB,sandstone,Sandstone,,high,17_log_about_1940-2050m.png
+1975,1976,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+1976,1983,m RKB,sandstone,Sandstone,,high,17_log_about_1940-2050m.png
+1983,1984,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+1984,1985,m RKB,sandstone,Sandstone,,medium,17_log_about_1940-2050m.png
+1985,1986,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+1986,1990,m RKB,sandstone,Sandstone,,high,17_log_about_1940-2050m.png
+1990,1991,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+1991,1997,m RKB,shale,Shale,,medium,17_log_about_1940-2050m.png
+1997,2006,m RKB,sandstone,Sandstone,,high,17_log_about_1940-2050m.png
+2006,2007,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+2007,2013.5,m RKB,sandstone,Sandstone,,high,17_log_about_1940-2050m.png
+2013.5,2014.5,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+2014.5,2019,m RKB,sandstone,Sandstone,,high,17_log_about_1940-2050m.png
+2019,2020,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+2020,2047.5,m RKB,sandstone,Sandstone,,high,17_log_about_1940-2050m.png
+2047.5,2048.5,m RKB,limestone stringer,Limestone,,medium,17_log_about_1940-2050m.png
+2048.5,2058,m RKB,sandstone,Sandstone,,high,17_log_about_1940-2050m.png
+2058,2059,m RKB,limestone stringer,Limestone,,medium,18_log_about_2040-2150m.png
+2059,2075.5,m RKB,sandstone,Sandstone,,high,18_log_about_2040-2150m.png
+2075.5,2076.5,m RKB,limestone stringer,Limestone,,medium,18_log_about_2040-2150m.png
+2076.5,2086.5,m RKB,sandstone,Sandstone,,high,18_log_about_2040-2150m.png
+2086.5,2088,m RKB,limestone,Limestone,,medium,18_log_about_2040-2150m.png
+2088,2096,m RKB,sandstone,Sandstone,,high,18_log_about_2040-2150m.png
+2096,2097,m RKB,limestone stringer,Limestone,,medium,18_log_about_2040-2150m.png
+2097,2102.5,m RKB,sandstone with shale laminae,Sandstone,Sandstone/Shale,medium,18_log_about_2040-2150m.png
+2102.5,2103.5,m RKB,limestone stringer,Limestone,,medium,18_log_about_2040-2150m.png
+2103.5,2105,m RKB,sandstone with shale laminae,Sandstone,Sandstone/Shale,medium,18_log_about_2040-2150m.png
+2105,2106.5,m RKB,coal,Coal,,high,18_log_about_2040-2150m.png
+2106.5,2112.5,m RKB,sandstone,Sandstone,,high,18_log_about_2040-2150m.png
+2112.5,2114,m RKB,coal,Coal,,high,18_log_about_2040-2150m.png
+2114,2117,m RKB,sandstone,Sandstone,,high,18_log_about_2040-2150m.png
+2117,2120,m RKB,shale,Shale,,medium,18_log_about_2040-2150m.png
+2120,2121.5,m RKB,sandstone,Sandstone,,medium,18_log_about_2040-2150m.png
+2121.5,2122.5,m RKB,limestone stringer,Limestone,,medium,18_log_about_2040-2150m.png
+2122.5,2127,m RKB,sandstone with shale laminae,Sandstone,Sandstone/Shale,medium,18_log_about_2040-2150m.png
+2127,2128,m RKB,limestone stringer,Limestone,,medium,18_log_about_2040-2150m.png
+2128,2129,m RKB,sandstone,Sandstone,,low,18_log_about_2040-2150m.png
+2129,2134,m RKB,shale,Shale,,medium,18_log_about_2040-2150m.png
+2134,2136,m RKB,sandstone,Sandstone,,high,18_log_about_2040-2150m.png
+2136,2137,m RKB,limestone stringer,Limestone,,medium,18_log_about_2040-2150m.png
+2137,2143,m RKB,sandstone,Sandstone,,high,18_log_about_2040-2150m.png
+2143,2157,m RKB,sandstone and shale in thin beds,Sandstone/Shale,Sandstone,medium,18_log_about_2040-2150m.png
+2157,2158,m RKB,limestone stringer,Limestone,,medium,19_log_about_2140-2250m.png
+2158,2174,m RKB,sand and claystone in thin beds,Sandstone/Shale,,medium,19_log_about_2140-2250m.png
+2174,2175,m RKB,limestone stringer,Limestone,,medium,19_log_about_2140-2250m.png
+2175,2184,m RKB,sandstone,Sandstone,,high,19_log_about_2140-2250m.png
+2184,2185,m RKB,limestone stringer,Limestone,,medium,19_log_about_2140-2250m.png
+2185,2190.5,m RKB,sandstone,Sandstone,,high,19_log_about_2140-2250m.png
+2190.5,2193,m RKB,claystone,Shale,,medium,19_log_about_2140-2250m.png
+2193,2197,m RKB,sandstone,Sandstone,,high,19_log_about_2140-2250m.png
+2197,2198,m RKB,limestone stringer,Limestone,,medium,19_log_about_2140-2250m.png
+2198,2208.5,m RKB,sandstone,Sandstone,,high,19_log_about_2140-2250m.png
+2208.5,2211.5,m RKB,claystone,Shale,,high,19_log_about_2140-2250m.png
+2211.5,2212.5,m RKB,limestone stringer,Limestone,,medium,19_log_about_2140-2250m.png
+2212.5,2216,m RKB,claystone,Shale,,high,19_log_about_2140-2250m.png
+2216,2222,m RKB,sandstone,Sandstone,,high,19_log_about_2140-2250m.png
+2222,2223,m RKB,limestone stringer,Limestone,,medium,19_log_about_2140-2250m.png
+2223,2224.5,m RKB,sandstone,Sandstone,,medium,19_log_about_2140-2250m.png
+2224.5,2225.5,m RKB,limestone stringer,Limestone,,medium,19_log_about_2140-2250m.png
+2225.5,2227.5,m RKB,sandstone,Sandstone,,medium,19_log_about_2140-2250m.png
+2227.5,2228.5,m RKB,limestone stringer,Limestone,,medium,19_log_about_2140-2250m.png
+2228.5,2230.5,m RKB,sandstone,Sandstone,,medium,19_log_about_2140-2250m.png
+2230.5,2237.5,m RKB,sand and claystone side by side with limestone stringers,Sandstone/Shale,Limestone,low,19_log_about_2140-2250m.png
+2237.5,2241.5,m RKB,claystone,Shale,,high,19_log_about_2140-2250m.png
+2241.5,2243.5,m RKB,sandstone,Sandstone,,medium,19_log_about_2140-2250m.png
+2243.5,2245,m RKB,claystone,Shale,,medium,19_log_about_2140-2250m.png
+2245,2246,m RKB,limestone stringer,Limestone,,medium,19_log_about_2140-2250m.png
+2246,2247.5,m RKB,claystone,Shale,,medium,19_log_about_2140-2250m.png
+2247.5,2256.5,m RKB,sandstone with silt laminae and a thin clay band,Sandstone,Sandstone/Shale,medium,19_log_about_2140-2250m.png
+2256.5,2258.5,m RKB,limestone beside sand,Limestone,Sandstone,medium,20_log_about_2240-2350m.png
+2258.5,2261.5,m RKB,claystone,Shale,,medium,20_log_about_2240-2350m.png
+2261.5,2267,m RKB,sand and siltstone in thin beds,Sandstone/Shale,,medium,20_log_about_2240-2350m.png
+2267,2290.5,m RKB,siltstone and claystone,Shale,Sandstone/Shale,medium,20_log_about_2240-2350m.png
+2290.5,2297,m RKB,sand and siltstone in thin beds,Sandstone/Shale,,medium,20_log_about_2240-2350m.png
+2297,2298,m RKB,sandstone,Sandstone,,medium,20_log_about_2240-2350m.png
+2298,2299,m RKB,limestone stringer,Limestone,,medium,20_log_about_2240-2350m.png
+2299,2305.5,m RKB,sandstone,Sandstone,,high,20_log_about_2240-2350m.png
+2305.5,2306.5,m RKB,limestone stringer,Limestone,,medium,20_log_about_2240-2350m.png
+2306.5,2307.5,m RKB,sandstone,Sandstone,,medium,20_log_about_2240-2350m.png
+2307.5,2309.5,m RKB,siltstone,Shale,Sandstone/Shale,medium,20_log_about_2240-2350m.png
+2309.5,2312,m RKB,sandstone,Sandstone,,medium,20_log_about_2240-2350m.png
+2312,2315.5,m RKB,claystone,Shale,,high,20_log_about_2240-2350m.png
+2315.5,2317.5,m RKB,sandstone,Sandstone,,medium,20_log_about_2240-2350m.png
+2317.5,2320.5,m RKB,claystone,Shale,,high,20_log_about_2240-2350m.png
+2320.5,2324.5,m RKB,sandstone,Sandstone,,high,20_log_about_2240-2350m.png
+2324.5,2329,m RKB,claystone,Shale,,high,20_log_about_2240-2350m.png
+2329,2330,m RKB,limestone stringer,Limestone,,medium,20_log_about_2240-2350m.png
+2330,2332,m RKB,claystone,Shale,,medium,20_log_about_2240-2350m.png
+2332,2333,m RKB,limestone stringer,Limestone,,medium,20_log_about_2240-2350m.png
+2333,2338,m RKB,claystone,Shale,,high,20_log_about_2240-2350m.png
+2338,2342,m RKB,sandstone with limestone,Sandstone,Limestone,medium,20_log_about_2240-2350m.png
+2342,2346.5,m RKB,sand and claystone in thin beds,Sandstone/Shale,,medium,20_log_about_2240-2350m.png
+2346.5,2350,m RKB,claystone,Shale,,medium,20_log_about_2240-2350m.png
+2350,2353,m RKB,sandstone,Sandstone,,high,21_log_about_2340-2450m.png
+2353,2354,m RKB,limestone stringer,Limestone,,medium,21_log_about_2340-2450m.png
+2354,2355,m RKB,sandstone,Sandstone,,medium,21_log_about_2340-2450m.png
+2355,2356,m RKB,claystone,Shale,,medium,21_log_about_2340-2450m.png
+2356,2357,m RKB,limestone stringer,Limestone,,medium,21_log_about_2340-2450m.png
+2357,2363,m RKB,claystone,Shale,,high,21_log_about_2340-2450m.png
