@@ -43,8 +43,9 @@ def load_logs() -> pd.DataFrame:
 
 
 def build_features(df: pd.DataFrame, which: str) -> pd.DataFrame:
-    """which = S0 (curves, depth, position, group, formation), S1 (+ shifted curves),
-    S2 (+ rolling mean / spread and well-normalised gamma ray)."""
+    """which = S0 (curves, depth, position, group, formation), S1 (+ 10 curves shifted by about
+    0.5, 1, 2 and 5 m up and down), S1b (+ 5 curves shifted by about 1 and 3 m up and down),
+    S2 (S1 + rolling mean / spread over about 10 m and well-normalised gamma ray)."""
     X = pd.DataFrame(index=df.index)
     for c in CURVES:
         v = df[c].astype("float32")
@@ -56,11 +57,11 @@ def build_features(df: pd.DataFrame, which: str) -> pd.DataFrame:
     for c in ["GROUP", "FORMATION"]:
         cats = sorted(df[c].dropna().unique().tolist())
         X[c] = pd.Categorical(df[c], categories=cats).codes.astype("int32")
-    if which in ("S1", "S2"):
+    if which in ("S1", "S2", "S1b"):
         g = X.groupby(df["WELL"], sort=False)
         new = {}
-        for c in WIN_CURVES:
-            for s in SHIFTS:
+        for c in (WIN_CURVES if which != "S1b" else ["GR", "RHOB", "NPHI", "DTC", "RDEP"]):
+            for s in (SHIFTS if which != "S1b" else [7, 20]):
                 new[f"{c}_up{s}"] = g[c].shift(s)
                 new[f"{c}_dn{s}"] = g[c].shift(-s)
         X = pd.concat([X, pd.DataFrame(new, index=X.index).astype("float32")], axis=1)

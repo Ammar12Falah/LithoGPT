@@ -5,7 +5,8 @@ from the rotary table, as in train.csv). Optional: second_class, confidence.
 Rules (fixed in reading_rules.md):
  - a row with an empty rock_class, or a class that is not one of the 12, gives no class;
  - depth_from / depth_to must both be numbers, else the row is dropped;
- - where rows overlap, the shortest interval wins; ties go to the higher confidence, then to the later row;
+ - where rows overlap: a row with confidence low counts only where no row with confidence medium or high
+   gives a class; among the rest the shortest interval wins; ties go to the higher confidence, then to the later row;
  - a depth step d gets the class of the winning row with depth_from <= d < depth_to
    (a row with depth_from == depth_to, a point description, covers d within +-0.25 m).
 """
@@ -51,8 +52,10 @@ def rasterise(df: pd.DataFrame, depths: np.ndarray, col: str = "cls"):
     a = np.where(point, a - POINT_HALF_M, a)
     b = np.where(point, b + POINT_HALF_M, b)
     ok["a"], ok["b"], ok["len"] = a, b, b - a
-    # longest first, so that shorter intervals overwrite; within equal length lower confidence first, earlier row first
-    ok = ok.sort_values(["len", "conf_rank", "row"], ascending=[False, True, True])
+    # painted in this order, later rows overwrite earlier ones: low-confidence rows first, then longest first;
+    # within equal length lower confidence first, earlier row first
+    ok["not_low"] = (ok["conf_rank"] != 1).astype(int)
+    ok = ok.sort_values(["not_low", "len", "conf_rank", "row"], ascending=[True, False, True, True])
     for _, r in ok.iterrows():
         m = (depths >= r["a"]) & (depths < r["b"])
         if not m.any():

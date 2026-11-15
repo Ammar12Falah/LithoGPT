@@ -16,8 +16,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from common import CLASSES, ROOT, well_code  # noqa: E402
 from readings import load_reading, rasterise  # noqa: E402
 
-RULE = json.loads((ROOT / "src" / "combine_rule.json").read_text()) if (ROOT / "src" / "combine_rule.json").exists() \
-    else {"text_max_len_m": 10.0}
+RULE = {"text_kinds_first": ["core", "sidewall_core"]}
 
 
 def row_lengths(df):
@@ -26,18 +25,19 @@ def row_lengths(df):
 
 def combine_arrays(text_df, log_df, depths):
     """Rule: at each depth step
-       1. if the text reading gives a class from a row no longer than text_max_len_m metres
-          (a sample, core or sidewall-core description), take the text class;
+       1. if the text reading gives a class from a core or sidewall-core description
+          (column `kind` of the text reading), take the text class;
        2. else if the log-picture reading gives a class, take it;
-       3. else take the text class from a longer row, if any;
+       3. else take the text class from any other row, if there is one;
        4. else no class."""
     t_cls, t_row = rasterise(text_df, depths)
     l_cls, l_row = rasterise(log_df, depths)
-    t_len = np.full(len(depths), np.inf)
+    kind = text_df["kind"].astype(str).str.strip().str.lower().to_numpy() if "kind" in text_df \
+        else np.full(len(text_df), "")
     ok = t_row >= 0
-    tl = row_lengths(text_df)
-    t_len[ok] = tl[t_row[ok]]
-    fine = (t_cls >= 0) & (t_len <= RULE["text_max_len_m"])
+    is_core = np.zeros(len(depths), dtype=bool)
+    is_core[ok] = np.isin(kind[t_row[ok]], RULE["text_kinds_first"])
+    fine = (t_cls >= 0) & is_core
     out = np.where(fine, t_cls, np.where(l_cls >= 0, l_cls, t_cls))
     src = np.where(fine, "text", np.where(l_cls >= 0, "log_picture", np.where(t_cls >= 0, "text", "")))
     row = np.where(fine, t_row, np.where(l_cls >= 0, l_row, t_row))

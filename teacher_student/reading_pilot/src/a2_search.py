@@ -22,7 +22,7 @@ EVAL_AT = [100, 200, 400, 600]
 
 def main():
     stage = sys.argv[1]
-    feats = {"1": ["S0", "S1"], "2": ["S1", "S2"]}[stage]
+    feats = {"1": ["S0", "S1"], "2": ["S1b", "S2"]}[stage]
     cands = sys.argv[2].split(",") if len(sys.argv) > 2 else list(CAND)
     R = m.roles(); logs = m.load_logs(); lab = m.labels_pool(logs)
     extra = R["extra"]
