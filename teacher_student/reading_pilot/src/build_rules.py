@@ -60,8 +60,8 @@ Two entries were settled on the two practice wells (25/7-2 and 25/4-5), where th
 may be seen:
 - Siltstone. The first draft sent siltstone to Sandstone/Shale. At the depths that the practice
   documents call siltstone, the experts wrote Shale more often than Sandstone/Shale
-  (log pictures: 257 m Shale against 160 m Sandstone/Shale; text: 350 m against 180 m).
-  So siltstone goes to Shale, with Sandstone/Shale as second class.
+  (first practice round, log pictures: 257 m Shale against 160 m Sandstone/Shale; text: 355 m
+  against 182 m). So siltstone goes to Shale, with Sandstone/Shale as second class.
 - Tuff. In both practice wells the experts wrote Tuff where the documents show claystone or
   siltstone with tuff marks, or call it tuffaceous (Balder Formation). So such rock goes to Tuff.
 
@@ -128,12 +128,14 @@ One rule joins the text reading and the log-picture reading into one class by de
 
 Why this rule. A core is the rock itself at a known depth, so it comes first. The rock column on
 the completion log is the geologist's own picture of the rock by depth, bed by bed, so it comes
-before text that describes long intervals or mixed cuttings. On the two practice sections the
-rule "fine text first, then log picture, then other text" gave a pooled tolerant agreement of
-67 percent, against 65 percent for the log picture alone and 62 percent for the text alone
-(first practice round; see notes.md). The practice wells hold no cuttings sample lists, so the
-practice could not show whether cuttings samples should come before or after the log picture.
-I put them after, for the reason given above. This is a judgment, not a measured result.
+before text that describes long intervals or mixed cuttings. On the two practice sections
+(25/7-2 from 1400 to 2600 m, 25/4-5 from 1700 to 2900 m; second practice round, with the final
+instructions) the pooled tolerant agreement was: combined by this rule 75.8 percent, log picture
+alone 74.4, text alone 67.6, all-shale line 51.2. These numbers come from the same two wells on
+which the word map was settled, so they are too rosy. The practice wells hold no cuttings sample
+lists, so the practice could not show whether cuttings samples should come before or after the
+log picture. I put them after, for the reason given above. That part is a judgment, not a
+measured result.
 
 ## 8. The teacher reading that Mark 2 judges
 
