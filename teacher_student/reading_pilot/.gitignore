@@ -1,0 +1,14 @@
+# environment
+.venv/
+__pycache__/
+*.pyc
+# raw downloads (FORCE files, listing tables)
+raw/
+# report files and other well documents downloaded from FactPages / KGS / NLOG
+docs/
+# derived data tables that hold the full logs or expert labels (rebuilt by the scripts)
+data/
+# trained models (rebuilt by run.sh)
+models/
+# working pictures that are rebuilt by scripts (committed ones are listed in notes.md)
+work/
