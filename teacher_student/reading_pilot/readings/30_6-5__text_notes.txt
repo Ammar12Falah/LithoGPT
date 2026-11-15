@@ -1,0 +1,130 @@
+NOTES - text reading of well 30/6-5, depth range 256-3548 m measured depth
+=========================================================================
+
+Document
+--------
+One document: 118_30_6_5_COMPLETION_REPORT_AND_LOG (183 pages kept of 188 in the PDF).
+Address: https://factpages.sodir.no/pbl/wellbore_documents/118_30_6_5_COMPLETION_REPORT_AND_LOG.pdf
+All page texts are OCR. The report gives all depths in metres from the kelly bushing
+(K.B.E. 25 m; RKB-MSL 25 m, water depth 155.6 m). No conversion was needed. T.D. 3550 m KB.
+
+Output files (joined in file-name order, sorted by depth_from, then depth_to)
+----------------------------------------------------------------------------
+reading_part01.csv  181-1000 m      77 rows
+reading_part02.csv  1000-1900 m     94 rows
+reading_part03.csv  1900-2122 m     81 rows
+reading_part04.csv  2122-2458 m    127 rows
+reading_part05.csv  2458-2800 m    134 rows
+reading_part06.csv  2800-2949.5 m   84 rows (cuttings, cores 1-8, sidewall cores)
+reading_part07.csv  2949.8-3229 m  110 rows
+reading_part08.csv  3229-3550 m    119 rows (the last 2 rows have no depth, see below)
+Total 826 rows: 683 cuttings_sample, 73 sidewall_core, 52 core, 18 interval_summary.
+(Row counts are my own tally while writing; the files were not read back.)
+
+Pages read closely
+------------------
+Text read (118 pages): pages 1-116 (general information, geological report, start of the
+drilling report), page 143 (lithology column figure) and page 183.
+Rock descriptions were taken from:
+ - pages 15-20  II.2.a Lithological description, summary by group / formation / member
+                (kind interval_summary, 18 rows)
+ - pages 22-86  II.2.b Wellsite sample description (cuttings, 260 m to 3550 m;
+                10 m samples to 1900 m, 3 m samples from 1903 m)
+ - pages 88-106 II.2.c Conventional core description, cores 1-8 (2843.5-2949.8 m),
+                graphic core logs with short written descriptions
+ - pages 108-111 II.2.d Sidewall core description, runs 1-3 (73 recovered cores, 1850-3525 m)
+Page pictures opened (32): 22, 24, 33, 35, 36, 53, 63, 77, 79, 80, 84, 88-105, 108, 110, 111.
+Not used for rows (as instructed): drilling report pages 113-116 (they hold some rock words
+in "drilling operation in intervals"), bit record / lithology column figure pages 140-143
+(formation names only, no rock words in the text), mud, marine and pressure chapters.
+Pages 117-182 were only searched by word (claystone, sandstone, limestone, siltstone, shale,
+lithology, clyst, sltst, sst, lst, prognos, forecast, predicted); no rock descriptions against
+depth were found there.
+
+Forecast against found depth of formation tops
+----------------------------------------------
+No such table was found. Pages 13-14 hold the tables of chronostratigraphy and
+lithostratigraphy with found tops only (not extracted). Word search for prognos / forecast /
+predicted hit only page 113 (days prognosed), pages 135 and 146 ("PREDICTED PRESSURE GRADIENTS",
+pressure figures) and mud cost tables "ESTIMATED / ACTUAL" on pages 161-165.
+
+How the rows were made
+----------------------
+Cuttings samples
+ - One row per listed sample depth. A sample with one depth stands for the interval from the
+   previous listed sample depth to its own depth. First sample (260 m): one 10 m step above.
+ - "a/a" samples are copied as printed ("2044: a/a"); the note names the sample they repeat.
+ - Class from the printed percentages: the rock with the largest share is the main rock;
+   several claystones (grey / red-brown) are added together. Where two rocks have equal shares,
+   or one rock has 50 % against two others of the Shale class, the first-named rock or the rock
+   with the largest single share was taken and confidence set to medium.
+ - Siltstone was put in class Shale. second_class = Sandstone/Shale was written where siltstone
+   is the largest share of the sample, and also where claystone is the main rock and siltstone
+   is 20 % or more and no other rock class reaches 20 %. Where sandstone is the main rock and
+   siltstone / claystone / shale together are 20 % or more, second_class = Shale.
+ - Samples said to be lost or missing have no row: 1927 ("sample lost"), 2014 ("lost sample"),
+   2053 ("sample lost"), 3358 and 3361 ("missing due to pooh without circulation"). The sample
+   after a lost one starts at the lost depth, so 1924-1927, 2011-2014, 2050-2053 and 3355-3361
+   have no cuttings description (the formation summaries cover them).
+ - Depths that are simply not in the list (no remark): 310, 1680 (1677 is printed instead),
+   2506, 3280, 3490. The next sample was given the interval from the previous listed depth.
+ - Cored interval: the list stops at 2872 ("CORED FROM 2871.5 - 2949.8 M") and starts again at
+   2950; that sample was given the interval 2949.8-2950. Samples 2845-2854 are cuttings from
+   the interval of cores 1 and 2 and were kept as rows.
+Sidewall cores
+ - One row per core, depth in both depth cells. Lists are in descending depth; "a/a" refers to
+   the entry above it in the list (the deeper core). Sheets print only "Depth" with
+   "K.B.E. 25 meters" in the header; depth_unit_ref written as "m KBE".
+Cores
+ - The core sheets are drawings (lithology column against a depth scale) with short descriptions
+   beside the column. Only the core top/base and whole-metre ticks are printed as numbers. The
+   tops and bases of the described units were read from the depth scale of the drawing and are
+   approximate (about +/- 0.1 to 0.2 m). All core rows are therefore confidence medium (the thin
+   coal bed of core 1 low). depth_unit_ref "m KB" is taken from the coring table on page 9
+   ("Interval (m KB)"); the core sheets print only "DEPTH".
+Formation summaries
+ - The cuttings and cores cover almost the whole range, so the summaries are needed only for the
+   small gaps named above. They were still all written (kind interval_summary, with their printed
+   intervals) so that every geological description against depth is on record; they overlap the
+   finer rows. Nordland Group (181-879) starts above the range and Cormorant Formation
+   (3472-3550) ends below it; printed depths were kept. Group headings without a rock sentence
+   of their own (Rogaland, Humber, Brent, Dunlin groups, Statfjord Formation) have no row.
+ - Confidence: low where the sentence names several rocks as parts of the interval without
+   shares; medium where a share word ("mostly") is used or where one rock is clearly the body
+   and the others are given only as stringers / interbeds (Heather, Burton/Amundsen, Nansen).
+   A stricter reading of the rule would put these three rows at low as well.
+ - Cook Formation and Cormorant Formation headings print their depths without "KB". The Cook
+   row has depth_unit_ref "m" (as printed). The Cormorant row carries "m KB" although its
+   heading prints "(3472 m - 3550 m (T.D.))"; T.D. is given as 3550 m KB on page 7.
+
+Reading problems and things left open
+-------------------------------------
+ - Page 36: a sample depth is printed "1406" between 1903 and 1909 (misprint, probably 1906).
+   Not corrected: row has depth_from 1903 and empty depth_to. The next sample (1909) was given
+   depth_from 1906 (one 3 m step above), said in its note.
+ - Page 77: a sample depth is printed "3225" between 3232 and 3238 (misprint, probably 3235).
+   Same handling: empty depth_to; next sample (3238) given depth_from 3235.
+ - Page 110 (sidewall cores run 2): two entries between 2563 and 2520 have no printed depth.
+   They are the last two rows of reading_part08.csv with empty depth cells.
+ - Page 111: the depth of the last sidewall core is overtyped (text layer "4813"); read as 2813
+   from the picture; confidence medium.
+ - Page 63, sample 2818: "siltst" is printed twice (40 % and 10 %); kept as printed.
+ - Page 39, sample 1975: a question mark is printed after "40 tuff".
+ - Core 1 (page 88): the coal is drawn as a thin black bar at about 2847.4 m and the claystone
+   symbol runs from there to the base of the recovered core (2848.2); the written coal
+   description takes several lines beside it. Coal row 2847.4-2847.45 is a reading of the
+   drawing (low confidence).
+ - Core 6 (pages 98-99): sheet header prints "from 2909.5 to 2919.1, CORED 9.6m, REC 10.5m,
+   109 %"; the coring table on page 9 prints 2909.1-2919.1 (10.0 m); core 7 header prints
+   "from 2919.5" (table: 2919.1). The drawing of core 6 runs from about 2909.0-2909.1 to about
+   2919.5. Rows follow the drawing (2909.1 to 2919.5).
+ - Core 8: recovered to about 2949.5; 2949.5-2949.8 "no rec".
+ - Core 4 base (about 2893.35-2893.7) is drawn with a finer laminated symbol but has no
+   description of its own; it is inside the last core 4 row.
+ - Core 5, first unit: the word after "carb," reads "light" (may be "tight").
+ - Some trace lines of the samples were cut short with "..." where the text ran into the
+   remarks column or was unclear; no main rock or percentage was affected.
+ - Eiriksson Member is printed 3316-3397 and Raude Member 3392-3472 (overlap as printed;
+   the lithostratigraphy table on page 14 has Raude at 3392).
+ - Not checked against the picture: most sample pages (the OCR text agreed with every picture
+   that was opened). Enclosure logs (composite log / mud log) are not in the folder.

@@ -1,0 +1,238 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+256,257,m K.B.,sand,Sandstone,,medium,01_log_about_247-357m.png
+257,261,m K.B.,clay with shell fragments,Shale,,medium,01_log_about_247-357m.png
+261,265,m K.B.,sand,Sandstone,,medium,01_log_about_247-357m.png
+265,278,m K.B.,clay with forams,Shale,,medium,01_log_about_247-357m.png
+278,282,m K.B.,sand,Sandstone,,medium,01_log_about_247-357m.png
+282,284.5,m K.B.,clay,Shale,,medium,01_log_about_247-357m.png
+284.5,287,m K.B.,sand,Sandstone,,medium,01_log_about_247-357m.png
+287,323,m K.B.,clay with shell fragments and forams,Shale,,high,01_log_about_247-357m.png
+323,326,m K.B.,sand,Sandstone,,medium,01_log_about_247-357m.png
+326,340,m K.B.,clay,Shale,,high,01_log_about_247-357m.png
+340,354,m K.B.,"sand with glauconite (description: sand, clr qtz, vf-f)",Sandstone,,high,01_log_about_247-357m.png
+354,359,m K.B.,clay,Shale,,medium,02_log_about_347-457m.png
+359,362,m K.B.,sand,Sandstone,,medium,02_log_about_347-457m.png
+362,367.5,m K.B.,clay,Shale,,medium,02_log_about_347-457m.png
+367.5,376,m K.B.,sand with one thin clay band,Sandstone,Shale,medium,02_log_about_347-457m.png
+376,388.5,m K.B.,clay,Shale,,high,02_log_about_347-457m.png
+388.5,393.5,m K.B.,sand with shell fragments,Sandstone,,medium,02_log_about_347-457m.png
+393.5,404,m K.B.,clay,Shale,,high,02_log_about_347-457m.png
+404,406.5,m K.B.,sand,Sandstone,,medium,02_log_about_347-457m.png
+406.5,412.5,m K.B.,clay,Shale,,medium,02_log_about_347-457m.png
+412.5,415,m K.B.,sand,Sandstone,,medium,02_log_about_347-457m.png
+415,420,m K.B.,clay,Shale,,medium,02_log_about_347-457m.png
+420,426,m K.B.,sand with one thin clay band,Sandstone,Shale,medium,02_log_about_347-457m.png
+426,439,m K.B.,clay with forams,Shale,,high,02_log_about_347-457m.png
+439,441.5,m K.B.,sand,Sandstone,,medium,02_log_about_347-457m.png
+441.5,446.5,m K.B.,clay,Shale,,medium,02_log_about_347-457m.png
+446.5,452.7,m K.B.,sand,Sandstone,,high,02_log_about_347-457m.png
+452.7,465.7,m K.B.,clay,Shale,,high,03_log_about_447-557m.png
+465.7,479,m K.B.,sand with forams; lower part with clay dashes,Sandstone,,medium,03_log_about_447-557m.png
+479,485,m K.B.,clay with shell fragments,Shale,,medium,03_log_about_447-557m.png
+485,490,m K.B.,sand,Sandstone,,medium,03_log_about_447-557m.png
+490,493,m K.B.,clay,Shale,,medium,03_log_about_447-557m.png
+493,497.5,m K.B.,sand with glauconite,Sandstone,,medium,03_log_about_447-557m.png
+497.5,501.5,m K.B.,clay,Shale,,medium,03_log_about_447-557m.png
+501.5,511.5,m K.B.,sand; clay dashes at base,Sandstone,,medium,03_log_about_447-557m.png
+511.5,514.5,m K.B.,clay,Shale,,medium,03_log_about_447-557m.png
+514.5,517,m K.B.,sand,Sandstone,,medium,03_log_about_447-557m.png
+517,521.5,m K.B.,clay,Shale,,medium,03_log_about_447-557m.png
+521.5,527,m K.B.,sand with shell fragments,Sandstone,,medium,03_log_about_447-557m.png
+527,531,m K.B.,clay with silt streak,Shale,,medium,03_log_about_447-557m.png
+531,538,m K.B.,sand with clay dashes,Sandstone,,medium,03_log_about_447-557m.png
+538,540.5,m K.B.,clay,Shale,,medium,03_log_about_447-557m.png
+540.5,546.5,m K.B.,sand with forams,Sandstone,,medium,03_log_about_447-557m.png
+546.5,553.7,m K.B.,clay,Shale,,high,03_log_about_447-557m.png
+553.7,566,m K.B.,sand with shell fragments; one thin clay band,Sandstone,Shale,medium,04_log_about_547-657m.png
+566,572.4,m K.B.,clay,Shale,,medium,04_log_about_547-657m.png
+572.4,579.7,m K.B.,sand with one thin clay band,Sandstone,Shale,medium,04_log_about_547-657m.png
+579.7,582,m K.B.,clay,Shale,,medium,04_log_about_547-657m.png
+582,610,m K.B.,"sand with glauconite, shell fragments, forams; thin clay bands",Sandstone,Shale,medium,04_log_about_547-657m.png
+610,612.5,m K.B.,clay,Shale,,medium,04_log_about_547-657m.png
+612.5,618.5,m K.B.,sand with glauconite,Sandstone,,medium,04_log_about_547-657m.png
+618.5,621,m K.B.,clay,Shale,,medium,04_log_about_547-657m.png
+621,626.3,m K.B.,sand,Sandstone,,medium,04_log_about_547-657m.png
+626.3,637.5,m K.B.,clay with one thin sand band,Shale,Sandstone,medium,04_log_about_547-657m.png
+637.5,644,m K.B.,sand,Sandstone,,medium,04_log_about_547-657m.png
+644,648,m K.B.,clay,Shale,,medium,04_log_about_547-657m.png
+648,653.7,m K.B.,sand with shell fragments,Sandstone,,medium,04_log_about_547-657m.png
+653.7,658,m K.B.,clay,Shale,,medium,05_log_about_647-757m.png
+658,664,m K.B.,sand with one thin clay band,Sandstone,Shale,medium,05_log_about_647-757m.png
+664,666.5,m K.B.,clay,Shale,,medium,05_log_about_647-757m.png
+666.5,684.6,m K.B.,sand with forams; one thin clay band,Sandstone,Shale,medium,05_log_about_647-757m.png
+684.6,695,m K.B.,clay,Shale,,high,05_log_about_647-757m.png
+695,697.4,m K.B.,sand,Sandstone,,medium,05_log_about_647-757m.png
+697.4,707.6,m K.B.,clay,Shale,,high,05_log_about_647-757m.png
+707.6,710.6,m K.B.,sand,Sandstone,,medium,05_log_about_647-757m.png
+710.6,718.5,m K.B.,clay,Shale,,medium,05_log_about_647-757m.png
+718.5,751.5,m K.B.,"sand with shell fragments (description at top Utsira Fm 726 m: sand, clr qtz, f-med)",Sandstone,,high,05_log_about_647-757m.png
+751.5,752.5,m K.B.,limestone stringer,Limestone,,medium,05_log_about_647-757m.png
+752.5,793,m K.B.,sand with glauconite and forams,Sandstone,,high,06_log_about_747-857m.png
+793,796,m K.B.,thin clay band (description: siltst and clayst),Shale,,low,06_log_about_747-857m.png
+796,818.5,m K.B.,sand with pyrite,Sandstone,,high,06_log_about_747-857m.png
+818.5,820.5,m K.B.,thin clay band,Shale,,low,06_log_about_747-857m.png
+820.5,851.5,m K.B.,sand with shell fragments; thin clay lines,Sandstone,Shale,medium,06_log_about_747-857m.png
+851.5,852.5,m K.B.,limestone stringer,Limestone,,low,06_log_about_747-857m.png
+852.5,880,m K.B.,sand with glauconite and shell fragments; one thin clay band,Sandstone,Shale,high,07_log_about_847-957m.png
+880,890,m K.B.,"clay (description: clayst, grnish gy); top 2 m sandy",Shale,,high,07_log_about_847-957m.png
+890,902.5,m K.B.,silt and clay (description: siltst),Shale,Sandstone/Shale,medium,07_log_about_847-957m.png
+902.5,904,m K.B.,limestone stringer,Limestone,,high,07_log_about_847-957m.png
+904,938.5,m K.B.,"silt (description: siltst, brnish gy)",Shale,Sandstone/Shale,high,07_log_about_847-957m.png
+938.5,963,m K.B.,"sand with forams, some silt dashes (description: sandst, clr qtz, med-f)",Sandstone,,medium,07_log_about_847-957m.png
+963,967.4,m K.B.,clay,Shale,,medium,08_log_about_947-1057m.png
+967.4,974.5,m K.B.,sand,Sandstone,,medium,08_log_about_947-1057m.png
+974.5,976,m K.B.,limestone stringer,Limestone,,high,08_log_about_947-1057m.png
+976,985.5,m K.B.,sand with glauconite,Sandstone,,medium,08_log_about_947-1057m.png
+985.5,989,m K.B.,clay,Shale,,medium,08_log_about_947-1057m.png
+989,996.3,m K.B.,sand,Sandstone,,medium,08_log_about_947-1057m.png
+996.3,1002,m K.B.,clay,Shale,,medium,08_log_about_947-1057m.png
+1002,1005.6,m K.B.,sand,Sandstone,,medium,08_log_about_947-1057m.png
+1005.6,1008.5,m K.B.,clay,Shale,,medium,08_log_about_947-1057m.png
+1008.5,1019.6,m K.B.,sand with shell fragments,Sandstone,,medium,08_log_about_947-1057m.png
+1019.6,1022.5,m K.B.,clay,Shale,,medium,08_log_about_947-1057m.png
+1022.5,1044.3,m K.B.,sand with forams; two thin clay bands,Sandstone,Shale,medium,08_log_about_947-1057m.png
+1044.3,1048,m K.B.,clay,Shale,,medium,08_log_about_947-1057m.png
+1048,1057.8,m K.B.,sand with glauconite,Sandstone,,high,08_log_about_947-1057m.png
+1057.8,1062.3,m K.B.,clay,Shale,,medium,09_log_about_1047-1157m.png
+1062.3,1064.7,m K.B.,sand,Sandstone,,medium,09_log_about_1047-1157m.png
+1064.7,1093,m K.B.,clay with forams and glauconite,Shale,,high,09_log_about_1047-1157m.png
+1093,1095,m K.B.,limestone stringer,Limestone,,high,09_log_about_1047-1157m.png
+1095,1118.6,m K.B.,clay with shell fragments,Shale,,high,09_log_about_1047-1157m.png
+1118.6,1121.6,m K.B.,limestone,Limestone,,high,09_log_about_1047-1157m.png
+1121.6,1143,m K.B.,clay with glauconite,Shale,,high,09_log_about_1047-1157m.png
+1143,1144.5,m K.B.,limestone stringer,Limestone,,high,09_log_about_1047-1157m.png
+1144.5,1146,m K.B.,clay,Shale,,medium,09_log_about_1047-1157m.png
+1146,1149,m K.B.,limestone,Limestone,,high,09_log_about_1047-1157m.png
+1149,1173.2,m K.B.,clay with shell fragments,Shale,,high,09_log_about_1047-1157m.png
+1173.2,1174.5,m K.B.,limestone stringer (drawn on part of the column width),Limestone,,medium,10_log_about_1147-1257m.png
+1174.5,1214.5,m K.B.,clay with forams and shell fragments,Shale,,high,10_log_about_1147-1257m.png
+1214.5,1215.7,m K.B.,limestone stringer (drawn on part of the column width),Limestone,,medium,10_log_about_1147-1257m.png
+1215.7,1241.3,m K.B.,clay with glauconite,Shale,,high,10_log_about_1147-1257m.png
+1241.3,1242.5,m K.B.,limestone stringer (drawn on part of the column width),Limestone,,medium,10_log_about_1147-1257m.png
+1242.5,1262.5,m K.B.,clay with shell fragments,Shale,,high,10_log_about_1147-1257m.png
+1262.5,1280.5,m K.B.,"clay with five thin limestone stringers (about 1263, 1269, 1271.5, 1277, 1279.5 m)",Shale,Limestone,medium,11_log_about_1247-1357m.png
+1280.5,1304,m K.B.,clay,Shale,,high,11_log_about_1247-1357m.png
+1304,1305.2,m K.B.,limestone stringer (drawn on part of the column width),Limestone,,medium,11_log_about_1247-1357m.png
+1305.2,1342,m K.B.,clay,Shale,,high,11_log_about_1247-1357m.png
+1342,1372,m K.B.,"sand (description: sandst, clr qtz, f-crs, lse)",Sandstone,,high,11_log_about_1247-1357m.png
+1372,1447.5,m K.B.,"silt with dolomitic limestone marks (description: clayst, siltst, limest)",Shale,Sandstone/Shale,medium,12_log_about_1347-1457m.png
+1447.5,1456,m K.B.,clay,Shale,,high,12_log_about_1347-1457m.png
+1456,1460,m K.B.,clay with silt dots,Shale,,medium,13_log_about_1447-1557m.png
+1460,1466.7,m K.B.,sand dots mixed with clay and silt dashes,Sandstone/Shale,,low,13_log_about_1447-1557m.png
+1466.7,1469.6,m K.B.,clay with pyrite,Shale,,medium,13_log_about_1447-1557m.png
+1469.6,1475.5,m K.B.,sand dots mixed with clay and silt dashes,Sandstone/Shale,,low,13_log_about_1447-1557m.png
+1475.5,1485,m K.B.,clay with mica; silt streak,Shale,,high,13_log_about_1447-1557m.png
+1485,1487.7,m K.B.,sand,Sandstone,,medium,13_log_about_1447-1557m.png
+1487.7,1502.3,m K.B.,clay with a silt streak,Shale,,high,13_log_about_1447-1557m.png
+1502.3,1503.7,m K.B.,limestone stringer,Limestone,,medium,13_log_about_1447-1557m.png
+1503.7,1530.4,m K.B.,clay with pyrite; silt streaks,Shale,,high,13_log_about_1447-1557m.png
+1530.4,1531.8,m K.B.,limestone stringer,Limestone,,medium,13_log_about_1447-1557m.png
+1531.8,1539,m K.B.,clay,Shale,,medium,13_log_about_1447-1557m.png
+1539,1546.8,m K.B.,silt,Shale,Sandstone/Shale,medium,13_log_about_1447-1557m.png
+1546.8,1548,m K.B.,limestone stringer,Limestone,,medium,13_log_about_1447-1557m.png
+1548,1554.6,m K.B.,sand with a clay dash,Sandstone,,medium,13_log_about_1447-1557m.png
+1554.6,1557.5,m K.B.,clay with silt streak,Shale,,medium,14_log_about_1547-1657m.png
+1557.5,1562.6,m K.B.,sand,Sandstone,,medium,14_log_about_1547-1657m.png
+1562.6,1564.2,m K.B.,limestone stringer,Limestone,,high,14_log_about_1547-1657m.png
+1564.2,1567,m K.B.,sand,Sandstone,,medium,14_log_about_1547-1657m.png
+1567,1578,m K.B.,clay with silt streaks,Shale,,medium,14_log_about_1547-1657m.png
+1578,1596,m K.B.,"sand with clay dashes, shell fragments, glauconite (description: clayst and sandst, clr qtz, vf)",Sandstone,Shale,medium,14_log_about_1547-1657m.png
+1596,1606.6,m K.B.,clay with silt streaks,Shale,,high,14_log_about_1547-1657m.png
+1606.6,1612.5,m K.B.,sand with fossils and shell fragments,Sandstone,,high,14_log_about_1547-1657m.png
+1612.5,1626,m K.B.,clay with silt streaks,Shale,,high,14_log_about_1547-1657m.png
+1626,1635,m K.B.,"sand with glauconite, shell fragments, clay dashes",Sandstone,Shale,medium,14_log_about_1547-1657m.png
+1635,1676,m K.B.,"clay with silt streaks, pyrite, shell fragments",Shale,,high,14_log_about_1547-1657m.png
+1676,1680,m K.B.,sand with a clay dash,Sandstone,,low,15_log_about_1647-1757m.png
+1680,1688,m K.B.,clay with silt streak,Shale,,medium,15_log_about_1647-1757m.png
+1688,1691.5,m K.B.,sand,Sandstone,,medium,15_log_about_1647-1757m.png
+1691.5,1704,m K.B.,clay with pyrite,Shale,,high,15_log_about_1647-1757m.png
+1704,1706.7,m K.B.,sand,Sandstone,,medium,15_log_about_1647-1757m.png
+1706.7,1711.6,m K.B.,clay,Shale,,medium,15_log_about_1647-1757m.png
+1711.6,1716,m K.B.,sand,Sandstone,,medium,15_log_about_1647-1757m.png
+1716,1718.4,m K.B.,clay,Shale,,medium,15_log_about_1647-1757m.png
+1718.4,1721,m K.B.,sand,Sandstone,,medium,15_log_about_1647-1757m.png
+1721,1731,m K.B.,clay,Shale,,high,15_log_about_1647-1757m.png
+1731,1733.6,m K.B.,sand,Sandstone,,medium,15_log_about_1647-1757m.png
+1733.6,1760,m K.B.,clay with pyrite; silt streaks,Shale,,high,15_log_about_1647-1757m.png
+1760,1766,m K.B.,sand,Sandstone,,medium,16_log_about_1747-1857m.png
+1766,1768.3,m K.B.,clay,Shale,,medium,16_log_about_1747-1857m.png
+1768.3,1774.7,m K.B.,sand,Sandstone,,medium,16_log_about_1747-1857m.png
+1774.7,1801,m K.B.,clay with glauconite and pyrite,Shale,,high,16_log_about_1747-1857m.png
+1801,1893,m K.B.,"clay with calcareous marks (description: clayst, brn-rd, with lst stringers)",Shale,Limestone,high,16_log_about_1747-1857m.png
+1893,1908.3,m K.B.,clay with a few scattered tuff marks and a silt streak,Shale,Tuff,medium,17_log_about_1847-1957m.png
+1908.3,1909.8,m K.B.,limestone stringer (at top Balder Fm 1908 m),Limestone,,high,17_log_about_1847-1957m.png
+1909.8,1940.4,m K.B.,"clay with tuff marks all through (description: clayst and tuff, lt-med gy)",Tuff,Shale,medium,17_log_about_1847-1957m.png
+1940.4,1964,m K.B.,"clay with silt streaks, calcareous marks, pyrite",Shale,,high,17_log_about_1847-1957m.png
+1964,1975,m K.B.,clay with stacked thin limestone marks,Shale,Limestone,medium,18_log_about_1947-2057m.png
+1975,2023,m K.B.,"clay with silt streaks (description: clayst, lt gy; siltst; sandst)",Shale,,high,18_log_about_1947-2057m.png
+2023,2123,m K.B.,"clay with silt streaks and thin limestone marks at about 2052, 2062, 2098 m (description: clayst, siltst, limest)",Shale,Limestone,high,18_log_about_1947-2057m.png
+2123,2203,m K.B.,"clay with silt streaks and a few calcareous marks (description: clayst, siltst, limst)",Shale,,high,19_log_about_2047-2157m.png
+2203,2309,m K.B.,"clay with silt streaks, pyrite and thin limestone marks at about 2269 and 2284 m (description: clayst, limest, siltst)",Shale,Limestone,high,20_log_about_2147-2257m.png
+2309,2404,m K.B.,clay lines with marl marks all through (marl marks get denser downward),Shale,Marl,medium,21_log_about_2247-2357m.png
+2404,2452,m K.B.,"clay lines with marl marks all through (description: marl, wh-buff, sft, v pasty)",Marl,Shale,medium,22_log_about_2347-2457m.png
+2452,2565.5,m K.B.,"clay with pyrite, mica, glauconite; thin limestone mark at about 2453 m (description: clayst, dk gy-dk brn; tr limest; tr siltst)",Shale,,high,22_log_about_2347-2457m.png
+2565.5,2594,m K.B.,clay with silt bands,Shale,Sandstone/Shale,medium,24_log_about_2547-2657m.png
+2594,2682,m K.B.,"clay with calcareous and thin limestone marks, pyrite, glauconite (description: clayst, lt gy-grn; tr siltst; tr limest)",Shale,,high,24_log_about_2547-2657m.png
+2682,2696.5,m K.B.,silt; lower part with sand dots,Shale,Sandstone/Shale,medium,25_log_about_2647-2757m.png
+2696.5,2698,m K.B.,thin limestone mark,Limestone,,low,25_log_about_2647-2757m.png
+2698,2806,m K.B.,"silt with calcareous marks, pyrite, glauconite (description: clayst occ grdng into sltst)",Shale,Sandstone/Shale,medium,25_log_about_2647-2757m.png
+2806,2825,m K.B.,shale dashes and clay lines,Shale,,high,26_log_about_2747-2857m.png
+2825,2841,m K.B.,sand dots with shale dashes,Sandstone,Shale,medium,26_log_about_2747-2857m.png
+2841,2848,m K.B.,"sand (description at top Brent Gr 2841 m: sandst, clr qtz, f-m)",Sandstone,,high,26_log_about_2747-2857m.png
+2848,2849,m K.B.,coal bed,Coal,,medium,26_log_about_2747-2857m.png
+2849,2860,m K.B.,sand with mica,Sandstone,,high,26_log_about_2747-2857m.png
+2860,2867,m K.B.,sand dots with many shale dashes (description: arg in parts),Sandstone/Shale,,medium,27_log_about_2847-2957m.png
+2867,2877,m K.B.,"sand with pyrite (description at top Etive Fm 2865 m: sandst, clr qtz, f-med)",Sandstone,,high,27_log_about_2847-2957m.png
+2877,2878,m K.B.,thin coal with clay dashes (description: tr lams of coal and clyst),Coal,Shale,low,27_log_about_2847-2957m.png
+2878,2893,m K.B.,"sand with glauconite, coal specks, pyrite, mica",Sandstone,,high,27_log_about_2847-2957m.png
+2893,2895,m K.B.,thin band of shale dashes,Shale,,low,27_log_about_2847-2957m.png
+2895,2901,m K.B.,sand with a coal speck,Sandstone,,medium,27_log_about_2847-2957m.png
+2901,2903,m K.B.,thin band of shale dashes,Shale,,low,27_log_about_2847-2957m.png
+2903,2939.7,m K.B.,"sand with glauconite, pyrite, mica (description: sandst, clr qtz, crs-m, occ granules)",Sandstone,,high,27_log_about_2847-2957m.png
+2939.7,2949,m K.B.,shale with a few silt dots,Shale,,high,27_log_about_2847-2957m.png
+2949,2958,m K.B.,sand,Sandstone,,high,27_log_about_2847-2957m.png
+2958,2995,m K.B.,"shale with silt dots in parts (description: shale, lt gy-brn, v slty in parts)",Shale,,high,28_log_about_2947-3057m.png
+2995,3012.5,m K.B.,"sand with pyrite (description: sandst, clr qtz, f-m)",Sandstone,,high,28_log_about_2947-3057m.png
+3012.5,3030,m K.B.,shale (description: shale a/a),Shale,,high,28_log_about_2947-3057m.png
+3030,3037.5,m K.B.,"sand with glauconite (description: sandst, clr qtz, f, calc cmtd)",Sandstone,,high,28_log_about_2947-3057m.png
+3037.5,3072.8,m K.B.,shale (description: shale a/a),Shale,,high,28_log_about_2947-3057m.png
+3072.8,3074.3,m K.B.,limestone (at top Cook Fm),Limestone,,high,29_log_about_3047-3157m.png
+3074.3,3076.3,m K.B.,empty band between two limestone beds; read as clay,Shale,,low,29_log_about_3047-3157m.png
+3076.3,3077.6,m K.B.,limestone,Limestone,,high,29_log_about_3047-3157m.png
+3077.6,3085.8,m K.B.,"sand (description: sandst, clr qtz, f-m, calc cmtd)",Sandstone,,high,29_log_about_3047-3157m.png
+3085.8,3087.7,m K.B.,empty band; read as clay,Shale,,low,29_log_about_3047-3157m.png
+3087.7,3092,m K.B.,sand with calcareous mark,Sandstone,,medium,29_log_about_3047-3157m.png
+3092,3093.6,m K.B.,limestone stringer,Limestone,,high,29_log_about_3047-3157m.png
+3093.6,3116.7,m K.B.,"sand with mica, pyrite, calcareous mark",Sandstone,,high,29_log_about_3047-3157m.png
+3116.7,3132,m K.B.,"shale with some silt dots (description at top Amundsen/Burton Fm 3123 m: shale, slty-v slty)",Shale,,high,29_log_about_3047-3157m.png
+3132,3148,m K.B.,"sand with mica (description: sandst, clr qtz, f)",Sandstone,,high,29_log_about_3047-3157m.png
+3148,3165.4,m K.B.,sand dots and shale dashes in thin alternation; pyrite,Sandstone/Shale,,medium,29_log_about_3047-3157m.png
+3165.4,3184,m K.B.,sand with one thin band of shale dashes,Sandstone,Shale,medium,30_log_about_3147-3257m.png
+3184,3190,m K.B.,shale,Shale,,medium,30_log_about_3147-3257m.png
+3190,3202.6,m K.B.,sand,Sandstone,,high,30_log_about_3147-3257m.png
+3202.6,3206,m K.B.,shale,Shale,,medium,30_log_about_3147-3257m.png
+3206,3221,m K.B.,sand with shale dashes,Sandstone,Shale,medium,30_log_about_3147-3257m.png
+3221,3224,m K.B.,shale,Shale,,medium,30_log_about_3147-3257m.png
+3224,3243,m K.B.,"sand (description at top Statfjord Fm 3223 m: sandst, clr qtz, f)",Sandstone,,high,30_log_about_3147-3257m.png
+3243,3244,m K.B.,thin coal with shale dashes (description: tr coal),Coal,,low,30_log_about_3147-3257m.png
+3244,3257,m K.B.,sand with a thin limestone mark,Sandstone,,high,30_log_about_3147-3257m.png
+3257,3258,m K.B.,thin coal with shale dashes (description: tr coal),Coal,,low,30_log_about_3147-3257m.png
+3258,3284,m K.B.,sand with mica and pyrite,Sandstone,,high,31_log_about_3247-3357m.png
+3284,3285,m K.B.,thin coal with shale dashes,Coal,,low,31_log_about_3247-3357m.png
+3285,3317,m K.B.,"sand with mica, pyrite, calcareous mark; a few shale dashes",Sandstone,Shale,high,31_log_about_3247-3357m.png
+3317,3322.5,m K.B.,"shale dashes with silt dots (description at top Eiriksson Mbr 3316 m: siltst, lt grn, brn)",Shale,Sandstone/Shale,medium,31_log_about_3247-3357m.png
+3322.5,3394,m K.B.,"sand with thin limestone or dolomite marks (description: sandst, mlky, f-crs; tr dol; tr lst)",Sandstone,,high,31_log_about_3247-3357m.png
+3394,3401,m K.B.,"shale dashes with silt dots (description at top Raude Mbr 3392 m: siltst, lt gy-grn, brn)",Shale,Sandstone/Shale,medium,32_log_about_3347-3457m.png
+3401,3404.6,m K.B.,sand,Sandstone,,medium,32_log_about_3347-3457m.png
+3404.6,3408.5,m K.B.,shale dashes with silt dots,Shale,Sandstone/Shale,medium,32_log_about_3347-3457m.png
+3408.5,3413.4,m K.B.,sand,Sandstone,,medium,32_log_about_3347-3457m.png
+3413.4,3426,m K.B.,shale dashes with silt dots (description: siltst),Shale,Sandstone/Shale,medium,32_log_about_3347-3457m.png
+3426,3435,m K.B.,"sand (description: sandst, mlky, f-crs)",Sandstone,,high,32_log_about_3347-3457m.png
+3435,3439,m K.B.,shale dashes with silt dots,Shale,Sandstone/Shale,medium,32_log_about_3347-3457m.png
+3439,3455,m K.B.,sand with one thin band of shale dashes,Sandstone,Shale,medium,32_log_about_3347-3457m.png
+3455,3472,m K.B.,shale dashes with silt dots,Shale,Sandstone/Shale,medium,32_log_about_3347-3457m.png
+3472,3481,m K.B.,"clay with silt streaks (description at top Cormorant 3472 m: clayst, rd-brn, v slty)",Shale,,high,33_log_about_3447-3557m.png
+3481,3513.4,m K.B.,silt (description: siltst),Shale,Sandstone/Shale,medium,33_log_about_3447-3557m.png
+3513.4,3535,m K.B.,clay with a silt streak,Shale,,high,33_log_about_3447-3557m.png
+3535,3542,m K.B.,"sand (description: sandst, mlky, f, occ arg)",Sandstone,,high,33_log_about_3447-3557m.png
+3542,3548,m K.B.,shale dashes with silt dots,Shale,Sandstone/Shale,medium,33_log_about_3447-3557m.png

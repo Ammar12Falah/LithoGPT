@@ -1,0 +1,42 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+3150,3155,m (K.B. 25 m),"sand/sandstone dots with thin shale/silt dash bands; descr: sandst f, calc cmtd, tr slst",Sandstone/Shale,,medium,01_log_about_3140-3250m.png
+3155,3160,m (K.B. 25 m),"shale/silt dash rows inside the sand column; descr: tr slst",Shale,Sandstone/Shale,medium,01_log_about_3140-3250m.png
+3160,3173,m (K.B. 25 m),"sand/sandstone dots with a few shale dashes, pyrite mark",Sandstone,Shale,medium,01_log_about_3140-3250m.png
+3173,3184,m (K.B. 25 m),sand/sandstone dots,Sandstone,,high,01_log_about_3140-3250m.png
+3184,3190,m (K.B. 25 m),sand/sandstone dots alternating with shale/silt dash bands,Sandstone/Shale,,medium,01_log_about_3140-3250m.png
+3190,3203,m (K.B. 25 m),sand/sandstone dots,Sandstone,,high,01_log_about_3140-3250m.png
+3203,3210,m (K.B. 25 m),sand/sandstone dots mixed with shale dashes,Sandstone/Shale,,low,01_log_about_3140-3250m.png
+3210,3217,m (K.B. 25 m),"sand/sandstone dots, one or two shale dashes",Sandstone,Shale,medium,01_log_about_3140-3250m.png
+3217,3223,m (K.B. 25 m),"shale/silt dash rows at base of Amundsen/Burton Fm",Shale,Sandstone/Shale,medium,01_log_about_3140-3250m.png
+3223,3243,m (K.B. 25 m),"sand/sandstone dots; TOP STATFJORD FM 3223; descr: sandst clr qtz, f, occ m, fri-loose",Sandstone,,high,01_log_about_3140-3250m.png
+3243,3244,m (K.B. 25 m),"coal mark (C) between dashes; descr: tr coal blk, brttl",Coal,,high,01_log_about_3140-3250m.png
+3244,3257,m (K.B. 25 m),"sand/sandstone dots, one small calcareous mark",Sandstone,,high,01_log_about_3140-3250m.png
+3257,3258,m (K.B. 25 m),coal mark (C) between dashes,Coal,,high,02_log_about_3240-3350m.png
+3258,3260,m (K.B. 25 m),"thin shale/silt dash band under the coal; descr: tr slst lt brn",Shale,Sandstone/Shale,low,02_log_about_3240-3350m.png
+3260,3284,m (K.B. 25 m),"sand/sandstone dots, mica and pyrite marks",Sandstone,,high,02_log_about_3240-3350m.png
+3284,3285,m (K.B. 25 m),coal mark (C) between dashes,Coal,,high,02_log_about_3240-3350m.png
+3285,3288,m (K.B. 25 m),shale/silt dash rows under the coal,Shale,Sandstone/Shale,medium,02_log_about_3240-3350m.png
+3288,3295,m (K.B. 25 m),"sand/sandstone dots, one small calcareous mark",Sandstone,,high,02_log_about_3240-3350m.png
+3295,3297,m (K.B. 25 m),thin shale dash band in sand,Shale,,low,02_log_about_3240-3350m.png
+3297,3316,m (K.B. 25 m),"sand/sandstone dots, mica and pyrite marks",Sandstone,,high,02_log_about_3240-3350m.png
+3316,3323,m (K.B. 25 m),"shale/silt dash rows; TOP EIRIKSSON MEMBER 3316; descr: siltst lt grn, brn, carb, non calc",Shale,Sandstone/Shale,high,02_log_about_3240-3350m.png
+3323,3365,m (K.B. 25 m),"sand/sandstone dots with scattered small limestone/dolomite stringer marks; descr: sandst mlky, f-crs, loose; tr dol, tr lst",Sandstone,Limestone,medium,02_log_about_3240-3350m.png
+3365,3368,m (K.B. 25 m),few shale dashes next to limestone stringer marks,Shale,,low,03_log_about_3340-3450m.png
+3368,3392,m (K.B. 25 m),"sand/sandstone dots, one limestone stringer mark",Sandstone,,high,03_log_about_3340-3450m.png
+3392,3399,m (K.B. 25 m),"shale/silt dash rows; TOP RAUDE MEMBER 3392; descr: siltst lt gy-grn, brn, carb, non calc",Shale,Sandstone/Shale,high,03_log_about_3340-3450m.png
+3399,3403,m (K.B. 25 m),sand/sandstone dots,Sandstone,,medium,03_log_about_3340-3450m.png
+3403,3407,m (K.B. 25 m),shale/silt dash rows,Shale,Sandstone/Shale,medium,03_log_about_3340-3450m.png
+3407,3412,m (K.B. 25 m),sand/sandstone dots,Sandstone,,medium,03_log_about_3340-3450m.png
+3412,3420,m (K.B. 25 m),shale/silt dash rows,Shale,Sandstone/Shale,medium,03_log_about_3340-3450m.png
+3420,3427,m (K.B. 25 m),sand dots alternating with single shale/silt dash rows,Sandstone/Shale,,low,03_log_about_3340-3450m.png
+3427,3435,m (K.B. 25 m),"sand/sandstone dots; descr: sandst mlky, f-crs, subang, loose",Sandstone,,high,03_log_about_3340-3450m.png
+3435,3439,m (K.B. 25 m),shale/silt dash rows,Shale,Sandstone/Shale,medium,03_log_about_3340-3450m.png
+3439,3441,m (K.B. 25 m),thin sand band (dots) between silt/shale bands,Sandstone,,low,03_log_about_3340-3450m.png
+3441,3445,m (K.B. 25 m),shale/silt dash rows,Shale,Sandstone/Shale,medium,03_log_about_3340-3450m.png
+3445,3455,m (K.B. 25 m),sand/sandstone dots,Sandstone,,high,03_log_about_3340-3450m.png
+3455,3463,m (K.B. 25 m),"shale/silt dash rows, one sand row",Shale,Sandstone/Shale,medium,04_log_about_3440-3550m.png
+3463,3472,m (K.B. 25 m),sand/sandstone dots with a few shale/silt dashes,Sandstone,Shale,medium,04_log_about_3440-3550m.png
+3472,3517,m (K.B. 25 m),"clay/claystone solid lines alternating with silt/siltstone dash-dot rows; TOP CORMORANT 3472; descr: clayst rd-brn, v slty; siltst dk gy, grn, brn",Shale,Sandstone/Shale,high,04_log_about_3440-3550m.png
+3517,3535,m (K.B. 25 m),"clay/claystone, close solid lines",Shale,,high,04_log_about_3440-3550m.png
+3535,3542,m (K.B. 25 m),"sand/sandstone dots; descr: sandst mlky, f, subang, occ arg",Sandstone,,high,04_log_about_3440-3550m.png
+3542,3548,m (K.B. 25 m),silt/shale dash and dash-dot rows,Shale,Sandstone/Shale,medium,04_log_about_3440-3550m.png
