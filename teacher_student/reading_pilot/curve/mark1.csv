@@ -1,0 +1,2 @@
+tolerant_70_wells_pct,tolerant_10_wells_mean_of_5_draws_pct,ten_well_draws_min_pct,ten_well_draws_max_pct,gap_points,mark1,gap_strict_points,gap_balanced_points,gap_soft_points,mark1_if_strict,mark1_if_balanced
+82.8,79.7,78.5,80.8,3.1,fail,3.8,12.8,1.9,fail,pass

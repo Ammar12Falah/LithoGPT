@@ -1,0 +1,2 @@
+curve_wells,mean_well_gap_points,median_well_gap_points,sd_of_well_gap_points_avg_over_draws,sd_of_well_gap_points_single_draw,min_well_gap,max_well_gap,wells_with_70_ahead,standard_error_with_5_wells_points,smallest_gap_5_wells_can_show_points_2se,five_random_curve_wells_pooled_gap_p05,five_random_curve_wells_pooled_gap_p50,five_random_curve_wells_pooled_gap_p95,share_of_5_well_draws_that_call_70_ahead_pct
+23,3.9,2.1,4.8,6.2,-2.5,13.5,19,2.8,5.5,-0.9,3.1,8.3,23.3

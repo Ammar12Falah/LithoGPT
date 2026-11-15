@@ -1,0 +1,6 @@
+{
+ "features": "S2",
+ "rounds": 100,
+ "trees": "B_leaves31_reg",
+ "chosen_by": "mean strict agreement over 3 well-by-well folds inside the 60 extra wells (curve/setup_check_extra_wells.csv)"
+}

@@ -119,11 +119,12 @@ def main():
         ax.annotate(f"{mean[ns[-1]]:.1f}", (ns[-1], mean[ns[-1]]), xytext=(8, 0), textcoords="offset points",
                     color=INK, fontsize=9, va="center")
     ax.axhline(100 * shale.tolerant_all, color=MUTED, lw=1.2, ls=(0, (4, 3)))
-    ax.text(1.02, 100 * shale.tolerant_all + 0.8, f"All-shale line, tolerant {100 * shale.tolerant_all:.1f}",
-            color=INK2, fontsize=8.5, va="bottom")
+    ax.text(13, 100 * shale.tolerant_all - 1.2, f"All-shale line, tolerant {100 * shale.tolerant_all:.1f}",
+            color=INK2, fontsize=8.5, va="top")
     ax.scatter([10], [100 * ten.tolerant_all], marker="D", s=48, facecolor="none", edgecolor=INK, lw=1.4, zorder=5)
     ax.annotate(f"Ten-well model (the 10 example wells), tolerant {100 * ten.tolerant_all:.1f}",
-                (10, 100 * ten.tolerant_all), xytext=(10, -16), textcoords="offset points", color=INK2, fontsize=8.5)
+                (10, 100 * ten.tolerant_all), xytext=(0, 16), textcoords="offset points", color=INK2, fontsize=8.5,
+                ha="center")
     ax.set_xscale("log")
     ax.set_xticks(ns)
     ax.set_xticklabels([str(n) for n in ns])

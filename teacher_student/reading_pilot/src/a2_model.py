@@ -26,12 +26,13 @@ ROLL = 33                        # half window of the rolling features: about 5 
 
 # ---- the fixed setup (chosen with `cv` inside the extra wells, then not changed) ----
 SETUP = json.loads((ROOT / "src" / "model_setup.json").read_text()) if (ROOT / "src" / "model_setup.json").exists() else {
-    "features": "S1", "rounds": 300,
+    "features": "S2", "rounds": 100,
 }
 PARAMS = {
-    "objective": "multiclass", "num_class": len(CLASSES), "learning_rate": 0.1,
-    "num_leaves": 63, "min_data_in_leaf": 40, "feature_fraction": 0.5,
-    "bagging_fraction": 0.7, "bagging_freq": 1, "lambda_l2": 1.0, "max_bin": 127,
+    "objective": "multiclass", "num_class": len(CLASSES), "learning_rate": 0.05,
+    "num_leaves": 31, "min_data_in_leaf": 300, "feature_fraction": 0.4,
+    "bagging_fraction": 0.7, "bagging_freq": 1, "lambda_l2": 5.0, "max_bin": 127,
+    "cat_l2": 50.0, "cat_smooth": 50.0, "min_data_per_group": 300,
     "num_threads": 4, "verbose": -1, "seed": SEED, "deterministic": True, "force_row_wise": True,
 }
 TRAIN_EVERY = 2                  # train on every 2nd depth step (neighbours are near copies)
@@ -223,4 +224,5 @@ def mode_fixed():
 
 
 if __name__ == "__main__":
-    {"cv": mode_cv, "curve": mode_curve, "fixed": mode_fixed}[sys.argv[1]]()
+    # the setup was chosen with src/a2_search.py (well-by-well check inside the extra wells)
+    {"curve": mode_curve, "fixed": mode_fixed}[sys.argv[1]]()
