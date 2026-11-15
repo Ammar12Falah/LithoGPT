@@ -1,0 +1,21 @@
+well,csv_line,picture_or_page_reference,depth_from,depth_to,rock_class,confidence
+31/3-1,5,curve picture VFQK_001_0300-0400m.png (re-made from train.csv by src/a3_pictures.py),358,369,Shale,high
+31/3-1,13,curve picture VFQK_008_1000-1100m.png (re-made from train.csv by src/a3_pictures.py),1038,1225,Shale,high
+31/3-1,41,curve picture VFQK_014_1600-1700m.png (re-made from train.csv by src/a3_pictures.py),1646,1649,Limestone,medium
+31/3-1,54,curve picture VFQK_016_1800-1900m.png (re-made from train.csv by src/a3_pictures.py),1814,1820,Shale,low
+31/3-1,56,curve picture VFQK_016_1800-1900m.png (re-made from train.csv by src/a3_pictures.py),1838,1840,Shale,low
+31/3-1,64,curve picture VFQK_017_1900-2000m.png (re-made from train.csv by src/a3_pictures.py),1945,1954,Sandstone,high
+31/3-1,73,curve picture VFQK_019_2100-2200m.png (re-made from train.csv by src/a3_pictures.py),2112,2114,Coal,medium
+31/3-1,83,curve picture VFQK_019_2100-2200m.png (re-made from train.csv by src/a3_pictures.py),2180,2207,Sandstone,low
+31/3-1,96,curve picture VFQK_020_2200-2300m.png (re-made from train.csv by src/a3_pictures.py),2277,2282,Shale,medium
+30/6-5,3,curve picture SKCD_001_0200-0300m.png (re-made from train.csv by src/a3_pictures.py),262,265,Sandstone,medium
+30/6-5,16,curve picture SKCD_010_1100-1200m.png (re-made from train.csv by src/a3_pictures.py),1119,1120,Limestone,medium
+30/6-5,24,curve picture SKCD_014_1500-1600m.png (re-made from train.csv by src/a3_pictures.py),1503,1529,Shale,medium
+30/6-5,52,curve picture SKCD_019_2000-2100m.png (re-made from train.csv by src/a3_pictures.py),2098,2099,Limestone,low
+30/6-5,58,curve picture SKCD_020_2100-2200m.png (re-made from train.csv by src/a3_pictures.py),2183,2200,Shale,low
+30/6-5,94,curve picture SKCD_026_2700-2800m.png (re-made from train.csv by src/a3_pictures.py),2740,2762,Shale,medium
+30/6-5,106,curve picture SKCD_027_2800-2900m.png (re-made from train.csv by src/a3_pictures.py),2853,2855,Shale,medium
+30/6-5,143,curve picture SKCD_032_3300-3400m.png (re-made from train.csv by src/a3_pictures.py),3344,3349,Shale,medium
+30/6-5,160,curve picture SKCD_033_3400-3500m.png (re-made from train.csv by src/a3_pictures.py),3476,3480,Sandstone,low
+35/11-13,41,curve picture LWHF_004_3200-3300m.png (re-made from train.csv by src/a3_pictures.py),3245,3246,Limestone,medium
+35/11-13,42,curve picture LWHF_004_3200-3300m.png (re-made from train.csv by src/a3_pictures.py),3246,3262,Shale,high
