@@ -12,3 +12,5 @@ data/
 models/
 # working pictures that are rebuilt by scripts (committed ones are listed in notes.md)
 work/
+# search tables while the search is running (the final table is curve/setup_check_extra_wells.csv)
+curve/setup_check_extra_wells_stage*.csv
