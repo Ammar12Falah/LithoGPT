@@ -1,0 +1,107 @@
+Notes of the text reader - well 35/11-13 - depth range read: 2901 m to 3271 m measured depth
+=====================================================================================
+
+Documents in the folder
+- One document: 5063_35_11_13_COMPLETION_REPORT (201 pages), "Final Well Report, well 35/11-13 Astero".
+  Section A geology/geophysics/petrophysics = PDF pages 3-60 (report pages A-1 to A-58). Operations start at
+  PDF page 61 (report pages "B-n of 141"); a well test report with appendices follows from about PDF page 138.
+  Only Section A holds rock descriptions.
+- candidate_pages.txt also names a document 5063_35_11_13_COMPLETION_LOG with 0 pages; it is not in the folder.
+  Page 12 says "For details on sampling descriptions see attached Composite log". That log is not here, so no
+  sample-by-sample cuttings list could be read. Page 41 also refers to a separate "Standard Core Description"
+  report; it is not in the folder either.
+
+Depth reference
+- Page 6: "All depths in this report have reference to RKB unless otherwise stated." KB elevation 25 m (page 7).
+  Depths are in metres, no feet. No conversion was made anywhere.
+- Lithostratigraphy (pages 18-19) writes "m MD"; the sidewall coring table heads its depth column only "Depth"
+  (page 41 calls the same cores "2960.0-3151.0 m MD RKB", so "m MD RKB" was written); the coring table and the zone
+  table write "m MD RKB"; the shows table writes "mRKB".
+- Core depths (page 24) are driller's depths; the table gives a depth shift to the logs (+3.5 m core 1,
+  +3.75 to +4.5 m core 2). The shift was NOT applied. Page 41: sidewall cores "should in principle be on depth with
+  the wireline logs".
+
+Pages read closely (text file, and picture where named)
+- p4-5 list of contents; p6-12 well summary and start of lithostratigraphy; p10 picture (geological summary figure).
+- p15-17 lithostratigraphy above the range (read to find the start of the range).
+- p18, p19 lithostratigraphy for the range (text + picture, both agree).
+- p20 hydrocarbon shows table (text + picture).
+- p21 logging table.
+- p22, p23 sidewall coring table (text + picture, both agree).
+- p24 conventional coring table (text + picture).
+- p25, p26 geological results / reservoir description (text + picture).
+- p27-29 biostratigraphy main results; p30-37 figure pages (p31 is a blank page, p32 biostratigraphic table picture).
+- p38-43 petrophysical evaluation text; p51 reservoir zonal averages table (text + picture); p52, p53 CPI plots
+  (p53 picture); p54 formation pressure table (start only).
+- p58-60 post site survey; p68 drilling summary of the 8 1/2" section; p132 FIT form.
+- All 201 text files were searched for rock words, formation names and for prognosis/forecast words.
+
+Kinds of description found for the range
+1. Sidewall core descriptions, one depth each (p22-23): 45 cores listed between 2960 and 3151 m; 41 have a
+   description and are rows. No row for no. 3 (3149.0, "Aborted"), no. 37 (3046,0), no. 39 (3026,0) and no. 42
+   (2996.5), all "Lost in hole".
+2. Lithology by depth interval in the lithostratigraphy section (p18-19): 5 rows touch the range
+   (2865-2902, 2902-3013, 2977-3093.5, 3095.5-3206, 3206-3291.5). Inside the 2977-3093.5 entry three spot
+   descriptions carry their own depth ("at 3012m", "at 3030m", "at 3050m"); they are rows of kind cuttings_sample
+   written as points, because the sampling step is not given and they are not a continuous sample list.
+3. Conventional cores (p24): two cores, 3100-3115 and 3115-3142 m MD RKB (recovered 3100-3114.40 and 3115-3134.30).
+   The report has NO core description by depth. The only words on the core rock are on p11: "Two cores were taken
+   and comprised mainly sandstones with occasional thin siltstones." Two core rows were made from that sentence with
+   the depths of the coring table (join of two pages, said in the row notes, confidence medium).
+4. Hydrocarbon shows description table (p20): two rows with a LITHOLOGY cell "Sandstone". Both were written
+   (confidence low/medium) because they name a rock against a depth interval. The first one is printed
+   "3903.5-3100" (Drill cuttings); 3903.5 is deeper than TD and looks like a misprint, so depth_from is empty.
+   This row is sorted at its depth_to (3100).
+5. Reservoir zones (geology chapter 2.1.2, p25-26): zones R1-R7 are "alternately sandstone- and mudstone-dominated,
+   the mudstone dominated zones R2, R4 and R6", sandstone-dominated R1, R3, R5, R7; J54 "Mudstones predominate".
+   The text gives no depths. The depths of J54 and J52-R1 ... J52-R7 stand in table 3.7.2 Reservoir zonal averages
+   (p51, petrophysics chapter, MD RKB). Eight interval_summary rows were made by joining the two by zone name
+   (said in every row note, confidence medium). If such joins are not wanted, drop the rows with page 25/26.
+6. Biostratigraphy text (p28): "Heather Formation mud-rocks ... below the 'Oxfordian sandstone' ... terminated at
+   3295m (loggers depth)": one coarse row 3207-3295.
+
+Class choices
+- Siltstone -> Shale with Sandstone/Shale in second_class (word map), also where the entry names thin sandstone
+  beds or thin limestones; those are named in the note instead.
+- "Sandstone with thin siltstones" and the sandstone cores with silty laminae -> Sandstone, second class Shale.
+- "Tr Sst" in the Draupne interval is a trace: no second class.
+
+Things that do not agree inside the report (nothing was corrected)
+- Draupne Formation is printed 2902-3013 m MD and Heather Formation 2977-3291.5 m MD with a first interval
+  2977-3093.5 m MD: the two intervals overlap between 2977 and 3013 m. The sidewall coring table follows 2977
+  (2975 m = Draupne Fm, 2985 m = Heather Fm); the biostratigraphy text (p28), the biostratigraphic table (p32)
+  and the geological summary figure (p10) put the boundary at 3013 m (log). Both rows are written as printed.
+  Both are class Shale, so the overlap does not change the class.
+- Heather interval ends at 3093.5 and Oxfordian Sandstones start at 3095.5 m MD: 3093.5-3095.5 has no interval
+  summary (sidewall cores at 3093.5, 3094.5 and 3095.5 cover it as points).
+- Base of the Oxfordian sandstone: 3206 m MD (p18), 3207 m MD RKB (p28), 3206.95 (p51), "Heather 3206.5" (p10).
+- Shows text "r - Tr dull - mod bri yel dir fluor ..." is given "at 2998 m MD" on p18 and for "3903.5-3100" on p20.
+  The show line on p18 does not name a rock, so no row was made from it.
+- Core 1 recovery: 96,0 % on p24, 97 % on p68.
+
+Not extracted, on purpose
+- Forecast against found depth: p60 (5063_35_11_13_COMPLETION_REPORT, post site survey, item 12e) has a table
+  "Horizon / Prognosis, P (m) / Observation, O (m) / O-P (m)" for Base Pleistocene, Base Pliocene and Base
+  Oligocene (depths in metres RKB TVD). Not extracted. No other table of prognosed against found formation tops was
+  found (p62/p134 only hold a planned against actual drilling time-depth curve).
+- p10 geological summary and p52-53 CPI plots: figures with a lithology column but no rock words - no rows.
+- p32 biostratigraphic table: formation tops only, no rock words - no rows.
+- p28-29: "'Oxfordian Sandstone' reservoir sequence ... between 3095.5m MD RKB - 3207m MD RKB" is a unit name, not
+  a rock description - no row. "Thin beds of sandstone are developed around the Draupne/ Heather formational
+  boundary" has no depths - no row.
+- p38-39 petrophysics: J54 "predominantly mudstone apart from some thin sand bed developments towards the base" -
+  no depths in the sentence, petrophysics chapter - no row of its own (it agrees with the J54 row from p25).
+- p132: FIT form at the 9 5/8" shoe (open hole depth 2935,00 mMD) with the label "Lithology : Clst" - drilling
+  chapter, table label - no row.
+- p68: "From 3200 m there was a formation change that gave excessive stick slip" - drilling chapter, no rock named.
+
+Could not read or find
+- No sample-by-sample cuttings descriptions and no core description by depth are in the folder (see top).
+- Sidewall core no. 1 (3151.0): the description is cut off at the cell edge after "r carb, r".
+- Between 3151 m and 3206 m and below 3206 m there are no samples or cores; only the interval summaries and the
+  zone rows cover these depths.
+- Nothing in the range was unreadable; the pages for the range have a text layer and agree with the pictures.
+
+Counts
+- Rows: 62 (41 sidewall_core, 3 core, 4 cuttings_sample, 14 interval_summary).
+- Text of 49 pages read; 13 page pictures opened (p10, p18, p19, p20, p22, p23, p24, p25, p26, p31, p32, p51, p53).

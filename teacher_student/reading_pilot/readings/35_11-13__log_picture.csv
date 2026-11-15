@@ -1,0 +1,49 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+2901,2988.5,m MD RKB,"Clay/Claystone; text: Claystone, slty, trace Sst; a few carbonate-cement marks near base",Shale,,high,01_log_about_2892-3002m.png
+2988.5,2991.5,m MD RKB,"Silt/Siltstone; text: Siltstone with thin calcite cemented sandstone beds",Shale,Sandstone/Shale,high,01_log_about_2892-3002m.png
+2991.5,2993,m MD RKB,Sand/Sandstone (thin bed),Sandstone,,medium,01_log_about_2892-3002m.png
+2993,2995.5,m MD RKB,Silt/Siltstone,Shale,Sandstone/Shale,high,01_log_about_2892-3002m.png
+2995.5,3001.5,m MD RKB,Clay/Claystone,Shale,,high,01_log_about_2892-3002m.png
+3001.5,3003.5,m MD RKB,"Sand/Sandstone, silty marks",Sandstone,,medium,02_log_about_2992-3102m.png
+3003.5,3013,m MD RKB,Clay/Claystone,Shale,,high,02_log_about_2992-3102m.png
+3013,3023,m MD RKB,"Silt/Siltstone; text: Sltst, arg grdg slty Clst",Shale,Sandstone/Shale,high,02_log_about_2992-3102m.png
+3023,3024,m MD RKB,Sand/Sandstone (thin bed),Sandstone,,medium,02_log_about_2992-3102m.png
+3024,3029,m MD RKB,Silt/Siltstone,Shale,Sandstone/Shale,high,02_log_about_2992-3102m.png
+3029,3030.5,m MD RKB,"Sand/Sandstone (thin bed); text: Sst, calc cmt",Sandstone,,medium,02_log_about_2992-3102m.png
+3030.5,3032,m MD RKB,Silt/Siltstone,Shale,Sandstone/Shale,medium,02_log_about_2992-3102m.png
+3032,3033.5,m MD RKB,Sand/Sandstone (thin bed),Sandstone,,medium,02_log_about_2992-3102m.png
+3033.5,3036,m MD RKB,Silt/Siltstone,Shale,Sandstone/Shale,medium,02_log_about_2992-3102m.png
+3036,3037,m MD RKB,Sand/Sandstone (thin bed),Sandstone,,medium,02_log_about_2992-3102m.png
+3037,3092,m MD RKB,"Silt/Siltstone, carbonate-cement marks; text: Sltst, vf sdy I.P.",Shale,Sandstone/Shale,high,02_log_about_2992-3102m.png
+3092,3093,m MD RKB,Sand/Sandstone (thin bed),Sandstone,,medium,02_log_about_2992-3102m.png
+3093,3096,m MD RKB,Silt/Siltstone,Shale,Sandstone/Shale,high,02_log_about_2992-3102m.png
+3096,3107.5,m MD RKB,"Sand/Sandstone; text: Sandstone with thin siltstones",Sandstone,,high,02_log_about_2992-3102m.png
+3107.5,3109,m MD RKB,Silt/Siltstone (thin bed),Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3109,3110,m MD RKB,Sand/Sandstone (thin bed between two siltstone beds),Sandstone,,low,03_log_about_3092-3202m.png
+3110,3112,m MD RKB,Silt/Siltstone (thin bed),Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3112,3120,m MD RKB,Sand/Sandstone,Sandstone,,high,03_log_about_3092-3202m.png
+3120,3121,m MD RKB,Silt/Siltstone (very thin band),Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3121,3129.5,m MD RKB,Sand/Sandstone,Sandstone,,high,03_log_about_3092-3202m.png
+3129.5,3132,m MD RKB,Silt/Siltstone,Shale,Sandstone/Shale,high,03_log_about_3092-3202m.png
+3132,3137.5,m MD RKB,Sand/Sandstone,Sandstone,,high,03_log_about_3092-3202m.png
+3137.5,3139,m MD RKB,Silt/Siltstone (thin bed),Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3139,3158,m MD RKB,Sand/Sandstone,Sandstone,,high,03_log_about_3092-3202m.png
+3158,3159,m MD RKB,Silt/Siltstone (very thin band),Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3159,3161,m MD RKB,Sand/Sandstone,Sandstone,,medium,03_log_about_3092-3202m.png
+3161,3165,m MD RKB,Silt/Siltstone,Shale,Sandstone/Shale,high,03_log_about_3092-3202m.png
+3165,3178.5,m MD RKB,Sand/Sandstone,Sandstone,,high,03_log_about_3092-3202m.png
+3178.5,3179.5,m MD RKB,Silt/Siltstone (very thin band),Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3179.5,3184.5,m MD RKB,Sand/Sandstone,Sandstone,,high,03_log_about_3092-3202m.png
+3184.5,3186,m MD RKB,Silt/Siltstone (thin bed),Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3186,3199,m MD RKB,"Sand/Sandstone, silty marks in lower part",Sandstone,,high,03_log_about_3092-3202m.png
+3199,3200,m MD RKB,Silt/Siltstone (very thin band),Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3200,3206,m MD RKB,"Sand/Sandstone, silty marks",Sandstone,,high,03_log_about_3092-3202m.png
+3206,3232.8,m MD RKB,"Silt/Siltstone; text: Siltstone with limestone stringers",Shale,Sandstone/Shale,high,04_log_about_3192-3302m.png
+3232.8,3233.8,m MD RKB,Limestone (stringer),Limestone,,medium,04_log_about_3192-3302m.png
+3233.8,3245,m MD RKB,Silt/Siltstone,Shale,Sandstone/Shale,high,04_log_about_3192-3302m.png
+3245,3246,m MD RKB,Limestone (stringer),Limestone,,medium,04_log_about_3192-3302m.png
+3246,3252.8,m MD RKB,Silt/Siltstone,Shale,Sandstone/Shale,high,04_log_about_3192-3302m.png
+3252.8,3253.8,m MD RKB,Limestone (stringer),Limestone,,medium,04_log_about_3192-3302m.png
+3253.8,3262.2,m MD RKB,Silt/Siltstone,Shale,Sandstone/Shale,high,04_log_about_3192-3302m.png
+3262.2,3263.2,m MD RKB,Limestone (stringer),Limestone,,medium,04_log_about_3192-3302m.png
+3263.2,3271,m MD RKB,Silt/Siltstone,Shale,Sandstone/Shale,high,04_log_about_3192-3302m.png
