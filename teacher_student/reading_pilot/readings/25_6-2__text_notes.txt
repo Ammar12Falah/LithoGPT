@@ -1,0 +1,44 @@
+Notes of the text reader - well 25/6-2 - depth range 1924 m to 2370 m measured depth
+
+DOCUMENT
+One document: 1949_25_6_2_COMPLETION_REPORT_AND_LOG (Saga Petroleum, Final Well Report 25/6-2, September 1992), 114 pages kept of 116.
+All pages are OCR text. Page numbers below are PDF page numbers (file names). The printed report page number is the PDF page number minus 2.
+
+KINDS OF DESCRIPTION FOUND
+1. Sidewall core descriptions: Table 4.1 "Sidewall Core Description, Well: 25/6-2", PDF pages 28 to 33 (No 1 to 105, 1051 to 2392 mRKB). The column head is "Depth mRKB" (page 28).
+   In the depth range: No 40 (1926) to No 102 (2365), on pages 29 to 32, plus one row without a number at 2334. 64 rows, one per sidewall core.
+2. Lithology by formation: section 4.9 Stratigraphy, sub-sections 4.9.3 to 4.9.9, PDF pages 52 to 57 (the report describes the formations from the bottom of the well upwards). 13 rows in the range.
+3. No cuttings sample list in this document. Section 4.3.1 (page 26) only lists the sampling intervals (10 m, 5 m and 3 m). Page 60 refers to a "Saga Well Site Lithlog" and a "Geoservices Final Well Report", which are not in the folder.
+4. No conventional cores were cut (pages 10, 27 and 61 say so).
+5. The Composite Well Log is listed as Enclosure I in the list of contents (page 6) but is not among the pages in the folder.
+
+PAGES READ CLOSELY
+Text and picture: 28, 29, 30, 31, 32 (sidewall core table), 52, 53, 54, 55, 56, 57 (stratigraphy), 23 (tops summary).
+Text only: 1 to 11 (title, contents, summary, well data summary), 17 to 27 (geology chapter start, figures, sampling), 33 to 36, 44 to 51 (shallow gas, lithostratigraphic table 4.6, biostratigraphy), 58 to 62, 113, 114.
+All other pages (12 to 16, 37 to 43, 63 to 112) were searched with a word search for rock words only; they are general information, velocity, temperature and pressure sections and the drilling, mud and operations chapters. No rock descriptions against depth were found there.
+
+TABLE OF FORECAST AGAINST FOUND DEPTHS (not extracted)
+1949_25_6_2_COMPLETION_REPORT_AND_LOG, page 23: Figure 4.5 "Tops Summary" - Horizon / Prognosed depth mRKB / Actual (TVD mRKB) / Difference / Shows, for Balder, Ty, Shetland, Base Cretaceous, Brent and Dunlin. The text about it is on pages 17 and 18.
+
+HOW THE ROWS WERE MADE
+- Sidewall cores: one depth, written in depth_from and depth_to. Source sentence is the table row (number, depth, lithology) as read on the page picture; the OCR text writes "It" for "lt" and "Cist" for "Clst" in places, and on page 32 it puts the lines of No 88 and No 89 out of order.
+- Rows that say "as above": the note names the sample that "above" refers to.
+- "Clst: tuf" (no weakening word) -> Tuff. "sl tuf" -> Shale with Tuff in second_class.
+- "Clst/Mrl" -> Shale with Marl in second_class (claystone is first named). Confidence medium.
+- "Ls/chk" (2210) -> Limestone with Chalk in second_class. Confidence medium.
+- Formation summaries: depths as printed in the "Depth interval" line of each formation. These agree with Table 4.6 on page 46.
+- Formations described as one rock in the upper part and another in the lower part, with no depth for the change (Ty, Shetland Group, Rodby, Mime): one row for the whole interval, first-named rock as main, the other in second_class, confidence low; the note says which rock is in which part. No boundary depth was invented.
+- Hordaland Group (927 - 1927): only its lowest 3 m are in the range. Written as one row with the printed interval; second_class taken from the sentence on the lower claystone unit.
+- Dunlin Group (2345 - 2392): runs past the end of the range (2370); written with the printed interval.
+
+DOUBTFUL OR UNUSUAL
+- Sidewall core No 99: printed depth 2340, but the row stands between No 98 (2344) and No 100 (2348) in a table that is in depth order. Looks like a misprint. Depth cells left empty; printed value is in the note. Rock word is Clst.
+- Row at 2334 has no sample number and says "poor recovery, not accepted as a valid sample". Kept as a row (Sst) with confidence medium.
+- Balder Formation summary is classed Tuff by the word-map rule ("tuffaceous, silty claystone"); the sidewall cores in the same interval are a mix of "Clst: tuf" and plain Clst.
+- Lista Formation: second_class Sandstone is uncertain ("minor sandstones, siltstones and dolomites", none called beds).
+- Not made into rows: the summary chapter 2.1 on page 7 ("The Cromer Knoll Group consisted of limestones interbedded with claystones and marls, while the Viking Group consisted of claystones") - it is outside the geology chapter and coarser than the formation descriptions; and the cuttings sample at 2328 mRKB MD on page 60 (hydrocarbon indications section; the sentence with the depth does not name the rock).
+- Group entries for Rogaland, Cromer Knoll and Viking Groups have no rock sentence of their own (they only list their formations), so no rows.
+
+COULD NOT READ OR FIND
+- No sample-by-sample cuttings descriptions, no core descriptions, no composite log in the folder.
+- Between sidewall core points the only description is the formation summary.

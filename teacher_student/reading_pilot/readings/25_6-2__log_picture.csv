@@ -1,0 +1,32 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+1924,1927,m RKB,"silty claystone with tuff (V) marks carried through; description for this part not in view",Tuff,,low,01_log_about_1915-2025m.png
+1927,1928.5,m RKB,"thin limestone band (one brick row) drawn directly under the 1927 line; not named in the description",Limestone,,low,01_log_about_1915-2025m.png
+1928.5,1934,m RKB,"silty claystone with tuff marks all through; description: TUFFACEOUS CLAYSTONE (CLST: TUF, SLTY)",Tuff,,high,01_log_about_1915-2025m.png
+1934,1935,m RKB,"thin limestone band (one brick row); not named in the description",Limestone,,low,01_log_about_1915-2025m.png
+1935,1957.5,m RKB,"silty claystone with tuff marks all through; description: TUFFACEOUS CLAYSTONE",Tuff,,high,01_log_about_1915-2025m.png
+1957.5,1958.5,m RKB,"thin band between two drawn lines, fill not readable; class taken from the description (TUFFACEOUS CLAYSTONE)",Tuff,,low,01_log_about_1915-2025m.png
+1958.5,1984,m RKB,"silty claystone with tuff marks all through; description: TUFFACEOUS CLAYSTONE",Tuff,,high,01_log_about_1915-2025m.png
+1984,2053,m RKB,"claystone, few silty marks; description: CLAYSTONE W/MINOR LIMESTONE BEDS (no limestone bed drawn in the column)",Shale,,high,01_log_about_1915-2025m.png
+2053,2061,m RKB,"claystone with calcitic marks; description: CLAYSTONE W/MINOR SILTSTONE, SANDSTONE AND DOLOMITE",Shale,,high,02_log_about_2015-2125m.png
+2061,2062,m RKB,"thin dolomite band (slanted ticks); description: DOL: DK YEL OR-MOD YEL BRN, HD-V HD",Dolomite,,medium,02_log_about_2015-2125m.png
+2062,2074,m RKB,claystone,Shale,,high,02_log_about_2015-2125m.png
+2074,2087,m RKB,"siltstone; description: SLTST: GRDG TO VF SST, V ARG, PYR, CARB, GLAUC",Shale,Sandstone/Shale,high,02_log_about_2015-2125m.png
+2087,2098.5,m RKB,claystone,Shale,,high,02_log_about_2015-2125m.png
+2098.5,2101.5,m RKB,"sandstone band with calcitic and glauconitic marks; description: SST: ARG, OCC GRDG TO SDY CLST, CALC CMT",Sandstone,Sandstone/Shale,medium,02_log_about_2015-2125m.png
+2101.5,2125,m RKB,claystone,Shale,,high,02_log_about_2015-2125m.png
+2125,2127.5,m RKB,"thin dotted band (sandstone dots, pyritic); no description next to it",Sandstone,,low,03_log_about_2115-2225m.png
+2127.5,2154.5,m RKB,"claystone with glauconitic, micaceous and pyritic marks; two marl marks just above the base",Shale,,high,03_log_about_2115-2225m.png
+2154.5,2163.5,m RKB,"claystone with marl marks; description: CALCAREOUS CLAYSTONE GRADING TO MARL (CLST/MRL, V CALC); a thin line at about 2156 with nothing readable above it",Shale,Marl,medium,03_log_about_2115-2225m.png
+2163.5,2168.5,m RKB,"sandstone (rows of dots, calcitic mark) above a thin line at 2168.5; description: SILTY SANDSTONE",Sandstone,,medium,03_log_about_2115-2225m.png
+2168.5,2207,m RKB,"sandstone with silty marks and a few clay dashes; description: SILTY SANDSTONE (SD/SST: SLTY, ARG, KAOL CMT, PYR, GLAUC)",Sandstone,Sandstone/Shale,medium,03_log_about_2115-2225m.png
+2207,2231,m RKB,"limestone (bricks) with a few marl marks; description: LIMESTONE: LS: WH, HD, AMOR",Limestone,,high,03_log_about_2115-2225m.png
+2231,2239,m RKB,"marl; description: MARL: MRL: M GY-OLV GY, SFT-FRM, OCC CARB",Marl,,high,04_log_about_2215-2325m.png
+2239,2250,m RKB,"claystone with calcitic marks; description: CALCAREOUS CLAYSTONE INTERBEDDED W/MARL (CLST: SL SLTY, V CALC)",Shale,,high,04_log_about_2215-2325m.png
+2250,2256,m RKB,"marl; description: MRL: MOD-PA BRN, AMOR, SFT",Marl,,medium,04_log_about_2215-2325m.png
+2256,2261.5,m RKB,"claystone with calcitic marks; description: CLST: SL SLTY, MOD BRN, CALC, PYR",Shale,,high,04_log_about_2215-2325m.png
+2261.5,2271,m RKB,"limestone (bricks); description: LIMESTONE: LS: SL SLTY, WH, FRM-HD, BLKY",Limestone,,high,04_log_about_2215-2325m.png
+2271,2278,m RKB,"marl; description: MARL: MRL: V LT-LT GY, FRM-SFT, PYR",Marl,,high,04_log_about_2215-2325m.png
+2278,2301,m RKB,"claystone with calcitic, micaceous and pyritic marks; description: CLAYSTONE: CLST: OLV BLK, HD-FRM, SL CALC, PYR",Shale,,high,04_log_about_2215-2325m.png
+2301,2324,m RKB,"claystone with micaceous and pyritic marks; description: CLAYSTONE: CLST: OLV BLK, FRM, SBFIS",Shale,,high,04_log_about_2215-2325m.png
+2324,2345,m RKB,"sandstone with silty, micaceous, carbonaceous and kaolinitic marks; description: SILTY SANDSTONE (SST: SLTY, OCC ARG, CALC CMT)",Sandstone,,high,05_log_about_2315-2425m.png
+2345,2370,m RKB,"claystone with micaceous, carbonaceous and pyritic marks; description: CLAYSTONE: CLST: SL SLTY, BRN GY-OLV GY-OLV BLK",Shale,,high,05_log_about_2315-2425m.png
