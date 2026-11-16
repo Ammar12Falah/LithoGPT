@@ -16,5 +16,6 @@ $PY src/combine.py "31/3-1" "30/6-5" "35/11-13" "35/11-11" "25/6-2"
 $PY src/score.py
 $PY src/sheets.py check || true        # needs the reading pictures in work/, skipped if they are absent
 $PY src/sheets.py conflicts || true
+$PY src/make_report.py
 $PY src/make_manifest.py
 echo "done: see scores/, curve/, conflicts/"
