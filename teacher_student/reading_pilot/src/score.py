@@ -31,6 +31,11 @@ from readings import load_reading, rasterise  # noqa: E402
 
 READERS = ["text", "log picture", "combined", "curve picture", "ten-well model", "all-well model", "all-shale line"]
 FILE_OF = {"text": "text", "log picture": "log_picture", "curve picture": "curve_picture"}
+# Part D: the same readings done by cheaper models. (file suffix, name suffix); "" is the main model.
+MODELS = [("", ""), ("sonnet", " (Sonnet)"), ("haiku", " (Haiku)")]
+KINDS = ["text", "log picture", "combined", "curve picture"]
+PARTD = [k + ns for _, ns in MODELS[1:] for k in KINDS]
+ALL_READERS = READERS + PARTD
 
 
 def pct(x):
@@ -69,30 +74,36 @@ def reader_arrays(well, df_w, mp, readings_dir):
     code = well_code(well)
     d = df_w.DEPTH_MD.to_numpy()
     out, second, extra = {}, {}, {}
-    rd = {}
-    for r, f in FILE_OF.items():
-        p = readings_dir / f"{code}__{f}.csv"
-        if p.exists():
-            rd[r] = load_reading(p)
-            out[r], row = rasterise(rd[r], d)
-            extra[r + "_row"] = row
-            if "second_class" in rd[r].columns:
-                second[r], _ = rasterise(rd[r], d, col="cls2")
+    rd_main = {}
+    for fsuf, nsuf in MODELS:
+        rd = {}
+        for r, f in FILE_OF.items():
+            p = readings_dir / (f"{code}__{f}__{fsuf}.csv" if fsuf else f"{code}__{f}.csv")
+            name = r + nsuf
+            if p.exists():
+                rd[r] = load_reading(p)
+                out[name], row = rasterise(rd[r], d)
+                extra[name + "_row"] = row
+                if "second_class" in rd[r].columns:
+                    second[name], _ = rasterise(rd[r], d, col="cls2")
+            else:
+                out[name] = None
+        cname = "combined" + nsuf
+        if "text" in rd and "log picture" in rd:
+            cls, src, row = combine_arrays(rd["text"], rd["log picture"], d)
+            out[cname] = cls
+            extra[cname + "_src"], extra[cname + "_row"] = src, row
+            none = np.full(len(d), -1)
+            s2 = np.where(src == "text", second.get("text" + nsuf, none), second.get("log picture" + nsuf, none))
+            second[cname] = np.where(cls >= 0, s2, -1)
         else:
-            out[r] = None
-    if out.get("text") is not None and out.get("log picture") is not None:
-        cls, src, row = combine_arrays(rd["text"], rd["log picture"], d)
-        out["combined"] = cls
-        extra["combined_src"], extra["combined_row"] = src, row
-        s2 = np.where(src == "text", second.get("text", np.full(len(d), -1)),
-                      second.get("log picture", np.full(len(d), -1)))
-        second["combined"] = np.where(cls >= 0, s2, -1)
-    else:
-        out["combined"] = None
+            out[cname] = None
+        if not fsuf:
+            rd_main = rd
     for tag in ("ten-well model", "all-well model"):
         out[tag] = mp[tag].reindex(df_w.row_id.to_numpy()).to_numpy().astype(int) if mp else None
     out["all-shale line"] = np.full(len(d), SHALE)
-    return out, second, extra, rd
+    return out, second, extra, rd_main
 
 
 def conf_name(v):
@@ -109,8 +120,8 @@ def main():
     df = load_truth(wells, practice)
     mp = model_preds(wells) if (ROOT / "models" / "ten_well.txt").exists() and not practice else None
 
-    items = {r: [] for r in READERS}      # per reader: list of per-well frames
-    done_wells = {r: [] for r in READERS}
+    items = {r: [] for r in ALL_READERS}      # per reader: list of per-well frames
+    done_wells = {r: [] for r in ALL_READERS}
     side_rows, agree_rows = [], []
     for well in wells:
         dw = df[df.WELL == well].reset_index(drop=True)
@@ -119,7 +130,7 @@ def main():
         d, t = dw.DEPTH_MD.to_numpy(), dw.truth.to_numpy()
         preds, second, extra, rd = reader_arrays(well, dw, mp, readings_dir)
         steps = pd.DataFrame({"depth_md": d})
-        for r in READERS:
+        for r in ALL_READERS:
             p = preds.get(r)
             if p is None:
                 continue
@@ -154,7 +165,7 @@ def main():
 
     # ---------- tables ----------
     head, bywell, bycls, byconf = [], [], [], []
-    for r in READERS:
+    for r in ALL_READERS:
         if not items[r]:
             continue
         allit = pd.concat(items[r], ignore_index=True)
@@ -180,7 +191,7 @@ def main():
         conf = conf.reindex(index=[c for c in CLASSES if c in conf.index],
                             columns=[c for c in CLASSES + ["(no class)"] if c in conf.columns]).round(1)
         conf.index.name = "expert class \\ reader class (metres)"
-        conf.to_csv(out_dir / f"confusion_{r.replace(' ', '_').replace('-', '_')}.csv")
+        conf.to_csv(out_dir / f"confusion_{r.replace(' ', '_').replace('-', '_').replace('(', '').replace(')', '')}.csv")
 
     def tidy(rows, first):
         t = pd.DataFrame(rows)
@@ -237,8 +248,8 @@ def main():
     n_wells = len(wells)
     need = n_wells - 1 if n_wells < 5 else 4
     for metric in ("tolerant_all_pct", "strict_all_pct", "balanced_all_pct"):
-        for i, a in enumerate(READERS):
-            for b in READERS[i + 1:]:
+        for i, a in enumerate(ALL_READERS):
+            for b in ALL_READERS[i + 1:]:
                 if a not in set(H.reader) or b not in set(H.reader):
                     continue
                 ga = float(H.loc[H.reader == a, metric].iloc[0])
@@ -260,6 +271,48 @@ def main():
                              "wells_compared": len(common), "verdict": verdict})
     C = pd.DataFrame(comp)
     C.to_csv(out_dir / "comparisons.csv", index=False)
+
+    # ---------- Part D: cheaper readers against the main reader of the same kind ----------
+    if not practice and (ROOT / "readings" / "costs_partd.csv").exists():
+        cm = pd.read_csv(ROOT / "readings" / "costs.csv")
+        cm = cm[~cm.reading.str.contains("set aside")].assign(model="")
+        cd = pd.read_csv(ROOT / "readings" / "costs_partd.csv").fillna({"model": ""})
+        costs = pd.concat([cm, cd], ignore_index=True)
+        rows, versus = [], []
+        for k in KINDS:
+            for fsuf, nsuf in MODELS:
+                name = k + nsuf
+                h = H[H.reader == name]
+                if h.empty:
+                    continue
+                h = h.iloc[0]
+                parts = ["text", "log picture"] if k == "combined" else [k]
+                c = costs[(costs.model == fsuf) & costs.reading.isin(parts)]
+                rows.append({"kind_of_reading": k, "model": {"": "main model", "sonnet": "Sonnet 5.5", "haiku": "Haiku 5.5"}[fsuf],
+                             "wells_scored": int(h.wells_scored), "headline_tolerant_all_pct": h.tolerant_all_pct,
+                             "coverage_pct": h.coverage_pct, "balanced_all_pct": h.balanced_all_pct,
+                             "strict_all_pct": h.strict_all_pct, "soft_all_pct": h.soft_all_pct,
+                             "minutes": round(float(c.minutes.sum()), 1), "subagent_tokens": int(c.subagent_tokens.sum()),
+                             "pages_text_read": int(c.pages_text_read.sum()), "pictures_looked_at": int(c.pictures_looked_at.sum()),
+                             "rows_written": int(c.rows.sum())})
+                if fsuf:
+                    for metric in ("tolerant_all_pct", "strict_all_pct", "balanced_all_pct"):
+                        r = C[(C.metric == metric) & (C.reader_a == k) & (C.reader_b == name)].iloc[0]
+                        if r.verdict == f"{name} ahead":
+                            word = "ahead of the main model"
+                        elif r.verdict == f"{k} ahead":
+                            word = "behind the main model"
+                        else:
+                            word = "not decided"
+                        versus.append({"metric": metric, "kind_of_reading": k, "model": rows[-1]["model"],
+                                       "main_pct": r.a_pct, "cheaper_pct": r.b_pct,
+                                       "gap_points_cheaper_minus_main": round(-r.gap_points_a_minus_b, 1),
+                                       "wells_cheaper_ahead": int(r.wells_b_ahead), "wells_main_ahead": int(r.wells_a_ahead),
+                                       "wells_compared": int(r.wells_compared), "verdict": word})
+        pd.DataFrame(rows).to_csv(out_dir / "partd.csv", index=False)
+        pd.DataFrame(versus).to_csv(out_dir / "partd_vs_main.csv", index=False)
+        print(pd.DataFrame(rows).to_string(index=False))
+        print(pd.DataFrame(versus).query("metric == 'tolerant_all_pct'").to_string(index=False))
 
     # ---------- the pass marks (Marks 2 and 3; Mark 1 comes from the learning curve) ----------
     if not practice:
@@ -301,7 +354,7 @@ def main():
     print(W[["reader", "well", "coverage_pct", "strict_all_pct", "tolerant_all_pct", "soft_all_pct"]].to_string(index=False))
     # per-item frame kept on disk (not in git: it holds expert labels) for the conflict sheets
     allf = []
-    for r in READERS:
+    for r in ALL_READERS:
         for it in items[r]:
             f = it[["well", "depth", "truth", "pred", "conf"]].copy()
             f["reader"] = r

@@ -1,0 +1,39 @@
+Notes: reader run for well 35/11-13, document 5063_35_11_13_COMPLETION_REPORT (201 pages), depth range 2901-3271 m MD RKB.
+
+Pages read closely (text layer, PDF page numbers):
+- 17, 18, 19: lithostratigraphy summary (section 1.1), Cromer Knoll/Viking Group rows, Draupne, Heather and Oxfordian Sandstone intervals and the point descriptions at 3012, 3030 and 3050 m.
+- 20: hydrocarbon shows description table (section 1.2). Picture opened and checked (p20.png): printed interval 3903.5-3100 is treated as a misprint.
+- 22, 23: sidewall coring table (section 1.4), cores 1-45. Pictures opened and checked (p22.png, p23.png). Values match the text layer.
+- 21, 24: logging and conventional coring tables. Read for depths only.
+- 12-16, 25-28: read for context (contents of the lithostratigraphy, depth reference, Draupne/Heather boundary at 3013 m on page 28, biostratigraphy). Not used as rock rows except the overlapping summaries above.
+- 40-43, 68, 106, 130, 132: read for depths and core/coring info. No rock description in the range. Pages 67, 83-86 were checked by text search only (depth lines).
+- Text pages read in total: 25. Picture pages opened in total: 4 (p18, p20, p22, p23).
+
+Pages read but not used for rows: 21 (logging), 24 (conventional coring table), 25-27 (geological and VSP narrative, biostratigraphy), 40-43 (petrophysics), 68 (coring and drilling narrative), 106 (BHA record), 130 and 132 (LOT/FIT plots).
+
+Kinds of description found in range:
+- Sidewall core descriptions: 41 sampled cores, 2960-3151 m, pages 22-23 (rows with kind sidewall_core).
+- Lithology by formation or depth interval: Draupne, Heather and Oxfordian Sandstones summaries, page 18-19 (kind interval_summary).
+- Point descriptions inside the Heather summary: 3012, 3030, 3050 m, page 18.
+- Hydrocarbon shows table lithology column: 3100-3131 m Sandstone (cores) and the misprinted 3903.5-3100 m Sandstone (cuttings), page 20.
+
+Not written as rows (and why):
+- Sidewall cores 3 (3149.0, aborted), 37 (3046.0, lost in hole), 39 (3026.0, lost in hole), 42 (2996.5, lost in hole): no description given.
+- Conventional cores 1 (3100.00-3115.00 m) and 2 (3115.00-3142.00 m) on page 24 and in the coring narrative (page 68): the table gives only the formation (Oxfordian j52), recovery and depth shift. No lithology text was found in this document, so no row. Core recovery: 96.0% and 71.5%.
+- Shows at 2998 m, 3100-3131 m (page 19) and the shows description table: these are fluorescence/shows descriptions, not rock class. Only the lithology column of the table is used.
+- Oxfordian siltstone line on page 19 (dk gry-olv blk, hd, brit, sbblky-plty, carb) with no depth of its own: sits in the 3095.5-3206 m interval, not given a row.
+- Limestone stringers named in the Heather 3206-3291.5 m and Draupne entries: named without beds or depths, so no rows and no second_class.
+- Forecast/prognosed depths: no prognosis table found in the range. The lithostratigraphy and sidewall tables are found-depth material.
+
+Other reading problems and notes:
+- The lithostratigraphy page 18 gives Draupne Formation 2902-3013 m and Heather Formation 2977-3291.5 m. The two entries overlap between 2977 and 3013 m. Page 28 places the Draupne/Heather boundary at 3013 m. Both are written as printed.
+- Sidewall core 21 (3096.0 m) and core 22 (3095.5 m) are listed as Heather Fm in the table, but the lithostratigraphy summary puts the Oxfordian Sandstones at 3095.5-3206 m. Both written as printed, with the conflict in the note.
+- Depth 3903.5 in the shows table (page 20): printed "3903.5-3100". Picture checked: printed the same. Left depth_from empty, depth_to 3100. Low confidence.
+- The composite log (sample-by-sample cuttings descriptions) is referred to on page 10 ("For details on sampling descriptions see attached Composite log"). No composite log text was found in the text layer of this document, and I did not find sample-by-sample cuttings descriptions for this depth range. This is the main gap in the reading. The cuttings description list is probably in an image-only attachment not in this folder.
+- The Heather 2977-3093.5 summary sentence names thin sandstone beds. Recorded as Shale with second_class Sandstone/Shale, following the siltstone rule in the instructions.
+- Sidewall depths are printed with a comma decimal (e.g. 3143,0). Converted to 3143.0.
+- All depths are read as m MD RKB, as the report says ("All depths are MD RKB"). No feet, no TVD conversion needed.
+- Two rows (summary 2865-2902 m and summary 3206-3291.5 m) extend beyond the 2901-3271 m range. Written as printed, with notes.
+- Some sidewall rows use "as ...", "else as ..." and "a.a.". Each row names the core it refers to in the note.
+
+Counts: 51 rows (10 interval_summary, 41 sidewall_core). Single file, no parts.

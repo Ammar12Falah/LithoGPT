@@ -1,0 +1,11 @@
+Well 35/11-11, document 3356_35_11_11_COMPLETION_REPORT. Depth range 1245-3215 m.
+
+Pages read closely (text): 15-24 (lithostratigraphy), 26 (shows table), 27 (core table 6.1), 41, 47-48 of the file list checked, 45-54 (core reports 1-9, text and pictures), 55-56, 57-58 (geological well summary log), 59-61 (gas, MDT). Grep over the rest for rock words found nothing else.
+Pictures opened: 45-52 and 54 (core reports).
+Kinds of description found: interval_summary (lithostratigraphy by formation, pages 16-24) and core (core reports, Appendix I, pages 45-54). No cuttings sample lists and no sidewall cores (report says none were taken).
+
+Forecast-versus-found formation tops table: none seen in the pages read.
+
+Not extracted: page 27 table 6.1 (core summary lithology, duplicates the core reports); page 26 table 5.1 (shows table) used only as a note; geological well summary log pages 57-58 (graphic summary, same content as the lithostratigraphy text, OCR poor); page 101 form with OH lithology Clst (drilling form).
+
+Problems: core report depth limits for each description are not printed; they were estimated from text position against the depth scale (about 21 px per m), and from "as for XXXX m" cross references. All such rows are marked medium or low and say so in note. Core 1 only 10 cm described, pieces not located. 1463-1466 m is not described. Pages 42 missing from folder (not kept).

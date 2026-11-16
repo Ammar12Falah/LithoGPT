@@ -1,0 +1,56 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+256,337,m,"Clay lines with sand dot bands interbedded (Nordland Gp, Pliocene-Pleistocene)",Sandstone/Shale,,low,01_log_about_247-357m.png
+337,350,m,"Clay lines with thin sand (clay desc. at Top Pliocene 337 m)",Shale,Sandstone,medium,01_log_about_247-357m.png
+350,400,m,"Sand dot bands alternating with clay lines",Sandstone/Shale,,low,02_log_about_347-457m.png
+400,450,m,"Sand dots in clay lines, sand patches near 405 and 440",Sandstone/Shale,,low,02_log_about_347-457m.png
+450,460,m,"Sand dots with fossil mark",Sandstone,,medium,03_log_about_447-557m.png
+460,500,m,"Clay lines with sand patches",Shale,Sandstone/Shale,medium,03_log_about_447-557m.png
+500,547,m,"Sand dots and glauconite marks in clay lines",Sandstone/Shale,,low,03_log_about_447-557m.png
+547,600,m,"Sand dots, dominant over clay lines",Sandstone,Shale,low,04_log_about_547-657m.png
+600,650,m,"Sand dots with clay lines",Sandstone/Shale,,low,04_log_about_547-657m.png
+650,726,m,"Sand dots and clay lines, marl mark near 650",Sandstone/Shale,Marl,low,05_log_about_647-757m.png
+726,850,m,"Sand dots (clear quartz sand, desc. at Top Utsira FM 726 m)",Sandstone,Shale,medium,05_log_about_647-757m.png
+850,879,m,"Sand dots with clay lines",Sandstone/Shale,,low,07_log_about_847-957m.png
+879,950,m,"Clay lines (claystone grnish gy, desc. at Top Hordaland 879 m)",Shale,Sandstone,medium,07_log_about_847-957m.png
+950,1050,m,"Clay lines with sand stringers (Hordaland Gp)",Shale,Sandstone,medium,08_log_about_947-1057m.png
+1050,1085,m,"Sand dots at 1050-1060, then clay lines with accessory marks",Shale,Sandstone,low,09_log_about_1047-1157m.png
+1085,1145,m,"Clay lines with limestone brick stringers",Shale,Limestone,medium,09_log_about_1047-1157m.png
+1145,1250,m,"Clay lines with accessory marks, marl mark near 1160",Shale,Marl,low,09_log_about_1047-1157m.png
+1250,1345,m,"Clay lines, marl mark at 1250",Shale,Marl,low,11_log_about_1247-1357m.png
+1345,1372,m,"Sand dots (sandst. clr qtz, f-crs, desc. at 1350)",Sandstone,,medium,11_log_about_1247-1357m.png
+1372,1420,m,"Dash-dot silt and clay lines (Top Eocene 1372 m); limestone desc. at 1400 not matched by drawn column",Shale,Sandstone/Shale,low,12_log_about_1347-1457m.png
+1420,1500,m,"Dash-dot lines with accessory marks",Shale,,medium,12_log_about_1347-1457m.png
+1500,1550,m,"Clay lines with box and accessory marks, mica near 1490",Shale,,medium,13_log_about_1447-1557m.png
+1550,1582,m,"Clay lines with sand patches near 1550",Shale,Sandstone,medium,14_log_about_1547-1657m.png
+1582,1600,m,"Sand dots and marks (Top Early Eocene 1582 m; clayst desc.)",Sandstone/Shale,Shale,low,14_log_about_1547-1657m.png
+1600,1625,m,"Sand dots with fossil and wavy marks (limest. desc. not matched)",Sandstone,Limestone,low,14_log_about_1547-1657m.png
+1625,1650,m,"Clay lines with sand patches",Shale,Sandstone/Shale,medium,14_log_about_1547-1657m.png
+1650,1750,m,"Clay lines with sand stringers and marks",Shale,Sandstone/Shale,medium,15_log_about_1647-1757m.png
+1750,1800,m,"Sand dots and clay lines",Sandstone/Shale,,low,16_log_about_1747-1857m.png
+1800,1857,m,"Brick-red clay lines with limestone stringers (3/8 in csg at 1801 m)",Shale,Limestone,medium,16_log_about_1747-1857m.png
+1857,1900,m,"Clay lines with accessory marks",Shale,,medium,17_log_about_1847-1957m.png
+1900,1950,m,"Tuff marks (V) through the interval (Top Balder 1908 m)",Tuff,Shale,medium,17_log_about_1847-1957m.png
+1950,2000,m,"Clay lines with sand stringers and circle marks",Shale,Sandstone/Shale,medium,18_log_about_1947-2057m.png
+2000,2023,m,"Clay lines with sand patch near 2000",Shale,Sandstone,low,18_log_about_1947-2057m.png
+2023,2065,m,"Dash-dot silt and clay lines (Top Sele 2023 m)",Shale,Sandstone/Shale,medium,18_log_about_1947-2057m.png
+2065,2123,m,"Clay lines, dash-dot (Sele Fm / Lista top 2123 m)",Shale,,medium,19_log_about_2047-2157m.png
+2123,2203,m,"Clay lines with limestone stringers (Lista Fm)",Shale,Limestone,low,19_log_about_2047-2157m.png
+2203,2250,m,"Clay lines (Shetland Gp, Top Cretaceous 2203 m)",Shale,,medium,20_log_about_2147-2257m.png
+2250,2300,m,"Clay lines with pyrite marks",Shale,,medium,21_log_about_2247-2357m.png
+2300,2452,m,"Clay lines with marl marks; marl desc. (Cromer Knoll Gr)",Marl,Shale,low,21_log_about_2247-2357m.png
+2452,2593,m,"Dark clay lines (Kimmeridge Clay Fm, Top Humber 2452 m)",Shale,,medium,23_log_about_2447-2557m.png
+2593,2700,m,"Silt and clay dash lines (Top Heather 2593 m)",Shale,Sandstone/Shale,medium,24_log_about_2547-2657m.png
+2700,2841,m,"Silty clay dash lines",Shale,Sandstone/Shale,medium,25_log_about_2647-2757m.png
+2841,2895,m,"Sand dots (Ness Fm, Top Brent Gr 2841 m)",Sandstone,,medium,26_log_about_2747-2857m.png
+2895,2950,m,"Sand dots with clay laminae (Top Dunlin Gr 2895 m)",Sandstone,Shale,medium,27_log_about_2847-2957m.png
+2950,3000,m,"Clay dashes (shale desc.) and sand",Shale,Sandstone,low,28_log_about_2947-3057m.png
+3000,3071,m,"Sand dots and clay dashes",Sandstone/Shale,,low,28_log_about_2947-3057m.png
+3071,3123,m,"Sand dots (Top Cook Fm 3071 m), limestone marks near 3085",Sandstone,Limestone,medium,29_log_about_3047-3157m.png
+3123,3150,m,"Clay dashes (Top Amundsen/Burton Fm 3123 m)",Shale,Sandstone,medium,29_log_about_3047-3157m.png
+3150,3223,m,"Sand dots with clay dashes",Sandstone/Shale,,low,30_log_about_3147-3257m.png
+3223,3316,m,"Sand dots (Top Statfjord Fm 3223 m)",Sandstone,Shale,medium,30_log_about_3147-3257m.png
+3316,3392,m,"Sand dots (Top Eiriksson Mbr 3316 m)",Sandstone,Shale,low,31_log_about_3247-3357m.png
+3392,3400,m,"Silt lines (Top Raude Mbr 3392 m)",Shale,,medium,32_log_about_3347-3457m.png
+3400,3472,m,"Sand dots with clay dashes (mlky f-crs sand desc.)",Sandstone,Sandstone/Shale,medium,32_log_about_3347-3457m.png
+3472,3510,m,"Clay lines (Top Cormorant Fm 3472 m)",Shale,,medium,33_log_about_3447-3557m.png
+3510,3548,m,"Sand dots with clay dashes (sandst. mlky f, desc.)",Sandstone,Shale,low,33_log_about_3447-3557m.png

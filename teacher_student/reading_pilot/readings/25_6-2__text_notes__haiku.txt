@@ -1,0 +1,29 @@
+Notes: document 1949_25_6_2_COMPLETION_REPORT_AND_LOG (114 pages kept of 116). Depth range read: 1924-2370 m.
+
+Pages read in text: 5, 7, 26, 27, 28, 29, 30, 31, 32, 33, 46, 47, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 74, 76, 96.
+Pages scanned by text search only (no full read): 9, 14, 17, 44, 73, 95, 97, 102, 103, 106.
+Page pictures opened: 29, 30, 31, 32 (sidewall core table 4.1, all in-range rows checked; the OCR was right except where noted in the reading).
+
+Kinds of description found:
+- sidewall_core: Table 4.1 (pdf pages 28-33). Rows 40-102 (1926-2365 m) written, plus one unnumbered entry at 2334 m (poor recovery, flagged in the report as not accepted as a valid sample).
+- interval_summary: chapter 4.9 stratigraphy (pdf pages 52-57), formation-level lithology. Written for Dunlin, Brent Group Equivalent, Heather, Draupne, Mime, Sola, Redby, Shetland, Ty, Lista, Sele, Balder, Hordaland (base only).
+- No conventional cores were cut (page 27). No cuttings lithology descriptions were found in the report for this depth range; routine cuttings were collected (page 26) but only their distribution is described.
+
+Not extracted or not written:
+- Sidewall samples outside the range: 39 at 1923 m (just above 1924), 103 at 2375 m, 104 at 2390 m, 105 at 2392 m.
+- Hordaland Group summary (927-1927 m, pdf page 57) written with printed bounds, because only its base falls in range.
+- Dunlin Group (2345-2392 m) written with printed bounds; the part below 2370 m is outside the range.
+- Group-level summaries (Rogaland, Cromer Knoll, Viking) not written as rows; their formations are written instead. The Cromer Knoll sentence on pdf page 7 ("limestones interbedded with claystones and marls", summary chapter) covers 2239-2278 m and is only a coarser version of the formation rows.
+- Brent Group summary sentence on the single cuttings sample with traces of sandstone at 2328 m (page 60) not written: no description of that sample.
+- Pdf page 39 appears to hold a table with two sets of depths per formation (for example Balder 1927 / 1899 and 1892 / 2591). It looks like a forecast-against-found table. Not read in full and not extracted. Recorded here as requested.
+- Pdf pages 62, 96 (formation pressure and leak-off tables) and page 46 table 4.6 (formation tops, MD and TVD) used only for depth intervals; formation tops are MD in the rows.
+- Depths were taken as mRKB MD. No feet conversion needed.
+
+Reading problems:
+- Sidewall sample 99 (2340 m) is printed after sample 98 (2344 m); its depth is kept as printed and it is sorted by depth.
+- Sample 70 label "Ls/chk" read as limestone/chalk.
+- Table labels "Clst/Mrl" (samples 59, 60, 61, 62, 79) read as claystone/marl: main Shale, second Marl.
+- Sample 44 has a second claystone line (interbedded with dusky yellow brown claystone); written as second class Shale.
+- Formation intervals with a split between two rocks (Ty, Shetland, Redby, Mime, Lista) have no depth for the split; rows are written for the whole formation interval with low confidence.
+
+Output: reading.csv with 77 rows (64 sidewall core rows, 13 interval summary rows).

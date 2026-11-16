@@ -1,0 +1,19 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+1924,1984,m RKB,"TUFF marks (legend TUFF) in claystone; description TUFFACEOUS CLAYSTONE",Tuff,,high,01_log_about_1915-2025m.png
+1984,2053,m RKB,"SHALE dashes (legend SHALE); description CLAYSTONE W/MINOR LIMESTONE BEDS",Shale,Limestone,medium,01_log_about_1915-2025m.png
+2053,2071,m RKB,"SHALE dashes; description CLAYSTONE W/MINOR SILTSTONE, SANDSTONE AND DOLOMITE; dolomite described at 2066-2070 but not clearly drawn",Shale,Dolomite,low,02_log_about_2015-2125m.png
+2071,2098,m RKB,"SHALE dashes with marks; description SILTSTONE GRADING TO VF SANDSTONE, V ARG",Shale,Sandstone/Shale,medium,02_log_about_2015-2125m.png
+2098,2102,m RKB,"SANDSTONE dots (legend SANDSTONE); description SST ARG, OCC GRDG TO SDY",Sandstone,,low,02_log_about_2015-2125m.png
+2102,2120,m RKB,"SHALE dashes; description CLST V LT GY",Shale,,medium,02_log_about_2015-2125m.png
+2120,2154,m RKB,"SHALE dashes with marks; no written description at this depth",Shale,,medium,02_log_about_2015-2125m.png
+2154,2167,m RKB,"MARL (legend MARL) with dashes; description CALCAREOUS CLAYSTONE GRADING TO MARL",Marl,Shale,low,03_log_about_2115-2225m.png
+2167,2207,m RKB,"SANDSTONE dots (legend SANDSTONE); description SILTY SANDSTONE",Sandstone,,high,03_log_about_2115-2225m.png
+2207,2229,m RKB,"LIMESTONE brick (legend LIMESTONE); description LIMESTONE WH HD AMOR",Limestone,,high,03_log_about_2115-2225m.png
+2229,2239,m RKB,"MARL (legend MARL) with C marks; description MARL M GY-OLV",Marl,,medium,04_log_about_2215-2325m.png
+2239,2261,m RKB,"SHALE dashes; description CALCAREOUS CLAYSTONE INTERBEDDED W/MARL",Shale,Marl,medium,04_log_about_2215-2325m.png
+2261,2271,m RKB,"LIMESTONE brick (legend LIMESTONE); description LIMESTONE SL SLTY WH",Limestone,,medium,04_log_about_2215-2325m.png
+2271,2278,m RKB,"MARL (legend MARL); description MARL V LT-LT GY",Marl,,medium,04_log_about_2215-2325m.png
+2278,2301,m RKB,"SHALE dashes; description CLAYSTONE OLV BLK",Shale,,high,04_log_about_2215-2325m.png
+2301,2324,m RKB,"SHALE dashes; description CLAYSTONE OLV BLK",Shale,,high,04_log_about_2215-2325m.png
+2324,2345,m RKB,"SANDSTONE dots (legend SANDSTONE); description SILTY SANDSTONE",Sandstone,,medium,04_log_about_2215-2325m.png
+2345,2370,m RKB,"SHALE dashes; description CLAYSTONE SL SLTY BRN GY-OLV",Shale,,medium,05_log_about_2315-2425m.png

@@ -1,0 +1,55 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+349,424,m RKB,"NO RETURN (column empty and crossed out; no rock description)",,,low,01_log_about_340-450m.png
+424,531,m RKB,"Clay symbol with thin sand bands; CLAY med gry soft sandy plus SAND",Shale,Sandstone,medium,01_log_about_340-450m.png
+531,545,m RKB,"Sand and clay thin alternating beds (T. Hordaland Gp 531 m)",Sandstone/Shale,,medium,02_log_about_440-550m.png
+545,800,m RKB,"Clay symbol throughout with thin sand bands; CLAY brn-brn gry silty",Shale,Sandstone,medium,02_log_about_440-550m.png
+800,931,m RKB,"Clay/claystone with thin silty-sand bands; CLAYSTONE lt brnsh gry silty",Shale,Sandstone/Shale,medium,05_log_about_740-850m.png
+931,990,m RKB,"Silt/siltstone and clay symbols with scattered tuff V marks (Balder Fm); occ tuffaceous",Shale,Tuff,medium,06_log_about_840-950m.png
+990,991,m RKB,"Limestone brick band (described LIMESTONE wh-lt gry)",Limestone,,medium,07_log_about_940-1050m.png
+991,1038,m RKB,"Silt/siltstone and clay symbols with scattered tuff V marks (Balder Fm); occ tuffaceous",Shale,Tuff,medium,07_log_about_940-1050m.png
+1038,1075,m RKB,"Claystone with silt dash-dot pattern (Sele Fm); partly tuffaceous",Shale,Sandstone/Shale,medium,07_log_about_940-1050m.png
+1075,1162,m RKB,"Clay/claystone symbol (Sele Fm); thin limestone stringers",Shale,Limestone,high,08_log_about_1040-1150m.png
+1162,1223,m RKB,"Clay/claystone symbol (Lista Fm); thin limestone/marl stringers",Shale,Limestone,high,08_log_about_1040-1150m.png
+1223,1237,m RKB,"Marl waves with limestone bricks (Maureen Fm); LIMESTONE/MARL",Marl,Limestone,medium,09_log_about_1140-1250m.png
+1237,1273,m RKB,"Marl waves with limestone bricks and claystone (Shetland Gp); MARL/LIMESTONE",Marl,Limestone,medium,09_log_about_1140-1250m.png
+1273,1300,m RKB,"Limestone bricks alternating with marl waves (Cromer Knoll Gp); chalky",Limestone,Marl,low,10_log_about_1240-1350m.png
+1300,1320,m RKB,"Silt/clay dash-dot with limestone bricks and marl waves (Cromer Knoll Gp)",Shale,Limestone,low,10_log_about_1240-1350m.png
+1320,1351.5,m RKB,"Clay/claystone symbol (Draupne Fm); claystone med-dk gry",Shale,,high,10_log_about_1240-1350m.png
+1351.5,1497,m RKB,"Sand/sandstone symbol with thin siltstone dashes and limestone stringers (Sognefjord Fm; cored)",Sandstone,Shale,high,11_log_about_1340-1450m.png
+1497,1516,m RKB,"Sand symbol with silt dashes (Heather Fm Unit C); SANDSTONE/SILTSTONE",Sandstone,Shale,medium,12_log_about_1440-1550m.png
+1516,1648,m RKB,"Sand/sandstone symbol with thin siltstone and limestone stringers (Fensfjord Fm)",Sandstone,Shale,high,12_log_about_1440-1550m.png
+1648,1649,m RKB,"Limestone brick band",Limestone,,medium,13_log_about_1540-1650m.png
+1649,1768,m RKB,"Sand/sandstone symbol with thin siltstone and limestone stringers (Fensfjord/Krossfjord Fm)",Sandstone,Shale,high,13_log_about_1540-1650m.png
+1768,1797,m RKB,"Sand symbol with more shale dashes and limestone/marl stringers (Heather Fm Unit A)",Sandstone,Shale,medium,14_log_about_1640-1750m.png
+1797,1806,m RKB,"Sand symbol with silt dashes (Tarbert Fm)",Sandstone,Shale,medium,15_log_about_1740-1850m.png
+1806,1807,m RKB,"Coal symbol (thick black bed; COAL blk)",Coal,,high,15_log_about_1740-1850m.png
+1807,1813,m RKB,"Sand with silt dashes (Ness Fm)",Sandstone/Shale,,medium,15_log_about_1740-1850m.png
+1813,1817,m RKB,"Shale dashes (SHALE dk brn-blk)",Shale,,medium,15_log_about_1740-1850m.png
+1817,1818,m RKB,"Coal symbol (thick black bed)",Coal,,high,15_log_about_1740-1850m.png
+1818,1832,m RKB,"Shale dashes with sand dots (Ness Fm); SHALE dk brn-blk carb",Shale,Sandstone,medium,15_log_about_1740-1850m.png
+1832,1848,m RKB,"Sand dots with thin shale dashes (Ness Fm)",Sandstone,Shale,medium,15_log_about_1740-1850m.png
+1848,1913,m RKB,"Sand symbol with silt/shale dashes and limestone bricks (Drake Fm)",Sandstone,Shale,high,16_log_about_1840-1950m.png
+1913,1945,m RKB,"Shale and silt dashes with a little sand (Drake Fm)",Shale,Sandstone/Shale,medium,16_log_about_1840-1950m.png
+1945,1991,m RKB,"Sand symbol with shale dashes and limestone bricks (Cook Fm)",Sandstone,Limestone,high,17_log_about_1940-2050m.png
+1991,2001,m RKB,"Shale and silt dashes (Upper Amundsen Fm)",Shale,Sandstone/Shale,medium,17_log_about_1940-2050m.png
+2001,2088,m RKB,"Sand/sandstone symbol with thin shale dashes and limestone ticks (Johansen Fm)",Sandstone,,high,17_log_about_1940-2050m.png
+2088,2106,m RKB,"Sand symbol with thin dashes (Lower Amundsen Fm)",Sandstone,,high,18_log_about_2040-2150m.png
+2106,2107,m RKB,"Coal symbol (thick black bed; COAL blk brtl)",Coal,,high,18_log_about_2040-2150m.png
+2107,2116,m RKB,"Sand symbol (Statfjord Fm); SANDSTONE gry-clr",Sandstone,,high,18_log_about_2040-2150m.png
+2116,2117,m RKB,"Coal symbol (thick black bed)",Coal,,high,18_log_about_2040-2150m.png
+2117,2160,m RKB,"Sand with shale dashes alternating (Statfjord Fm); CLAYSTONE/SHALE rd brn",Sandstone/Shale,,medium,18_log_about_2040-2150m.png
+2160,2172,m RKB,"Silt/shale dashes with some dots (Hegre Gp); CLAYSTONE purp gry-rd brn",Shale,Sandstone/Shale,medium,19_log_about_2140-2250m.png
+2172,2194,m RKB,"Sand dots alternating with shale dashes",Sandstone/Shale,,low,19_log_about_2140-2250m.png
+2194,2209,m RKB,"Sand dots (SANDSTONE clr occ wh qtz)",Sandstone,,medium,19_log_about_2140-2250m.png
+2209,2216,m RKB,"Shale dashes",Shale,,medium,19_log_about_2140-2250m.png
+2216,2233,m RKB,"Sand dots with limestone ticks",Sandstone,,medium,19_log_about_2140-2250m.png
+2233,2241,m RKB,"Shale dashes with thin sand",Shale,Sandstone,low,19_log_about_2140-2250m.png
+2241,2263,m RKB,"Sand dots alternating with shale dashes and limestone ticks",Sandstone/Shale,,low,19_log_about_2140-2250m.png
+2263,2290,m RKB,"Silt/shale dashes with scattered dots",Shale,Sandstone/Shale,low,20_log_about_2240-2350m.png
+2290,2308,m RKB,"Sand dots (SANDSTONE occ rd qtz) with silt dashes",Sandstone,Shale,medium,20_log_about_2240-2350m.png
+2308,2315,m RKB,"Shale and silt dashes (SILTSTONE rd brn)",Shale,Sandstone/Shale,low,20_log_about_2240-2350m.png
+2315,2322,m RKB,"Sand dots",Sandstone,,medium,20_log_about_2240-2350m.png
+2322,2337,m RKB,"Shale dashes with sparse sand dots",Shale,Sandstone/Shale,low,20_log_about_2240-2350m.png
+2337,2350,m RKB,"Sand dots alternating with shale dashes",Sandstone/Shale,,low,20_log_about_2240-2350m.png
+2350,2355,m RKB,"Sand dots with limestone tick",Sandstone,,medium,21_log_about_2340-2450m.png
+2355,2363,m RKB,"Shale dashes with sparse dots (to T.D. 2374 m)",Shale,Sandstone/Shale,medium,21_log_about_2340-2450m.png

@@ -1,0 +1,46 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+349,420,m RKB,"No drawn rock: NO RETURN zone (no cuttings), no description beside it",,,low,01_log_about_340-450m.png
+420,428,m RKB,"CONGLOMERATE symbol (described CLAY and SAND, granules)",Sandstone,,medium,01_log_about_340-450m.png
+428,531,m RKB,"CLAY horizontal lines (Quaternary/Pleistocene, Nordland GP); thin sand dots",Shale,Sandstone,medium,01_log_about_340-450m.png
+531,650,m RKB,"CLAY horizontal lines (Hordaland GP, Oligocene marine); thin sand dots",Shale,Sandstone,medium,02_log_about_440-550m.png
+650,750,m RKB,"CLAY horizontal lines (Hordaland GP, Eocene)",Shale,,medium,03_log_about_540-650m.png
+750,850,m RKB,"CLAY/CLAYSTONE horizontal lines; sand dots at about 800 and 845",Shale,Sandstone,medium,04_log_about_640-750m.png
+850,931,m RKB,"CLAYSTONE horizontal lines with SILTSTONE dash-dot (Hordaland/Balder interval)",Shale,Sandstone/Shale,medium,05_log_about_740-850m.png
+931,993,m RKB,"SILTSTONE dash-dot, scattered TUFF marks (T. Balder FM 931 m)",Shale,Sandstone/Shale,medium,06_log_about_840-950m.png
+993,994,m RKB,"LIMESTONE brick stringer",Limestone,,medium,07_log_about_940-1050m.png
+994,1010,m RKB,"SILTSTONE dash-dot and CLAY, scattered TUFF marks (Balder FM)",Shale,Sandstone/Shale,medium,07_log_about_940-1050m.png
+1010,1011,m RKB,"LIMESTONE brick stringer",Limestone,,medium,07_log_about_940-1050m.png
+1011,1038,m RKB,"SILTSTONE dash-dot and CLAY (Balder FM)",Shale,Sandstone/Shale,medium,07_log_about_940-1050m.png
+1038,1100,m RKB,"CLAYSTONE horizontal lines with SILTSTONE dash-dot (T. Sele FM 1038 m); partly tuffaceous",Shale,Sandstone/Shale,medium,07_log_about_940-1050m.png
+1100,1162,m RKB,"CLAYSTONE horizontal lines (Sele FM / Rogaland GP)",Shale,,medium,08_log_about_1040-1150m.png
+1162,1221,m RKB,"CLAYSTONE horizontal lines (T. Lista FM 1162 m)",Shale,,medium,09_log_about_1140-1250m.png
+1221,1237,m RKB,"MARL wavy lines with LIMESTONE brick bands (Maureen FM 1225 m)",Marl,Limestone,low,09_log_about_1140-1250m.png
+1237,1273,m RKB,"MARL wavy lines with LIMESTONE brick bands (Shetland GP 1237 m)",Marl,Limestone,low,09_log_about_1140-1250m.png
+1273,1320,m RKB,"MARL/LIMESTONE wavy and brick bands; described as chalky (Cromer Knoll GP 1273 m)",Chalk,Marl,low,10_log_about_1240-1350m.png
+1320,1351,m RKB,"CLAYSTONE horizontal lines (Draupne FM 1320 m)",Shale,,medium,10_log_about_1240-1350m.png
+1351,1497,m RKB,"SANDSTONE dots with shale and siltstone stringers (Sognefjord FM, Viking GP); coal described",Sandstone,Shale,medium,11_log_about_1340-1450m.png
+1497,1516,m RKB,"SANDSTONE dots, SANDSTONE/SILTSTONE (Heather FM Unit C 1497 m)",Sandstone,Shale,medium,12_log_about_1440-1550m.png
+1516,1572,m RKB,"SANDSTONE dots (Fensfjord FM 1516 m); coal and siltstone described",Sandstone,Shale,medium,12_log_about_1440-1550m.png
+1572,1650,m RKB,"SANDSTONE dots (Fensfjord FM; GOC 1572 m, OWC 1576 m)",Sandstone,Shale,medium,13_log_about_1540-1650m.png
+1650,1668,m RKB,"SANDSTONE dots with SHALE bands (Fensfjord FM base)",Sandstone,Shale,medium,13_log_about_1540-1650m.png
+1668,1768,m RKB,"SANDSTONE dots (Krossfjord FM 1668 m); shale and limestone described",Sandstone,Shale,medium,14_log_about_1640-1750m.png
+1768,1805,m RKB,"SANDSTONE dots (Heather FM Unit A 1768 m; Tarbert FM 1797 m)",Sandstone,Shale,medium,15_log_about_1740-1850m.png
+1805,1806,m RKB,"COAL black fill (Ness FM 1805 m)",Coal,,low,15_log_about_1740-1850m.png
+1806,1823,m RKB,"SHALE horizontal dashes, dark brown-black (Ness FM)",Shale,Sandstone,medium,15_log_about_1740-1850m.png
+1823,1848,m RKB,"SANDSTONE dots (Ness FM)",Sandstone,Shale,medium,15_log_about_1740-1850m.png
+1848,1905,m RKB,"SANDSTONE dots (Drake FM 1848 m)",Sandstone,Shale,medium,15_log_about_1740-1850m.png
+1905,1945,m RKB,"SHALE horizontal dashes (Drake FM, near shore/marginal marine)",Shale,Sandstone,medium,16_log_about_1840-1950m.png
+1945,1991,m RKB,"SANDSTONE dots (Cook FM 1945 m); shale and limestone described",Sandstone,Shale,medium,16_log_about_1840-1950m.png
+1991,2088,m RKB,"SANDSTONE dots (Upper Amundsen FM 1991 m, Johansen FM 2001 m)",Sandstone,,high,17_log_about_1940-2050m.png
+2088,2105,m RKB,"SANDSTONE dots (Lower Amundsen FM 2088 m)",Sandstone,,high,18_log_about_2040-2150m.png
+2105,2106,m RKB,"COAL black fill (Statfjord FM 2105 m)",Coal,,medium,18_log_about_2040-2150m.png
+2106,2160,m RKB,"SANDSTONE dots with shale dashes (Statfjord FM)",Sandstone,Shale,medium,18_log_about_2040-2150m.png
+2160,2180,m RKB,"CLAYSTONE horizontal lines, purple-red (Hegre GP 2160 m)",Shale,Sandstone,medium,19_log_about_2140-2250m.png
+2180,2210,m RKB,"SANDSTONE dots (Hegre GP); limestone described",Sandstone,Shale,medium,19_log_about_2140-2250m.png
+2210,2250,m RKB,"SHALE horizontal lines (Hegre GP)",Shale,Sandstone,low,19_log_about_2140-2250m.png
+2250,2270,m RKB,"SANDSTONE dots (Hegre GP)",Sandstone,Shale,medium,20_log_about_2240-2350m.png
+2270,2300,m RKB,"SHALE horizontal lines (Hegre GP, terrestrial/delta plain)",Shale,Sandstone,medium,20_log_about_2240-2350m.png
+2300,2315,m RKB,"SANDSTONE dots (Hegre GP)",Sandstone,Shale,medium,20_log_about_2240-2350m.png
+2315,2350,m RKB,"SILTSTONE/SHALE horizontal lines (Hegre GP)",Shale,Sandstone,low,20_log_about_2240-2350m.png
+2350,2357,m RKB,"SANDSTONE dots (Hegre GP)",Sandstone,,medium,21_log_about_2340-2450m.png
+2357,2363,m RKB,"SHALE horizontal lines (Hegre GP)",Shale,,low,21_log_about_2340-2450m.png

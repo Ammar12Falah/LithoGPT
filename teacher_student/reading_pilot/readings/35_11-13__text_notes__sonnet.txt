@@ -1,0 +1,19 @@
+Well 35/11-13, document 5063_35_11_13_COMPLETION_REPORT (one document, 201 pages).
+Depth range read: 2901-3271 m MD.
+
+Pages read closely (text): 7, 11-26, 28, 29, 41, 130-132 (plus grep over all pages for rock words). Page 22 picture opened and checked against text.
+
+Kinds of description found:
+- interval_summary: lithostratigraphy by formation/interval in Final Well Report section 1.1 (pdf pages 12-19); Draupne 2902-3013, Heather 2977-3093.5, Oxfordian Sandstones 3095.5-3206, Heather 3206-3291.5. Includes a few "at depth" cuttings lines (3012, 3030, 3050) written as point cuttings_sample rows.
+- sidewall_core: table 1.4 (pdf pages 22-23), 45 cores, depths 2960-3151. 4 cores had no description: no. 3 (3149, aborted), no. 37 (3046), no. 39 (3026), no. 42 (2996.5) lost in hole. No rows for those. Cores 45, 44 etc. many say "as XXXX m"; the source sentence is copied as printed and the referenced description is in the note.
+- No cuttings sample-by-sample list in this document (it refers to the composite log, not included).
+- Conventional cores 1 (3100-3115) and 2 (3115-3142) are only in the coring table (page 24) with no description; no rows. Gap in sidewall cores 3103-3140 is covered by the Oxfordian interval summary.
+
+Not extracted / skipped:
+- Hydrocarbon shows table (pdf page 20): lithology column "Sandstone" for cuttings "3903.5-3100" (printed so, looks like a misprint) and cores 3100-3131. This is a shows table, not a lithology description, so no row.
+- Shows line at 2998 m (page 18): only shows, no rock description, no row.
+- Draupne/Heather overlap 2977-3013 is as printed in the report (Heather header begins at 2977, Draupne/Heather boundary stated elsewhere at 3013); not corrected.
+- Interval 2865-2902 Claystone (page 18) ends at the lower edge of the range; not included.
+- No forecast (prognosed) against found formation tops table was found in the pages read; none extracted.
+
+Problems: OCR/textlayer was clean; no value was unreadable. Sidewall depths use comma decimals in places (e.g. 3143,0); read as 3143.0. Depth unit not given in SWC table; "m MD" used (report states depths are MD RKB). Sidewall core no. 1 description is cut off in the table cell at "r".

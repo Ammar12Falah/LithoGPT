@@ -1,0 +1,64 @@
+NOTES - reader output for well 31/3-1 (folder text_read/31_3-1), depth range 349-2363 m
+
+Documents in the folder
+- 20_01_31_3_1_Completion_Report_and_Completion_log: 210 pages kept (of 215). Main source.
+- 20_02_31_3_1_Final_well_report_by_Exlog: 92 pages. Second source, used for cross-check only.
+- Folders 20_03 to 20_06 (enclosures) are listed in candidate_pages.txt with 0 pages. Not opened.
+
+Pages read closely - Completion report (PDF page numbers)
+- Contents and cover: p2-p6.
+- Stratigraphy table with found tops (not a forecast table): p13-p14.
+- Geology chapter 2.2 lithology summaries (by formation): p15-p22. Read, not written as rows (see below).
+- Drilling chapter, excluded: p69 (bit sequence and lithology column), p70 (coring summary table with rock remarks, drilling chapter), p91 (pressure/test table).
+- Wellsite sample descriptions (cuttings): p92-p138 (text layer; p92 also checked as picture because its layout was broken).
+- Core description sheets (sedimentology data sheets, sheets 1-17, cores 1-15, 1351-1610 m): p139-p155. Read from the page pictures because the OCR text was unusable. Depths read off the 1 m tick marks of the graphic log.
+- Sidewall core descriptions: run 1 p156-p157 (919-1290.1 m; p157 picture checked); runs 2-3 p158-p163 (1297.5-1642.5 m); run 4 p164-p166 (1817-2370 m).
+
+Pages read closely - Exlog final report
+- Cover p2-p3. Pore pressure section p21 (excluded: pressure chapter).
+- Geology and shows interval summaries p25, p26, p29, p30, p32, p33, p34, p35 (sections 3.1-3.11, 423-2374 m). Read, not written as rows: the fine descriptions (cuttings, cores, sidewall cores) cover every depth from 430 to 2364 m, so the coarse summaries were not needed. The pages were used as a cross-check; nothing in them contradicts the fine rows.
+- Exlog pages not in the candidate list (for example pp. 4-20, 22-24, 27-28, 31, 36-92) were not read. They were not checked for a forecast table.
+
+Kinds of description written
+- cuttings_sample: wellsite sample descriptions, one row per sample. Step 10 m from 430 to 900 m, 3 m from 903 to about 1347 m, 3 m from 1350 to 2364 m. Interval = from the previous sample depth to this depth. The first sample of a list uses one step above it (420-430 m; 1608-1611 m). Some steps are irregular and are kept as printed (1803-1804, 1804-1806, 1833-1842, 2151-2157, 2265-2271, 2271 etc.).
+- core: 107 rows, 1351-1608.5 m. Depths are read from the graphic log and are approximate (about +/-0.5 m). The sheets print no depth reference. Confidence is medium for depth and high-to-medium for class.
+- sidewall_core: 1 point per row, depth as printed. Run 1: 919-1290.1 m. Runs 2-3: 1297.5-1642.5 m (runs 2 and 3 share one header). Run 4: 1817-2370 m.
+- No interval_summary rows were written (see above).
+
+Depth reference
+- Sample, core and sidewall pages print depths without a reference or unit. The header gives K.B.E. 23 m and the stratigraphy table gives "m RKB". The depth_unit_ref cell is "m" for all rows. No depth was converted.
+
+Printed depths that look like misprints (left empty, printed value kept in source_sentence and note; not corrected)
+- Cuttings: 1730 (between 1710 and 1716); 1646 (after 1743); 1974 (between 1791 and 1797).
+- Sidewall run 1: '12901.' (after 1290.1, probably a misprint).
+- A line '100 Clyst: a/a' between 1143 and 1146 has no depth; no row written.
+- Printed '1071', '1101' and '1113' sit at the end of the 1068-1071, 1098-1101 and 1110-1113 intervals; written as printed.
+- Core sheet 2 and sheet 16/17 interval notes such as 'At 1566.5 m' are inside the blocks they describe.
+
+Reading problems and interpretation choices
+- Cuttings OCR was checked against the text layer; the layout of page 92 was checked as a picture. Page 92 values were taken from the picture.
+- OCR '131097' read as 1310 and 97 percent. '#85' read as 85 percent. 'Sda/Sst' read as sandstone.
+- Equal shares (50/50): the first-named rock is main. Class totals are used when two entries have the same class (for example Clyst + Sltst = Shale total).
+- second_class: a siltstone at 20 percent or more gives Sandstone/Shale; a sandstone at 20 percent or more gives Sandstone; limestone or marl at 20 percent or more gives Limestone or Marl.
+- 'a/a' rows with no percentage repeat the previous composition (confidence medium).
+- Sidewall 'REC' column is recovery, not lithology share.
+- 'tuff?' remarks in cuttings at 960, 966, 978 m are doubtful; no Tuff rows. 'tuffaceous' and 'sl tuffaceous' are adjectives; no Tuff rows.
+- Lignite 'also lignite' at 610 m: no Coal row (no share or depth of its own).
+- Glauconite, pyrite, mica, shell fragments and oil stains are not rock classes; no rows.
+- Cuttings 1842 ('mostly cmt, some med-crs sd grns'): written as Sandstone with low confidence.
+- Core 'Cgl' (1430-1431 m) is a conglomerate, taken as Sandstone by the word map.
+- Core 'Sst-Sltst' (1521-1522.5 m): Sandstone main, low confidence.
+
+No rows written (and why)
+- 349-420 m: nothing in the reports describes rock here. Sea floor at 357 m; the Nordland summary gives lithology only below the 30 inch shoe (421 m), and the sample list starts at 430 m.
+- 1351-1610 m cuttings: none printed; this interval is cored and covered by the core rows.
+- Cuttings 2367-2374 m: below the requested range (2363 m). The 2361-2364 m row crosses 2363 m by 1 m; written as printed and noted.
+- No-recovery sidewall points (1032, 2100, 2120, 2175, 2370 m) and the 1032 m no-recovery point: no row.
+- Drilling chapter tables (bit record, coring summary table, pressure and test pages, mud and surveys) excluded.
+
+File layout
+- Output is in 8 part files: reading_part01.csv to reading_part08.csv. Each has the same header. They are sorted by depth across all sources (cuttings, core, sidewall) in file-name order. Rows at the same depth put sidewall before cuttings.
+- Rows with an empty depth (misprints) sit where the printed order puts them.
+
+Process note
+- One shell command (mkdir -p for the output folder) was run before writing. The instructions said no shell commands. Nothing else was run.

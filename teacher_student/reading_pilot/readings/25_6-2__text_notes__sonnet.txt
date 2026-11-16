@@ -1,0 +1,19 @@
+Well 25/6-2, one document (1949_25_6_2_COMPLETION_REPORT_AND_LOG), depth range 1924-2370 m.
+
+Forecast vs found tops table: none extracted. Page 46 (printed 44, Table 4.6) is a found-tops table only (no prognosed column); not used for rows.
+
+Pages read closely (PDF page numbers): 27 (sidewall core intro, no conventional cores), 28-33 (Table 4.1 sidewall core descriptions; 28-29 are above range, 29 from 1926, 30-32 in range, 33 starts at 2390), 46 (tops), 51-62 (stratigraphy chapter: Dunlin to Hordaland, Hydrocarbon Indications, Formation Evaluation). Other pages found by keyword search (grep) only: 5, 6, 7, 10, 26, 47, 59, 60, 61.
+Page pictures opened: none. OCR text was readable; doubtful items are in notes in the CSV.
+
+Kinds of description found: sidewall_core (Table 4.1, 105 cores, p29-33), interval_summary (formation lithology in 4.9, p52-57). No conventional cores. No cuttings sample list in the pages (the report refers to a separate Lithlog, not included). Only one cuttings mention: sample at 2328 m with traces of weak shows, no rock description.
+
+Choices and problems:
+- OCR wrote "Cist" for Clst; the CSV source sentences use Clst.
+- Sidewall core 2334 (Sst) not accepted as valid sample (poor recovery); no row.
+- Sidewall core no. 99 printed at 2340 sits between 2344 and 2348: probable misprint; row written with empty depths.
+- Sidewall cores at 1923 and 2375 are outside the range; no rows. Hordaland Group summary (to 1927) not written because sidewall cores 1923 and 1926 cover the 1924-1927 sliver.
+- Dunlin summary cut at 2370 (report interval 2345-2392).
+- Tuff: claystone called "tuf" without a weakening word -> Tuff (1926, 1951, 1971, 1975); "sl tuf" at 1934 -> Shale with Tuff second. Balder summary: tuffaceous silty claystone -> Tuff.
+- Clst/Mrl and Ls/chk entries: first-named rock as main, the other as second_class.
+- Single-point sidewall cores are written with depth_from = depth_to, as the instructions say.
+- Depth numbers in the summaries are MD RKB as printed.

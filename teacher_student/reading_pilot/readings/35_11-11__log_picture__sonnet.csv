@@ -1,0 +1,66 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+1245,1323,m RKB,"blank column, description claystone (Clst)",Shale,,medium,01_log_about_1235-1345m.png
+1323,1324,m RKB,limestone stringer,Limestone,,medium,01_log_about_1235-1345m.png
+1324,1329,m RKB,"blank column, description claystone",Shale,,medium,01_log_about_1235-1345m.png
+1329,1330,m RKB,limestone stringer,Limestone,,medium,01_log_about_1235-1345m.png
+1330,1466,m RKB,"blank column, description claystone",Shale,,medium,01_log_about_1235-1345m.png
+1466,1495,m RKB,"blank column with tuffaceous marks, description claystone and tuff (Balder Fm)",Tuff,Shale,low,03_log_about_1435-1545m.png
+1495,1496,m RKB,limestone stringer,Limestone,,medium,03_log_about_1435-1545m.png
+1496,1510,m RKB,"blank column with tuffaceous marks, description claystone and tuff",Tuff,Shale,low,03_log_about_1435-1545m.png
+1510,1517,m RKB,"blank column, claystone",Shale,,medium,03_log_about_1435-1545m.png
+1517,1519,m RKB,limestone stringers,Limestone,,medium,03_log_about_1435-1545m.png
+1519,1620,m RKB,"blank column, description claystone",Shale,,medium,03_log_about_1435-1545m.png
+1620,1631,m RKB,sandstone,Sandstone,,high,04_log_about_1535-1645m.png
+1631,1640,m RKB,blank column between sandstone beds,Shale,,low,04_log_about_1535-1645m.png
+1640,1678,m RKB,sandstone,Sandstone,,high,05_log_about_1635-1745m.png
+1678,1824,m RKB,"blank column, description claystone, thin limestone stringers",Shale,Limestone,medium,05_log_about_1635-1745m.png
+1824,1888,m RKB,sandstone,Sandstone,,high,06_log_about_1735-1845m.png
+1888,1900,m RKB,blank column; description of interval lists limestone,Limestone,,low,07_log_about_1835-1945m.png
+1900,1913,m RKB,sandstone,Sandstone,,high,07_log_about_1835-1945m.png
+1913,2056,m RKB,"blank column with many limestone bands, description claystone and limestone",Shale,Limestone,medium,07_log_about_1835-1945m.png
+2056,2341,m RKB,"blank column with limestone bands, description claystone",Shale,Limestone,medium,09_log_about_2035-2145m.png
+2341,2385,m RKB,argillaceous limestone,Limestone,,high,11_log_about_2235-2345m.png
+2385,2388,m RKB,blank column,Shale,,low,12_log_about_2335-2445m.png
+2388,2411,m RKB,argillaceous limestone,Limestone,,high,12_log_about_2335-2445m.png
+2411,2442,m RKB,"blank column with thin banding, description claystone and limestone",Shale,Limestone,medium,12_log_about_2335-2445m.png
+2442,2447,m RKB,dense thin horizontal banding (marl-like pattern),Marl,Limestone,low,12_log_about_2335-2445m.png
+2447,2467,m RKB,"blank column, description claystone",Shale,,medium,13_log_about_2435-2545m.png
+2467,2469,m RKB,limestone band,Limestone,,medium,13_log_about_2435-2545m.png
+2469,2472,m RKB,blank column,Shale,,medium,13_log_about_2435-2545m.png
+2472,2473,m RKB,limestone band,Limestone,,medium,13_log_about_2435-2545m.png
+2473,2538,m RKB,"blank column, description claystone",Shale,,medium,13_log_about_2435-2545m.png
+2538,2550,m RKB,thin alternating sandstone and claystone,Sandstone/Shale,,medium,13_log_about_2435-2545m.png
+2550,2559,m RKB,sandstone,Sandstone,,medium,14_log_about_2535-2645m.png
+2559,2567,m RKB,thin alternating sandstone and claystone,Sandstone/Shale,,low,14_log_about_2535-2645m.png
+2567,2577,m RKB,blank column (description names sandstone),Shale,Sandstone,low,14_log_about_2535-2645m.png
+2577,2612,m RKB,sandstone with thin shaly beds,Sandstone,Sandstone/Shale,medium,14_log_about_2535-2645m.png
+2612,2682,m RKB,siltstone,Shale,Sandstone/Shale,high,14_log_about_2535-2645m.png
+2682,2699,m RKB,sandstone,Sandstone,,medium,15_log_about_2635-2745m.png
+2699,2704,m RKB,siltstone,Shale,Sandstone/Shale,medium,15_log_about_2635-2745m.png
+2704,2722,m RKB,sandstone with thin siltstone beds,Sandstone,Shale,medium,15_log_about_2635-2745m.png
+2722,2724,m RKB,thin alternating sandstone and siltstone,Sandstone/Shale,,low,15_log_about_2635-2745m.png
+2724,2762,m RKB,siltstone,Shale,Sandstone/Shale,high,15_log_about_2635-2745m.png
+2762,2764,m RKB,limestone band,Limestone,,medium,16_log_about_2735-2845m.png
+2764,2779,m RKB,siltstone,Shale,Sandstone/Shale,high,16_log_about_2735-2845m.png
+2779,2780,m RKB,limestone band,Limestone,,medium,16_log_about_2735-2845m.png
+2780,2817,m RKB,siltstone,Shale,Sandstone/Shale,high,16_log_about_2735-2845m.png
+2817,2819,m RKB,limestone band,Limestone,,medium,16_log_about_2735-2845m.png
+2819,2870,m RKB,siltstone,Shale,Sandstone/Shale,high,16_log_about_2735-2845m.png
+2870,2871,m RKB,limestone band,Limestone,,medium,17_log_about_2835-2945m.png
+2871,3004,m RKB,siltstone,Shale,Sandstone/Shale,high,17_log_about_2835-2945m.png
+3004,3007,m RKB,sandstone,Sandstone,,medium,18_log_about_2935-3045m.png
+3007,3040,m RKB,"blank column, claystone with thin black coal lines",Shale,Coal,low,18_log_about_2935-3045m.png
+3040,3043,m RKB,black coal bands,Coal,,low,19_log_about_3035-3145m.png
+3043,3075,m RKB,"blank column, claystone with thin coal lines",Shale,Coal,low,19_log_about_3035-3145m.png
+3075,3097,m RKB,sandstone,Sandstone,,high,19_log_about_3035-3145m.png
+3097,3117,m RKB,siltstone,Shale,Sandstone/Shale,high,19_log_about_3035-3145m.png
+3117,3140,m RKB,sandstone,Sandstone,,medium,19_log_about_3035-3145m.png
+3140,3143,m RKB,siltstone,Shale,,low,20_log_about_3135-3245m.png
+3143,3150,m RKB,sandstone,Sandstone,,medium,20_log_about_3135-3245m.png
+3150,3170,m RKB,alternating sandstone and siltstone beds,Sandstone/Shale,,medium,20_log_about_3135-3245m.png
+3170,3174,m RKB,sandstone,Sandstone,,low,20_log_about_3135-3245m.png
+3174,3190,m RKB,siltstone,Shale,Sandstone/Shale,medium,20_log_about_3135-3245m.png
+3190,3197,m RKB,alternating sandstone and siltstone,Sandstone/Shale,,low,20_log_about_3135-3245m.png
+3197,3201,m RKB,sandstone,Sandstone,,low,20_log_about_3135-3245m.png
+3201,3208,m RKB,alternating sandstone and siltstone,Sandstone/Shale,,low,20_log_about_3135-3245m.png
+3208,3215,m RKB,sandstone,Sandstone,,medium,20_log_about_3135-3245m.png

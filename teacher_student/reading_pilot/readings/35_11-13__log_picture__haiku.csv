@@ -1,0 +1,27 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+2901,2987,m RKB,CLAY/CLAYSTONE (green); description Claystone,Shale,,high,01_log_about_2892-3002m.png
+2987,2991,m RKB,SILT/SILTSTONE (brown),Shale,Sandstone/Shale,medium,01_log_about_2892-3002m.png
+2991,2993,m RKB,SAND/SANDSTONE (yellow),Sandstone,,medium,01_log_about_2892-3002m.png
+2993,2996,m RKB,SILT/SILTSTONE (brown),Shale,Sandstone/Shale,medium,01_log_about_2892-3002m.png
+2996,3002,m RKB,CLAY/CLAYSTONE (green),Shale,,low,01_log_about_2892-3002m.png
+3002,3004,m RKB,SAND/SANDSTONE (yellow),Sandstone,,low,02_log_about_2992-3102m.png
+3004,3013,m RKB,CLAY/CLAYSTONE (green),Shale,,low,02_log_about_2992-3102m.png
+3013,3031,m RKB,SILT/SILTSTONE (brown); description Sltstone (Heather Fm),Shale,Sandstone/Shale,medium,02_log_about_2992-3102m.png
+3031,3043,m RKB,SAND/SANDSTONE (yellow) with siltstone; description Sst,Sandstone,Shale,low,02_log_about_2992-3102m.png
+3043,3093,m RKB,SILT/SILTSTONE (brown); description Sltst (J54),Shale,Sandstone/Shale,medium,02_log_about_2992-3102m.png
+3093,3096,m RKB,SAND/SANDSTONE (yellow),Sandstone,,medium,02_log_about_2992-3102m.png
+3096,3137,m RKB,SAND/SANDSTONE (yellow) with thin siltstones; description Sandstone with thin siltstones,Sandstone,Shale,high,02_log_about_2992-3102m.png
+3137,3176,m RKB,SAND/SANDSTONE (yellow),Sandstone,,medium,03_log_about_3092-3202m.png
+3176,3178,m RKB,SILT/SILTSTONE (brown band),Shale,Sandstone,medium,03_log_about_3092-3202m.png
+3178,3197,m RKB,SAND/SANDSTONE (yellow),Sandstone,,medium,03_log_about_3092-3202m.png
+3197,3199,m RKB,SILT/SILTSTONE (brown),Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3199,3205,m RKB,SAND/SANDSTONE (yellow),Sandstone,,high,03_log_about_3092-3202m.png
+3205,3233,m RKB,SILT/SILTSTONE (brown); description Siltstone with limestone stringers,Shale,Sandstone/Shale,medium,04_log_about_3192-3302m.png
+3233,3234,m RKB,LIMESTONE (light blue stringer),Limestone,,medium,04_log_about_3192-3302m.png
+3234,3245,m RKB,SILT/SILTSTONE (brown),Shale,Sandstone/Shale,medium,04_log_about_3192-3302m.png
+3245,3246,m RKB,LIMESTONE (light blue stringer),Limestone,,medium,04_log_about_3192-3302m.png
+3246,3253,m RKB,SILT/SILTSTONE (brown),Shale,Sandstone/Shale,medium,04_log_about_3192-3302m.png
+3253,3254,m RKB,LIMESTONE (light blue stringer),Limestone,,medium,04_log_about_3192-3302m.png
+3254,3262,m RKB,SILT/SILTSTONE (brown),Shale,Sandstone/Shale,medium,04_log_about_3192-3302m.png
+3262,3263,m RKB,LIMESTONE (light blue stringer),Limestone,,medium,04_log_about_3192-3302m.png
+3263,3271,m RKB,SILT/SILTSTONE (brown),Shale,Sandstone/Shale,medium,04_log_about_3192-3302m.png

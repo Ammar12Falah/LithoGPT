@@ -1,0 +1,48 @@
+Notes on reading of well 31/3-1 (depth range 349-2363 m)
+
+Output: reading_part01.csv to reading_part10.csv (same header; 715 rows). Each part is sorted by depth; parts are split by kind of description, so depth ranges overlap between parts:
+- part01-part07: cuttings samples (wellsite sample description), 357-2364 m, in depth order (part 7 ends at 2364).
+- part08: core descriptions (core sheets 1-17), 1351-1610 m.
+- part09: sidewall cores, 919-2347 m (single depths).
+- part10: four formation-summary rows that fill gaps between core-sheet descriptions.
+Rows in part09 and part08 overlap in depth with part01-07 cuttings rows. Join and sort by depth_from if one combined order is needed.
+
+Forecast against found table: none found in either document. The stratigraphy tables on completion report pages 13 and 14 list found tops only (biostratigraphy and lithostratigraphy), not forecast against found. Exlog report page 6 (Prognosis) is text only with no depth table. The completion report page 54 is a nomenclature page (Norwegian-English terms).
+
+Pages read closely (text file read):
+Document 20_01_31_3_1_Completion_Report_and_Completion_log: p13, p14, p15-p22 (geology lithology summary by formation), p54, p70 (coring table), p91-p155 (wellsite sample description, pages 1-47 of the sheet = p92-p138; core description sheets 1-17 = p139-p155), p156-p166 (sidewall core descriptions), p167 (header only).
+Document 20_02_31_3_1_Final_well_report_by_Exlog: p4, p6, p10, p21, p25, p26, p29, p30, p32, p33, p34, p35 (geology and shows; coarse interval summaries; not used for rows because finer descriptions cover the same depths).
+
+Page pictures opened: p92, p116, p117, p118, p129, p131, p133, p134 (sample sheets, to check doubtful numbers), p139-p155 (core sheets, depth boundaries read from the graphic column), p159 (sidewall core depths).
+
+Kinds of description found:
+1. Wellsite sample (cuttings) description with percent lithology, from 430 m to 2374 m (completion report p92-p138). Sample at one depth is taken to cover the interval from the previous listed sample depth to its depth. First sample (430 m) covers 420-430 m. Cored zone 1351-1610 m has no cuttings ("1351-1610 SEE CORE DESCRIPTION", p112); first cuttings sample after it (1611 m) is given interval 1610-1611 m.
+2. Core description sheets (sedimentology data sheets), core 1-15, 1351-1610 m, p139-p155.
+3. Sidewall core descriptions, run 1 (919-1290.1 m), run 2-3 (1297.5-1835 m), run 4 (1817-2347 m), p156-p166.
+4. Formation-by-formation lithology summary (p15-p22) and Exlog geology summaries by interval (used only for 357-420 m and for gaps in core sheets).
+
+Rules and choices used:
+- Claystone, clay, shale -> Shale. Siltstone -> Shale with Sandstone/Shale as second_class when siltstone is the main rock or the largest second rock. Sandstone main with siltstone as second rock: second_class Shale. Marl/Lst and Lst/Marl entries: class by first-named rock (Marl/Lst -> Marl, Lst/Marl -> Limestone). Conglomerate -> Sandstone.
+- Samples with several lines for the same class (two claystone lines, claystone plus siltstone) were added together for the main class; shares are in the note column where it mattered. Where sandstone was the largest single line but all claystone/siltstone lines together were larger, the row is Shale with Sandstone second, confidence medium.
+- second_class filled only when the second rock is about 20 percent or more of the sample (or named as beds); smaller shares left empty.
+- Sidewall core 924 m (siltstone called "tuffaceous" with no weakening word) is given as Tuff, low confidence.
+- Depth reference: samples and sidewall cores give DEPT with K.B.E. 23 m (written m RKB for samples, m KBE for sidewall cores); core sheets are headed "core depth (m)" (written m core depth). No conversion needed; all in metres.
+- Core-sheet depth boundaries are not printed with each description. They were estimated from the position of each text block against the depth scale of the graphic column (about 62 px per metre). They are approximate to about 0.3-0.5 m; confidence is medium or low. Unrecovered core pieces inside a described block are not split out (noted where large).
+
+Doubtful printed depths (left as printed, no correction):
+- p116: sample printed "1730" between 1710 and 1716 (page picture confirms). Row has depth_to empty; the following 1716 row has depth_from empty.
+- p117: sample printed "1646" between 1743 and 1749 (page picture confirms). Row has depth_to empty; the following 1749 row has depth_from empty.
+- p118: sample printed "1974" between 1791 and 1797 (page picture confirms). Row has depth_to empty; the following 1797 row has depth_from empty.
+- p129: 2151 then 2157 (6 m step); p133: 2265 then 2271 (6 m step); p134: 2286, 2288, 2289 (1 m steps). Printed as is (page pictures confirm); kept as listed, noted in note column.
+- p131 sample 2223: printed shares add up to 110 percent.
+- p157: last sidewall core line prints a second sample at the same depth as 1290.1 (OCR "12901."); p158: "131097" read as depth 1310 and recovery 97.
+
+Not recorded as rows:
+- Sidewall cores "NO RECOVERY" at 1032, 2100, 2120, 2175, 2370 m.
+- Coring table on p70 (interval, recovery and one-line remarks per core): not used because core sheets describe the same intervals in more detail.
+- Core sheet entries without a rock class: "Laminae w/abund org mat" and "Coquina layer: thin disarticulated shells, convex down" (1475.5-1477 m, sheet 9, p147); no depths of their own, not in the word map.
+- Cuttings "Tr" lines (traces) are not rows; their rocks are not put in second_class.
+- Small unrecovered core gaps below about 0.7 m (for example 1392.0-1392.5, 1397.5-1398.0, 1400.0-1400.6) are left without rows; gaps of about 0.9 m or more were filled with the Sognefjord formation summary (part10).
+- No description was found for 349-357 m (water depth to sea floor at 357 m); 357-420 m uses the Nordland Group summary (low confidence; the sentence describes the part below the 421 m casing shoe). Intervals 2364-2374 m are outside the requested range; the 2361-2364 m sample row runs one metre past 2363.
+- Hordaland to Statfjord, Hegre formation summaries (p15-p22) and the Exlog interval summaries were not turned into rows because the sample and core descriptions cover all of those depths.
+- Sample 1842 m ("Mostly cmt. Some med-crs sd grns, mica and coal") is a low-confidence Sandstone row (sample mostly cement).

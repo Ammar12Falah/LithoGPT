@@ -1,0 +1,31 @@
+model,well,reading,minutes,subagent_tokens,pictures_looked_at,pages_text_read,rows,note
+sonnet,31/3-1,log picture,1.5,119828,23,0,54,
+sonnet,30/6-5,curve picture,2.0,173181,54,0,46,
+haiku,30/6-5,curve picture,1.6,179640,54,0,60,
+haiku,30/6-5,log picture,1.7,152042,36,0,55,
+haiku,31/3-1,log picture,2.1,136091,23,0,45,
+haiku,31/3-1,curve picture,2.1,165670,41,0,39,
+sonnet,31/3-1,curve picture,2.4,157041,41,0,47,
+sonnet,30/6-5,log picture,3.7,159207,36,0,175,reader made one shell call by mistake (echo); it was denied
+sonnet,25/6-2,log picture,0.5,80171,7,0,18,
+sonnet,35/11-13,log picture,0.6,81304,6,0,40,
+sonnet,25/6-2,curve picture,0.7,112777,25,0,10,
+sonnet,35/11-13,curve picture,0.8,111916,24,0,34,
+haiku,35/11-13,curve picture,0.9,117000,24,0,20,
+haiku,35/11-13,log picture,0.9,87751,6,0,26,
+haiku,25/6-2,curve picture,1.2,121945,25,0,15,
+haiku,35/11-11,curve picture,1.2,149159,41,0,53,
+haiku,25/6-2,log picture,1.4,96008,7,0,18,reader made one tool call outside its task (archive_session on its own session); the call was denied and nothing happened
+sonnet,35/11-13,text,1.7,120101,1,24,48,
+sonnet,35/11-11,curve picture,2.0,149008,41,0,67,
+haiku,35/11-11,log picture,2.1,131746,22,0,57,
+sonnet,35/11-11,log picture,2.2,119248,22,0,65,
+sonnet,35/11-11,text,2.4,142558,9,40,57,"pages read is the reader's own estimate (""about 40"")"
+haiku,35/11-13,text,3.1,177464,4,25,51,
+haiku,35/11-11,text,3.8,179852,10,39,44,
+sonnet,25/6-2,text,2.1,115837,0,34,75,
+haiku,25/6-2,text,3.5,163447,4,26,77,
+sonnet,30/6-5,text,14.4,355244,29,108,804,"pages read is the reader's own estimate (""about 108"")"
+sonnet,31/3-1,text,16.3,367450,26,101,715,
+haiku,30/6-5,text,16.8,488855,21,86,810,"pages read is the reader's own estimate (""about 86"")"
+haiku,31/3-1,text,24.0,601393,20,95,711,"pages read is the reader's own estimate (""about 95""); reader ran one shell command (mkdir for its output folder) against the rules"

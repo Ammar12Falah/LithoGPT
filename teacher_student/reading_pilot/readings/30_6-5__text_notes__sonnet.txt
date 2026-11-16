@@ -1,0 +1,24 @@
+Well 30/6-5, document 118_30_6_5_COMPLETION_REPORT_AND_LOG (183 pages kept). Depth range read: 256-3548 m. Depths are m KBE (K.B.E. 25 m) as printed on the forms.
+
+Forecast vs found tables: none found that compare prognosed and found tops. Page 12 (chronostratigraphy tops), page 13 (age tops) and page 14 (table of lithostratigraphy tops and thickness) are tops tables, not extracted. (Pages 12-14 are in folder 118_30_6_5_COMPLETION_REPORT_AND_LOG.)
+
+Pages read closely (text, with page picture where noted):
+- Geology summary by formation: pages 15-20 (read, no rows made because the depths are fully covered by finer descriptions).
+- Wellsite sample descriptions (cuttings, 10 m then 3 m steps): pages 22-86 (260-3550 m). Row per sample; samples with only 'a/a' written as rows with class taken from the last full description (confidence medium).
+- Conventional core descriptions: pages 88-106 (cores 1-8, 2843.5-2949.8 m); page pictures opened for pages 88-106 because the OCR text of the graphic logs is garbled. Block depths were read from the depth scale of the graphic log and are approximate (about 0.2 m); confidence set to medium.
+- Sidewall core descriptions: pages 108-111 (runs 1-3).
+- Also read: pages 115, 116, 123 (drilling report, used only to check core intervals, not for rows), 140-141 (bit record, no rock).
+
+Kinds of description found: cuttings_sample (wellsite sample description), core (conventional core description), sidewall_core. No interval_summary rows were written: the formation summaries (pages 15-20) and the lithology sentences in the drilling report (pages 115-116) cover only depths already covered by finer descriptions.
+
+Choices and problems:
+- First cuttings sample (260 m): interval starts one 10 m step above (250 m). First sample after coring (2950 m): interval starts 2947 m (3 m step).
+- Misprinted depths: sample '1406' (page 36, between 1903 and 1909) and '3225' (page 77, between 3232 and 3238). Depths left empty, printed value in note.
+- Lost samples: 1927, 2014, 2053 (lost sample), 3358 and 3361 (missing); the next listed sample covers from the last described depth.
+- Missing 10 m / 3 m entries on the forms (310 m, 2506 m, 3280 m, 3490 m): next sample covers from the previous listed depth.
+- Siltstone treated as Shale with Sandstone/Shale as second class. Sand and shale mixtures with similar shares (about 55/45 or 50/50) written as Sandstone/Shale (medium confidence). Where siltstone and limestone share 20 percent each, limestone given as second class.
+- Sidewall core run 3 (page 111): '2813' depth digit blurred; 'a/a' entries refer to the neighbouring described line. Run 2 (page 110): two entries under 2563 m have no printed depth and were not written as rows.
+- Core 8 below about 2949.5 m: 'no rec'. Core 2 recovery 4.8 of 6.4 m, nothing described below 2853.1 m.
+- The last sample row (3550 m, printed) extends 2 m beyond the requested 3548 m.
+- Core 6 recovery is 109 percent; last row ends at 2919.5 m (start of core 7).
+- Not recorded: shows (oil, fluorescence) and porosity remarks; they do not change the rock class.

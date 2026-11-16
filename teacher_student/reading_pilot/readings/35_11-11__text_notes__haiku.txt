@@ -1,0 +1,37 @@
+Reader notes: document 3356_35_11_11_COMPLETION_REPORT (Final Well Report, well 35/11-11, 101 pages kept of 103 in PDF)
+Depth range read: 1245 m to 3215 m (the report's TD is 3225 m; rows run to 3225 m where the Dunlin Group summary ends at TD)
+
+Pages read closely (text file):
+- Front and contents: p0001 not read; p0003, p0009-p0014 (contents, figures and tables list, objectives, biostratigraphy, biostratigraphical tops table on p0014)
+- Lithostratigraphy section 4: p0015-p0024 (all formation summaries from 1245 m to TD)
+- Hydrocarbon shows: p0025-p0026 (Table 5.1, the lithology column used only for the 2540-2550.5 m cuttings row)
+- Coring: p0027 (Table 6.1)
+- Appendix I core descriptions: p0044-p0054 (text), with the page pictures p0045-p0054 opened and read for depth ticks and lithology
+- Appendix II well summary and geological well summary: p0055-p0058 (the graphic log on p0057-p0058 repeats the formation tops in the text; not used as separate rows)
+- Post site survey and standard studies (checked for rock content): p0039, p0041, p0043
+- LOT test sheet: p0101 (lithology entry at the shoe only, not used)
+Page pictures opened: 10 (p0045, p0046, p0047, p0048, p0049, p0050, p0051, p0052, p0053, p0054)
+
+Kinds of description found:
+- Core descriptions (Appendix I, cores 1-9, cut 2550.5-3104 m): the finest descriptions in the report. Used for all core intervals. Core descriptions are per lithology entry with depth ticks only; sub-boundaries inside a core are approximate, read from the picture, and marked in the notes column.
+- Lithostratigraphy by formation (section 4, mostly from ditch cuttings per the report text, but no sample-by-sample list is given): used for depths the cores do not cover.
+- Shows table (Table 5.1): one lithology entry used (2540-2550.5 m, cuttings sandstone), low confidence.
+- No sample-by-sample cuttings descriptions were found in the folder. The report states there are no sidewall cores (section 6.2). Coring is 9 conventional cores.
+
+Not extracted:
+- Prognosis versus actual table (formation tops prognosed vs actual, "FORMATION | PROGNOSED/PROGNOSED | UNCER | ACTUAL"): folder 3356_35_11_11_COMPLETION_REPORT, page p0036 (text lines from p0035 also refer to it). This is a forecast table, so not extracted. I did not read p0036 in full; this is from the text search hit.
+- Biostratigraphic tops table (ages only, p0014) and the age list in section 3: no rock descriptions.
+- Post site survey (p0040-p0041): seismic shallow sand intervals and tops above 1000 m, outside the range; no rock descriptions in range.
+- LOT sheet (p0101): lithology at the casing shoe only.
+- Drilling, mud and logging text (p0060-p0080 etc.), and petrophysics pages: not used.
+
+Reading problems:
+- Core description and core table text is OCR and has errors; the core pictures (p0045-p0054) were read for lithology and depth ticks, and the rows rest on them.
+- Table 6.1 prints core 5 recovery base as "2338.3"; read as 2638.3 from the core header (17.3 m, 100%).
+- Table 5.1 prints a Core 9 depth as "3085-3002"; core 9 description and Table 6.1 give 3085-3104; not used as a row.
+- Core 1 has only 10 cm described (rest stuck in shoe); row kept as Sandstone/Shale, 2550.5-2551.0 m, medium confidence.
+- Depths inside cores are approximate where they come from picture ticks (marked in the note column).
+- Depth unit: all depths are as printed, m MD RKB (lithostratigraphy, RKB 23.5 m above sea level) and m RKB (core reports). No feet conversion needed.
+- Summary sentences for Heather C (2540-2569 m, sandstone and claystone), Oxfordian Turbidites (2569-2616 m) and Heather B/Heather A/Callovian were trimmed to the part not covered by cores, so no duplicate rows for depths the cores cover.
+
+Gaps: 1463-1466 m (not described); 2721-2723 m (core 7 recovery ends 2721, core 8 starts 2723); 3102.3-3119 m is the Rannoch summary (no core below 3102.3 m); no rock description below 3225 m (outside range).

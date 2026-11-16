@@ -1,0 +1,58 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+1245,1253,m RKB,Clst speckled no clear fill; description starts at 1253,Shale,,low,01_log_about_1235-1345m.png
+1253,1321,m RKB,Clst ditto fill with scattered specks; desc 1253-1420 Clst gn gry sft frm,Shale,,high,01_log_about_1235-1345m.png
+1321,1322,m RKB,Thin limestone brick band in claystone,Limestone,,medium,01_log_about_1235-1345m.png
+1322,1328,m RKB,Clst ditto fill,Shale,,high,01_log_about_1235-1345m.png
+1328,1329,m RKB,Thin limestone brick band in claystone,Limestone,,medium,01_log_about_1235-1345m.png
+1329,1420,m RKB,Clst ditto fill,Shale,,high,01_log_about_1235-1345m.png
+1420,1466,m RKB,Clst mod brn and gn gry sft frm; ditto fill,Shale,,high,02_log_about_1335-1445m.png
+1466,1497,m RKB,Tuff marks V and M all through; desc Tuff lt gry dk yel brn,Tuff,,medium,03_log_about_1435-1545m.png
+1497,1498,m RKB,Thin limestone brick band,Limestone,,medium,03_log_about_1435-1545m.png
+1498,1518,m RKB,Tuff marks V and M,Tuff,,medium,03_log_about_1435-1545m.png
+1518,1519,m RKB,Thin limestone brick band,Limestone,,medium,03_log_about_1435-1545m.png
+1519,1523,m RKB,Tuff marks V and M,Tuff,,low,03_log_about_1435-1545m.png
+1523,1582,m RKB,Clst ditto fill with M micaceous marks; sheet prints 1914-1582 for this desc,Shale,,medium,03_log_about_1435-1545m.png
+1582,1624,m RKB,Clst ditto fill with M marks; desc Clst lt olv gry,Shale,,medium,04_log_about_1535-1645m.png
+1624,1679,m RKB,Stipple sandstone; desc Sst clr trnsl Qtz,Sandstone,,high,04_log_about_1535-1645m.png
+1679,1700,m RKB,Clst varicoloured ditto fill with thin brick bands,Shale,Limestone,medium,05_log_about_1635-1745m.png
+1700,1770,m RKB,Clst ditto fill with M marks,Shale,,medium,05_log_about_1635-1745m.png
+1770,1825,m RKB,Clst olv gry dk gry ditto fill,Shale,,high,06_log_about_1735-1845m.png
+1825,1890,m RKB,Stipple sandstone; desc Sst clr crs pred m,Sandstone,,medium,06_log_about_1735-1845m.png
+1890,1897,m RKB,Blank fill with specks,Shale,,low,07_log_about_1835-1945m.png
+1897,1914,m RKB,Stipple sandstone,Sandstone,,medium,07_log_about_1835-1945m.png
+1914,1932,m RKB,Brick limestone with glauconite marks; desc Clst with Ls,Limestone,Shale,low,08_log_about_1935-2045m.png
+1932,1940,m RKB,Shale with limestone stringers; desc Clst,Shale,Limestone,low,08_log_about_1935-2045m.png
+1940,2040,m RKB,Ditto and I marks with thin brick stringers; desc Clst with Ls,Shale,Limestone,low,09_log_about_2035-2145m.png
+2040,2056,m RKB,Ditto and squares; desc Clst,Shale,,medium,10_log_about_2135-2245m.png
+2056,2084,m RKB,Clst ditto and squares; desc 2056-2343 Clst Ls Dol,Shale,,medium,10_log_about_2135-2245m.png
+2084,2086,m RKB,Thin dolomite band; desc Dol dk yel brn,Dolomite,,low,10_log_about_2135-2245m.png
+2086,2110,m RKB,Clst ditto with thin brick stringers,Shale,Limestone,medium,10_log_about_2135-2245m.png
+2110,2126,m RKB,Alternating thin limestone bands and claystone,Limestone,Shale,low,10_log_about_2135-2245m.png
+2126,2140,m RKB,Clst ditto and squares,Shale,,medium,10_log_about_2135-2245m.png
+2140,2245,m RKB,Clst ditto and squares with thin brick stringers; Kyre Fm,Shale,Limestone,medium,11_log_about_2235-2345m.png
+2245,2310,m RKB,Clst ditto and squares with thin brick stringers,Shale,Limestone,medium,12_log_about_2335-2445m.png
+2310,2319,m RKB,Thin limestone bricks,Limestone,Shale,low,12_log_about_2335-2445m.png
+2319,2338,m RKB,Clst ditto,Shale,,medium,12_log_about_2335-2445m.png
+2338,2343,m RKB,Limestone bricks,Limestone,,medium,12_log_about_2335-2445m.png
+2343,2388,m RKB,Limestone bricks; desc Ls wh lt gry arg grd Mrl,Limestone,Marl,high,13_log_about_2435-2545m.png
+2388,2420,m RKB,Limestone bricks; desc Ls arg grd Mrl,Limestone,Marl,medium,13_log_about_2435-2545m.png
+2420,2457,m RKB,Mixed horizontal and brick lines; desc Clst calc and Ls arg grd Mrl,Marl,Limestone,low,13_log_about_2435-2545m.png
+2457,2469,m RKB,Clst brn gry ditto with brick stringers,Shale,Limestone,medium,14_log_about_2535-2645m.png
+2469,2540,m RKB,Clst brn gry ditto; Heather Fm and Draupne Fm,Shale,,medium,14_log_about_2535-2645m.png
+2540,2569,m RKB,Stipple sandstone with M marks; desc Sst m gry N/G 0.56,Sandstone,Shale,medium,14_log_about_2535-2645m.png
+2569,2616,m RKB,Stipple sandstone; desc Sst lt gry N/G 0.62,Sandstone,Shale,medium,15_log_about_2635-2745m.png
+2616,2683,m RKB,Dense silty pattern; desc Sltst dk gry and Clst,Shale,Sandstone/Shale,medium,15_log_about_2635-2745m.png
+2683,2727,m RKB,Stipple sandstone with thin siltstone laminae; desc N/G 0.78,Sandstone,Shale,medium,16_log_about_2735-2845m.png
+2727,2778,m RKB,Dense silty pattern; desc Slst dsky yel brn with Ls,Shale,Sandstone/Shale,medium,16_log_about_2735-2845m.png
+2778,2779,m RKB,Thin limestone brick band,Limestone,,low,17_log_about_2835-2945m.png
+2779,2818,m RKB,Dense silty pattern,Shale,,medium,17_log_about_2835-2945m.png
+2818,2819,m RKB,Thin limestone brick band,Limestone,,low,17_log_about_2835-2945m.png
+2819,2935,m RKB,Dense silty pattern with thin carbonaceous marks; desc Clst,Shale,,medium,17_log_about_2835-2945m.png
+2935,3005,m RKB,Dense silty pattern; desc Clst brn,Shale,,medium,19_log_about_3035-3145m.png
+3005,3009,m RKB,Stipple sandstone and M marks; desc Sst,Sandstone,,low,19_log_about_3035-3145m.png
+3009,3077,m RKB,Claystone with black coal bands; desc Clst dsky yel brn and C blk,Shale,Coal,low,19_log_about_3035-3145m.png
+3077,3085,m RKB,Stipple sandstone; desc Sst clr vf-m N/G 0.70,Sandstone,,medium,20_log_about_3135-3245m.png
+3085,3118,m RKB,Mixed sandstone and siltstone; desc Sst and Sltst N/G 0.19,Sandstone/Shale,,low,20_log_about_3135-3245m.png
+3118,3177,m RKB,Stipple sandstone with squares and M marks; desc Sst,Sandstone,Shale,medium,20_log_about_3135-3245m.png
+3177,3190,m RKB,Dark silty pattern; desc Sltst brn gry,Shale,Sandstone,low,20_log_about_3135-3245m.png
+3190,3215,m RKB,Stipple sandstone; desc Sst lt gry; base of range 3215 (TD 3225),Sandstone,Shale,medium,20_log_about_3135-3245m.png

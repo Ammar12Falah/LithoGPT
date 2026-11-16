@@ -217,3 +217,49 @@ Cost of one practice reader: log picture (1200 m) 5 to 11 minutes; text (whole w
 - Judgment: this is a repair of my tool, not a second try at a reading. No label had been seen, so
   the choice could not be steered by results. The set-aside reading is scored after the freeze and
   shown next to the kept one, so that the size of the effect is in the open.
+
+## The readings of the five test wells (15 November, 22:01 to 23:45)
+
+- Each reading was done by a subagent with a fresh memory. Its task message named only its
+  instruction file, the folder it may open, the depth range (document readers) and the output path.
+- Wells were read in the drawn order, one after the other: 31/3-1, 30/6-5, 35/11-13, 35/11-11, 25/6-2.
+- Text readers were allowed to write their file in parts (wells 1 and 2 have 728 and 826 rows).
+- Rows without a usable depth (printed depths that look like misprints were left empty, as the
+  instructions say): 31/3-1 text 8 cells, 30/6-5 text 6, 35/11-13 text 1, 25/6-2 text 2.
+- 31/3-1 log picture: 349 to 420 m has no class (no rock column drawn above 358 m; "NO RETURN" to 420 m).
+- 35/11-11 log picture: the claystone fill cannot be seen on this black-and-white scan. The reader
+  took Shale from the written descriptions next to the column there and said so in every such row.
+- Tables of forecast depth against found depth (noted, not extracted): 35/11-13 completion report
+  p60 (site survey horizons); 35/11-11 completion report p36; 25/6-2 final well report p23
+  (Figure 4.5). The readers found none for 31/3-1 and 30/6-5.
+- Costs are in `readings/costs.csv`.
+
+## Pause
+
+- 15 November 23:45: I ended my turn to wait for the completion notice of the last reader. The
+  session then sat idle. The container was suspended and started again on 16 November at 06:27,
+  with all working files still on disk. Nothing was rebuilt. Idle time is not counted as work time.
+
+## Part D. Cheaper readers (16 November, 06:29 to 06:55)
+
+- The subagent tool has a model option. I set it to "sonnet" and to "haiku". The tool does not
+  report back the exact model version that served a reader. This environment names the newest
+  models of those two lines as Claude Sonnet 5.5 and Claude Haiku 5.5. I could not check the served
+  version myself.
+- Everything else was the same as for the main readings: the same picture files and pages (nothing
+  was rebuilt), the same instruction files, the same 20 example pictures, the same task messages
+  (only the output path differs), a fresh memory for each reading. For 30/6-5 the log pictures are
+  the corrected ones that the kept main reading used. No tuning and no practice for these models.
+- Before the cheaper readers started, I moved the main readers' output files out of the picture
+  folders, so that no cheaper reader could come across them.
+- All 30 readings (5 wells x 3 kinds x 2 models) were done. They ran several at a time; the tool
+  allows at most 20 readers at once, so the two text readings of well 5 started a few minutes later.
+- I could not find out whether the cheaper models see the pictures at lower detail. They were given
+  the same files.
+- Three cheaper readers broke the tool rules once each. None of it touched data or readings:
+  Haiku, log picture of 25/6-2, tried to archive its own session (denied, nothing happened);
+  Sonnet, log picture of 30/6-5, made one shell call "echo" (denied);
+  Haiku, text of 31/3-1, ran one shell command to make its output folder.
+- The cheaper readers wrote far fewer rows for the pictures (for example 54 and 45 rows for the
+  log picture of 31/3-1, against 291 by the main reader) and were about five to ten times faster.
+- Costs are in `readings/costs_partd.csv`. Their combined readings were built with the same rule.

@@ -1,0 +1,41 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+2901,2989,m RKB,"CLAY/CLAYSTONE (Claystone 2902-2987 m)",Shale,,high,01_log_about_2892-3002m.png
+2989,2991.5,m RKB,"SILT/SILTSTONE (siltstone with thin calcite cemented sandstone beds)",Shale,Sandstone/Shale,medium,01_log_about_2892-3002m.png
+2991.5,2993,m RKB,SAND/SANDSTONE thin bed,Sandstone,,medium,01_log_about_2892-3002m.png
+2993,2996,m RKB,SILT/SILTSTONE,Shale,Sandstone/Shale,medium,01_log_about_2892-3002m.png
+2996,3001.5,m RKB,CLAY/CLAYSTONE,Shale,,medium,01_log_about_2892-3002m.png
+3001.5,3003.5,m RKB,SAND/SANDSTONE,Sandstone,,medium,02_log_about_2992-3102m.png
+3003.5,3013,m RKB,CLAY/CLAYSTONE,Shale,,high,02_log_about_2992-3102m.png
+3013,3023,m RKB,"SILT/SILTSTONE (Heather Fm; Sltst description)",Shale,Sandstone/Shale,high,02_log_about_2992-3102m.png
+3023,3024,m RKB,SAND/SANDSTONE thin bed,Sandstone,,low,02_log_about_2992-3102m.png
+3024,3029,m RKB,SILT/SILTSTONE,Shale,Sandstone/Shale,high,02_log_about_2992-3102m.png
+3029,3031,m RKB,SAND/SANDSTONE thin bed,Sandstone,,medium,02_log_about_2992-3102m.png
+3031,3033,m RKB,SILT/SILTSTONE,Shale,Sandstone/Shale,medium,02_log_about_2992-3102m.png
+3033,3034,m RKB,SAND/SANDSTONE thin bed,Sandstone,,low,02_log_about_2992-3102m.png
+3034,3036,m RKB,SILT/SILTSTONE,Shale,Sandstone/Shale,medium,02_log_about_2992-3102m.png
+3036,3037,m RKB,SAND/SANDSTONE thin bed,Sandstone,,low,02_log_about_2992-3102m.png
+3037,3092.5,m RKB,"SILT/SILTSTONE (j54; Sltst description)",Shale,Sandstone/Shale,high,02_log_about_2992-3102m.png
+3092.5,3093.5,m RKB,SAND/SANDSTONE thin bed,Sandstone,,low,02_log_about_2992-3102m.png
+3093.5,3096,m RKB,SILT/SILTSTONE,Shale,Sandstone/Shale,medium,02_log_about_2992-3102m.png
+3096,3110,m RKB,"SAND/SANDSTONE (Sandstone with thin siltstones 3096-3206 m)",Sandstone,,high,02_log_about_2992-3102m.png
+3110,3112,m RKB,SILT/SILTSTONE band,Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3112,3129.5,m RKB,SAND/SANDSTONE,Sandstone,,high,03_log_about_3092-3202m.png
+3129.5,3132,m RKB,SILT/SILTSTONE band,Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3132,3137.5,m RKB,SAND/SANDSTONE,Sandstone,,high,03_log_about_3092-3202m.png
+3137.5,3139,m RKB,SILT/SILTSTONE band,Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3139,3161,m RKB,SAND/SANDSTONE,Sandstone,Sandstone/Shale,high,03_log_about_3092-3202m.png
+3161,3165,m RKB,SILT/SILTSTONE band,Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3165,3185,m RKB,SAND/SANDSTONE,Sandstone,,high,03_log_about_3092-3202m.png
+3185,3186.5,m RKB,SILT/SILTSTONE band,Shale,Sandstone/Shale,medium,03_log_about_3092-3202m.png
+3186.5,3199,m RKB,SAND/SANDSTONE,Sandstone,,high,03_log_about_3092-3202m.png
+3199,3200,m RKB,SILT/SILTSTONE thin band,Shale,Sandstone/Shale,low,03_log_about_3092-3202m.png
+3200,3206.5,m RKB,SAND/SANDSTONE,Sandstone,,high,04_log_about_3192-3302m.png
+3206.5,3233,m RKB,"SILT/SILTSTONE (Siltstone with limestone stringers 3205-3291.5 m)",Shale,Sandstone/Shale,high,04_log_about_3192-3302m.png
+3233,3234,m RKB,LIMESTONE stringer,Limestone,,medium,04_log_about_3192-3302m.png
+3234,3245,m RKB,SILT/SILTSTONE,Shale,Sandstone/Shale,high,04_log_about_3192-3302m.png
+3245,3246,m RKB,LIMESTONE stringer,Limestone,,medium,04_log_about_3192-3302m.png
+3246,3253,m RKB,SILT/SILTSTONE,Shale,Sandstone/Shale,high,04_log_about_3192-3302m.png
+3253,3254,m RKB,LIMESTONE stringer,Limestone,,medium,04_log_about_3192-3302m.png
+3254,3262,m RKB,SILT/SILTSTONE,Shale,Sandstone/Shale,high,04_log_about_3192-3302m.png
+3262,3263,m RKB,LIMESTONE stringer,Limestone,,medium,04_log_about_3192-3302m.png
+3263,3271,m RKB,SILT/SILTSTONE,Shale,Sandstone/Shale,high,04_log_about_3192-3302m.png

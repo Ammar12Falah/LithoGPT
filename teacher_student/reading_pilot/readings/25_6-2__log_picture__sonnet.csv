@@ -1,0 +1,19 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+1924,1984,m RKB,"Claystone pattern with tuff marks all through; description TUFFACEOUS CLAYSTONE",Tuff,Shale,medium,01_log_about_1915-2025m.png
+1984,2053,m RKB,"Claystone; description claystone w/ minor limestone beds (none drawn)",Shale,,high,01_log_about_1915-2025m.png
+2053,2073,m RKB,"Claystone w/ minor siltstone, sandstone, dolomite",Shale,,high,02_log_about_2015-2125m.png
+2073,2087,m RKB,"Shaly siltstone pattern (dotted); description SLTST grading to VF sst",Shale,Sandstone/Shale,medium,02_log_about_2015-2125m.png
+2087,2126,m RKB,"Claystone; thin arg sandstone near 2099-2101",Shale,Sandstone/Shale,medium,02_log_about_2015-2125m.png
+2126,2154.5,m RKB,"Claystone",Shale,,high,03_log_about_2115-2225m.png
+2154.5,2161,m RKB,"Marl pattern; calcareous claystone grading to marl",Marl,Shale,medium,03_log_about_2115-2225m.png
+2161,2207,m RKB,"Sandstone (dotted); silty sandstone",Sandstone,Shale,medium,03_log_about_2115-2225m.png
+2207,2232,m RKB,"Limestone",Limestone,,high,03_log_about_2115-2225m.png
+2232,2239,m RKB,"Marl",Marl,,high,04_log_about_2215-2325m.png
+2239,2249,m RKB,"Calcareous claystone interbedded w/ marl",Shale,Marl,medium,04_log_about_2215-2325m.png
+2249,2255,m RKB,"Marl pattern; marl in claystone-marl interval",Marl,Shale,medium,04_log_about_2215-2325m.png
+2255,2261.5,m RKB,"Claystone (CLST: sl silty mod brn)",Shale,,medium,04_log_about_2215-2325m.png
+2261.5,2272,m RKB,"Limestone",Limestone,,high,04_log_about_2215-2325m.png
+2272,2278,m RKB,"Marl",Marl,,high,04_log_about_2215-2325m.png
+2278,2324,m RKB,"Claystone",Shale,,high,04_log_about_2215-2325m.png
+2324,2345,m RKB,"Sandstone (dotted); silty sandstone",Sandstone,Shale,medium,05_log_about_2315-2425m.png
+2345,2370,m RKB,"Claystone",Shale,,high,05_log_about_2315-2425m.png

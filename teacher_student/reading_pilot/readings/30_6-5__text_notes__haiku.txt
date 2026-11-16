@@ -1,0 +1,59 @@
+NOTES - reader output for well 30/6-5 (document 118_30_6_5_COMPLETION_REPORT_AND_LOG)
+Document address: https://factpages.sodir.no/pbl/wellbore_documents/118_30_6_5_COMPLETION_REPORT_AND_LOG.pdf
+Folder: 183 pages kept (of 188 in the PDF). Depth range read: 256-3548 m (rows reach to T.D. 3550 m at the end, flagged in the row).
+
+OUTPUT FILES
+reading_part01.csv to reading_part12.csv, each with the same header. Parts 01-08 and 11 are the cuttings (wellsite sample) rows in depth order. Part 09 (conventional cores), part 10 (sidewall cores) and part 12 (three gap fillers from the formation summary) overlap the cuttings depth range. Joined in file-name order the file is therefore NOT globally sorted by depth; sort by depth_from after joining. Each part is sorted by depth internally.
+
+PAGES READ CLOSELY (text layer)
+- Table of contents p4; drilling chapter headers p5 (not used); age tops p13 (not used as rows).
+- Lithostratigraphic tops table p14 (tops only, no description; not used as rows).
+- Lithological summary by formation p15-p20 (used only for gap fillers, see below).
+- Wellsite sample descriptions p21-p86 (all pages, one row per listed sample).
+- Conventional core description headings p87-p88; core text read from page pictures (see below).
+- Sidewall core description p107 (heading only), p108, p109, p110, p111.
+- Drilling summary p113 (checked for a prognosis table: only the word 'prognosed' for drilling days; no formation-top forecast table found in the folder).
+- Well history narrative p115-p116: drilling/well-history text, NOT used as rock rows (excluded by the instructions).
+- Text pages read in total: about 86.
+- Not read: p117-p142 and p143-p183 (drilling, casing, logs, bit record and lithology column, appendices). p140 and p143 are the bit record and lithology column of the drilling chapter (excluded).
+
+PAGE PICTURES OPENED (21)
+p28 (check of the remark 'kgl 3m fm 1122-1125'), p84 (check of sample values 3472-3502), core pages p88, p89, p90, p91, p92, p93, p94, p95, p96, p97, p98, p99, p100, p101, p102, p103, p104, p105, p106.
+
+KINDS FOUND
+- cuttings_sample: wellsite sample descriptions, 250-3550 m, every listed sample (about 680 rows). Intervals run from the previous printed sample depth to the sample depth (first sample: one sampling step, 10 m, above it).
+- core: conventional core 1 (2843.5-2848.3), core 2 (2848.3-2854.7), core 3 (2871.5-2874.5), core 4 (2874.5-2893.7), core 5 (2893.7-2909.05), core 6 (2909.5-2919.1), core 7 (2919.5-2938.7), core 8 (2938.7-2949.8). Core 8 page 3 reads 'no rec' at 2950 m (no row).
+- sidewall_core: runs 1, 4, 2, 3 (sidewall core descriptions, single depth each).
+- interval_summary: only three gap fillers (1924-1927, 2011-2014, 2050-2053), where a lost sample left a gap. No other interval summary rows were needed because the sample rows cover the range.
+
+CONVENTIONS USED
+- Rock classes: sst/sd/sand/sd-sst -> Sandstone; clyst/clay/sh/shale -> Shale; siltst/sltst -> Shale with Sandstone/Shale written in second_class (when siltstone is the second rock, or the main rock with no other second rock of a fifth or more); marl -> Marl; lst/ls/dol -> Limestone; coal -> Coal; tuff -> Tuff; very argillaceous sandstone -> Sandstone/Shale; conglomeratic sandstone -> Sandstone.
+- Shares are summed by class before choosing the main rock. Ties go to the first-named rock. Second_class only if a second class has about a fifth (20 percent) or more; 15 percent or less is left empty.
+- 'a/a' (as above): the composition is the one of the sample named in note; confidence medium.
+- Traces (Tr) add no row and no second class.
+- 'Shows' remarks (fluorescence, cut, gas, mud weight, W.T., wiper trip, drilling break, flows) are not rock descriptions and are not used.
+
+DEPTH PROBLEMS (printed values not corrected; depth cell left empty where needed)
+- 1406 printed at the 1903 sample, probably 1906 (3 m step). Row 1903 has depth_to empty; the next row 1909 has depth_from empty.
+- 1927 sample lost: the 1930 row starts at 1927 (lost sample depth). 1924-1927 filled from the summary (gap filler).
+- 2014 and 2053 samples lost: rows start at those depths; 2011-2014 and 2050-2053 filled from the summary (gap fillers).
+- 3225 printed after 3232 (probably 3235): row 3225 has depth_to empty; row 3238 has depth_from empty.
+- 4813 printed for a sidewall core (run 3) after 2855: probably 2813; both depths left empty.
+- 4.2942 printed for a sidewall core: read as 2942 (stray '4.' treated as OCR artefact; medium confidence).
+- '1880, 65' read as 1880 (65 is the lithology percent); '11720' read as 1720; '2959-]' read as 2959; 'ist' read as lst; '1912 65°' read as 65.
+- Two sidewall cores (run 2, between 2563 and 2520 m) have no printed depth: both rows have empty depths.
+- Sample depths not printed in the sequence: 310 m (300-320 row), 2506 m (2503-2509 row), 3280 m (3277-3283 row), 3490 m (3487-3493 row), 3358 and 3361 m (3355-3364 row: 'sample missing due to pooh without circulation'). Rows span the gap and are noted.
+- Sampling step changes to 3 m at 1900 m. Samples from 2800 m onward are at 3 m steps in most of the list.
+
+CORE ROWS - BOUNDARIES ARE APPROXIMATE
+Core description entries are placed against a depth scale in the page picture and have no printed interval. Boundaries are estimated from that scale (approximately 0.1-0.5 m) and every core row has confidence low. Core 1-8 headers (intervals and recovery) are printed and were used as the outer limits. Seal peel intervals (I 2877.0-77.3, II 2883.4-83.7, III 2891.2-91.5, 2846.08-2846.35 m) are recorded in notes only.
+
+OVERLAPS
+- Wellsite sample at 2872 m (2869-2872 row) overlaps the top of core 3 (2871.5 m). Noted.
+- Wellsite sample at 2950 m (2947-2950 row) overlaps the end of core 8 (2949.8 m); its top is taken one 3 m step above, as for a first sample. Noted.
+- Core 1 and core 2 lie within the wellsite sample depths of 2842-2848 m and 2848-2854 m (both sets are kept; core rows use the core description).
+
+NOT EXTRACTED
+- Drilling, mud, pressure, testing, seismic and forecast content (p113-p116 and later).
+- Formation tops table (p14) and formation summary text, except as gap fillers (p16).
+- Lithology column (drilling chapter, p140-p143).

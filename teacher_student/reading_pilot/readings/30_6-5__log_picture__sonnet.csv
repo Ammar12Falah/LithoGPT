@@ -1,0 +1,176 @@
+depth_from,depth_to,depth_unit_ref,rock_as_drawn,rock_class,second_class,confidence,picture_file
+256,257,m,"Sand/Sandstone pattern (clay 'clay: lt-med gy' text nearby)",Sandstone,,medium,01_log_about_247-357m.png
+257,260,m,Clay/Claystone lines,Shale,,medium,01_log_about_247-357m.png
+260,266,m,Sand/Sandstone,Sandstone,,medium,01_log_about_247-357m.png
+266,276,m,Clay/Claystone lines with shell/foram symbols,Shale,,medium,01_log_about_247-357m.png
+276,281,m,Sand/Sandstone,Sandstone,,medium,01_log_about_247-357m.png
+281,284,m,Clay/Claystone lines,Shale,,medium,01_log_about_247-357m.png
+284,289,m,Sand/Sandstone,Sandstone,,medium,01_log_about_247-357m.png
+289,325,m,Clay/Claystone lines with silt marks,Shale,,medium,01_log_about_247-357m.png
+325,329,m,Sand/Sandstone,Sandstone,,medium,01_log_about_247-357m.png
+329,340,m,Clay/Claystone lines (top Pliocene 337 m),Shale,,medium,01_log_about_247-357m.png
+340,353,m,Sand/Sandstone with glauconite mark,Sandstone,,medium,01_log_about_247-357m.png
+353,368,m,Clay/Claystone lines,Shale,,medium,02_log_about_347-457m.png
+368,375,m,Sand and clay in thin alternating beds,Sandstone/Shale,,low,02_log_about_347-457m.png
+375,389,m,Clay/Claystone lines,Shale,,medium,02_log_about_347-457m.png
+389,393,m,Sand/Sandstone,Sandstone,,medium,02_log_about_347-457m.png
+393,405,m,Clay/Claystone lines,Shale,,medium,02_log_about_347-457m.png
+405,408,m,Sand/Sandstone,Sandstone,,medium,02_log_about_347-457m.png
+408,412,m,Clay/Claystone lines,Shale,,medium,02_log_about_347-457m.png
+412,416,m,Sand/Sandstone,Sandstone,,medium,02_log_about_347-457m.png
+416,420,m,Clay/Claystone lines,Shale,,medium,02_log_about_347-457m.png
+420,425,m,Sand/Sandstone,Sandstone,,medium,02_log_about_347-457m.png
+425,439,m,Clay/Claystone lines,Shale,,medium,02_log_about_347-457m.png
+439,442,m,Sand/Sandstone,Sandstone,,medium,02_log_about_347-457m.png
+442,447,m,Clay/Claystone lines,Shale,,medium,02_log_about_347-457m.png
+447,453,m,Sand/Sandstone,Sandstone,,medium,02_log_about_347-457m.png
+453,465,m,Clay/Claystone lines,Shale,,medium,03_log_about_447-557m.png
+465,492,m,Sand/Sandstone with thin clay lines,Sandstone,Shale,low,03_log_about_447-557m.png
+492,499,m,Sand with clay lines at base,Sandstone/Shale,,low,03_log_about_447-557m.png
+499,511,m,Sand/Sandstone with a few clay lines,Sandstone,Shale,low,03_log_about_447-557m.png
+511,514,m,Clay/Claystone lines,Shale,,low,03_log_about_447-557m.png
+514,518,m,Sand/Sandstone,Sandstone,,medium,03_log_about_447-557m.png
+518,522,m,Clay/Claystone lines,Shale,,low,03_log_about_447-557m.png
+522,526,m,Sand/Sandstone,Sandstone,,medium,03_log_about_447-557m.png
+526,533,m,Clay lines with silt dashes,Shale,,low,03_log_about_447-557m.png
+533,542,m,Sand/Sandstone with foram symbol,Sandstone,,medium,03_log_about_447-557m.png
+542,555,m,Clay/Claystone lines,Shale,,medium,03_log_about_447-557m.png
+555,566,m,Sand with thin clay lines,Sandstone,Shale,low,04_log_about_547-657m.png
+566,570,m,Clay/Claystone lines,Shale,,low,04_log_about_547-657m.png
+570,577,m,Sand/Sandstone,Sandstone,,medium,04_log_about_547-657m.png
+577,582,m,Clay/Claystone lines,Shale,,low,04_log_about_547-657m.png
+582,627,m,Sand/Sandstone with thin clay lines and glauconite/shell marks,Sandstone,Shale,low,04_log_about_547-657m.png
+627,634,m,Clay/Claystone lines,Shale,,medium,04_log_about_547-657m.png
+634,654,m,Sand/Sandstone with thin clay lines,Sandstone,Shale,medium,04_log_about_547-657m.png
+654,659,m,Clay/Claystone lines,Shale,,medium,05_log_about_647-757m.png
+659,686,m,Sand/Sandstone with thin clay lines,Sandstone,Shale,low,05_log_about_647-757m.png
+686,695,m,Clay/Claystone lines,Shale,,medium,05_log_about_647-757m.png
+695,698,m,Sand/Sandstone,Sandstone,,medium,05_log_about_647-757m.png
+698,709,m,Clay/Claystone lines,Shale,,medium,05_log_about_647-757m.png
+709,712,m,Sand/Sandstone,Sandstone,,medium,05_log_about_647-757m.png
+712,719,m,Clay/Claystone lines,Shale,,medium,05_log_about_647-757m.png
+719,749,m,"Sand/Sandstone (Utsira Fm from 726 m; text: sand clr qtz, f-med)",Sandstone,,high,05_log_about_647-757m.png
+749,754,m,Clay lines with small limestone mark,Shale,Limestone,low,05_log_about_647-757m.png
+754,849,m,Sand/Sandstone with occasional thin clay lines,Sandstone,Shale,high,06_log_about_747-857m.png
+849,853,m,Clay/Claystone lines,Shale,,medium,07_log_about_847-957m.png
+853,864,m,Sand/Sandstone,Sandstone,,medium,07_log_about_847-957m.png
+864,868,m,Clay/Claystone lines,Shale,,medium,07_log_about_847-957m.png
+868,879,m,Sand/Sandstone,Sandstone,,medium,07_log_about_847-957m.png
+879,891,m,"Clay/Claystone lines (Hordaland Gp top 879 m; text claystone)",Shale,,high,07_log_about_847-957m.png
+891,903,m,Silt/Siltstone dashes and clay lines (text siltstone),Shale,Sandstone/Shale,medium,07_log_about_847-957m.png
+903,947,m,Silt/Siltstone dashes with dots and clay lines (text sandstone mentioned but drawn as silt/clay),Shale,Sandstone/Shale,low,07_log_about_847-957m.png
+947,953,m,Sand/Sandstone,Sandstone,,medium,07_log_about_847-957m.png
+953,957,m,Clay/Claystone lines,Shale,,medium,08_log_about_947-1057m.png
+957,963,m,Sand/Sandstone with foram symbol,Sandstone,,medium,08_log_about_947-1057m.png
+963,967,m,Clay/Claystone lines,Shale,,medium,08_log_about_947-1057m.png
+967,974,m,Sand/Sandstone,Sandstone,,medium,08_log_about_947-1057m.png
+974,976,m,Limestone brick pattern,Limestone,,medium,08_log_about_947-1057m.png
+976,985,m,Sand/Sandstone with glauconite mark,Sandstone,,medium,08_log_about_947-1057m.png
+985,990,m,Clay/Claystone lines,Shale,,medium,08_log_about_947-1057m.png
+990,993,m,Sand/Sandstone,Sandstone,,low,08_log_about_947-1057m.png
+993,1000,m,Clay/Claystone lines,Shale,,medium,08_log_about_947-1057m.png
+1000,1008,m,Sand/Sandstone,Sandstone,,medium,08_log_about_947-1057m.png
+1008,1010,m,Clay/Claystone lines,Shale,,low,08_log_about_947-1057m.png
+1010,1015,m,Sand/Sandstone with shell mark,Sandstone,,medium,08_log_about_947-1057m.png
+1015,1017,m,Clay/Claystone lines,Shale,,low,08_log_about_947-1057m.png
+1017,1021,m,Sand/Sandstone,Sandstone,,medium,08_log_about_947-1057m.png
+1021,1026,m,Clay/Claystone lines,Shale,,medium,08_log_about_947-1057m.png
+1026,1040,m,Sand/Sandstone with clay lines and foram/glauconite marks,Sandstone,Shale,low,08_log_about_947-1057m.png
+1040,1047,m,Clay/Claystone lines,Shale,,medium,08_log_about_947-1057m.png
+1047,1057,m,Sand/Sandstone with thin clay lines,Sandstone,Shale,medium,09_log_about_1047-1157m.png
+1057,1062,m,Clay/Claystone lines,Shale,,medium,09_log_about_1047-1157m.png
+1062,1065,m,Sand/Sandstone,Sandstone,,medium,09_log_about_1047-1157m.png
+1065,1093,m,Clay/Claystone lines with small marks,Shale,,high,09_log_about_1047-1157m.png
+1093,1094,m,Limestone brick pattern,Limestone,,medium,09_log_about_1047-1157m.png
+1094,1118,m,Clay/Claystone lines,Shale,,high,09_log_about_1047-1157m.png
+1118,1121,m,Limestone brick pattern,Limestone,,medium,09_log_about_1047-1157m.png
+1121,1144,m,Clay/Claystone lines,Shale,,high,09_log_about_1047-1157m.png
+1144,1149,m,Limestone brick pattern,Limestone,,medium,09_log_about_1047-1157m.png
+1149,1173,m,Clay/Claystone lines,Shale,,high,10_log_about_1147-1257m.png
+1173,1174,m,Limestone stringer,Limestone,,medium,10_log_about_1147-1257m.png
+1174,1214,m,Clay/Claystone lines,Shale,,high,10_log_about_1147-1257m.png
+1214,1215,m,Limestone stringer,Limestone,,medium,10_log_about_1147-1257m.png
+1215,1242,m,Clay/Claystone lines,Shale,,high,10_log_about_1147-1257m.png
+1242,1243,m,Limestone stringer,Limestone,,medium,10_log_about_1147-1257m.png
+1243,1255,m,Clay/Claystone lines,Shale,,high,10_log_about_1147-1257m.png
+1255,1285,m,Clay/Claystone lines with several small limestone marks,Shale,Limestone,medium,11_log_about_1247-1357m.png
+1285,1346,m,Clay/Claystone lines with a small limestone mark near 1304,Shale,,high,11_log_about_1247-1357m.png
+1346,1372,m,"Sand/Sandstone (text sandst clr qtz, f-crs; top Eocene 1372 m)",Sandstone,,high,11_log_about_1247-1357m.png
+1372,1403,m,Silt/Siltstone dashes and clay lines (text claystone and siltstone),Shale,Sandstone/Shale,medium,12_log_about_1347-1457m.png
+1403,1406,m,Limestone brick pattern (text limest crm-buff),Limestone,,medium,12_log_about_1347-1457m.png
+1406,1459,m,Silt/clay dashes with small limestone marks,Shale,Sandstone/Shale,low,12_log_about_1347-1457m.png
+1459,1479,m,Sand dots and clay dashes in thin alternation,Sandstone/Shale,,low,13_log_about_1447-1557m.png
+1479,1503,m,Clay lines with silt dots and mica mark,Shale,Sandstone/Shale,low,13_log_about_1447-1557m.png
+1503,1504,m,Limestone brick pattern,Limestone,,medium,13_log_about_1447-1557m.png
+1504,1526,m,Clay lines with small limestone marks,Shale,Limestone,low,13_log_about_1447-1557m.png
+1526,1533,m,Sand dots with clay lines,Sandstone/Shale,,low,13_log_about_1447-1557m.png
+1533,1551,m,Clay lines with silt dots and small limestone marks,Shale,Sandstone/Shale,low,13_log_about_1447-1557m.png
+1551,1562,m,Sand dots with clay dash lines,Sandstone/Shale,,low,14_log_about_1547-1657m.png
+1562,1564,m,Limestone brick pattern,Limestone,,medium,14_log_about_1547-1657m.png
+1564,1577,m,Clay lines with silt dots,Shale,Sandstone/Shale,low,14_log_about_1547-1657m.png
+1577,1597,m,Sand dots with a few clay lines (top Early Eocene 1582 m),Sandstone,Shale,low,14_log_about_1547-1657m.png
+1597,1608,m,Clay lines with silt dots,Shale,Sandstone/Shale,low,14_log_about_1547-1657m.png
+1608,1614,m,Sand dots with fossil and shell marks,Sandstone,,medium,14_log_about_1547-1657m.png
+1614,1628,m,Clay lines with silt dots,Shale,Sandstone/Shale,low,14_log_about_1547-1657m.png
+1628,1639,m,Sand dots with clay lines,Sandstone/Shale,,low,14_log_about_1547-1657m.png
+1639,1677,m,Clay lines with silt dots and pyrite marks,Shale,Sandstone/Shale,low,14_log_about_1547-1657m.png
+1677,1681,m,Sand dots with clay lines,Sandstone/Shale,,low,15_log_about_1647-1757m.png
+1681,1689,m,Clay lines,Shale,,medium,15_log_about_1647-1757m.png
+1689,1694,m,Sand dots with clay lines,Sandstone/Shale,,low,15_log_about_1647-1757m.png
+1694,1703,m,Clay lines with silt dots,Shale,Sandstone/Shale,low,15_log_about_1647-1757m.png
+1703,1707,m,Sand/Sandstone,Sandstone,,low,15_log_about_1647-1757m.png
+1707,1713,m,Clay lines,Shale,,medium,15_log_about_1647-1757m.png
+1713,1723,m,Sand dots with clay lines,Sandstone,Shale,low,15_log_about_1647-1757m.png
+1723,1733,m,Clay lines,Shale,,medium,15_log_about_1647-1757m.png
+1733,1736,m,Sand dots with clay lines,Sandstone/Shale,,low,15_log_about_1647-1757m.png
+1736,1760,m,Clay lines with silt dots,Shale,Sandstone/Shale,low,15_log_about_1647-1757m.png
+1760,1766,m,Sand/Sandstone,Sandstone,,medium,16_log_about_1747-1857m.png
+1766,1768,m,Clay lines,Shale,,low,16_log_about_1747-1857m.png
+1768,1774,m,Sand/Sandstone,Sandstone,,medium,16_log_about_1747-1857m.png
+1774,1895,m,"Clay/Claystone lines, brick red, with limestone stringers (text)",Shale,Limestone,high,16_log_about_1747-1857m.png
+1895,1908,m,Clay lines with scattered tuff marks,Shale,Tuff,medium,17_log_about_1847-1957m.png
+1908,1909,m,Limestone brick pattern (top Balder 1908 m),Limestone,,medium,17_log_about_1847-1957m.png
+1909,1941,m,Tuff marks through claystone (text tuff lt-med gy),Tuff,,medium,17_log_about_1847-1957m.png
+1941,2023,m,Clay lines with silt dots and small limestone marks (Balder Fm),Shale,Limestone,medium,17_log_about_1847-1957m.png
+2023,2123,m,Clay lines with silt dots and small limestone marks (Sele Fm),Shale,Limestone,medium,18_log_about_1947-2057m.png
+2123,2203,m,Clay lines with silt dots (Lista Fm),Shale,Sandstone/Shale,medium,19_log_about_2047-2157m.png
+2203,2308,m,Clay lines with silt dots (Shetland Gp; text claystone and limestone),Shale,Limestone,medium,20_log_about_2147-2257m.png
+2308,2452,m,Clay lines with repeated wavy symbols; text says marl so drawn and written disagree,Shale,Marl,low,20_log_about_2147-2257m.png
+2452,2566,m,Clay lines with small marks (Kimmeridge Clay),Shale,,high,22_log_about_2347-2457m.png
+2566,2593,m,Clay lines with silt dashes and dots,Shale,Sandstone/Shale,medium,24_log_about_2547-2657m.png
+2593,2643,m,Clay lines (Heather Fm),Shale,,high,24_log_about_2547-2657m.png
+2643,2650,m,Silt dash-dot pattern,Shale,Sandstone/Shale,medium,24_log_about_2547-2657m.png
+2650,2682,m,Clay lines with pyrite and glauconite marks,Shale,,high,25_log_about_2647-2757m.png
+2682,2807,m,Silt dash-dot-dot pattern in claystone (text claystone grading into siltstone),Shale,Sandstone/Shale,medium,25_log_about_2647-2757m.png
+2807,2820,m,Clay lines,Shale,,medium,26_log_about_2747-2857m.png
+2820,2841,m,Sand dots with shale dashes,Sandstone,Shale,medium,26_log_about_2747-2857m.png
+2841,2852,m,Sand dots with coal marks (top Brent 2841 m),Sandstone,Coal,medium,26_log_about_2747-2857m.png
+2852,2867,m,Sand dots alternating with shale dashes,Sandstone/Shale,,medium,27_log_about_2847-2957m.png
+2867,2895,m,"Sand dots with coal marks (Etive Fm, text sandst; lams of coal)",Sandstone,Coal,high,27_log_about_2847-2957m.png
+2895,2941,m,"Sand dots with mica and pyrite marks (Drake Fm, text sandst)",Sandstone,,high,27_log_about_2847-2957m.png
+2941,2947,m,Shale dashes,Shale,Sandstone/Shale,medium,27_log_about_2847-2957m.png
+2947,2956,m,Sand/Sandstone,Sandstone,,high,28_log_about_2947-3057m.png
+2956,2969,m,Shale dashes (text shale),Shale,,high,28_log_about_2947-3057m.png
+2969,2988,m,Shale dashes with silt dots (text shale v slty),Shale,Sandstone/Shale,medium,28_log_about_2947-3057m.png
+2988,3011,m,Sand dots with shale dashes (text sandst),Sandstone,Shale,medium,28_log_about_2947-3057m.png
+3011,3024,m,Shale dashes,Shale,,high,28_log_about_2947-3057m.png
+3024,3041,m,Sand dots with shale dashes and glauconite mark,Sandstone,Shale,medium,28_log_about_2947-3057m.png
+3041,3067,m,Shale dashes,Shale,,high,28_log_about_2947-3057m.png
+3067,3071,m,Limestone brick pattern,Limestone,,medium,29_log_about_3047-3157m.png
+3071,3079,m,Sand/Sandstone (Cook Fm 3071 m),Sandstone,,high,29_log_about_3047-3157m.png
+3079,3085,m,Sand dots with small mark and clay lines,Sandstone/Shale,,low,29_log_about_3047-3157m.png
+3085,3087,m,Limestone brick pattern,Limestone,,medium,29_log_about_3047-3157m.png
+3087,3113,m,Sand/Sandstone with mica and pyrite marks,Sandstone,Shale,medium,29_log_about_3047-3157m.png
+3113,3123,m,Shale dashes with silt dots,Shale,Sandstone/Shale,medium,29_log_about_3047-3157m.png
+3123,3131,m,Shale dashes (Amundsen/Burton 3123 m),Shale,,high,29_log_about_3047-3157m.png
+3131,3148,m,Sand/Sandstone with mica mark,Sandstone,,high,29_log_about_3047-3157m.png
+3148,3223,m,Sand dots with thin shale dashes,Sandstone,Shale,medium,29_log_about_3047-3157m.png
+3223,3316,m,"Sand/Sandstone with coal marks (Statfjord Fm 3223 m)",Sandstone,Coal,high,30_log_about_3147-3257m.png
+3316,3326,m,Sand dots with shale dashes (Eiriksson 3316 m),Sandstone/Shale,,medium,31_log_about_3247-3357m.png
+3326,3392,m,Sand/Sandstone with small limestone marks,Sandstone,Limestone,medium,31_log_about_3247-3357m.png
+3392,3412,m,Sand dots with shale dashes (Raude 3392 m),Sandstone/Shale,,medium,32_log_about_3347-3457m.png
+3412,3447,m,Sand/Sandstone with thin shale dashes,Sandstone,Shale,medium,32_log_about_3347-3457m.png
+3447,3473,m,Sand dots alternating with shale dashes,Sandstone/Shale,,medium,33_log_about_3447-3557m.png
+3473,3535,m,"Clay lines and silt dash-dot (Cormorant 3472 m, text claystone v slty)",Shale,Sandstone/Shale,medium,33_log_about_3447-3557m.png
+3535,3541,m,Sand/Sandstone,Sandstone,,medium,33_log_about_3447-3557m.png
+3541,3548,m,Sand dots with shale dashes,Sandstone/Shale,,low,33_log_about_3447-3557m.png

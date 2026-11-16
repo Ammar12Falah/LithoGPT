@@ -1,0 +1,16 @@
+depth_from,depth_to,rock_class,confidence
+1925,1927,Shale,low
+1927,1984,Tuff,low
+1984,2053,Shale,medium
+2053,2118,Sandstone/Shale,low
+2118,2140,Sandstone,low
+2140,2156,Sandstone/Shale,low
+2156,2168,Sandstone,low
+2168,2207,Shale,low
+2207,2239,Sandstone,low
+2239,2256,Shale,medium
+2256,2278,Shale,low
+2278,2300,Shale,medium
+2300,2324,Sandstone/Shale,low
+2324,2344,Sandstone,medium
+2344,2368,Shale,low
