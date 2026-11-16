@@ -1,0 +1,4 @@
+metric,teacher_reading,teacher_pct,ten_well_pct,all_well_pct,all_shale_pct,curve_picture_pct,teacher_vs_ten_well,teacher_vs_all_well,teacher_minus_all_shale,mark2,curve_picture_minus_ten_well,mark3,curve_picture_minus_all_well,curve_picture_vs_all_well
+tolerant_all_pct,combined,75.4,79.9,85.1,60.3,80.6,not decided,all-well model ahead,15.1,not decided,0.7,pass,-4.5,not decided
+balanced_all_pct,combined,64.9,46.2,68.3,14.3,71.0,combined ahead,not decided,50.6,strong pass,24.8,pass,2.7,not decided
+strict_all_pct,combined,66.1,69.8,77.4,60.3,76.6,not decided,all-well model ahead,5.8,not decided,6.8,pass,-0.8,not decided

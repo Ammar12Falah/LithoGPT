@@ -1,0 +1,7 @@
+well,n_items,both_read,same_class,same_family,strict_where_same,tolerant_where_same,strict_text_where_differ,strict_log_where_differ,differ,share_both_read_pct,share_same_class_of_all_pct,share_same_class_of_both_read_pct,share_same_family_of_both_read_pct,strict_where_same_pct,tolerant_where_same_pct,strict_text_where_differ_pct,strict_log_where_differ_pct,both_read_metres,same_class_metres,same_family_metres,differ_metres
+31/3-1,13236,12773,9051,10986,6787,6802,1188,1742,3722,96.5,68.4,70.9,86.0,75.0,75.2,31.9,46.8,1941.5,1375.8,1669.9,565.7
+30/6-5,21636,21636,16492,20818,12980,13073,2964,1379,5144,100.0,76.2,76.2,96.2,78.7,79.3,57.6,26.8,3288.7,2506.8,3164.3,781.9
+35/11-13,2430,2430,2258,2403,1741,1754,58,84,172,100.0,92.9,92.9,98.9,77.1,77.7,33.7,48.8,369.4,343.2,365.3,26.1
+35/11-11,12844,12825,11186,11861,7755,7810,748,595,1639,99.9,87.1,87.2,92.5,69.3,69.8,45.6,36.3,1949.4,1700.3,1802.9,249.1
+25/6-2,2925,2925,2504,2806,1919,1952,185,200,421,100.0,85.6,85.6,95.9,76.6,78.0,43.9,47.5,444.6,380.6,426.5,64.0
+POOLED,53071,52589,41491,48874,31182,31391,5143,4000,11098,99.1,78.2,78.9,92.9,75.2,75.7,46.3,36.0,7993.5,6306.6,7428.8,1686.9

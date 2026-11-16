@@ -1,0 +1,9 @@
+expert class \ reader class (metres),Sandstone,Sandstone/Shale,Shale,Marl,Dolomite,Limestone,Tuff,Coal
+Sandstone,1206.9,42.1,121.9,0.0,0.0,3.0,1.4,0.6
+Sandstone/Shale,209.0,214.5,722.0,0.0,0.0,2.9,6.8,0.0
+Shale,59.3,175.3,4566.2,0.9,0.0,7.0,54.3,2.9
+Marl,0.0,1.7,168.0,27.8,0.0,23.3,0.0,0.0
+Dolomite,2.9,0.0,0.9,0.0,0.0,0.0,0.0,0.0
+Limestone,40.1,19.3,84.7,20.4,0.2,82.5,2.4,0.0
+Tuff,0.0,0.0,27.2,0.0,0.0,0.6,135.3,0.0
+Coal,3.2,2.7,13.8,0.0,0.0,0.0,0.0,12.9

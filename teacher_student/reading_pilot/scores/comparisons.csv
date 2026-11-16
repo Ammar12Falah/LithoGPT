@@ -1,0 +1,316 @@
+metric,reader_a,reader_b,a_pct,b_pct,gap_points_a_minus_b,wells_a_ahead,wells_b_ahead,wells_compared,verdict
+tolerant_all_pct,text,log picture,72.1,74.4,-2.3,2,3,5,not decided
+tolerant_all_pct,text,combined,72.1,75.4,-3.3,1,4,5,not decided
+tolerant_all_pct,text,curve picture,72.1,80.6,-8.5,1,4,5,curve picture ahead
+tolerant_all_pct,text,ten-well model,72.1,79.9,-7.8,0,5,5,ten-well model ahead
+tolerant_all_pct,text,all-well model,72.1,85.1,-13.0,0,5,5,all-well model ahead
+tolerant_all_pct,text,all-shale line,72.1,60.3,11.8,5,0,5,text ahead
+tolerant_all_pct,text,text (Sonnet),72.1,72.2,-0.1,3,2,5,not decided
+tolerant_all_pct,text,log picture (Sonnet),72.1,68.7,3.4,4,1,5,not decided
+tolerant_all_pct,text,combined (Sonnet),72.1,70.7,1.4,2,3,5,not decided
+tolerant_all_pct,text,curve picture (Sonnet),72.1,67.6,4.5,3,2,5,not decided
+tolerant_all_pct,text,text (Haiku),72.1,71.7,0.4,2,1,5,not decided
+tolerant_all_pct,text,log picture (Haiku),72.1,63.6,8.5,5,0,5,text ahead
+tolerant_all_pct,text,combined (Haiku),72.1,65.7,6.4,5,0,5,text ahead
+tolerant_all_pct,text,curve picture (Haiku),72.1,48.7,23.4,5,0,5,text ahead
+tolerant_all_pct,log picture,combined,74.4,75.4,-1.0,1,3,5,not decided
+tolerant_all_pct,log picture,curve picture,74.4,80.6,-6.2,0,5,5,curve picture ahead
+tolerant_all_pct,log picture,ten-well model,74.4,79.9,-5.5,0,5,5,ten-well model ahead
+tolerant_all_pct,log picture,all-well model,74.4,85.1,-10.7,0,5,5,all-well model ahead
+tolerant_all_pct,log picture,all-shale line,74.4,60.3,14.1,5,0,5,log picture ahead
+tolerant_all_pct,log picture,text (Sonnet),74.4,72.2,2.2,3,2,5,not decided
+tolerant_all_pct,log picture,log picture (Sonnet),74.4,68.7,5.7,4,0,5,log picture ahead
+tolerant_all_pct,log picture,combined (Sonnet),74.4,70.7,3.7,3,1,5,not decided
+tolerant_all_pct,log picture,curve picture (Sonnet),74.4,67.6,6.8,5,0,5,log picture ahead
+tolerant_all_pct,log picture,text (Haiku),74.4,71.7,2.7,3,2,5,not decided
+tolerant_all_pct,log picture,log picture (Haiku),74.4,63.6,10.8,5,0,5,log picture ahead
+tolerant_all_pct,log picture,combined (Haiku),74.4,65.7,8.7,4,1,5,log picture ahead
+tolerant_all_pct,log picture,curve picture (Haiku),74.4,48.7,25.7,5,0,5,log picture ahead
+tolerant_all_pct,combined,curve picture,75.4,80.6,-5.2,1,4,5,curve picture ahead
+tolerant_all_pct,combined,ten-well model,75.4,79.9,-4.5,0,5,5,not decided
+tolerant_all_pct,combined,all-well model,75.4,85.1,-9.7,1,4,5,all-well model ahead
+tolerant_all_pct,combined,all-shale line,75.4,60.3,15.1,5,0,5,combined ahead
+tolerant_all_pct,combined,text (Sonnet),75.4,72.2,3.2,4,1,5,not decided
+tolerant_all_pct,combined,log picture (Sonnet),75.4,68.7,6.7,4,0,5,combined ahead
+tolerant_all_pct,combined,combined (Sonnet),75.4,70.7,4.7,4,0,5,not decided
+tolerant_all_pct,combined,curve picture (Sonnet),75.4,67.6,7.8,5,0,5,combined ahead
+tolerant_all_pct,combined,text (Haiku),75.4,71.7,3.7,4,1,5,not decided
+tolerant_all_pct,combined,log picture (Haiku),75.4,63.6,11.8,5,0,5,combined ahead
+tolerant_all_pct,combined,combined (Haiku),75.4,65.7,9.7,5,0,5,combined ahead
+tolerant_all_pct,combined,curve picture (Haiku),75.4,48.7,26.7,5,0,5,combined ahead
+tolerant_all_pct,curve picture,ten-well model,80.6,79.9,0.7,3,2,5,not decided
+tolerant_all_pct,curve picture,all-well model,80.6,85.1,-4.5,0,5,5,not decided
+tolerant_all_pct,curve picture,all-shale line,80.6,60.3,20.3,5,0,5,curve picture ahead
+tolerant_all_pct,curve picture,text (Sonnet),80.6,72.2,8.4,4,1,5,curve picture ahead
+tolerant_all_pct,curve picture,log picture (Sonnet),80.6,68.7,11.9,5,0,5,curve picture ahead
+tolerant_all_pct,curve picture,combined (Sonnet),80.6,70.7,9.9,4,1,5,curve picture ahead
+tolerant_all_pct,curve picture,curve picture (Sonnet),80.6,67.6,13.0,5,0,5,curve picture ahead
+tolerant_all_pct,curve picture,text (Haiku),80.6,71.7,8.9,4,1,5,curve picture ahead
+tolerant_all_pct,curve picture,log picture (Haiku),80.6,63.6,17.0,5,0,5,curve picture ahead
+tolerant_all_pct,curve picture,combined (Haiku),80.6,65.7,14.9,4,1,5,curve picture ahead
+tolerant_all_pct,curve picture,curve picture (Haiku),80.6,48.7,31.9,5,0,5,curve picture ahead
+tolerant_all_pct,ten-well model,all-well model,79.9,85.1,-5.2,2,3,5,not decided
+tolerant_all_pct,ten-well model,all-shale line,79.9,60.3,19.6,5,0,5,ten-well model ahead
+tolerant_all_pct,ten-well model,text (Sonnet),79.9,72.2,7.7,5,0,5,ten-well model ahead
+tolerant_all_pct,ten-well model,log picture (Sonnet),79.9,68.7,11.2,5,0,5,ten-well model ahead
+tolerant_all_pct,ten-well model,combined (Sonnet),79.9,70.7,9.2,5,0,5,ten-well model ahead
+tolerant_all_pct,ten-well model,curve picture (Sonnet),79.9,67.6,12.3,5,0,5,ten-well model ahead
+tolerant_all_pct,ten-well model,text (Haiku),79.9,71.7,8.2,5,0,5,ten-well model ahead
+tolerant_all_pct,ten-well model,log picture (Haiku),79.9,63.6,16.3,5,0,5,ten-well model ahead
+tolerant_all_pct,ten-well model,combined (Haiku),79.9,65.7,14.2,5,0,5,ten-well model ahead
+tolerant_all_pct,ten-well model,curve picture (Haiku),79.9,48.7,31.2,5,0,5,ten-well model ahead
+tolerant_all_pct,all-well model,all-shale line,85.1,60.3,24.8,5,0,5,all-well model ahead
+tolerant_all_pct,all-well model,text (Sonnet),85.1,72.2,12.9,5,0,5,all-well model ahead
+tolerant_all_pct,all-well model,log picture (Sonnet),85.1,68.7,16.4,5,0,5,all-well model ahead
+tolerant_all_pct,all-well model,combined (Sonnet),85.1,70.7,14.4,4,1,5,all-well model ahead
+tolerant_all_pct,all-well model,curve picture (Sonnet),85.1,67.6,17.5,5,0,5,all-well model ahead
+tolerant_all_pct,all-well model,text (Haiku),85.1,71.7,13.4,5,0,5,all-well model ahead
+tolerant_all_pct,all-well model,log picture (Haiku),85.1,63.6,21.5,5,0,5,all-well model ahead
+tolerant_all_pct,all-well model,combined (Haiku),85.1,65.7,19.4,5,0,5,all-well model ahead
+tolerant_all_pct,all-well model,curve picture (Haiku),85.1,48.7,36.4,5,0,5,all-well model ahead
+tolerant_all_pct,all-shale line,text (Sonnet),60.3,72.2,-11.9,0,5,5,text (Sonnet) ahead
+tolerant_all_pct,all-shale line,log picture (Sonnet),60.3,68.7,-8.4,0,5,5,log picture (Sonnet) ahead
+tolerant_all_pct,all-shale line,combined (Sonnet),60.3,70.7,-10.4,0,5,5,combined (Sonnet) ahead
+tolerant_all_pct,all-shale line,curve picture (Sonnet),60.3,67.6,-7.3,1,4,5,curve picture (Sonnet) ahead
+tolerant_all_pct,all-shale line,text (Haiku),60.3,71.7,-11.4,0,5,5,text (Haiku) ahead
+tolerant_all_pct,all-shale line,log picture (Haiku),60.3,63.6,-3.3,1,4,5,not decided
+tolerant_all_pct,all-shale line,combined (Haiku),60.3,65.7,-5.4,1,4,5,combined (Haiku) ahead
+tolerant_all_pct,all-shale line,curve picture (Haiku),60.3,48.7,11.6,3,2,5,not decided
+tolerant_all_pct,text (Sonnet),log picture (Sonnet),72.2,68.7,3.5,4,1,5,not decided
+tolerant_all_pct,text (Sonnet),combined (Sonnet),72.2,70.7,1.5,2,3,5,not decided
+tolerant_all_pct,text (Sonnet),curve picture (Sonnet),72.2,67.6,4.6,3,2,5,not decided
+tolerant_all_pct,text (Sonnet),text (Haiku),72.2,71.7,0.5,3,1,5,not decided
+tolerant_all_pct,text (Sonnet),log picture (Haiku),72.2,63.6,8.6,4,1,5,text (Sonnet) ahead
+tolerant_all_pct,text (Sonnet),combined (Haiku),72.2,65.7,6.5,3,1,5,not decided
+tolerant_all_pct,text (Sonnet),curve picture (Haiku),72.2,48.7,23.5,5,0,5,text (Sonnet) ahead
+tolerant_all_pct,log picture (Sonnet),combined (Sonnet),68.7,70.7,-2.0,0,4,5,not decided
+tolerant_all_pct,log picture (Sonnet),curve picture (Sonnet),68.7,67.6,1.1,4,1,5,not decided
+tolerant_all_pct,log picture (Sonnet),text (Haiku),68.7,71.7,-3.0,1,4,5,not decided
+tolerant_all_pct,log picture (Sonnet),log picture (Haiku),68.7,63.6,5.1,5,0,5,log picture (Sonnet) ahead
+tolerant_all_pct,log picture (Sonnet),combined (Haiku),68.7,65.7,3.0,3,2,5,not decided
+tolerant_all_pct,log picture (Sonnet),curve picture (Haiku),68.7,48.7,20.0,5,0,5,log picture (Sonnet) ahead
+tolerant_all_pct,combined (Sonnet),curve picture (Sonnet),70.7,67.6,3.1,4,1,5,not decided
+tolerant_all_pct,combined (Sonnet),text (Haiku),70.7,71.7,-1.0,3,2,5,not decided
+tolerant_all_pct,combined (Sonnet),log picture (Haiku),70.7,63.6,7.1,5,0,5,combined (Sonnet) ahead
+tolerant_all_pct,combined (Sonnet),combined (Haiku),70.7,65.7,5.0,5,0,5,combined (Sonnet) ahead
+tolerant_all_pct,combined (Sonnet),curve picture (Haiku),70.7,48.7,22.0,5,0,5,combined (Sonnet) ahead
+tolerant_all_pct,curve picture (Sonnet),text (Haiku),67.6,71.7,-4.1,2,3,5,not decided
+tolerant_all_pct,curve picture (Sonnet),log picture (Haiku),67.6,63.6,4.0,4,1,5,not decided
+tolerant_all_pct,curve picture (Sonnet),combined (Haiku),67.6,65.7,1.9,3,2,5,not decided
+tolerant_all_pct,curve picture (Sonnet),curve picture (Haiku),67.6,48.7,18.9,5,0,5,curve picture (Sonnet) ahead
+tolerant_all_pct,text (Haiku),log picture (Haiku),71.7,63.6,8.1,4,1,5,text (Haiku) ahead
+tolerant_all_pct,text (Haiku),combined (Haiku),71.7,65.7,6.0,3,2,5,not decided
+tolerant_all_pct,text (Haiku),curve picture (Haiku),71.7,48.7,23.0,5,0,5,text (Haiku) ahead
+tolerant_all_pct,log picture (Haiku),combined (Haiku),63.6,65.7,-2.1,0,5,5,not decided
+tolerant_all_pct,log picture (Haiku),curve picture (Haiku),63.6,48.7,14.9,5,0,5,log picture (Haiku) ahead
+tolerant_all_pct,combined (Haiku),curve picture (Haiku),65.7,48.7,17.0,5,0,5,combined (Haiku) ahead
+strict_all_pct,text,log picture,68.4,66.3,2.1,2,3,5,not decided
+strict_all_pct,text,combined,68.4,66.1,2.3,2,3,5,not decided
+strict_all_pct,text,curve picture,68.4,76.6,-8.2,1,4,5,curve picture ahead
+strict_all_pct,text,ten-well model,68.4,69.8,-1.4,1,4,5,not decided
+strict_all_pct,text,all-well model,68.4,77.4,-9.0,1,4,5,all-well model ahead
+strict_all_pct,text,all-shale line,68.4,60.3,8.1,5,0,5,text ahead
+strict_all_pct,text,text (Sonnet),68.4,68.3,0.1,3,1,5,not decided
+strict_all_pct,text,log picture (Sonnet),68.4,63.5,4.9,2,3,5,not decided
+strict_all_pct,text,combined (Sonnet),68.4,63.9,4.5,2,3,5,not decided
+strict_all_pct,text,curve picture (Sonnet),68.4,65.2,3.2,3,2,5,not decided
+strict_all_pct,text,text (Haiku),68.4,67.9,0.5,2,1,5,not decided
+strict_all_pct,text,log picture (Haiku),68.4,61.5,6.9,4,1,5,text ahead
+strict_all_pct,text,combined (Haiku),68.4,61.6,6.8,4,1,5,text ahead
+strict_all_pct,text,curve picture (Haiku),68.4,46.6,21.8,5,0,5,text ahead
+strict_all_pct,log picture,combined,66.3,66.1,0.2,1,2,5,not decided
+strict_all_pct,log picture,curve picture,66.3,76.6,-10.3,1,4,5,curve picture ahead
+strict_all_pct,log picture,ten-well model,66.3,69.8,-3.5,1,4,5,not decided
+strict_all_pct,log picture,all-well model,66.3,77.4,-11.1,1,4,5,all-well model ahead
+strict_all_pct,log picture,all-shale line,66.3,60.3,6.0,4,1,5,log picture ahead
+strict_all_pct,log picture,text (Sonnet),66.3,68.3,-2.0,3,2,5,not decided
+strict_all_pct,log picture,log picture (Sonnet),66.3,63.5,2.8,4,1,5,not decided
+strict_all_pct,log picture,combined (Sonnet),66.3,63.9,2.4,3,2,5,not decided
+strict_all_pct,log picture,curve picture (Sonnet),66.3,65.2,1.1,3,1,5,not decided
+strict_all_pct,log picture,text (Haiku),66.3,67.9,-1.6,3,2,5,not decided
+strict_all_pct,log picture,log picture (Haiku),66.3,61.5,4.8,5,0,5,not decided
+strict_all_pct,log picture,combined (Haiku),66.3,61.6,4.7,5,0,5,not decided
+strict_all_pct,log picture,curve picture (Haiku),66.3,46.6,19.7,5,0,5,log picture ahead
+strict_all_pct,combined,curve picture,66.1,76.6,-10.5,1,4,5,curve picture ahead
+strict_all_pct,combined,ten-well model,66.1,69.8,-3.7,1,4,5,not decided
+strict_all_pct,combined,all-well model,66.1,77.4,-11.3,1,4,5,all-well model ahead
+strict_all_pct,combined,all-shale line,66.1,60.3,5.8,4,1,5,combined ahead
+strict_all_pct,combined,text (Sonnet),66.1,68.3,-2.2,3,2,5,not decided
+strict_all_pct,combined,log picture (Sonnet),66.1,63.5,2.6,4,1,5,not decided
+strict_all_pct,combined,combined (Sonnet),66.1,63.9,2.2,3,1,5,not decided
+strict_all_pct,combined,curve picture (Sonnet),66.1,65.2,0.9,3,1,5,not decided
+strict_all_pct,combined,text (Haiku),66.1,67.9,-1.8,3,2,5,not decided
+strict_all_pct,combined,log picture (Haiku),66.1,61.5,4.6,5,0,5,not decided
+strict_all_pct,combined,combined (Haiku),66.1,61.6,4.5,5,0,5,not decided
+strict_all_pct,combined,curve picture (Haiku),66.1,46.6,19.5,5,0,5,combined ahead
+strict_all_pct,curve picture,ten-well model,76.6,69.8,6.8,3,2,5,not decided
+strict_all_pct,curve picture,all-well model,76.6,77.4,-0.8,1,4,5,not decided
+strict_all_pct,curve picture,all-shale line,76.6,60.3,16.3,5,0,5,curve picture ahead
+strict_all_pct,curve picture,text (Sonnet),76.6,68.3,8.3,5,0,5,curve picture ahead
+strict_all_pct,curve picture,log picture (Sonnet),76.6,63.5,13.1,4,1,5,curve picture ahead
+strict_all_pct,curve picture,combined (Sonnet),76.6,63.9,12.7,4,1,5,curve picture ahead
+strict_all_pct,curve picture,curve picture (Sonnet),76.6,65.2,11.4,5,0,5,curve picture ahead
+strict_all_pct,curve picture,text (Haiku),76.6,67.9,8.7,5,0,5,curve picture ahead
+strict_all_pct,curve picture,log picture (Haiku),76.6,61.5,15.1,5,0,5,curve picture ahead
+strict_all_pct,curve picture,combined (Haiku),76.6,61.6,15.0,5,0,5,curve picture ahead
+strict_all_pct,curve picture,curve picture (Haiku),76.6,46.6,30.0,5,0,5,curve picture ahead
+strict_all_pct,ten-well model,all-well model,69.8,77.4,-7.6,2,3,5,not decided
+strict_all_pct,ten-well model,all-shale line,69.8,60.3,9.5,5,0,5,ten-well model ahead
+strict_all_pct,ten-well model,text (Sonnet),69.8,68.3,1.5,4,1,5,not decided
+strict_all_pct,ten-well model,log picture (Sonnet),69.8,63.5,6.3,4,1,5,ten-well model ahead
+strict_all_pct,ten-well model,combined (Sonnet),69.8,63.9,5.9,4,1,5,ten-well model ahead
+strict_all_pct,ten-well model,curve picture (Sonnet),69.8,65.2,4.6,4,1,5,not decided
+strict_all_pct,ten-well model,text (Haiku),69.8,67.9,1.9,4,1,5,not decided
+strict_all_pct,ten-well model,log picture (Haiku),69.8,61.5,8.3,5,0,5,ten-well model ahead
+strict_all_pct,ten-well model,combined (Haiku),69.8,61.6,8.2,5,0,5,ten-well model ahead
+strict_all_pct,ten-well model,curve picture (Haiku),69.8,46.6,23.2,5,0,5,ten-well model ahead
+strict_all_pct,all-well model,all-shale line,77.4,60.3,17.1,5,0,5,all-well model ahead
+strict_all_pct,all-well model,text (Sonnet),77.4,68.3,9.1,4,1,5,all-well model ahead
+strict_all_pct,all-well model,log picture (Sonnet),77.4,63.5,13.9,4,1,5,all-well model ahead
+strict_all_pct,all-well model,combined (Sonnet),77.4,63.9,13.5,4,1,5,all-well model ahead
+strict_all_pct,all-well model,curve picture (Sonnet),77.4,65.2,12.2,5,0,5,all-well model ahead
+strict_all_pct,all-well model,text (Haiku),77.4,67.9,9.5,4,1,5,all-well model ahead
+strict_all_pct,all-well model,log picture (Haiku),77.4,61.5,15.9,4,1,5,all-well model ahead
+strict_all_pct,all-well model,combined (Haiku),77.4,61.6,15.8,4,1,5,all-well model ahead
+strict_all_pct,all-well model,curve picture (Haiku),77.4,46.6,30.8,5,0,5,all-well model ahead
+strict_all_pct,all-shale line,text (Sonnet),60.3,68.3,-8.0,0,5,5,text (Sonnet) ahead
+strict_all_pct,all-shale line,log picture (Sonnet),60.3,63.5,-3.2,1,4,5,not decided
+strict_all_pct,all-shale line,combined (Sonnet),60.3,63.9,-3.6,1,4,5,not decided
+strict_all_pct,all-shale line,curve picture (Sonnet),60.3,65.2,-4.9,1,4,5,not decided
+strict_all_pct,all-shale line,text (Haiku),60.3,67.9,-7.6,0,5,5,text (Haiku) ahead
+strict_all_pct,all-shale line,log picture (Haiku),60.3,61.5,-1.2,2,3,5,not decided
+strict_all_pct,all-shale line,combined (Haiku),60.3,61.6,-1.3,2,3,5,not decided
+strict_all_pct,all-shale line,curve picture (Haiku),60.3,46.6,13.7,3,2,5,not decided
+strict_all_pct,text (Sonnet),log picture (Sonnet),68.3,63.5,4.8,2,3,5,not decided
+strict_all_pct,text (Sonnet),combined (Sonnet),68.3,63.9,4.4,2,3,5,not decided
+strict_all_pct,text (Sonnet),curve picture (Sonnet),68.3,65.2,3.1,3,2,5,not decided
+strict_all_pct,text (Sonnet),text (Haiku),68.3,67.9,0.4,2,3,5,not decided
+strict_all_pct,text (Sonnet),log picture (Haiku),68.3,61.5,6.8,4,1,5,text (Sonnet) ahead
+strict_all_pct,text (Sonnet),combined (Haiku),68.3,61.6,6.7,4,1,5,text (Sonnet) ahead
+strict_all_pct,text (Sonnet),curve picture (Haiku),68.3,46.6,21.7,5,0,5,text (Sonnet) ahead
+strict_all_pct,log picture (Sonnet),combined (Sonnet),63.5,63.9,-0.4,0,5,5,not decided
+strict_all_pct,log picture (Sonnet),curve picture (Sonnet),63.5,65.2,-1.7,2,2,5,not decided
+strict_all_pct,log picture (Sonnet),text (Haiku),63.5,67.9,-4.4,3,2,5,not decided
+strict_all_pct,log picture (Sonnet),log picture (Haiku),63.5,61.5,2.0,5,0,5,not decided
+strict_all_pct,log picture (Sonnet),combined (Haiku),63.5,61.6,1.9,4,0,5,not decided
+strict_all_pct,log picture (Sonnet),curve picture (Haiku),63.5,46.6,16.9,5,0,5,log picture (Sonnet) ahead
+strict_all_pct,combined (Sonnet),curve picture (Sonnet),63.9,65.2,-1.3,3,2,5,not decided
+strict_all_pct,combined (Sonnet),text (Haiku),63.9,67.9,-4.0,3,2,5,not decided
+strict_all_pct,combined (Sonnet),log picture (Haiku),63.9,61.5,2.4,5,0,5,not decided
+strict_all_pct,combined (Sonnet),combined (Haiku),63.9,61.6,2.3,5,0,5,not decided
+strict_all_pct,combined (Sonnet),curve picture (Haiku),63.9,46.6,17.3,5,0,5,combined (Sonnet) ahead
+strict_all_pct,curve picture (Sonnet),text (Haiku),65.2,67.9,-2.7,2,3,5,not decided
+strict_all_pct,curve picture (Sonnet),log picture (Haiku),65.2,61.5,3.7,3,2,5,not decided
+strict_all_pct,curve picture (Sonnet),combined (Haiku),65.2,61.6,3.6,3,2,5,not decided
+strict_all_pct,curve picture (Sonnet),curve picture (Haiku),65.2,46.6,18.6,5,0,5,curve picture (Sonnet) ahead
+strict_all_pct,text (Haiku),log picture (Haiku),67.9,61.5,6.4,4,1,5,text (Haiku) ahead
+strict_all_pct,text (Haiku),combined (Haiku),67.9,61.6,6.3,4,1,5,text (Haiku) ahead
+strict_all_pct,text (Haiku),curve picture (Haiku),67.9,46.6,21.3,5,0,5,text (Haiku) ahead
+strict_all_pct,log picture (Haiku),combined (Haiku),61.5,61.6,-0.1,1,4,5,not decided
+strict_all_pct,log picture (Haiku),curve picture (Haiku),61.5,46.6,14.9,5,0,5,log picture (Haiku) ahead
+strict_all_pct,combined (Haiku),curve picture (Haiku),61.6,46.6,15.0,5,0,5,combined (Haiku) ahead
+balanced_all_pct,text,log picture,38.2,64.5,-26.3,0,5,5,log picture ahead
+balanced_all_pct,text,combined,38.2,64.9,-26.7,0,5,5,combined ahead
+balanced_all_pct,text,curve picture,38.2,71.0,-32.8,0,5,5,curve picture ahead
+balanced_all_pct,text,ten-well model,38.2,46.2,-8.0,1,4,5,ten-well model ahead
+balanced_all_pct,text,all-well model,38.2,68.3,-30.1,1,4,5,all-well model ahead
+balanced_all_pct,text,all-shale line,38.2,14.3,23.9,5,0,5,text ahead
+balanced_all_pct,text,text (Sonnet),38.2,36.0,2.2,3,2,5,not decided
+balanced_all_pct,text,log picture (Sonnet),38.2,39.9,-1.7,1,4,5,not decided
+balanced_all_pct,text,combined (Sonnet),38.2,41.2,-3.0,0,5,5,not decided
+balanced_all_pct,text,curve picture (Sonnet),38.2,51.3,-13.1,1,4,5,curve picture (Sonnet) ahead
+balanced_all_pct,text,text (Haiku),38.2,35.6,2.6,2,1,5,not decided
+balanced_all_pct,text,log picture (Haiku),38.2,39.0,-0.8,2,3,5,not decided
+balanced_all_pct,text,combined (Haiku),38.2,40.3,-2.1,2,3,5,not decided
+balanced_all_pct,text,curve picture (Haiku),38.2,28.3,9.9,3,2,5,not decided
+balanced_all_pct,log picture,combined,64.5,64.9,-0.4,1,3,5,not decided
+balanced_all_pct,log picture,curve picture,64.5,71.0,-6.5,2,3,5,not decided
+balanced_all_pct,log picture,ten-well model,64.5,46.2,18.3,4,1,5,log picture ahead
+balanced_all_pct,log picture,all-well model,64.5,68.3,-3.8,1,4,5,not decided
+balanced_all_pct,log picture,all-shale line,64.5,14.3,50.2,5,0,5,log picture ahead
+balanced_all_pct,log picture,text (Sonnet),64.5,36.0,28.5,5,0,5,log picture ahead
+balanced_all_pct,log picture,log picture (Sonnet),64.5,39.9,24.6,4,0,5,log picture ahead
+balanced_all_pct,log picture,combined (Sonnet),64.5,41.2,23.3,3,1,5,not decided
+balanced_all_pct,log picture,curve picture (Sonnet),64.5,51.3,13.2,4,1,5,log picture ahead
+balanced_all_pct,log picture,text (Haiku),64.5,35.6,28.9,5,0,5,log picture ahead
+balanced_all_pct,log picture,log picture (Haiku),64.5,39.0,25.5,4,1,5,log picture ahead
+balanced_all_pct,log picture,combined (Haiku),64.5,40.3,24.2,4,1,5,log picture ahead
+balanced_all_pct,log picture,curve picture (Haiku),64.5,28.3,36.2,5,0,5,log picture ahead
+balanced_all_pct,combined,curve picture,64.9,71.0,-6.1,2,3,5,not decided
+balanced_all_pct,combined,ten-well model,64.9,46.2,18.7,4,1,5,combined ahead
+balanced_all_pct,combined,all-well model,64.9,68.3,-3.4,1,4,5,not decided
+balanced_all_pct,combined,all-shale line,64.9,14.3,50.6,5,0,5,combined ahead
+balanced_all_pct,combined,text (Sonnet),64.9,36.0,28.9,5,0,5,combined ahead
+balanced_all_pct,combined,log picture (Sonnet),64.9,39.9,25.0,4,0,5,combined ahead
+balanced_all_pct,combined,combined (Sonnet),64.9,41.2,23.7,4,0,5,combined ahead
+balanced_all_pct,combined,curve picture (Sonnet),64.9,51.3,13.6,4,1,5,combined ahead
+balanced_all_pct,combined,text (Haiku),64.9,35.6,29.3,5,0,5,combined ahead
+balanced_all_pct,combined,log picture (Haiku),64.9,39.0,25.9,4,1,5,combined ahead
+balanced_all_pct,combined,combined (Haiku),64.9,40.3,24.6,4,1,5,combined ahead
+balanced_all_pct,combined,curve picture (Haiku),64.9,28.3,36.6,5,0,5,combined ahead
+balanced_all_pct,curve picture,ten-well model,71.0,46.2,24.8,3,2,5,not decided
+balanced_all_pct,curve picture,all-well model,71.0,68.3,2.7,3,2,5,not decided
+balanced_all_pct,curve picture,all-shale line,71.0,14.3,56.7,5,0,5,curve picture ahead
+balanced_all_pct,curve picture,text (Sonnet),71.0,36.0,35.0,5,0,5,curve picture ahead
+balanced_all_pct,curve picture,log picture (Sonnet),71.0,39.9,31.1,4,1,5,curve picture ahead
+balanced_all_pct,curve picture,combined (Sonnet),71.0,41.2,29.8,4,1,5,curve picture ahead
+balanced_all_pct,curve picture,curve picture (Sonnet),71.0,51.3,19.7,4,1,5,curve picture ahead
+balanced_all_pct,curve picture,text (Haiku),71.0,35.6,35.4,5,0,5,curve picture ahead
+balanced_all_pct,curve picture,log picture (Haiku),71.0,39.0,32.0,5,0,5,curve picture ahead
+balanced_all_pct,curve picture,combined (Haiku),71.0,40.3,30.7,5,0,5,curve picture ahead
+balanced_all_pct,curve picture,curve picture (Haiku),71.0,28.3,42.7,5,0,5,curve picture ahead
+balanced_all_pct,ten-well model,all-well model,46.2,68.3,-22.1,2,3,5,not decided
+balanced_all_pct,ten-well model,all-shale line,46.2,14.3,31.9,5,0,5,ten-well model ahead
+balanced_all_pct,ten-well model,text (Sonnet),46.2,36.0,10.2,5,0,5,ten-well model ahead
+balanced_all_pct,ten-well model,log picture (Sonnet),46.2,39.9,6.3,4,1,5,ten-well model ahead
+balanced_all_pct,ten-well model,combined (Sonnet),46.2,41.2,5.0,3,2,5,not decided
+balanced_all_pct,ten-well model,curve picture (Sonnet),46.2,51.3,-5.1,4,1,5,not decided
+balanced_all_pct,ten-well model,text (Haiku),46.2,35.6,10.6,5,0,5,ten-well model ahead
+balanced_all_pct,ten-well model,log picture (Haiku),46.2,39.0,7.2,4,1,5,ten-well model ahead
+balanced_all_pct,ten-well model,combined (Haiku),46.2,40.3,5.9,4,1,5,ten-well model ahead
+balanced_all_pct,ten-well model,curve picture (Haiku),46.2,28.3,17.9,5,0,5,ten-well model ahead
+balanced_all_pct,all-well model,all-shale line,68.3,14.3,54.0,5,0,5,all-well model ahead
+balanced_all_pct,all-well model,text (Sonnet),68.3,36.0,32.3,4,1,5,all-well model ahead
+balanced_all_pct,all-well model,log picture (Sonnet),68.3,39.9,28.4,4,1,5,all-well model ahead
+balanced_all_pct,all-well model,combined (Sonnet),68.3,41.2,27.1,4,1,5,all-well model ahead
+balanced_all_pct,all-well model,curve picture (Sonnet),68.3,51.3,17.0,5,0,5,all-well model ahead
+balanced_all_pct,all-well model,text (Haiku),68.3,35.6,32.7,4,1,5,all-well model ahead
+balanced_all_pct,all-well model,log picture (Haiku),68.3,39.0,29.3,4,1,5,all-well model ahead
+balanced_all_pct,all-well model,combined (Haiku),68.3,40.3,28.0,4,1,5,all-well model ahead
+balanced_all_pct,all-well model,curve picture (Haiku),68.3,28.3,40.0,5,0,5,all-well model ahead
+balanced_all_pct,all-shale line,text (Sonnet),14.3,36.0,-21.7,0,5,5,text (Sonnet) ahead
+balanced_all_pct,all-shale line,log picture (Sonnet),14.3,39.9,-25.6,0,5,5,log picture (Sonnet) ahead
+balanced_all_pct,all-shale line,combined (Sonnet),14.3,41.2,-26.9,0,5,5,combined (Sonnet) ahead
+balanced_all_pct,all-shale line,curve picture (Sonnet),14.3,51.3,-37.0,0,5,5,curve picture (Sonnet) ahead
+balanced_all_pct,all-shale line,text (Haiku),14.3,35.6,-21.3,0,5,5,text (Haiku) ahead
+balanced_all_pct,all-shale line,log picture (Haiku),14.3,39.0,-24.7,0,5,5,log picture (Haiku) ahead
+balanced_all_pct,all-shale line,combined (Haiku),14.3,40.3,-26.0,0,5,5,combined (Haiku) ahead
+balanced_all_pct,all-shale line,curve picture (Haiku),14.3,28.3,-14.0,1,4,5,curve picture (Haiku) ahead
+balanced_all_pct,text (Sonnet),log picture (Sonnet),36.0,39.9,-3.9,0,5,5,not decided
+balanced_all_pct,text (Sonnet),combined (Sonnet),36.0,41.2,-5.2,0,5,5,combined (Sonnet) ahead
+balanced_all_pct,text (Sonnet),curve picture (Sonnet),36.0,51.3,-15.3,1,4,5,curve picture (Sonnet) ahead
+balanced_all_pct,text (Sonnet),text (Haiku),36.0,35.6,0.4,3,1,5,not decided
+balanced_all_pct,text (Sonnet),log picture (Haiku),36.0,39.0,-3.0,1,4,5,not decided
+balanced_all_pct,text (Sonnet),combined (Haiku),36.0,40.3,-4.3,0,5,5,not decided
+balanced_all_pct,text (Sonnet),curve picture (Haiku),36.0,28.3,7.7,3,2,5,not decided
+balanced_all_pct,log picture (Sonnet),combined (Sonnet),39.9,41.2,-1.3,0,4,5,not decided
+balanced_all_pct,log picture (Sonnet),curve picture (Sonnet),39.9,51.3,-11.4,1,4,5,curve picture (Sonnet) ahead
+balanced_all_pct,log picture (Sonnet),text (Haiku),39.9,35.6,4.3,5,0,5,not decided
+balanced_all_pct,log picture (Sonnet),log picture (Haiku),39.9,39.0,0.9,3,2,5,not decided
+balanced_all_pct,log picture (Sonnet),combined (Haiku),39.9,40.3,-0.4,2,3,5,not decided
+balanced_all_pct,log picture (Sonnet),curve picture (Haiku),39.9,28.3,11.6,4,1,5,log picture (Sonnet) ahead
+balanced_all_pct,combined (Sonnet),curve picture (Sonnet),41.2,51.3,-10.1,1,4,5,curve picture (Sonnet) ahead
+balanced_all_pct,combined (Sonnet),text (Haiku),41.2,35.6,5.6,5,0,5,combined (Sonnet) ahead
+balanced_all_pct,combined (Sonnet),log picture (Haiku),41.2,39.0,2.2,3,2,5,not decided
+balanced_all_pct,combined (Sonnet),combined (Haiku),41.2,40.3,0.9,3,2,5,not decided
+balanced_all_pct,combined (Sonnet),curve picture (Haiku),41.2,28.3,12.9,4,1,5,combined (Sonnet) ahead
+balanced_all_pct,curve picture (Sonnet),text (Haiku),51.3,35.6,15.7,4,1,5,curve picture (Sonnet) ahead
+balanced_all_pct,curve picture (Sonnet),log picture (Haiku),51.3,39.0,12.3,2,2,5,not decided
+balanced_all_pct,curve picture (Sonnet),combined (Haiku),51.3,40.3,11.0,3,2,5,not decided
+balanced_all_pct,curve picture (Sonnet),curve picture (Haiku),51.3,28.3,23.0,4,1,5,curve picture (Sonnet) ahead
+balanced_all_pct,text (Haiku),log picture (Haiku),35.6,39.0,-3.4,1,4,5,not decided
+balanced_all_pct,text (Haiku),combined (Haiku),35.6,40.3,-4.7,0,5,5,not decided
+balanced_all_pct,text (Haiku),curve picture (Haiku),35.6,28.3,7.3,3,2,5,not decided
+balanced_all_pct,log picture (Haiku),combined (Haiku),39.0,40.3,-1.3,1,4,5,not decided
+balanced_all_pct,log picture (Haiku),curve picture (Haiku),39.0,28.3,10.7,4,1,5,log picture (Haiku) ahead
+balanced_all_pct,combined (Haiku),curve picture (Haiku),40.3,28.3,12.0,4,1,5,combined (Haiku) ahead

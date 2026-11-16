@@ -1,0 +1,4 @@
+log-picture reading of 30/6-5,coverage_pct,tolerant_all_pct,tolerant_read_pct,strict_all_pct,soft_all_pct,balanced_all_pct
+"kept reading (corrected pictures, full re-read)",100.0,76.3,76.3,66.4,96.5,52.4
+set aside: first cut,93.0,70.6,75.9,61.2,88.8,40.5
+set aside: first cut down to 3150 m + patch below,100.0,76.1,76.1,65.1,95.6,44.1

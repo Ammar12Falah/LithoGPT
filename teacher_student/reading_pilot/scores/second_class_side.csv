@@ -1,0 +1,55 @@
+reader,well,n_items,tolerant_main_only,tolerant_with_second_class
+text,31/3-1,13236,66.1,74.9
+log picture,31/3-1,13236,73.0,80.7
+combined,31/3-1,13236,75.8,83.1
+text (Sonnet),31/3-1,13236,65.5,75.7
+log picture (Sonnet),31/3-1,13236,63.4,75.3
+combined (Sonnet),31/3-1,13236,67.6,81.6
+text (Haiku),31/3-1,13236,64.3,72.0
+log picture (Haiku),31/3-1,13236,62.6,72.1
+combined (Haiku),31/3-1,13236,65.5,74.7
+text,30/6-5,21636,77.2,83.6
+log picture,30/6-5,21636,76.3,84.0
+combined,30/6-5,21636,77.0,85.0
+text (Sonnet),30/6-5,21636,77.4,82.5
+log picture (Sonnet),30/6-5,21636,70.9,85.1
+combined (Sonnet),30/6-5,21636,72.3,86.5
+text (Haiku),30/6-5,21636,77.2,81.7
+log picture (Haiku),30/6-5,21636,61.1,73.5
+combined (Haiku),30/6-5,21636,63.7,74.7
+text,35/11-13,2430,75.4,92.7
+log picture,35/11-13,2430,79.0,98.8
+combined,35/11-13,2430,79.0,98.8
+text (Sonnet),35/11-13,2430,73.0,77.5
+log picture (Sonnet),35/11-13,2430,79.0,98.8
+combined (Sonnet),35/11-13,2430,79.0,98.8
+text (Haiku),35/11-13,2430,73.0,90.0
+log picture (Haiku),35/11-13,2430,74.9,95.2
+combined (Haiku),35/11-13,2430,75.0,95.2
+text,35/11-11,12844,67.6,88.5
+log picture,35/11-11,12844,70.9,91.8
+combined,35/11-11,12844,70.2,91.4
+text (Sonnet),35/11-11,12844,68.5,88.6
+log picture (Sonnet),35/11-11,12844,66.8,89.8
+combined (Sonnet),35/11-11,12844,67.5,89.9
+text (Haiku),35/11-11,12844,68.2,88.3
+log picture (Haiku),35/11-11,12844,64.6,80.2
+combined (Haiku),35/11-11,12844,64.7,79.2
+text,25/6-2,2925,79.4,85.9
+log picture,25/6-2,2925,77.5,78.5
+combined,25/6-2,2925,81.2,83.6
+text (Sonnet),25/6-2,2925,79.1,84.2
+log picture (Sonnet),25/6-2,2925,75.8,91.7
+combined (Sonnet),25/6-2,2925,80.9,91.7
+text (Haiku),25/6-2,2925,79.4,85.9
+log picture (Haiku),25/6-2,2925,73.6,79.6
+combined (Haiku),25/6-2,2925,78.7,84.7
+combined,POOLED,53071,75.4,86.6
+combined (Haiku),POOLED,53071,65.7,77.3
+combined (Sonnet),POOLED,53071,70.7,86.9
+log picture,POOLED,53071,74.4,85.4
+log picture (Haiku),POOLED,53071,63.6,76.1
+log picture (Sonnet),POOLED,53071,68.7,84.8
+text,POOLED,53071,72.1,83.2
+text (Haiku),POOLED,53071,71.7,81.5
+text (Sonnet),POOLED,53071,72.2,82.2

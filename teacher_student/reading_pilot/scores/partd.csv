@@ -1,0 +1,13 @@
+kind_of_reading,model,wells_scored,headline_tolerant_all_pct,coverage_pct,balanced_all_pct,strict_all_pct,soft_all_pct,minutes,subagent_tokens,pages_text_read,pictures_looked_at,rows_written
+text,main model,5,72.1,99.1,38.2,68.4,93.3,93.6,1565639,392,102,1752
+text,Sonnet 5.5,5,72.2,99.6,36.0,68.3,93.8,36.9,1101190,307,65,1699
+text,Haiku 5.5,5,71.7,97.3,35.6,67.9,92.9,51.2,1611011,271,59,1693
+log picture,main model,5,74.4,99.1,64.5,66.3,94.9,48.5,839691,0,94,809
+log picture,Sonnet 5.5,5,68.7,99.1,39.9,63.5,92.4,8.5,559758,0,94,352
+log picture,Haiku 5.5,5,63.6,99.1,39.0,61.5,91.3,8.2,603638,0,94,201
+combined,main model,5,75.4,99.1,64.9,66.1,95.3,142.1,2405330,392,196,2561
+combined,Sonnet 5.5,5,70.7,99.9,41.2,63.9,93.7,45.4,1660948,307,159,2051
+combined,Haiku 5.5,5,65.7,99.1,40.3,61.6,92.1,59.4,2214649,271,153,1894
+curve picture,main model,5,80.6,99.9,71.0,76.6,96.1,67.4,1040197,0,185,542
+curve picture,Sonnet 5.5,5,67.6,100.0,51.3,65.2,92.3,7.9,703923,0,185,204
+curve picture,Haiku 5.5,5,48.7,99.9,28.3,46.6,87.5,7.0,733414,0,185,187

@@ -13,6 +13,7 @@ import sys
 from pathlib import Path
 
 import matplotlib
+import matplotlib.ticker
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
@@ -174,6 +175,7 @@ def mode_conflicts():
                 ax.plot(s[c], dep, color=col, lw=1.3)
                 if logx:
                     ax.set_xscale("log")
+                    ax.xaxis.set_minor_formatter(matplotlib.ticker.NullFormatter())
             if c == "RHOB" and s["NPHI"].notna().any():
                 ax2 = ax.twiny()
                 ax2.plot(s["NPHI"], dep, color="#3987e5", lw=1.0, ls="--")
