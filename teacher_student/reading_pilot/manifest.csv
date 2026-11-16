@@ -27,3 +27,17 @@ docs/25_4-5/composite_log_201.pdf,https://factpages.sodir.no/pbl/wellbore_compos
 docs/25_4-5/201_02_WDSS_completion_log.pdf,https://factpages.sodir.no/pbl/wdss_old/201_02_WDSS_completion_log.pdf,2026-11-15,266634,979ef76fe2e879bb6e6e4a07a098cdb9af8e007de753b9d9265ea610f0c30069
 docs/25_4-5/201_02_25_4_5_Completion_log.pdf,https://factpages.sodir.no/pbl/wellbore_documents/201_02_25_4_5_Completion_log.pdf,2026-11-15,1633390,188df2deb71cdd79d0620a6068e3fbbe66fccd119bce4d3c6029f9df348ba1ae
 docs/25_4-5/201_01_25_4_5_Completion_report.pdf,https://factpages.sodir.no/pbl/wellbore_documents/201_01_25_4_5_Completion_report.pdf,2026-11-15,4528175,5d61cd237f4f9bf6292bf7b3cbb4a08c63da5bca1160dff71e0bdbe98cb4d3e2
+raw/partc/kgs/ks_las_files.zip,https://www.kgs.ku.edu/PRS/Ora_Archive/ks_las_files.zip,2026-11-16,1373421,3d8215794ffda0ce52bddebee968bdfade2f0a0a2ba0a9fb2f8547681827bdcf
+raw/partc/kgs/ks_elog_scans.zip,https://www.kgs.ku.edu/PRS/Ora_Archive/ks_elog_scans.zip,2026-11-16,21851197,c7bd8b0f2ab33feef5731551eafffc15ed9fc7518b262cc201b178befb6b6975
+raw/partc/nlog/thematische_data_boringen.zip,https://www.nlog.nl/sites/default/files/2026-09/thematische_data_boringen.zip,2026-11-16,56704710,fd90d756df002a42a86306e49a5b704877f1e2104aeb6c9c6a984fab31070a4b
+raw/partc/nlog/NLOG_Boreholes.csv,https://www.gdngeoservices.nl/geoserver/nlog/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=nlog:gdw_ng_wll_all_utm&outputFormat=csv,2026-11-16,3179660,20a5209cfa59e6bcf5e973df87493c26b222ee7cb1bedfdcf3ef8752c8bfdd97
+raw/partc/kgs/petroDB.html,https://www.kgs.ku.edu/PRS/petroDB.html,2026-11-16,22828,676bcd35b653e509590b58723aefb1f84d0be3f8c89869ea30e9475b11e29273
+raw/partc/kgs/Magellan_Logs_index.html,https://www.kgs.ku.edu/Magellan/Logs/index.html,2026-11-16,9758,cbe0bcd20306ac421f7a553780fe9348a56d979070c7cc169c61b41c186ddbc5
+raw/partc/kgs/Magellan_Elog_scan.html,https://www.kgs.ku.edu/Magellan/Elog/scan.html,2026-11-16,9980,92fc84e46677236dd63fa9cf2114d64cdcaf391b749c42faf1c249789c9091aa
+raw/partc/kgs/Magellan_Elog_index.html,https://www.kgs.ku.edu/Magellan/Elog/index.html,2026-11-16,8901,381e468db1b2b906aa6ba2f68d25bc5eb3247e1903b56d49f7f9532151fd366f
+raw/partc/kgs/Magellan_ACO_index.html,https://www.kgs.ku.edu/Magellan/ACO/index.html,2026-11-16,8957,ad39dbf632f0a446928f2a41ed6980638ea68959ca5a68c1368ce6d427e6b048
+raw/partc/nlog/boreholes.html,https://www.nlog.nl/en/boreholes,2026-11-16,81626,8f0bfe29065b2b22d5a3f7fb84993774b79e1d48dc0362f86163e10cff45e2c8
+raw/partc/nlog/data.html,https://www.nlog.nl/en/data,2026-11-16,77744,cecd1d98c8c5d798ff72bf27e6e3acdbc2a4c4ca10a6772defa229781cd9de85
+raw/partc/nlog/files-interactive-map.html,https://www.nlog.nl/en/files-interactive-map,2026-11-16,95112,4ec9b16efe633b3ee4999850afb63afcde72783e0b217c165ae92887cba74282
+raw/partc/nlog/brh-overview.html,https://www.nlog.nl/datacenter/brh-overview,2026-11-16,6679,0bd9f50ff61340ce3bdf1310f12118d378687acd9a72261870bdfb03dfb2aba1
+raw/partc/nlog/wfs_capabilities.xml,https://www.gdngeoservices.nl/geoserver/nlog/ows?service=WFS&version=1.0.0&request=GetCapabilities,2026-11-16,22771,324b4071bfe6dfbb60a31af35c6beacdc0a5716f76d1353386c42c8a96684555

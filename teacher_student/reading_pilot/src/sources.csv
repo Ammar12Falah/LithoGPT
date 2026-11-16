@@ -27,3 +27,17 @@ path,url,date_utc
 "docs/25_4-5/201_02_WDSS_completion_log.pdf","https://factpages.sodir.no/pbl/wdss_old/201_02_WDSS_completion_log.pdf",2026-11-15
 "docs/25_4-5/201_02_25_4_5_Completion_log.pdf","https://factpages.sodir.no/pbl/wellbore_documents/201_02_25_4_5_Completion_log.pdf",2026-11-15
 "docs/25_4-5/201_01_25_4_5_Completion_report.pdf","https://factpages.sodir.no/pbl/wellbore_documents/201_01_25_4_5_Completion_report.pdf",2026-11-15
+"raw/partc/kgs/ks_las_files.zip","https://www.kgs.ku.edu/PRS/Ora_Archive/ks_las_files.zip",2026-11-16
+"raw/partc/kgs/ks_elog_scans.zip","https://www.kgs.ku.edu/PRS/Ora_Archive/ks_elog_scans.zip",2026-11-16
+"raw/partc/nlog/thematische_data_boringen.zip","https://www.nlog.nl/sites/default/files/2026-09/thematische_data_boringen.zip",2026-11-16
+"raw/partc/nlog/NLOG_Boreholes.csv","https://www.gdngeoservices.nl/geoserver/nlog/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=nlog:gdw_ng_wll_all_utm&outputFormat=csv",2026-11-16
+"raw/partc/kgs/petroDB.html","https://www.kgs.ku.edu/PRS/petroDB.html",2026-11-16
+"raw/partc/kgs/Magellan_Logs_index.html","https://www.kgs.ku.edu/Magellan/Logs/index.html",2026-11-16
+"raw/partc/kgs/Magellan_Elog_scan.html","https://www.kgs.ku.edu/Magellan/Elog/scan.html",2026-11-16
+"raw/partc/kgs/Magellan_Elog_index.html","https://www.kgs.ku.edu/Magellan/Elog/index.html",2026-11-16
+"raw/partc/kgs/Magellan_ACO_index.html","https://www.kgs.ku.edu/Magellan/ACO/index.html",2026-11-16
+"raw/partc/nlog/boreholes.html","https://www.nlog.nl/en/boreholes",2026-11-16
+"raw/partc/nlog/data.html","https://www.nlog.nl/en/data",2026-11-16
+"raw/partc/nlog/files-interactive-map.html","https://www.nlog.nl/en/files-interactive-map",2026-11-16
+"raw/partc/nlog/brh-overview.html","https://www.nlog.nl/datacenter/brh-overview",2026-11-16
+"raw/partc/nlog/wfs_capabilities.xml","https://www.gdngeoservices.nl/geoserver/nlog/ows?service=WFS&version=1.0.0&request=GetCapabilities",2026-11-16

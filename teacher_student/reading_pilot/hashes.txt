@@ -26,6 +26,20 @@ dc1b8803cb750c2feb96cc7ddd92f3e34cd21b01b80286b5a8eb0e6a7a8bdb35  docs/25_7-2/14
 979ef76fe2e879bb6e6e4a07a098cdb9af8e007de753b9d9265ea610f0c30069  docs/25_4-5/201_02_WDSS_completion_log.pdf  (downloaded, not in git)
 188df2deb71cdd79d0620a6068e3fbbe66fccd119bce4d3c6029f9df348ba1ae  docs/25_4-5/201_02_25_4_5_Completion_log.pdf  (downloaded, not in git)
 5d61cd237f4f9bf6292bf7b3cbb4a08c63da5bca1160dff71e0bdbe98cb4d3e2  docs/25_4-5/201_01_25_4_5_Completion_report.pdf  (downloaded, not in git)
+3d8215794ffda0ce52bddebee968bdfade2f0a0a2ba0a9fb2f8547681827bdcf  raw/partc/kgs/ks_las_files.zip  (downloaded, not in git)
+c7bd8b0f2ab33feef5731551eafffc15ed9fc7518b262cc201b178befb6b6975  raw/partc/kgs/ks_elog_scans.zip  (downloaded, not in git)
+fd90d756df002a42a86306e49a5b704877f1e2104aeb6c9c6a984fab31070a4b  raw/partc/nlog/thematische_data_boringen.zip  (downloaded, not in git)
+20a5209cfa59e6bcf5e973df87493c26b222ee7cb1bedfdcf3ef8752c8bfdd97  raw/partc/nlog/NLOG_Boreholes.csv  (downloaded, not in git)
+676bcd35b653e509590b58723aefb1f84d0be3f8c89869ea30e9475b11e29273  raw/partc/kgs/petroDB.html  (downloaded, not in git)
+cbe0bcd20306ac421f7a553780fe9348a56d979070c7cc169c61b41c186ddbc5  raw/partc/kgs/Magellan_Logs_index.html  (downloaded, not in git)
+92fc84e46677236dd63fa9cf2114d64cdcaf391b749c42faf1c249789c9091aa  raw/partc/kgs/Magellan_Elog_scan.html  (downloaded, not in git)
+381e468db1b2b906aa6ba2f68d25bc5eb3247e1903b56d49f7f9532151fd366f  raw/partc/kgs/Magellan_Elog_index.html  (downloaded, not in git)
+ad39dbf632f0a446928f2a41ed6980638ea68959ca5a68c1368ce6d427e6b048  raw/partc/kgs/Magellan_ACO_index.html  (downloaded, not in git)
+8f0bfe29065b2b22d5a3f7fb84993774b79e1d48dc0362f86163e10cff45e2c8  raw/partc/nlog/boreholes.html  (downloaded, not in git)
+cecd1d98c8c5d798ff72bf27e6e3acdbc2a4c4ca10a6772defa229781cd9de85  raw/partc/nlog/data.html  (downloaded, not in git)
+4ec9b16efe633b3ee4999850afb63afcde72783e0b217c165ae92887cba74282  raw/partc/nlog/files-interactive-map.html  (downloaded, not in git)
+0bd9f50ff61340ce3bdf1310f12118d378687acd9a72261870bdfb03dfb2aba1  raw/partc/nlog/brh-overview.html  (downloaded, not in git)
+324b4071bfe6dfbb60a31af35c6beacdc0a5716f76d1353386c42c8a96684555  raw/partc/nlog/wfs_capabilities.xml  (downloaded, not in git)
 da02af9c32c1069f5554d101f0e2e537a2a7e5a6af743547bb4d1fed681351f8  readings/25_6-2__combined.csv
 89128ff3890f69b441e5e34ebf91b3f593c5f2477791c4d175346d23c2045b45  readings/25_6-2__combined__haiku.csv
 32a5ce70052e9a0f2fc0abed89442e2ad8dfce9e19c3c9322d51580d02986cf1  readings/25_6-2__combined__sonnet.csv
@@ -155,6 +169,7 @@ c67738f86568127edbaf4c877b90fdca7b9f6d9784e347dcd17830348bfbd329  conflicts/conf
 61ba82ba441d19fa1a06e25cb1c33709a84a898194ac775db426d1a3ea253a4a  check_sheet/check_sheet_text.csv
 ab0a0faa554b3499d15a4eefe0ec470c2c1b01bb344a49e625d32c922c62aa4d  draw.csv
 db1fcf157f6d862f00bd2ca213be1c80c2c239a6855ab472f6a9ae7253b333b9  reading_rules.md
-36e3a2ea3ed1dffd397ef2e9f90ce07bb6d6ed4f0e003dc2b37e5777e4aae0da  notes.md
-c7fe74d40046241359e76fde6012a7432940adce58484f0676f4838d05e17b43  report.md
+b42e6cba907c3b140414508c9e5a7cad3b072d9a94f51513a2559e8086263ba6  notes.md
+be6a2483c6eb742885a671ce6f3efed7b676cd58bbf29f4361d46c91fc138639  data_count.md
+2cff0e9a6c486f77b37100bf6b5a7b468205c81b7aca1f00699553a765eb6cb3  report.md
 fba7ee0da5603a0dd037366deed26a4d61259e5906ea7d09cc939763e01dd186  FREEZE

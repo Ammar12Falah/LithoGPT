@@ -272,8 +272,22 @@ The working record, with times, is in `notes.md`.
   applied to any reading. Core depths in the text readings are driller's depths.
 - The well names `16/11-1 ST3` and `25/2-13 T4` could not be matched to the documents table.
 - Money cost. I report minutes and tokens only.
+- Part C: the Kansas scanned documents could not be opened, because their addresses redirect to
+  the host `kgsimages.blob.core.windows.net`, which this environment does not allow. The
+  Netherlands has no listing file for logs or documents, so that part was stopped.
 
-### 8. Files, and how to run the number work again
+### 8. Part C in short (full text in `data_count.md`)
+
+- Norway: 1 994 wellbores in the FactPages documents table. 1 159 have a completion log by the
+  rule of A1, 1 101 have a report of the named kinds, 1 049 have both. Counting only completion
+  logs handed in by licensees (the kind that showed a rock column in this pilot): 1 000 wellbores,
+  975 of them with a report.
+- Kansas: 24 468 wells have a digital log file (LAS). 31 901 wells have a scanned sample log,
+  strip log, geologist's report or mud log. 4 252 wells have both.
+- Netherlands: 6 739 boreholes in the NLOG listing. No listing file says which have digital logs
+  or which documents.
+
+### 9. Files, and how to run the number work again
 
 - `draw.csv` (roles and reasons), `reading_rules.md` (fixed rules and the readers' instructions),
   `notes.md` (working record), `data_count.md` (Part C).

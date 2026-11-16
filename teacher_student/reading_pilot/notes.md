@@ -263,3 +263,21 @@ Cost of one practice reader: log picture (1200 m) 5 to 11 minutes; text (whole w
 - The cheaper readers wrote far fewer rows for the pictures (for example 54 and 45 rows for the
   log picture of 31/3-1, against 291 by the main reader) and were about five to ten times faster.
 - Costs are in `readings/costs_partd.csv`. Their combined readings were built with the same rule.
+
+## Freeze and scoring (16 November, 06:55 to 07:01)
+
+- Freeze commit bcdd5c7: all main readings, all Part D readings, the combined readings, the check
+  sheets and `reading_rules.md` (unchanged since commit 9613929).
+- `src/score.py` is the only script that opens the test wells' labels. It ran for the first time
+  after the freeze. No reading was changed afterwards.
+- Side score, done once after the freeze: the set-aside first log-picture reading of 30/6-5 scores
+  70.6 percent on that well, the kept reading 76.3, the first reading with the patch 76.1.
+- Work time: 15 November 20:42 to 23:45, and 16 November from 06:27. Parts A, B and D with scoring
+  and report took about 3 hours 40 minutes of work time, well inside the budget.
+
+## Part C (16 November, 07:01 to 07:10)
+
+- Norway and Kansas counted from listing files (`src/c_count.py`, `data_count.md`).
+- Kansas scans: the addresses in the listing redirect to `kgsimages.blob.core.windows.net`.
+  That host is not allowed here. Stopped that step (rule 5). Three scans were drawn, none opened.
+- Netherlands: no listing file for logs or documents. Stopped that part, as the brief says.
