@@ -1,0 +1,9 @@
+loaded 1170511 rows; roles {'curve': 23, 'example': 10, 'extra': 60, 'test': 5}
+ten example wells  -> 5 test wells : {'strict': 69.0, 'tolerant': 78.4, 'soft': 94.2, 'balanced': 43.0} | -> 23 curve wells: {'strict': 71.0, 'tolerant': 78.2, 'soft': 94.4, 'balanced': 43.5}
+ten random pool wells, draw 1 -> 23 curve wells: {'strict': 65.8, 'tolerant': 74.9, 'soft': 94.7, 'balanced': 29.8}
+ten random pool wells, draw 2 -> 23 curve wells: {'strict': 71.3, 'tolerant': 78.8, 'soft': 94.3, 'balanced': 32.4}
+ten random pool wells, draw 3 -> 23 curve wells: {'strict': 67.3, 'tolerant': 78.1, 'soft': 94.6, 'balanced': 35.9}
+mean of the three ten-well draws on the curve wells: {'strict': 68.1, 'tolerant': 77.3, 'soft': 94.5, 'balanced': 32.7}
+all 70 pool wells   -> 23 curve wells: {'strict': 72.4, 'tolerant': 81.1, 'soft': 95.6, 'balanced': 52.2}
+all 93 other wells  -> 5 test wells  : {'strict': 77.4, 'tolerant': 87.0, 'soft': 97.0, 'balanced': 72.2}
+done in 82 s

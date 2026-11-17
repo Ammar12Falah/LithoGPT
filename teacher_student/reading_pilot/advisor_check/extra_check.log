@@ -1,0 +1,19 @@
+=== 1. A reader that knows ONLY the formation and group names (no curves, no pictures)
+name -> most common rock, learned from the 10 example wells strict 64.8  tolerant 65.3  balanced 34.5   (formation name known for 85% of depth)
+name -> most common rock, learned from all 93 other wells  strict 66.7  tolerant 67.2  balanced 37.4   (formation name known for 87% of depth)
+share of test-well depth with a formation name: 87.0 %; with a group name: 99.9 %
+
+=== 2. Curve-picture reader against the document teacher, step by step (strict)
+both gave a class: 99.1 % of depth; they agree on 77.2 % of that
+where they agree, they match the experts on 80.6 %
+where they disagree ( 1822 m ): curve picture right 62.9 %, teacher right 19.7 %, neither 17.4 %
+curve picture agrees with the all-well model on 85.8 % of depth; with the ten-well model on 77.3 %
+
+=== 3. Changes of rock class per 100 m (steps without a class are skipped)
+expert                      23.2
+curve picture                6.5
+combined                    10.6
+ten-well model              25.4
+all-well model              18.6
+curve picture (Sonnet)       2.3
+curve picture (Haiku)        1.6
