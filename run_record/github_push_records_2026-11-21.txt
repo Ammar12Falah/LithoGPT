@@ -1,0 +1,98 @@
+GitHub push records for branch protocol/confirmatory-test, pushes of 2026-11-21.
+Source: GET https://api.github.com/repos/Ammar12Falah/LithoGPT/activity?ref=refs/heads/protocol/confirmatory-test
+Fetched: 2026-11-21 11:57:59 UTC. Entries below are GitHub's raw JSON, unedited, one per push, newest first.
+The push that adds this file is not in it (it did not exist yet when the file was written).
+
+{
+  "activity_type": "push",
+  "actor": {
+    "avatar_url": "https://avatars.githubusercontent.com/u/104951473?v=4",
+    "events_url": "https://api.github.com/users/Ammar12Falah/events{/privacy}",
+    "followers_url": "https://api.github.com/users/Ammar12Falah/followers",
+    "following_url": "https://api.github.com/users/Ammar12Falah/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Ammar12Falah/gists{/gist_id}",
+    "gravatar_id": "",
+    "html_url": "https://github.com/Ammar12Falah",
+    "id": 104951473,
+    "login": "Ammar12Falah",
+    "node_id": "U_kgDOBkFusQ",
+    "organizations_url": "https://api.github.com/users/Ammar12Falah/orgs",
+    "received_events_url": "https://api.github.com/users/Ammar12Falah/received_events",
+    "repos_url": "https://api.github.com/users/Ammar12Falah/repos",
+    "site_admin": false,
+    "starred_url": "https://api.github.com/users/Ammar12Falah/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Ammar12Falah/subscriptions",
+    "type": "User",
+    "url": "https://api.github.com/users/Ammar12Falah",
+    "user_view_type": "public"
+  },
+  "after": "a8e3772f5cfe053ab0d211f88c6962bf2a877246",
+  "before": "93a745e66eb057d1d4ee677927ba410c215ee302",
+  "id": 51265936606,
+  "node_id": "PSH_kwLOQ0pjCM8AAAAL77Ac3g",
+  "ref": "refs/heads/protocol/confirmatory-test",
+  "timestamp": "2026-11-21T11:50:22Z"
+}
+
+{
+  "activity_type": "push",
+  "actor": {
+    "avatar_url": "https://avatars.githubusercontent.com/u/104951473?v=4",
+    "events_url": "https://api.github.com/users/Ammar12Falah/events{/privacy}",
+    "followers_url": "https://api.github.com/users/Ammar12Falah/followers",
+    "following_url": "https://api.github.com/users/Ammar12Falah/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Ammar12Falah/gists{/gist_id}",
+    "gravatar_id": "",
+    "html_url": "https://github.com/Ammar12Falah",
+    "id": 104951473,
+    "login": "Ammar12Falah",
+    "node_id": "U_kgDOBkFusQ",
+    "organizations_url": "https://api.github.com/users/Ammar12Falah/orgs",
+    "received_events_url": "https://api.github.com/users/Ammar12Falah/received_events",
+    "repos_url": "https://api.github.com/users/Ammar12Falah/repos",
+    "site_admin": false,
+    "starred_url": "https://api.github.com/users/Ammar12Falah/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Ammar12Falah/subscriptions",
+    "type": "User",
+    "url": "https://api.github.com/users/Ammar12Falah",
+    "user_view_type": "public"
+  },
+  "after": "93a745e66eb057d1d4ee677927ba410c215ee302",
+  "before": "e2acd0e1423d857b6efe97e2002e062eab345827",
+  "id": 51265839789,
+  "node_id": "PSH_kwLOQ0pjCM8AAAAL766irQ",
+  "ref": "refs/heads/protocol/confirmatory-test",
+  "timestamp": "2026-11-21T11:49:03Z"
+}
+
+{
+  "activity_type": "push",
+  "actor": {
+    "avatar_url": "https://avatars.githubusercontent.com/u/104951473?v=4",
+    "events_url": "https://api.github.com/users/Ammar12Falah/events{/privacy}",
+    "followers_url": "https://api.github.com/users/Ammar12Falah/followers",
+    "following_url": "https://api.github.com/users/Ammar12Falah/following{/other_user}",
+    "gists_url": "https://api.github.com/users/Ammar12Falah/gists{/gist_id}",
+    "gravatar_id": "",
+    "html_url": "https://github.com/Ammar12Falah",
+    "id": 104951473,
+    "login": "Ammar12Falah",
+    "node_id": "U_kgDOBkFusQ",
+    "organizations_url": "https://api.github.com/users/Ammar12Falah/orgs",
+    "received_events_url": "https://api.github.com/users/Ammar12Falah/received_events",
+    "repos_url": "https://api.github.com/users/Ammar12Falah/repos",
+    "site_admin": false,
+    "starred_url": "https://api.github.com/users/Ammar12Falah/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/Ammar12Falah/subscriptions",
+    "type": "User",
+    "url": "https://api.github.com/users/Ammar12Falah",
+    "user_view_type": "public"
+  },
+  "after": "e2acd0e1423d857b6efe97e2002e062eab345827",
+  "before": "937b50849dfce619b1f50c876a9bcc03651f942d",
+  "id": 51265422176,
+  "node_id": "PSH_kwLOQ0pjCM8AAAAL76hDYA",
+  "ref": "refs/heads/protocol/confirmatory-test",
+  "timestamp": "2026-11-21T11:43:18Z"
+}
+
